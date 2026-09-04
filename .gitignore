@@ -1,0 +1,30 @@
+﻿# Python cache
+__pycache__/
+*.py[cod]
+*.class
+*.pyc
+
+# Environment
+.venv/
+env/
+venv/
+ENV/
+
+# Temporary and log files
+*.log
+*.tmp
+temp/
+.tempmediaStorage/
+
+# OS specific
+Thumbs.db
+.DS_Store
+
+# Raw input videos
+input_videos/*.mp4
+input_videos/*.mov
+input_videos/*.mpg
+input_videos/*.avi
+
+# Raw FBX character model cache
+models/*.fbx
