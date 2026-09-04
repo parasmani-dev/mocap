@@ -1,0 +1,219 @@
+[
+  {
+    "word_id": "black",
+    "label": "Black",
+    "filename": "Black.mp4",
+    "glb_file": "./output/glb/avatar_black.glb",
+    "duration_sec": 2.0
+  },
+  {
+    "word_id": "blackboard",
+    "label": "Blackboard",
+    "filename": "Blackboard.mpg",
+    "glb_file": "./output/glb/avatar_blackboard.glb",
+    "duration_sec": 2.0
+  },
+  {
+    "word_id": "board_panel",
+    "label": "Board (Panel)",
+    "filename": "Board_(Panel).mp4",
+    "glb_file": "./output/glb/avatar_board_panel.glb",
+    "duration_sec": 2.0
+  },
+  {
+    "word_id": "book",
+    "label": "Book",
+    "filename": "Book.mp4",
+    "glb_file": "./output/glb/avatar_book.glb",
+    "duration_sec": 2.0
+  },
+  {
+    "word_id": "competition_contest",
+    "label": "Competition Contest",
+    "filename": "Competition_Contest.mp4",
+    "glb_file": "./output/glb/avatar_competition_contest.glb",
+    "duration_sec": 2.0
+  },
+  {
+    "word_id": "congratulations",
+    "label": "Congratulations",
+    "filename": "Congratulations.mp4",
+    "glb_file": "./output/glb/avatar_congratulations.glb",
+    "duration_sec": 2.0
+  },
+  {
+    "word_id": "correct",
+    "label": "Correct",
+    "filename": "Correct.mp4",
+    "glb_file": "./output/glb/avatar_correct.glb",
+    "duration_sec": 2.0
+  },
+  {
+    "word_id": "cost",
+    "label": "Cost",
+    "filename": "Cost.mp4",
+    "glb_file": "./output/glb/avatar_cost.glb",
+    "duration_sec": 2.0
+  },
+  {
+    "word_id": "explain",
+    "label": "Explain",
+    "filename": "Explain.mp4",
+    "glb_file": "./output/glb/avatar_explain.glb",
+    "duration_sec": 2.0
+  },
+  {
+    "word_id": "finish",
+    "label": "Finish",
+    "filename": "Finish.mp4",
+    "glb_file": "./output/glb/avatar_finish.glb",
+    "duration_sec": 2.0
+  },
+  {
+    "word_id": "pen_sign_2",
+    "label": "Pen (Sign 2)",
+    "filename": "Pen_(Sign_2).mp4",
+    "glb_file": "./output/glb/avatar_pen_sign_2.glb",
+    "duration_sec": 2.0
+  },
+  {
+    "word_id": "pencil_sign_4",
+    "label": "Pencil (Sign 4)",
+    "filename": "Pencil_(Sign_4).mp4",
+    "glb_file": "./output/glb/avatar_pencil_sign_4.glb",
+    "duration_sec": 2.0
+  },
+  {
+    "word_id": "student",
+    "label": "Student",
+    "filename": "Student.mp4",
+    "glb_file": "./output/glb/avatar_student.glb",
+    "duration_sec": 2.0
+  },
+  {
+    "word_id": "study",
+    "label": "Study",
+    "filename": "Study.mp4",
+    "glb_file": "./output/glb/avatar_study.glb",
+    "duration_sec": 2.0
+  },
+  {
+    "word_id": "teacher",
+    "label": "Teacher",
+    "filename": "Teacher.mp4",
+    "glb_file": "./output/glb/avatar_teacher.glb",
+    "duration_sec": 2.0
+  },
+  {
+    "word_id": "today",
+    "label": "Today",
+    "filename": "Today.mp4",
+    "glb_file": "./output/glb/avatar_today.glb",
+    "duration_sec": 2.0
+  },
+  {
+    "word_id": "tomorrow",
+    "label": "Tomorrow",
+    "filename": "Tomorrow.mp4",
+    "glb_file": "./output/glb/avatar_tomorrow.glb",
+    "duration_sec": 2.0
+  },
+  {
+    "word_id": "wait",
+    "label": "Wait",
+    "filename": "Wait.mp4",
+    "glb_file": "./output/glb/avatar_wait.glb",
+    "duration_sec": 2.0
+  },
+  {
+    "word_id": "want_desire_wish_for",
+    "label": "Want Desire Wish For",
+    "filename": "Want_Desire_Wish_For.mp4",
+    "glb_file": "./output/glb/avatar_want_desire_wish_for.glb",
+    "duration_sec": 2.0
+  },
+  {
+    "word_id": "whats_up",
+    "label": "What's Up",
+    "filename": "What's_Up.mp4",
+    "glb_file": "./output/glb/avatar_whats_up.glb",
+    "duration_sec": 2.0
+  },
+  {
+    "word_id": "what_happened",
+    "label": "What Happened",
+    "filename": "What_Happened.mp4",
+    "glb_file": "./output/glb/avatar_what_happened.glb",
+    "duration_sec": 2.0
+  },
+  {
+    "word_id": "what_is_your_name",
+    "label": "What Is Your Name",
+    "filename": "What_Is_Your_Name.mp4",
+    "glb_file": "./output/glb/avatar_what_is_your_name.glb",
+    "duration_sec": 2.0
+  },
+  {
+    "word_id": "when_for_days",
+    "label": "When (For Days)",
+    "filename": "When_(For_Days).mp4",
+    "glb_file": "./output/glb/avatar_when_for_days.glb",
+    "duration_sec": 2.0
+  },
+  {
+    "word_id": "where",
+    "label": "Where",
+    "filename": "Where.mp4",
+    "glb_file": "./output/glb/avatar_where.glb",
+    "duration_sec": 2.0
+  },
+  {
+    "word_id": "which",
+    "label": "Which",
+    "filename": "Which.mp4",
+    "glb_file": "./output/glb/avatar_which.glb",
+    "duration_sec": 2.0
+  },
+  {
+    "word_id": "while",
+    "label": "While",
+    "filename": "While.mp4",
+    "glb_file": "./output/glb/avatar_while.glb",
+    "duration_sec": 2.0
+  },
+  {
+    "word_id": "why_sign_1",
+    "label": "Why (Sign 1)",
+    "filename": "Why_(Sign_1).mp4",
+    "glb_file": "./output/glb/avatar_why_sign_1.glb",
+    "duration_sec": 2.0
+  },
+  {
+    "word_id": "win",
+    "label": "Win",
+    "filename": "Win.mp4",
+    "glb_file": "./output/glb/avatar_win.glb",
+    "duration_sec": 2.0
+  },
+  {
+    "word_id": "beautiful",
+    "label": "beautiful",
+    "filename": "beautiful.MOV",
+    "glb_file": "./output/glb/avatar_beautiful.glb",
+    "duration_sec": 2.0
+  },
+  {
+    "word_id": "deaf",
+    "label": "deaf",
+    "filename": "deaf.MOV",
+    "glb_file": "./output/glb/avatar_deaf.glb",
+    "duration_sec": 2.0
+  },
+  {
+    "word_id": "quiet",
+    "label": "quiet",
+    "filename": "quiet.MOV",
+    "glb_file": "./output/glb/avatar_quiet.glb",
+    "duration_sec": 2.0
+  }
+]
