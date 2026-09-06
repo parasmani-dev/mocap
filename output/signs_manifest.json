@@ -1,0 +1,250 @@
+[
+  {
+    "word_id": "beautiful",
+    "label": "Beautiful",
+    "glb_file": "./output/glb/avatar_beautiful.glb",
+    "bvh_file": "./output/bvh/beautiful.bvh",
+    "duration_sec": 2.0,
+    "status": "CLEAN"
+  },
+  {
+    "word_id": "black",
+    "label": "Black",
+    "glb_file": "./output/glb/avatar_black.glb",
+    "bvh_file": "./output/bvh/black.bvh",
+    "duration_sec": 2.0,
+    "status": "CLEAN"
+  },
+  {
+    "word_id": "blackboard",
+    "label": "Blackboard",
+    "glb_file": "./output/glb/avatar_blackboard.glb",
+    "bvh_file": "./output/bvh/blackboard.bvh",
+    "duration_sec": 2.0,
+    "status": "NEEDS_REVIEW"
+  },
+  {
+    "word_id": "board_panel",
+    "label": "Board Panel",
+    "glb_file": "./output/glb/avatar_board_panel.glb",
+    "bvh_file": "./output/bvh/board_panel.bvh",
+    "duration_sec": 2.0,
+    "status": "CLEAN"
+  },
+  {
+    "word_id": "book",
+    "label": "Book",
+    "glb_file": "./output/glb/avatar_book.glb",
+    "bvh_file": "./output/bvh/book.bvh",
+    "duration_sec": 2.0,
+    "status": "CLEAN"
+  },
+  {
+    "word_id": "competition_contest",
+    "label": "Competition Contest",
+    "glb_file": "./output/glb/avatar_competition_contest.glb",
+    "bvh_file": "./output/bvh/competition_contest.bvh",
+    "duration_sec": 2.0,
+    "status": "NEEDS_REVIEW"
+  },
+  {
+    "word_id": "congratulations",
+    "label": "Congratulations",
+    "glb_file": "./output/glb/avatar_congratulations.glb",
+    "bvh_file": "./output/bvh/congratulations.bvh",
+    "duration_sec": 2.0,
+    "status": "CLEAN"
+  },
+  {
+    "word_id": "correct",
+    "label": "Correct",
+    "glb_file": "./output/glb/avatar_correct.glb",
+    "bvh_file": "./output/bvh/correct.bvh",
+    "duration_sec": 2.0,
+    "status": "NEEDS_REVIEW"
+  },
+  {
+    "word_id": "cost",
+    "label": "Cost",
+    "glb_file": "./output/glb/avatar_cost.glb",
+    "bvh_file": "./output/bvh/cost.bvh",
+    "duration_sec": 2.0,
+    "status": "NEEDS_REVIEW"
+  },
+  {
+    "word_id": "deaf",
+    "label": "Deaf",
+    "glb_file": "./output/glb/avatar_deaf.glb",
+    "bvh_file": "./output/bvh/deaf.bvh",
+    "duration_sec": 2.0,
+    "status": "NEEDS_REVIEW"
+  },
+  {
+    "word_id": "explain",
+    "label": "Explain",
+    "glb_file": "./output/glb/avatar_explain.glb",
+    "bvh_file": "./output/bvh/explain.bvh",
+    "duration_sec": 2.0,
+    "status": "CLEAN"
+  },
+  {
+    "word_id": "finish",
+    "label": "Finish",
+    "glb_file": "./output/glb/avatar_finish.glb",
+    "bvh_file": "./output/bvh/finish.bvh",
+    "duration_sec": 2.0,
+    "status": "CLEAN"
+  },
+  {
+    "word_id": "pen_sign_2",
+    "label": "Pen Sign 2",
+    "glb_file": "./output/glb/avatar_pen_sign_2.glb",
+    "bvh_file": "./output/bvh/pen_sign_2.bvh",
+    "duration_sec": 2.0,
+    "status": "NEEDS_REVIEW"
+  },
+  {
+    "word_id": "pencil_sign_4",
+    "label": "Pencil Sign 4",
+    "glb_file": "./output/glb/avatar_pencil_sign_4.glb",
+    "bvh_file": "./output/bvh/pencil_sign_4.bvh",
+    "duration_sec": 2.0,
+    "status": "NEEDS_REVIEW"
+  },
+  {
+    "word_id": "quiet",
+    "label": "Quiet",
+    "glb_file": "./output/glb/avatar_quiet.glb",
+    "bvh_file": "./output/bvh/quiet.bvh",
+    "duration_sec": 2.0,
+    "status": "CLEAN"
+  },
+  {
+    "word_id": "student",
+    "label": "Student",
+    "glb_file": "./output/glb/avatar_student.glb",
+    "bvh_file": "./output/bvh/student.bvh",
+    "duration_sec": 2.0,
+    "status": "NEEDS_REVIEW"
+  },
+  {
+    "word_id": "study",
+    "label": "Study",
+    "glb_file": "./output/glb/avatar_study.glb",
+    "bvh_file": "./output/bvh/study.bvh",
+    "duration_sec": 2.0,
+    "status": "CLEAN"
+  },
+  {
+    "word_id": "teacher",
+    "label": "Teacher",
+    "glb_file": "./output/glb/avatar_teacher.glb",
+    "bvh_file": "./output/bvh/teacher.bvh",
+    "duration_sec": 2.0,
+    "status": "NEEDS_REVIEW"
+  },
+  {
+    "word_id": "today",
+    "label": "Today",
+    "glb_file": "./output/glb/avatar_today.glb",
+    "bvh_file": "./output/bvh/today.bvh",
+    "duration_sec": 2.0,
+    "status": "NEEDS_REVIEW"
+  },
+  {
+    "word_id": "tomorrow",
+    "label": "Tomorrow",
+    "glb_file": "./output/glb/avatar_tomorrow.glb",
+    "bvh_file": "./output/bvh/tomorrow.bvh",
+    "duration_sec": 2.0,
+    "status": "NEEDS_REVIEW"
+  },
+  {
+    "word_id": "wait",
+    "label": "Wait",
+    "glb_file": "./output/glb/avatar_wait.glb",
+    "bvh_file": "./output/bvh/wait.bvh",
+    "duration_sec": 2.0,
+    "status": "NEEDS_REVIEW"
+  },
+  {
+    "word_id": "want_desire_wish_for",
+    "label": "Want Desire Wish For",
+    "glb_file": "./output/glb/avatar_want_desire_wish_for.glb",
+    "bvh_file": "./output/bvh/want_desire_wish_for.bvh",
+    "duration_sec": 2.0,
+    "status": "NEEDS_REVIEW"
+  },
+  {
+    "word_id": "what_happened",
+    "label": "What Happened",
+    "glb_file": "./output/glb/avatar_what_happened.glb",
+    "bvh_file": "./output/bvh/what_happened.bvh",
+    "duration_sec": 2.0,
+    "status": "NEEDS_REVIEW"
+  },
+  {
+    "word_id": "what_is_your_name",
+    "label": "What Is Your Name",
+    "glb_file": "./output/glb/avatar_what_is_your_name.glb",
+    "bvh_file": "./output/bvh/what_is_your_name.bvh",
+    "duration_sec": 2.0,
+    "status": "NEEDS_REVIEW"
+  },
+  {
+    "word_id": "whats_up",
+    "label": "Whats Up",
+    "glb_file": "./output/glb/avatar_whats_up.glb",
+    "bvh_file": "./output/bvh/whats_up.bvh",
+    "duration_sec": 2.0,
+    "status": "CLEAN"
+  },
+  {
+    "word_id": "when_for_days",
+    "label": "When For Days",
+    "glb_file": "./output/glb/avatar_when_for_days.glb",
+    "bvh_file": "./output/bvh/when_for_days.bvh",
+    "duration_sec": 2.0,
+    "status": "NEEDS_REVIEW"
+  },
+  {
+    "word_id": "where",
+    "label": "Where",
+    "glb_file": "./output/glb/avatar_where.glb",
+    "bvh_file": "./output/bvh/where.bvh",
+    "duration_sec": 2.0,
+    "status": "CLEAN"
+  },
+  {
+    "word_id": "which",
+    "label": "Which",
+    "glb_file": "./output/glb/avatar_which.glb",
+    "bvh_file": "./output/bvh/which.bvh",
+    "duration_sec": 2.0,
+    "status": "NEEDS_REVIEW"
+  },
+  {
+    "word_id": "while",
+    "label": "While",
+    "glb_file": "./output/glb/avatar_while.glb",
+    "bvh_file": "./output/bvh/while.bvh",
+    "duration_sec": 2.0,
+    "status": "NEEDS_REVIEW"
+  },
+  {
+    "word_id": "why_sign_1",
+    "label": "Why Sign 1",
+    "glb_file": "./output/glb/avatar_why_sign_1.glb",
+    "bvh_file": "./output/bvh/why_sign_1.bvh",
+    "duration_sec": 2.0,
+    "status": "NEEDS_REVIEW"
+  },
+  {
+    "word_id": "win",
+    "label": "Win",
+    "glb_file": "./output/glb/avatar_win.glb",
+    "bvh_file": "./output/bvh/win.bvh",
+    "duration_sec": 2.0,
+    "status": "NEEDS_REVIEW"
+  }
+]

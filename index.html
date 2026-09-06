@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISL 3D Sign Language Avatar Studio</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            background-color: #0b0d13;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            color: #f0f3f6;
+            overflow: hidden;
+            width: 100vw;
+            height: 100vh;
+        }
+        #canvas-container {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .ui-overlay {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 10;
+            background: rgba(18, 22, 30, 0.92);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 14px;
+            padding: 20px;
+            width: 340px;
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6);
+            max-height: 94vh;
+            display: flex;
+            flex-direction: column;
+        }
+        h1 {
+            font-size: 1.15rem;
+            font-weight: 700;
+            margin-bottom: 2px;
+            color: #58a6ff;
+            letter-spacing: 0.5px;
+        }
+        p.subtitle {
+            font-size: 0.78rem;
+            color: #8b949e;
+            margin-bottom: 14px;
+        }
+        .control-group {
+            margin-bottom: 14px;
+        }
+        label {
+            display: block;
+            font-size: 0.72rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #8b949e;
+            margin-bottom: 6px;
+        }
+        .search-box {
+            width: 100%;
+            padding: 8px 12px;
+            background: #161b22;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            color: #ffffff;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            outline: none;
+            margin-bottom: 6px;
+        }
+        .search-box:focus {
+            border-color: #58a6ff;
+        }
+        select {
+            width: 100%;
+            padding: 9px 12px;
+            background: #21262d;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            color: #ffffff;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            outline: none;
+            cursor: pointer;
+        }
+        select:focus {
+            border-color: #58a6ff;
+        }
+        .btn-row {
+            display: flex;
+            gap: 6px;
+        }
+        button {
+            flex: 1;
+            padding: 8px 10px;
+            background: #21262d;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            color: #c9d1d9;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.8rem;
+            font-weight: 500;
+            transition: all 0.15s ease;
+        }
+        button:hover {
+            background: #30363d;
+            border-color: #58a6ff;
+            color: #ffffff;
+        }
+        button.active {
+            background: #1f6feb;
+            border-color: #58a6ff;
+            color: #ffffff;
+        }
+        .speed-slider {
+            width: 100%;
+            accent-color: #1f6feb;
+            margin-top: 4px;
+        }
+        .status-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.75rem;
+            color: #3fb950;
+            margin-top: auto;
+            padding-top: 8px;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            background: #3fb950;
+            border-radius: 50%;
+        }
+        #loading-screen {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #0b0d13;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 100;
+            transition: opacity 0.3s ease;
+        }
+        .spinner {
+            width: 44px;
+            height: 44px;
+            border: 3px solid rgba(88, 166, 255, 0.2);
+            border-top-color: #58a6ff;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+            margin-bottom: 16px;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        #debug-bar {
+            position: absolute;
+            bottom: 12px;
+            right: 12px;
+            background: rgba(0,0,0,0.75);
+            color: #58a6ff;
+            font-size: 0.8rem;
+            padding: 6px 12px;
+            border-radius: 6px;
+            z-index: 10;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+</head>
+<body>
+    <div id="loading-screen">
+        <div class="spinner"></div>
+        <p id="loading-text" style="color: #8b949e; font-size: 0.9rem;">Loading Sign Language Avatar...</p>
+    </div>
+
+    <div id="canvas-container"></div>
+
+    <div class="ui-overlay">
+        <h1>ISL 3D Avatar Studio</h1>
+        <p class="subtitle">Complete Indian Sign Language Dictionary</p>
+
+        <div class="control-group">
+            <label>Search & Select Sign (<span id="sign-count">35</span> Words)</label>
+            <input type="text" id="search-input" class="search-box" placeholder="Type to filter words...">
+            <select id="sign-selector" size="6" style="height: 150px; overflow-y: auto;">
+            </select>
+        </div>
+
+        <div class="control-group">
+            <label>Playback</label>
+            <div class="btn-row">
+                <button id="btn-play-pause" class="active">Pause</button>
+                <button id="btn-replay">Replay</button>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label>Signing Speed: <span id="speed-val" style="color: #58a6ff;">1.0x</span></label>
+            <input type="range" id="speed-slider" class="speed-slider" min="0.2" max="2.0" step="0.1" value="1.0">
+        </div>
+
+        <div class="control-group">
+            <label>Camera Preset</label>
+            <div class="btn-row">
+                <button id="btn-view-chest" class="active">Upper Body</button>
+                <button id="btn-view-hand">Hand Focus</button>
+                <button id="btn-view-full">Full Body</button>
+            </div>
+        </div>
+
+        <div class="status-badge">
+            <div class="status-dot"></div>
+            <span id="track-status">Kinematics Active</span>
+        </div>
+    </div>
+
+    <div id="debug-bar">Initializing...</div>
+
+    <script>
+        const debugBar = document.getElementById('debug-bar');
+        function setDebug(msg) {
+            console.log('[ISL Studio]', msg);
+            if (debugBar) debugBar.textContent = msg;
+        }
+
+        // 1. Scene Setup
+        const container = document.getElementById('canvas-container');
+        const scene = new THREE.Scene();
+        scene.background = new THREE.Color(0x10141d);
+
+        const gridHelper = new THREE.GridHelper(10, 20, 0x30363d, 0x1f242c);
+        gridHelper.position.y = 0;
+        scene.add(gridHelper);
+
+        // 2. Camera Setup (Centered on upper chest and facing straight at avatar)
+        const camera = new THREE.PerspectiveCamera(38, window.innerWidth / window.innerHeight, 0.1, 100);
+        camera.position.set(0.0, 1.45, 1.7);
+
+        // 3. Renderer Setup
+        const renderer = new THREE.WebGLRenderer({ antialias: true });
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+        renderer.toneMapping = THREE.ACESFilmicToneMapping;
+        renderer.toneMappingExposure = 1.25;
+        renderer.shadowMap.enabled = true;
+        container.appendChild(renderer.domElement);
+
+        // 4. Orbit Controls
+        const controls = new THREE.OrbitControls(camera, renderer.domElement);
+        controls.enableDamping = true;
+        controls.dampingFactor = 0.05;
+        controls.target.set(0.0, 1.3, 0.0);
+        controls.minDistance = 0.5;
+        controls.maxDistance = 5.0;
+
+        // 5. Studio Lighting
+        const ambientLight = new THREE.AmbientLight(0xffffff, 1.6);
+        scene.add(ambientLight);
+
+        const keyLight = new THREE.DirectionalLight(0xfffaed, 3.2);
+        keyLight.position.set(2.5, 4.0, 3.0);
+        keyLight.castShadow = true;
+        scene.add(keyLight);
+
+        const fillLight = new THREE.DirectionalLight(0xd4e6ff, 1.6);
+        fillLight.position.set(-2.5, 2.5, 2.0);
+        scene.add(fillLight);
+
+        const rimLight = new THREE.DirectionalLight(0x58a6ff, 2.0);
+        rimLight.position.set(0.0, 3.0, -3.0);
+        scene.add(rimLight);
+
+        // 6. Sign Model Loader & Active Animation Player
+        let allSigns = [];
+        let currentAvatar = null;
+        let mixer = null;
+        let activeAction = null;
+        const loader = new THREE.GLTFLoader();
+
+        const signSelector = document.getElementById('sign-selector');
+        const signCountEl = document.getElementById('sign-count');
+        const searchInput = document.getElementById('search-input');
+        const trackStatus = document.getElementById('track-status');
+
+        async function fetchManifest() {
+            try {
+                const res = await fetch('./output/signs_manifest.json?v=' + Date.now());
+                if (res.ok) {
+                    allSigns = await res.json();
+                    renderSignList(allSigns);
+                }
+            } catch (e) {
+                console.error('Error fetching signs manifest:', e);
+            }
+        }
+
+        function renderSignList(signs) {
+            const query = searchInput.value.toLowerCase();
+            const filtered = signs.filter(s => {
+                const title = (s.title || s.label || s.id || '').toLowerCase();
+                const id = (s.id || s.word_id || '').toLowerCase();
+                return title.includes(query) || id.includes(query);
+            });
+            const currentSelected = signSelector.value;
+            signSelector.innerHTML = '';
+            
+            filtered.forEach((s, idx) => {
+                const opt = document.createElement('option');
+                const val = s.id || s.word_id;
+                const title = s.title || s.label || val;
+                opt.value = val;
+                opt.textContent = title;
+                if (val === currentSelected || (!currentSelected && idx === 0)) {
+                    opt.selected = true;
+                }
+                signSelector.appendChild(opt);
+            });
+            if (signCountEl) signCountEl.textContent = signs.length;
+        }
+
+        searchInput.addEventListener('input', () => renderSignList(allSigns));
+
+        function loadSign(wordId) {
+            if (!wordId) wordId = 'black';
+            setDebug('Loading sign: ' + wordId + '...');
+            const loadingScreen = document.getElementById('loading-screen');
+            if (loadingScreen) {
+                loadingScreen.style.display = 'flex';
+                loadingScreen.style.opacity = '1';
+            }
+
+            if (currentAvatar) {
+                scene.remove(currentAvatar);
+                if (mixer) mixer.stopAllAction();
+            }
+
+            const path = './output/glb/avatar_' + wordId + '.glb?v=' + Date.now();
+            loader.load(
+                path,
+                (gltf) => {
+                    currentAvatar = gltf.scene;
+                    
+                    currentAvatar.traverse((child) => {
+                        if (child.isMesh) {
+                            child.castShadow = true;
+                            child.receiveShadow = true;
+                            if (child.material) {
+                                child.material.depthWrite = true;
+                                child.material.needsUpdate = true;
+                            }
+                        }
+                    });
+                    
+                    scene.add(currentAvatar);
+
+                    mixer = new THREE.AnimationMixer(currentAvatar);
+                    
+                    let clip = null;
+                    if (gltf.animations && gltf.animations.length > 0) {
+                        clip = gltf.animations.find(c => c.name.toLowerCase().includes(wordId.toLowerCase()));
+                        if (!clip) {
+                            clip = gltf.animations.reduce((max, c) => c.duration > max.duration ? c : max, gltf.animations[0]);
+                        }
+                    }
+
+                    if (clip) {
+                        if (trackStatus) trackStatus.textContent = 'Sign: ' + wordId.toUpperCase() + ' (' + clip.duration.toFixed(2) + 's)';
+                        activeAction = mixer.clipAction(clip);
+                        activeAction.setLoop(THREE.LoopRepeat);
+                        activeAction.play();
+                        setDebug('Playing: ' + wordId + ' (' + clip.duration.toFixed(2) + 's)');
+                    } else {
+                        setDebug('Warning: No animation clip found in ' + wordId);
+                    }
+
+                    if (loadingScreen) {
+                        loadingScreen.style.opacity = '0';
+                        setTimeout(() => { loadingScreen.style.display = 'none'; }, 200);
+                    }
+                },
+                (xhr) => {
+                    if (xhr.total > 0) {
+                        const pct = Math.round((xhr.loaded / xhr.total) * 100);
+                        setDebug('Downloading ' + wordId + ': ' + pct + '%');
+                    }
+                },
+                (err) => {
+                    console.error('Error loading sign GLB:', err);
+                    setDebug('Error loading avatar_' + wordId + '.glb');
+                    if (trackStatus) trackStatus.textContent = 'Error: ' + wordId;
+                    if (loadingScreen) loadingScreen.style.display = 'none';
+                }
+            );
+        }
+
+        signSelector.addEventListener('change', (e) => {
+            if (e.target.value) loadSign(e.target.value);
+        });
+
+        // Initialize and load default
+        fetchManifest().then(() => {
+            if (allSigns.length > 0) {
+                const firstId = allSigns[0].id || allSigns[0].word_id || 'black';
+                loadSign(firstId);
+            } else {
+                loadSign('black');
+            }
+        });
+
+        // 7. UI Controls Interactivity
+        const btnPlayPause = document.getElementById('btn-play-pause');
+        btnPlayPause.addEventListener('click', () => {
+            if (!activeAction) return;
+            if (activeAction.paused) {
+                activeAction.paused = false;
+                btnPlayPause.textContent = 'Pause';
+                btnPlayPause.classList.add('active');
+            } else {
+                activeAction.paused = true;
+                btnPlayPause.textContent = 'Play';
+                btnPlayPause.classList.remove('active');
+            }
+        });
+
+        document.getElementById('btn-replay').addEventListener('click', () => {
+            if (activeAction) {
+                activeAction.reset();
+                activeAction.paused = false;
+                btnPlayPause.textContent = 'Pause';
+                btnPlayPause.classList.add('active');
+            }
+        });
+
+        const speedSlider = document.getElementById('speed-slider');
+        const speedVal = document.getElementById('speed-val');
+        speedSlider.addEventListener('input', (e) => {
+            const speed = parseFloat(e.target.value);
+            speedVal.textContent = speed.toFixed(1) + 'x';
+            if (mixer) mixer.timeScale = speed;
+        });
+
+        document.getElementById('btn-view-chest').addEventListener('click', () => {
+            camera.position.set(0.0, 1.45, 1.7);
+            controls.target.set(0.0, 1.3, 0.0);
+        });
+        document.getElementById('btn-view-hand').addEventListener('click', () => {
+            camera.position.set(-0.25, 1.45, 0.95);
+            controls.target.set(-0.12, 1.38, 0.0);
+        });
+        document.getElementById('btn-view-full').addEventListener('click', () => {
+            camera.position.set(0.0, 1.1, 3.2);
+            controls.target.set(0.0, 0.9, 0.0);
+        });
+
+        window.addEventListener('resize', () => {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        });
+
+        // 8. Render Animation Loop
+        const clock = new THREE.Clock();
+        function animate() {
+            requestAnimationFrame(animate);
+            const delta = clock.getDelta();
+            if (mixer) mixer.update(delta);
+            controls.update();
+            renderer.render(scene, camera);
+        }
+        animate();
+    </script>
+</body>
+</html>
