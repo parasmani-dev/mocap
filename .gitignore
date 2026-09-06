@@ -1,4 +1,4 @@
-﻿# Python cache
+# Python cache
 __pycache__/
 *.py[cod]
 *.class
@@ -15,6 +15,9 @@ ENV/
 *.tmp
 temp/
 .tempmediaStorage/
+output/blender_render/
+output/debug_all_frames/
+output/debug_frames/
 
 # OS specific
 Thumbs.db
@@ -28,3 +31,4 @@ input_videos/*.avi
 
 # Raw FBX character model cache
 models/*.fbx
+
