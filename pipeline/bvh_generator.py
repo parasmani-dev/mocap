@@ -391,23 +391,37 @@ class BVHConverter:
             Q_world["LeftShoulder"] = R.identity()
             Q_local["LeftShoulder"] = R.identity()
             
-            if l_sh is not None and l_elb is not None:
+            # Natural signing resting vectors
+            REST_L_ARM = normalize_vector(np.array([0.3, -0.9, 0.2]))
+            REST_L_FORE = normalize_vector(np.array([0.2, -0.8, 0.5]))
+            REST_R_ARM = normalize_vector(np.array([-0.3, -0.9, 0.2]))
+            REST_R_FORE = normalize_vector(np.array([-0.2, -0.8, 0.5]))
+
+            l_active = (left_hand is not None) or (l_w is not None and l_w[1] > -20.0)
+
+            if l_sh is not None and l_elb is not None and l_active:
                 l_arm_dir = normalize_vector(l_elb - l_sh)
-                Q_l_arm_w = quat_from_vectors(np.array([1.0, 0.0, 0.0]), l_arm_dir)
+                if l_arm_dir[2] < -0.3:
+                    l_arm_dir[2] = -0.1
+                    l_arm_dir = normalize_vector(l_arm_dir)
             else:
-                Q_l_arm_w = quat_from_vectors(np.array([1.0, 0.0, 0.0]), np.array([0.0, -1.0, 0.0]))
+                l_arm_dir = REST_L_ARM
+
+            Q_l_arm_w = quat_from_vectors(np.array([1.0, 0.0, 0.0]), l_arm_dir)
             Q_world["LeftArm"] = Q_l_arm_w
             Q_local["LeftArm"] = Q_world["LeftShoulder"].inv() * Q_world["LeftArm"]
             
-            if l_elb is not None and l_w is not None and l_sh is not None:
+            if l_elb is not None and l_w is not None and l_sh is not None and l_active:
                 l_fore_dir = normalize_vector(l_w - l_elb)
-                # Compute elbow flexion angle and clamp to 0..145°
+                if l_fore_dir[2] < -0.2:
+                    l_fore_dir[2] = 0.1
+                    l_fore_dir = normalize_vector(l_fore_dir)
                 elbow_flex_raw = math.degrees(math.acos(np.clip(np.dot(l_arm_dir, l_fore_dir), -1.0, 1.0)))
                 elbow_flex_clamped = self.clamp_angle(elbow_flex_raw, 0.0, 145.0, "LeftForeArm_Elbow", f_idx)
-                
                 Q_l_fore_w = quat_from_vectors(np.array([1.0, 0.0, 0.0]), l_fore_dir)
             else:
-                Q_l_fore_w = Q_world["LeftArm"]
+                Q_l_fore_w = quat_from_vectors(np.array([1.0, 0.0, 0.0]), REST_L_FORE)
+
             Q_world["LeftForeArm"] = Q_l_fore_w
             Q_local["LeftForeArm"] = Q_world["LeftArm"].inv() * Q_world["LeftForeArm"]
             
@@ -456,6 +470,18 @@ class BVHConverter:
                 parent_hand = "LeftHand" if is_left else "RightHand"
                 Q_hand_w = Q_world[parent_hand]
                 
+                if not hand_lms:
+                    # Natural relaxed finger resting posture
+                    relaxed_pip = 20.0 if "Thumb" not in finger_names[0] else 10.0
+                    relaxed_dip = 10.0
+                    Q_local[finger_names[0]] = R.identity()
+                    Q_world[finger_names[0]] = Q_hand_w
+                    Q_local[finger_names[1]] = R.from_euler('zxy', [relaxed_pip, 0.0, 0.0], degrees=True)
+                    Q_world[finger_names[1]] = Q_world[finger_names[0]] * Q_local[finger_names[1]]
+                    Q_local[finger_names[2]] = R.from_euler('zxy', [relaxed_dip, 0.0, 0.0], degrees=True)
+                    Q_world[finger_names[2]] = Q_world[finger_names[1]] * Q_local[finger_names[2]]
+                    return
+
                 p_mcp = get_p(hand_lms, base_idx)
                 p_pip = get_p(hand_lms, base_idx + 1)
                 p_dip = get_p(hand_lms, base_idx + 2)
@@ -518,22 +544,31 @@ class BVHConverter:
             Q_world["RightShoulder"] = R.identity()
             Q_local["RightShoulder"] = R.identity()
             
-            if r_sh is not None and r_elb is not None:
+            r_active = (right_hand is not None) or (r_w is not None and r_w[1] > -20.0)
+
+            if r_sh is not None and r_elb is not None and r_active:
                 r_arm_dir = normalize_vector(r_elb - r_sh)
-                Q_r_arm_w = quat_from_vectors(np.array([-1.0, 0.0, 0.0]), r_arm_dir)
+                if r_arm_dir[2] < -0.3:
+                    r_arm_dir[2] = -0.1
+                    r_arm_dir = normalize_vector(r_arm_dir)
             else:
-                Q_r_arm_w = quat_from_vectors(np.array([-1.0, 0.0, 0.0]), np.array([0.0, -1.0, 0.0]))
+                r_arm_dir = REST_R_ARM
+
+            Q_r_arm_w = quat_from_vectors(np.array([-1.0, 0.0, 0.0]), r_arm_dir)
             Q_world["RightArm"] = Q_r_arm_w
             Q_local["RightArm"] = Q_world["RightShoulder"].inv() * Q_world["RightArm"]
             
-            if r_elb is not None and r_w is not None and r_sh is not None:
+            if r_elb is not None and r_w is not None and r_sh is not None and r_active:
                 r_fore_dir = normalize_vector(r_w - r_elb)
+                if r_fore_dir[2] < -0.2:
+                    r_fore_dir[2] = 0.1
+                    r_fore_dir = normalize_vector(r_fore_dir)
                 elbow_r_raw = math.degrees(math.acos(np.clip(np.dot(r_arm_dir, r_fore_dir), -1.0, 1.0)))
                 elbow_r_clamped = self.clamp_angle(elbow_r_raw, 0.0, 145.0, "RightForeArm_Elbow", f_idx)
-                
                 Q_r_fore_w = quat_from_vectors(np.array([-1.0, 0.0, 0.0]), r_fore_dir)
             else:
-                Q_r_fore_w = Q_world["RightArm"]
+                Q_r_fore_w = quat_from_vectors(np.array([-1.0, 0.0, 0.0]), REST_R_FORE)
+
             Q_world["RightForeArm"] = Q_r_fore_w
             Q_local["RightForeArm"] = Q_world["RightArm"].inv() * Q_world["RightForeArm"]
             

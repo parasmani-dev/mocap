@@ -113,6 +113,12 @@ for f_idx, frame in enumerate(frames):
             pb.rotation_quaternion = Quaternion((1,0,0,0))
             pb.keyframe_insert(data_path='rotation_quaternion', frame=f_num)
 
+    # Natural Signing Rest Pose directions
+    REST_ARM_R = norm_v(Vector((-0.3, -0.9, 0.2)))
+    REST_FORE_R = norm_v(Vector((-0.2, -0.8, 0.5)))
+    REST_ARM_L = norm_v(Vector((0.3, -0.9, 0.2)))
+    REST_FORE_L = norm_v(Vector((0.2, -0.8, 0.5)))
+
     # 1. Right Arm & ForeArm
     r_sh = get_vec(pose_lms, 12)
     r_elb = get_vec(pose_lms, 14)
@@ -121,25 +127,36 @@ for f_idx, frame in enumerate(frames):
     pb_r_arm = char_bones.get('RightArm')
     pb_r_fore = char_bones.get('RightForeArm')
     
-    q_r_arm = Quaternion((1,0,0,0))
-    if r_sh and r_elb:
+    # Active detection: wrist in signing volume
+    r_active = (rh is not None) or (r_w is not None and r_w.y > -0.2 * 100.0)
+    
+    if r_sh and r_elb and r_active:
         dir_arm = norm_v(r_elb - r_sh)
-        q_r_arm = quat_between(Vector((-1, 0, 0)), dir_arm)
+        if dir_arm.z < -0.3:  # Prevent arm from bending backwards
+            dir_arm.z = -0.1
+            dir_arm = norm_v(dir_arm)
+    else:
+        dir_arm = REST_ARM_R
+
+    q_r_arm = quat_between(Vector((-1, 0, 0)), dir_arm)
     if pb_r_arm:
         pb_r_arm.rotation_mode = 'QUATERNION'
         pb_r_arm.rotation_quaternion = q_r_arm
         pb_r_arm.keyframe_insert(data_path='rotation_quaternion', frame=f_num)
 
-    if r_elb and r_w and r_sh:
+    if r_elb and r_w and r_sh and r_active:
         dir_fore = norm_v(r_w - r_elb)
-        # Elbow 1-DOF hinge clamping: 0..145°
+        if dir_fore.z < -0.2:  # Keep forearms forward in front of the body
+            dir_fore.z = 0.1
+            dir_fore = norm_v(dir_fore)
         elbow_angle = math.acos(max(-1.0, min(1.0, dir_arm.dot(dir_fore))))
         elbow_angle_clamped = clamp_rad(elbow_angle, 0.0, 145.0)
-        
         q_r_fore_w = quat_between(Vector((-1, 0, 0)), dir_fore)
         q_r_fore_local = q_r_arm.inverted() @ q_r_fore_w
     else:
-        q_r_fore_local = Quaternion((1,0,0,0))
+        q_r_fore_w = quat_between(Vector((-1, 0, 0)), REST_FORE_R)
+        q_r_fore_local = q_r_arm.inverted() @ q_r_fore_w
+
     if pb_r_fore:
         pb_r_fore.rotation_mode = 'QUATERNION'
         pb_r_fore.rotation_quaternion = q_r_fore_local
@@ -153,30 +170,41 @@ for f_idx, frame in enumerate(frames):
     pb_l_arm = char_bones.get('LeftArm')
     pb_l_fore = char_bones.get('LeftForeArm')
     
-    q_l_arm = Quaternion((1,0,0,0))
-    if l_sh and l_elb:
+    l_active = (lh is not None) or (l_w is not None and l_w.y > -0.2 * 100.0)
+    
+    if l_sh and l_elb and l_active:
         dir_arm_l = norm_v(l_elb - l_sh)
-        q_l_arm = quat_between(Vector((1, 0, 0)), dir_arm_l)
+        if dir_arm_l.z < -0.3:
+            dir_arm_l.z = -0.1
+            dir_arm_l = norm_v(dir_arm_l)
+    else:
+        dir_arm_l = REST_ARM_L
+
+    q_l_arm = quat_between(Vector((1, 0, 0)), dir_arm_l)
     if pb_l_arm:
         pb_l_arm.rotation_mode = 'QUATERNION'
         pb_l_arm.rotation_quaternion = q_l_arm
         pb_l_arm.keyframe_insert(data_path='rotation_quaternion', frame=f_num)
 
-    if l_elb and l_w and l_sh:
+    if l_elb and l_w and l_sh and l_active:
         dir_fore_l = norm_v(l_w - l_elb)
+        if dir_fore_l.z < -0.2:
+            dir_fore_l.z = 0.1
+            dir_fore_l = norm_v(dir_fore_l)
         elbow_angle_l = math.acos(max(-1.0, min(1.0, dir_arm_l.dot(dir_fore_l))))
         elbow_angle_l_clamped = clamp_rad(elbow_angle_l, 0.0, 145.0)
-
         q_l_fore_w = quat_between(Vector((1, 0, 0)), dir_fore_l)
         q_l_fore_local = q_l_arm.inverted() @ q_l_fore_w
     else:
-        q_l_fore_local = Quaternion((1,0,0,0))
+        q_l_fore_w = quat_between(Vector((1, 0, 0)), REST_FORE_L)
+        q_l_fore_local = q_l_arm.inverted() @ q_l_fore_w
+
     if pb_l_fore:
         pb_l_fore.rotation_mode = 'QUATERNION'
         pb_l_fore.rotation_quaternion = q_l_fore_local
         pb_l_fore.keyframe_insert(data_path='rotation_quaternion', frame=f_num)
 
-    # 3. Direct Anatomical Finger Tracking with Palm-Normal Continuity & Joint Limits
+    # 3. Direct Anatomical Finger Tracking with Palm-Normal Continuity & Neutral Rest Pose
     def solve_hand_fingers(hand_lms, is_left=False):
         nonlocal prev_palm_normal_r, prev_palm_normal_l
         prefix = 'LeftHand' if is_left else 'RightHand'
@@ -186,7 +214,23 @@ for f_idx, frame in enumerate(frames):
             pb_hand.rotation_quaternion = Quaternion((1,0,0,0))
             pb_hand.keyframe_insert(data_path='rotation_quaternion', frame=f_num)
 
+        finger_defs = [
+            ('Thumb', 1, [char_bones.get(prefix + 'Thumb1'), char_bones.get(prefix + 'Thumb2'), char_bones.get(prefix + 'Thumb3')]),
+            ('Index', 5, [char_bones.get(prefix + 'Index1'), char_bones.get(prefix + 'Index2'), char_bones.get(prefix + 'Index3')]),
+            ('Middle', 9, [char_bones.get(prefix + 'Middle1'), char_bones.get(prefix + 'Middle2'), char_bones.get(prefix + 'Middle3')]),
+            ('Ring', 13, [char_bones.get(prefix + 'Ring1'), char_bones.get(prefix + 'Ring2'), char_bones.get(prefix + 'Ring3')]),
+            ('Pinky', 17, [char_bones.get(prefix + 'Pinky1'), char_bones.get(prefix + 'Pinky2'), char_bones.get(prefix + 'Pinky3')])
+        ]
+
         if not hand_lms:
+            # Neutral relaxed hand pose when not actively signing
+            for fname, _, pbs in finger_defs:
+                relaxed_angles = [math.radians(15.0), math.radians(20.0), math.radians(10.0)] if fname != 'Thumb' else [math.radians(10.0), math.radians(10.0), math.radians(10.0)]
+                for pb, angle in zip(pbs, relaxed_angles):
+                    if pb:
+                        pb.rotation_mode = 'XYZ'
+                        pb.rotation_euler = Euler((angle, 0, 0), 'XYZ')
+                        pb.keyframe_insert(data_path='rotation_euler', frame=f_num)
             return
 
         pts = [Vector((lm['x'], lm['y'], lm['z'])) for lm in hand_lms]
@@ -208,14 +252,6 @@ for f_idx, frame in enumerate(frames):
                 if prev_palm_normal_r.dot(v_norm) < -0.2:
                     v_norm = -v_norm # Correct ghost hand flip
             prev_palm_normal_r = v_norm
-
-        finger_defs = [
-            ('Thumb', 1, [char_bones.get(prefix + 'Thumb1'), char_bones.get(prefix + 'Thumb2'), char_bones.get(prefix + 'Thumb3')]),
-            ('Index', 5, [char_bones.get(prefix + 'Index1'), char_bones.get(prefix + 'Index2'), char_bones.get(prefix + 'Index3')]),
-            ('Middle', 9, [char_bones.get(prefix + 'Middle1'), char_bones.get(prefix + 'Middle2'), char_bones.get(prefix + 'Middle3')]),
-            ('Ring', 13, [char_bones.get(prefix + 'Ring1'), char_bones.get(prefix + 'Ring2'), char_bones.get(prefix + 'Ring3')]),
-            ('Pinky', 17, [char_bones.get(prefix + 'Pinky1'), char_bones.get(prefix + 'Pinky2'), char_bones.get(prefix + 'Pinky3')])
-        ]
 
         for fname, base, pbs in finger_defs:
             p0, p1, p2, p3 = pts[base], pts[base+1], pts[base+2], pts[base+3]
