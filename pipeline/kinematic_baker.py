@@ -12,6 +12,7 @@ import argparse
 import os
 import json
 import math
+from typing import Tuple, List, Dict, Optional, Any
 from mathutils import Matrix, Quaternion, Euler, Vector
 
 def parse_args():
@@ -107,6 +108,12 @@ def log_clamp(joint: str, frame_idx: int, attempted: float, clamped: float, reas
     })
 
 # Extract rest matrices for LeftHand and RightHand
+# Extract rest matrices for LeftArm, RightArm, LeftForeArm, RightForeArm, LeftHand, RightHand
+M_REST_LA = char_arm.data.bones['mixamorig2:LeftArm'].matrix_local.to_3x3() if 'mixamorig2:LeftArm' in char_arm.data.bones else None
+M_REST_LF = char_arm.data.bones['mixamorig2:LeftForeArm'].matrix_local.to_3x3() if 'mixamorig2:LeftForeArm' in char_arm.data.bones else None
+M_REST_RA = char_arm.data.bones['mixamorig2:RightArm'].matrix_local.to_3x3() if 'mixamorig2:RightArm' in char_arm.data.bones else None
+M_REST_RF = char_arm.data.bones['mixamorig2:RightForeArm'].matrix_local.to_3x3() if 'mixamorig2:RightForeArm' in char_arm.data.bones else None
+
 R_REST_LH = char_arm.data.bones['mixamorig2:LeftHand'].matrix_local.to_3x3() if 'mixamorig2:LeftHand' in char_arm.data.bones else None
 R_REST_RH = char_arm.data.bones['mixamorig2:RightHand'].matrix_local.to_3x3() if 'mixamorig2:RightHand' in char_arm.data.bones else None
 
@@ -116,13 +123,18 @@ REST_L_FORE = norm_v(Vector((0.2, -0.3, 0.8)))
 REST_R_ARM = norm_v(Vector((-0.2, -0.9, 0.15)))
 REST_R_FORE = norm_v(Vector((-0.2, -0.3, 0.8)))
 
-Q_REST_L_ARM = quat_from_to(Vector((1, 0, 0)), REST_L_ARM)
-Q_REST_L_FORE_W = quat_from_to(Vector((1, 0, 0)), REST_L_FORE)
-Q_REST_L_FORE = Q_REST_L_ARM.inverted() @ Q_REST_L_FORE_W
-
-Q_REST_R_ARM = quat_from_to(Vector((-1, 0, 0)), REST_R_ARM)
-Q_REST_R_FORE_W = quat_from_to(Vector((-1, 0, 0)), REST_R_FORE)
-Q_REST_R_FORE = Q_REST_R_ARM.inverted() @ Q_REST_R_FORE_W
+def get_bone_local_rot(target_dir_world: Vector, m_rest: Matrix, is_child: bool = False, q_parent_world: Quaternion = None) -> Tuple[Quaternion, Quaternion]:
+    """Computes exact local quaternion for a bone given target direction in world space."""
+    # In bone rest local frame, bone length is along +Y: Vector((0, 1, 0))
+    if m_rest is not None:
+        target_dir_local = norm_v(m_rest.inverted() @ target_dir_world)
+        q_world_rot = norm_v(Vector((0, 1, 0))).rotation_difference(target_dir_local)
+        # Reconstruct actual world orientation
+        q_world_dir = norm_v(Vector((0, 1, 0))).rotation_difference(target_dir_world)
+    else:
+        q_world_rot = Quaternion((1, 0, 0, 0))
+        q_world_dir = Quaternion((1, 0, 0, 0))
+    return q_world_rot, q_world_dir
 
 prev_palm_n_l = None
 prev_palm_n_r = None
@@ -146,12 +158,13 @@ for f_idx, frame in enumerate(frames):
     lh = frame.get('left_hand_landmarks')
     rh = frame.get('right_hand_landmarks')
     
-    def get_vec(lms, idx):
+    def get_vec_with_vis(lms, idx, min_vis=0.2):
         if lms and idx < len(lms) and lms[idx] is not None:
             p = lms[idx]
+            vis = p.get('visibility', 1.0)
             # MediaPipe: X=right, Y=down, Z=away_from_cam -> Target: X=left(+), Y=up(+), Z=front(+)
-            return Vector((p['x'] * 100.0, -p['y'] * 100.0, -p['z'] * 100.0))
-        return None
+            return Vector((p['x'] * 100.0, -p['y'] * 100.0, -p['z'] * 100.0)), vis
+        return None, 0.0
 
     # 1. Posture Anchor: Keep Spine, Neck, Head, Legs straight and upright
     upright_bones = [
@@ -168,106 +181,122 @@ for f_idx, frame in enumerate(frames):
             pb.keyframe_insert(data_path='rotation_quaternion', frame=f_num)
 
     # 2. Left Arm & Forearm
-    l_sh = get_vec(pose_lms, 11)
-    l_elb = get_vec(pose_lms, 13)
-    l_w = get_vec(pose_lms, 15)
+    l_sh, l_sh_vis = get_vec_with_vis(pose_lms, 11, min_vis=0.15)
+    l_elb, l_elb_vis = get_vec_with_vis(pose_lms, 13, min_vis=0.15)
+    l_w, l_w_vis = get_vec_with_vis(pose_lms, 15, min_vis=0.2)
     
     pb_l_arm = char_bones.get('LeftArm')
     pb_l_fore = char_bones.get('LeftForeArm')
     pb_l_hand = char_bones.get('LeftHand')
     
-    l_active = (lh is not None) or (l_w is not None and l_w.y > -25.0)
+    l_active = (lh is not None) or (l_w is not None and l_w_vis >= 0.25)
     
     if l_sh and l_elb and l_active:
-        dir_l_arm = norm_v(l_elb - l_sh)
-        if dir_l_arm.z < -0.15:
-            log_clamp("LeftArm", f_idx, dir_l_arm.z, -0.1, "TorsoBackPenetration")
-            dir_l_arm.z = -0.1
-            dir_l_arm = norm_v(dir_l_arm)
+        dir_l_arm_target = norm_v(l_elb - l_sh)
+        if dir_l_arm_target.z < 0.0:
+            log_clamp("LeftArm", f_idx, dir_l_arm_target.z, 0.1, "TorsoBackPenetration")
+            dir_l_arm_target.z = 0.1
+            dir_l_arm_target = norm_v(dir_l_arm_target)
     else:
-        dir_l_arm = REST_L_ARM
+        dir_l_arm_target = REST_L_ARM
         
-    q_l_arm_raw = quat_from_to(Vector((1, 0, 0)), dir_l_arm)
-    q_l_arm_world = Q_REST_L_ARM.slerp(q_l_arm_raw, blend_weight)
+    dir_l_arm = REST_L_ARM.lerp(dir_l_arm_target, blend_weight if l_active else 0.0).normalized()
     
-    if l_elb and l_w and l_active:
-        dir_l_fore = norm_v(l_w - l_elb)
-        if dir_l_fore.z < -0.1:
-            log_clamp("LeftForeArm_SigningSpace", f_idx, dir_l_fore.z, 0.2, "ForearmBackwardClamp")
-            dir_l_fore.z = 0.2
-            dir_l_fore = norm_v(dir_l_fore)
-        elbow_angle = math.acos(max(-1.0, min(1.0, dir_l_arm.dot(dir_l_fore))))
-        if elbow_angle > math.radians(145.0):
-            log_clamp("LeftForeArm_ElbowFlexion", f_idx, math.degrees(elbow_angle), 145.0, "ElbowOverflexion")
-            axis = norm_v(dir_l_arm.cross(dir_l_fore))
-            dir_l_fore = norm_v(Quaternion(axis, math.radians(145.0)) @ dir_l_arm)
-        q_l_fore_raw = quat_from_to(Vector((1, 0, 0)), dir_l_fore)
-    else:
-        q_l_fore_raw = Q_REST_L_FORE_W
-        
-    q_l_fore_world = Q_REST_L_FORE_W.slerp(q_l_fore_raw, blend_weight)
-    q_l_fore_local = q_l_arm_world.inverted() @ q_l_fore_world
+    # Calculate local rotation for LeftArm
+    target_l_arm_local = norm_v(M_REST_LA.inverted() @ dir_l_arm)
+    q_l_arm_local = norm_v(Vector((0, 1, 0))).rotation_difference(target_l_arm_local)
     
     if pb_l_arm:
         pb_l_arm.rotation_mode = 'QUATERNION'
-        pb_l_arm.rotation_quaternion = q_l_arm_world
+        pb_l_arm.rotation_quaternion = q_l_arm_local
         pb_l_arm.keyframe_insert(data_path='rotation_quaternion', frame=f_num)
         
+    bpy.context.view_layer.update()
+    
+    if l_elb and l_w and l_active:
+        dir_l_fore_target = norm_v(l_w - l_elb)
+        if dir_l_fore_target.z < 0.1:
+            log_clamp("LeftForeArm_SigningSpace", f_idx, dir_l_fore_target.z, 0.25, "ForearmBackwardClamp")
+            dir_l_fore_target.z = 0.25
+            dir_l_fore_target = norm_v(dir_l_fore_target)
+        elbow_angle = math.acos(max(-1.0, min(1.0, dir_l_arm.dot(dir_l_fore_target))))
+        if elbow_angle > math.radians(145.0):
+            log_clamp("LeftForeArm_ElbowFlexion", f_idx, math.degrees(elbow_angle), 145.0, "ElbowOverflexion")
+            axis = norm_v(dir_l_arm.cross(dir_l_fore_target))
+            dir_l_fore_target = norm_v(Quaternion(axis, math.radians(145.0)) @ dir_l_arm)
+    else:
+        dir_l_fore_target = REST_L_FORE
+        
+    dir_l_fore = REST_L_FORE.lerp(dir_l_fore_target, blend_weight if l_active else 0.0).normalized()
+    
+    # In pose hierarchy, LeftForeArm target is transformed by parent pb_l_arm.matrix:
+    dir_l_fore_in_parent = norm_v(pb_l_arm.matrix.to_3x3().inverted() @ dir_l_fore)
+    M_rel_rest_lf = M_REST_LA.inverted() @ M_REST_LF
+    target_l_fore_local = norm_v(M_rel_rest_lf.inverted() @ dir_l_fore_in_parent)
+    q_l_fore_local = norm_v(Vector((0, 1, 0))).rotation_difference(target_l_fore_local)
+    
     if pb_l_fore:
         pb_l_fore.rotation_mode = 'QUATERNION'
         pb_l_fore.rotation_quaternion = q_l_fore_local
         pb_l_fore.keyframe_insert(data_path='rotation_quaternion', frame=f_num)
 
     # 3. Right Arm & Forearm
-    r_sh = get_vec(pose_lms, 12)
-    r_elb = get_vec(pose_lms, 14)
-    r_w = get_vec(pose_lms, 16)
+    r_sh, r_sh_vis = get_vec_with_vis(pose_lms, 12, min_vis=0.15)
+    r_elb, r_elb_vis = get_vec_with_vis(pose_lms, 14, min_vis=0.15)
+    r_w, r_w_vis = get_vec_with_vis(pose_lms, 16, min_vis=0.2)
     
     pb_r_arm = char_bones.get('RightArm')
     pb_r_fore = char_bones.get('RightForeArm')
     pb_r_hand = char_bones.get('RightHand')
     
-    r_active = (rh is not None) or (r_w is not None and r_w.y > -25.0)
+    r_active = (rh is not None) or (r_w is not None and r_w_vis >= 0.25)
     
     if r_sh and r_elb and r_active:
-        dir_r_arm = norm_v(r_elb - r_sh)
-        if dir_r_arm.z < -0.15:
-            log_clamp("RightArm", f_idx, dir_r_arm.z, -0.1, "TorsoBackPenetration")
-            dir_r_arm.z = -0.1
-            dir_r_arm = norm_v(dir_r_arm)
+        dir_r_arm_target = norm_v(r_elb - r_sh)
+        if dir_r_arm_target.z < 0.0:
+            log_clamp("RightArm", f_idx, dir_r_arm_target.z, 0.1, "TorsoBackPenetration")
+            dir_r_arm_target.z = 0.1
+            dir_r_arm_target = norm_v(dir_r_arm_target)
     else:
-        dir_r_arm = REST_R_ARM
+        dir_r_arm_target = REST_R_ARM
         
-    q_r_arm_raw = quat_from_to(Vector((-1, 0, 0)), dir_r_arm)
-    q_r_arm_world = Q_REST_R_ARM.slerp(q_r_arm_raw, blend_weight)
-    
-    if r_elb and r_w and r_active:
-        dir_r_fore = norm_v(r_w - r_elb)
-        if dir_r_fore.z < -0.1:
-            log_clamp("RightForeArm_SigningSpace", f_idx, dir_r_fore.z, 0.2, "ForearmBackwardClamp")
-            dir_r_fore.z = 0.2
-            dir_r_fore = norm_v(dir_r_fore)
-        elbow_angle_r = math.acos(max(-1.0, min(1.0, dir_r_arm.dot(dir_r_fore))))
-        if elbow_angle_r > math.radians(145.0):
-            log_clamp("RightForeArm_ElbowFlexion", f_idx, math.degrees(elbow_angle_r), 145.0, "ElbowOverflexion")
-            axis = norm_v(dir_r_arm.cross(dir_r_fore))
-            dir_r_fore = norm_v(Quaternion(axis, math.radians(145.0)) @ dir_r_arm)
-        q_r_fore_raw = quat_from_to(Vector((-1, 0, 0)), dir_r_fore)
-    else:
-        q_r_fore_raw = Q_REST_R_FORE_W
-        
-    q_r_fore_world = Q_REST_R_FORE_W.slerp(q_r_fore_raw, blend_weight)
-    q_r_fore_local = q_r_arm_world.inverted() @ q_r_fore_world
+    dir_r_arm = REST_R_ARM.lerp(dir_r_arm_target, blend_weight if r_active else 0.0).normalized()
+    target_r_arm_local = norm_v(M_REST_RA.inverted() @ dir_r_arm)
+    q_r_arm_local = norm_v(Vector((0, 1, 0))).rotation_difference(target_r_arm_local)
     
     if pb_r_arm:
         pb_r_arm.rotation_mode = 'QUATERNION'
-        pb_r_arm.rotation_quaternion = q_r_arm_world
+        pb_r_arm.rotation_quaternion = q_r_arm_local
         pb_r_arm.keyframe_insert(data_path='rotation_quaternion', frame=f_num)
         
+    bpy.context.view_layer.update()
+    
+    if r_elb and r_w and r_active:
+        dir_r_fore_target = norm_v(r_w - r_elb)
+        if dir_r_fore_target.z < 0.1:
+            log_clamp("RightForeArm_SigningSpace", f_idx, dir_r_fore_target.z, 0.25, "ForearmBackwardClamp")
+            dir_r_fore_target.z = 0.25
+            dir_r_fore_target = norm_v(dir_r_fore_target)
+        elbow_angle_r = math.acos(max(-1.0, min(1.0, dir_r_arm.dot(dir_r_fore_target))))
+        if elbow_angle_r > math.radians(145.0):
+            log_clamp("RightForeArm_ElbowFlexion", f_idx, math.degrees(elbow_angle_r), 145.0, "ElbowOverflexion")
+            axis = norm_v(dir_r_arm.cross(dir_r_fore_target))
+            dir_r_fore_target = norm_v(Quaternion(axis, math.radians(145.0)) @ dir_r_arm)
+    else:
+        dir_r_fore_target = REST_R_FORE
+        
+    dir_r_fore = REST_R_FORE.lerp(dir_r_fore_target, blend_weight if r_active else 0.0).normalized()
+    dir_r_fore_in_parent = norm_v(pb_r_arm.matrix.to_3x3().inverted() @ dir_r_fore)
+    M_rel_rest_rf = M_REST_RA.inverted() @ M_REST_RF
+    target_r_fore_local = norm_v(M_rel_rest_rf.inverted() @ dir_r_fore_in_parent)
+    q_r_fore_local = norm_v(Vector((0, 1, 0))).rotation_difference(target_r_fore_local)
+    
     if pb_r_fore:
         pb_r_fore.rotation_mode = 'QUATERNION'
         pb_r_fore.rotation_quaternion = q_r_fore_local
         pb_r_fore.keyframe_insert(data_path='rotation_quaternion', frame=f_num)
+        
+    bpy.context.view_layer.update()
 
     # 4. Hand Orientation via Full 3x3 Orthonormal Palm Frame
     def solve_hand(hand_lms, is_left=True, q_fore_world=None):
@@ -314,14 +343,15 @@ for f_idx, frame in enumerate(frames):
                     log_clamp("LeftHand_PalmNormalFlip", f_idx, prev_palm_n_l.dot(v_norm), 1.0, "GhostHandNormalInversion")
                     v_norm = -v_norm
             prev_palm_n_l = v_norm
-            v_lat = norm_v(v_norm.cross(v_fwd))
-            v_norm = norm_v(v_fwd.cross(v_lat))
+            v_thumb = norm_v(v_norm.cross(v_fwd))
+            v_norm = norm_v(v_fwd.cross(v_thumb))
             
-            # Target matrix for LeftHand: col 0 = v_lat, col 1 = v_fwd, col 2 = -v_norm
+            # Target matrix for LeftHand:
+            # Col 0 (Local X) -> -v_thumb, Col 1 (Local Y) -> v_fwd, Col 2 (Local Z) -> -v_norm
             R_target = Matrix([
-                [v_lat.x, v_fwd.x, -v_norm.x],
-                [v_lat.y, v_fwd.y, -v_norm.y],
-                [v_lat.z, v_fwd.z, -v_norm.z]
+                [-v_thumb.x, v_fwd.x, -v_norm.x],
+                [-v_thumb.y, v_fwd.y, -v_norm.y],
+                [-v_thumb.z, v_fwd.z, -v_norm.z]
             ])
         else:
             # Right Hand: (Index - Wrist) x (Pinky - Wrist)
@@ -331,27 +361,37 @@ for f_idx, frame in enumerate(frames):
                     log_clamp("RightHand_PalmNormalFlip", f_idx, prev_palm_n_r.dot(v_norm), 1.0, "GhostHandNormalInversion")
                     v_norm = -v_norm
             prev_palm_n_r = v_norm
-            v_lat = norm_v(v_norm.cross(v_fwd))
-            v_norm = norm_v(v_fwd.cross(v_lat))
+            v_thumb = norm_v(v_norm.cross(v_fwd))
+            v_norm = norm_v(v_fwd.cross(v_thumb))
             
-            # Target matrix for RightHand: col 0 = v_lat, col 1 = v_fwd, col 2 = -v_norm
+            # Target matrix for RightHand:
+            # Col 0 (Local X) -> v_thumb, Col 1 (Local Y) -> -v_fwd, Col 2 (Local Z) -> -v_norm
             R_target = Matrix([
-                [v_lat.x, v_fwd.x, -v_norm.x],
-                [v_lat.y, v_fwd.y, -v_norm.y],
-                [v_lat.z, v_fwd.z, -v_norm.z]
+                [v_thumb.x, -v_fwd.x, -v_norm.x],
+                [v_thumb.y, -v_fwd.y, -v_norm.y],
+                [v_thumb.z, -v_fwd.z, -v_norm.z]
             ])
             
         if R_rest is not None:
-            q_hand_raw = (R_target @ R_rest.inverted()).to_quaternion()
-        else:
-            q_hand_raw = quat_from_to(Vector((-1 if not is_left else 1, 0, 0)), v_fwd)
+            # The hand's parent (ForeArm) is rotated by pb_fore.matrix in pose space.
+            # In parent's pose space, the target hand rotation matrix is:
+            pb_fore = pb_l_fore if is_left else pb_r_fore
+            M_rest_fore = M_REST_LF if is_left else M_REST_RF
+            M_rel_rest_hand = M_rest_fore.inverted() @ R_rest
             
-        q_hand_world = Quaternion((1, 0, 0, 0)).slerp(q_hand_raw, blend_weight)
+            if pb_fore:
+                R_target_in_parent = pb_fore.matrix.to_3x3().inverted() @ R_target
+                q_hand_local = (R_target_in_parent @ M_rel_rest_hand.inverted()).to_quaternion()
+            else:
+                q_hand_local = (R_target @ R_rest.inverted()).to_quaternion()
+        else:
+            q_hand_local = Quaternion((1, 0, 0, 0))
+            
+        q_hand_final = Quaternion((1, 0, 0, 0)).slerp(q_hand_local, blend_weight)
         
-        if pb_h and q_fore_world:
-            q_hand_local = q_fore_world.inverted() @ q_hand_world
+        if pb_h:
             pb_h.rotation_mode = 'QUATERNION'
-            pb_h.rotation_quaternion = q_hand_local
+            pb_h.rotation_quaternion = q_hand_final
             pb_h.keyframe_insert(data_path='rotation_quaternion', frame=f_num)
 
         # Solve individual fingers with 1-DOF biological flexion hinges
@@ -367,8 +407,8 @@ for f_idx, frame in enumerate(frames):
                 f3_raw = math.degrees(math.acos(max(-1.0, min(1.0, v12.dot(v23)))))
                 
                 f1_deg = max(0.0, min(70.0, f1_raw))
-                f2_deg = max(0.0, min(70.0, f2_deg))
-                f3_deg = max(0.0, min(90.0, f3_deg))
+                f2_deg = max(0.0, min(70.0, f2_raw))
+                f3_deg = max(0.0, min(90.0, f3_raw))
                 
                 if f1_raw != f1_deg: log_clamp(f"{prefix}Thumb1", f_idx, f1_raw, f1_deg, "ThumbMCPClamp")
                 if f2_raw != f2_deg: log_clamp(f"{prefix}Thumb2", f_idx, f2_raw, f2_deg, "ThumbPIPClamp")
@@ -380,8 +420,8 @@ for f_idx, frame in enumerate(frames):
                 
                 # Biological 1-DOF limits: MCP -5..90°, PIP 0..110°, DIP 0..90°
                 f1_deg = max(-5.0, min(90.0, f1_raw))
-                f2_deg = max(0.0, min(110.0, f2_deg))
-                f3_deg = max(0.0, min(90.0, f3_deg))
+                f2_deg = max(0.0, min(110.0, f2_raw))
+                f3_deg = max(0.0, min(90.0, f3_raw))
                 
                 if f1_raw != f1_deg: log_clamp(f"{prefix}{fname}1", f_idx, f1_raw, f1_deg, "FingerMCPClamp")
                 if f2_raw != f2_deg: log_clamp(f"{prefix}{fname}2", f_idx, f2_raw, f2_deg, "FingerPIPHyperextension")
@@ -397,8 +437,8 @@ for f_idx, frame in enumerate(frames):
                     pb.rotation_quaternion = q_curl
                     pb.keyframe_insert(data_path='rotation_quaternion', frame=f_num)
 
-    solve_hand(lh, is_left=True, q_fore_world=q_l_fore_world)
-    solve_hand(rh, is_left=False, q_fore_world=q_r_fore_world)
+    solve_hand(lh, is_left=True)
+    solve_hand(rh, is_left=False)
 
 # 5. Push NLA track & Export Web GLB
 bpy.ops.object.mode_set(mode='OBJECT')
