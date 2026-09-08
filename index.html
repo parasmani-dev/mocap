@@ -70,7 +70,7 @@
             border-radius: 6px;
             font-size: 0.85rem;
             outline: none;
-            margin-bottom: 8px;
+            margin-bottom: 6px;
         }
         .search-box:focus {
             border-color: #58a6ff;
@@ -189,7 +189,7 @@
         <p class="subtitle">Complete Indian Sign Language Dictionary</p>
 
         <div class="control-group">
-            <label>Search & Select Sign (<span id="sign-count">31</span> Words)</label>
+            <label>Search & Select Sign (<span id="sign-count">35</span> Words)</label>
             <input type="text" id="search-input" class="search-box" placeholder="Type to filter words...">
             <select id="sign-selector" size="6" style="height: 150px; overflow-y: auto;">
             </select>
@@ -229,7 +229,7 @@
         const debugBar = document.getElementById('debug-bar');
         function setDebug(msg) {
             console.log('[ISL Studio]', msg);
-            debugBar.textContent = msg;
+            if (debugBar) debugBar.textContent = msg;
         }
 
         // 1. Scene Setup
@@ -305,26 +305,33 @@
 
         function renderSignList(signs) {
             const query = searchInput.value.toLowerCase();
-            const filtered = signs.filter(s => s.label.toLowerCase().includes(query) || s.word_id.includes(query));
+            const filtered = signs.filter(s => {
+                const title = (s.title || s.label || s.id || '').toLowerCase();
+                const id = (s.id || s.word_id || '').toLowerCase();
+                return title.includes(query) || id.includes(query);
+            });
             const currentSelected = signSelector.value;
             signSelector.innerHTML = '';
             
             filtered.forEach((s, idx) => {
                 const opt = document.createElement('option');
-                opt.value = s.word_id;
-                opt.textContent = `${s.label}`;
-                if (s.word_id === currentSelected || (!currentSelected && idx === 0)) {
+                const val = s.id || s.word_id;
+                const title = s.title || s.label || val;
+                opt.value = val;
+                opt.textContent = title;
+                if (val === currentSelected || (!currentSelected && idx === 0)) {
                     opt.selected = true;
                 }
                 signSelector.appendChild(opt);
             });
-            signCountEl.textContent = signs.length;
+            if (signCountEl) signCountEl.textContent = signs.length;
         }
 
         searchInput.addEventListener('input', () => renderSignList(allSigns));
 
         function loadSign(wordId) {
-            setDebug(`Loading sign: ${wordId}...`);
+            if (!wordId) wordId = 'black';
+            setDebug('Loading sign: ' + wordId + '...');
             const loadingScreen = document.getElementById('loading-screen');
             if (loadingScreen) {
                 loadingScreen.style.display = 'flex';
@@ -336,29 +343,29 @@
                 if (mixer) mixer.stopAllAction();
             }
 
-            const path = `./output/glb/avatar_${wordId}.glb?v=` + Date.now();
+            const path = './output/glb/avatar_' + wordId + '.glb?v=' + Date.now();
             loader.load(
                 path,
                 (gltf) => {
                     currentAvatar = gltf.scene;
                     
-                    // Enforce upright standing pose & shadow casting
                     currentAvatar.traverse((child) => {
                         if (child.isMesh) {
                             child.castShadow = true;
                             child.receiveShadow = true;
+                            if (child.material) {
+                                child.material.depthWrite = true;
+                                child.material.needsUpdate = true;
+                            }
                         }
                     });
                     
                     scene.add(currentAvatar);
 
-                    // Animation Mixer & Action Resolution
                     mixer = new THREE.AnimationMixer(currentAvatar);
                     
-                    // Auto-select the active motion clip
                     let clip = null;
-                    if (gltf.animations.length > 0) {
-                        // Find clip matching word or longest duration clip
+                    if (gltf.animations && gltf.animations.length > 0) {
                         clip = gltf.animations.find(c => c.name.toLowerCase().includes(wordId.toLowerCase()));
                         if (!clip) {
                             clip = gltf.animations.reduce((max, c) => c.duration > max.duration ? c : max, gltf.animations[0]);
@@ -366,30 +373,30 @@
                     }
 
                     if (clip) {
-                        trackStatus.textContent = `Sign: ${wordId.toUpperCase()} (${clip.duration.toFixed(2)}s)`;
+                        if (trackStatus) trackStatus.textContent = 'Sign: ' + wordId.toUpperCase() + ' (' + clip.duration.toFixed(2) + 's)';
                         activeAction = mixer.clipAction(clip);
                         activeAction.setLoop(THREE.LoopRepeat);
                         activeAction.play();
-                        setDebug(`Playing: ${wordId} (${clip.duration.toFixed(2)}s)`);
+                        setDebug('Playing: ' + wordId + ' (' + clip.duration.toFixed(2) + 's)');
                     } else {
-                        setDebug(`Warning: No animation clip found in ${wordId}`);
+                        setDebug('Warning: No animation clip found in ' + wordId);
                     }
 
                     if (loadingScreen) {
                         loadingScreen.style.opacity = '0';
-                        setTimeout(() => loadingScreen.style.display = 'none', 200);
+                        setTimeout(() => { loadingScreen.style.display = 'none'; }, 200);
                     }
                 },
                 (xhr) => {
                     if (xhr.total > 0) {
                         const pct = Math.round((xhr.loaded / xhr.total) * 100);
-                        setDebug(`Downloading ${wordId}: ${pct}%`);
+                        setDebug('Downloading ' + wordId + ': ' + pct + '%');
                     }
                 },
                 (err) => {
                     console.error('Error loading sign GLB:', err);
-                    setDebug(`Error loading avatar_${wordId}.glb`);
-                    trackStatus.textContent = `Error: ${wordId}`;
+                    setDebug('Error loading avatar_' + wordId + '.glb');
+                    if (trackStatus) trackStatus.textContent = 'Error: ' + wordId;
                     if (loadingScreen) loadingScreen.style.display = 'none';
                 }
             );
@@ -402,9 +409,10 @@
         // Initialize and load default
         fetchManifest().then(() => {
             if (allSigns.length > 0) {
-                loadSign(allSigns[0].word_id);
+                const firstId = allSigns[0].id || allSigns[0].word_id || 'black';
+                loadSign(firstId);
             } else {
-                loadSign('beautiful');
+                loadSign('black');
             }
         });
 
