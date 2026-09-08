@@ -146,7 +146,13 @@ def main():
                 char_pb.location = m_local.to_translation()
                 char_pb.keyframe_insert(data_path="location", frame=f)
 
-    # 5. Clean up & Export
+    # 5. Push Action into NLA Track for clean Web glTF export
+    if target_action:
+        track = char_arm.animation_data.nla_tracks.new()
+        track.name = args.anim_name
+        track.strips.new(args.anim_name, frame_start, target_action)
+
+    # 6. Clean up & Export
     bpy.data.objects.remove(bvh_arm, do_unlink=True)
     if bvh_action:
         bpy.data.actions.remove(bvh_action)
@@ -157,6 +163,7 @@ def main():
         filepath=args.output,
         export_format='GLB',
         export_animations=True,
+        export_nla_strips=True,
         export_current_frame=False,
         export_skins=True,
         export_morph=False,
