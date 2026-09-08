@@ -1,0 +1,8802 @@
+[
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 2,
+    "attempted_val": -0.29,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 2,
+    "attempted_val": -0.33,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 7,
+    "attempted_val": -0.14,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 7,
+    "attempted_val": -0.06,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 10,
+    "attempted_val": -0.37,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 10,
+    "attempted_val": -0.4,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 11,
+    "attempted_val": -0.41,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 11,
+    "attempted_val": -0.38,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 12,
+    "attempted_val": -0.57,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 12,
+    "attempted_val": -0.59,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 13,
+    "attempted_val": -0.28,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 13,
+    "attempted_val": -0.36,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 14,
+    "attempted_val": -0.28,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 14,
+    "attempted_val": -0.36,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 15,
+    "attempted_val": -0.22,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 15,
+    "attempted_val": -0.28,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 16,
+    "attempted_val": -0.17,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 16,
+    "attempted_val": -0.19,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 17,
+    "attempted_val": -0.11,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 17,
+    "attempted_val": -0.09,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 18,
+    "attempted_val": -0.05,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 18,
+    "attempted_val": 0.02,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 34,
+    "attempted_val": 0.01,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 35,
+    "attempted_val": -0.11,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 36,
+    "attempted_val": -0.21,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 37,
+    "attempted_val": -0.3,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 38,
+    "attempted_val": -0.04,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 38,
+    "attempted_val": -0.38,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 39,
+    "attempted_val": -0.11,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 39,
+    "attempted_val": -0.46,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 40,
+    "attempted_val": -0.17,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 40,
+    "attempted_val": -0.52,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 41,
+    "attempted_val": -0.22,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 41,
+    "attempted_val": -0.57,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 42,
+    "attempted_val": -0.28,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 42,
+    "attempted_val": -0.61,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 43,
+    "attempted_val": -0.32,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 43,
+    "attempted_val": -0.65,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 44,
+    "attempted_val": -0.4,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 44,
+    "attempted_val": -0.75,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 44,
+    "attempted_val": -0.35,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 44,
+    "attempted_val": -0.61,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 45,
+    "attempted_val": -0.25,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 45,
+    "attempted_val": -0.41,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 45,
+    "attempted_val": -0.11,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 45,
+    "attempted_val": 0.01,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 46,
+    "attempted_val": -0.54,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 46,
+    "attempted_val": -0.56,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 47,
+    "attempted_val": -0.48,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 47,
+    "attempted_val": -0.49,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 48,
+    "attempted_val": -0.55,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 48,
+    "attempted_val": -0.58,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 49,
+    "attempted_val": -0.72,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 49,
+    "attempted_val": -0.89,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 49,
+    "attempted_val": 0.06,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 50,
+    "attempted_val": -0.56,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 50,
+    "attempted_val": -0.91,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 50,
+    "attempted_val": -0.29,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 50,
+    "attempted_val": -0.62,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 51,
+    "attempted_val": -0.59,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 51,
+    "attempted_val": -0.87,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 52,
+    "attempted_val": -0.9,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 52,
+    "attempted_val": -0.88,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 54,
+    "attempted_val": -0.39,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 54,
+    "attempted_val": -0.39,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 55,
+    "attempted_val": -0.22,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 55,
+    "attempted_val": -0.31,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 57,
+    "attempted_val": -0.54,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 57,
+    "attempted_val": -0.62,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 58,
+    "attempted_val": -0.6,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 58,
+    "attempted_val": -0.7,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 73,
+    "attempted_val": -0.05,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 73,
+    "attempted_val": 0.04,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 88,
+    "attempted_val": 0.0,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 89,
+    "attempted_val": -0.11,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 96,
+    "attempted_val": -0.11,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 97,
+    "attempted_val": -0.02,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 98,
+    "attempted_val": 0.07,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 100,
+    "attempted_val": 0.05,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 101,
+    "attempted_val": -0.22,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 102,
+    "attempted_val": -0.04,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 102,
+    "attempted_val": -0.91,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 103,
+    "attempted_val": -0.33,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 103,
+    "attempted_val": -0.82,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 104,
+    "attempted_val": -0.47,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 104,
+    "attempted_val": -0.65,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 106,
+    "attempted_val": -0.48,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 106,
+    "attempted_val": -0.56,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 107,
+    "attempted_val": -0.56,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 107,
+    "attempted_val": -0.59,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 108,
+    "attempted_val": -0.45,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 108,
+    "attempted_val": -0.51,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 109,
+    "attempted_val": -0.11,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 109,
+    "attempted_val": -0.45,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 109,
+    "attempted_val": -0.43,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 109,
+    "attempted_val": -0.53,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 110,
+    "attempted_val": -0.73,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 110,
+    "attempted_val": -0.92,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 110,
+    "attempted_val": -0.24,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 110,
+    "attempted_val": -0.48,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 112,
+    "attempted_val": -0.57,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 112,
+    "attempted_val": -0.73,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 113,
+    "attempted_val": -0.9,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 113,
+    "attempted_val": -0.86,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 114,
+    "attempted_val": 0.05,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 116,
+    "attempted_val": -0.36,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 116,
+    "attempted_val": -0.45,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 121,
+    "attempted_val": 0.09,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 131,
+    "attempted_val": 0.0,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 132,
+    "attempted_val": -0.13,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 132,
+    "attempted_val": -0.21,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 137,
+    "attempted_val": -0.75,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 137,
+    "attempted_val": -0.82,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 138,
+    "attempted_val": -0.74,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 138,
+    "attempted_val": -0.82,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 139,
+    "attempted_val": -0.72,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 139,
+    "attempted_val": -0.82,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 140,
+    "attempted_val": -0.71,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 140,
+    "attempted_val": -0.83,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 141,
+    "attempted_val": -0.7,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 141,
+    "attempted_val": -0.83,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 142,
+    "attempted_val": -0.68,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 142,
+    "attempted_val": -0.83,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 143,
+    "attempted_val": -0.67,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 143,
+    "attempted_val": -0.83,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 144,
+    "attempted_val": -0.66,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 144,
+    "attempted_val": -0.83,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 145,
+    "attempted_val": -0.65,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 145,
+    "attempted_val": -0.83,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 146,
+    "attempted_val": -0.64,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 146,
+    "attempted_val": -0.84,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 147,
+    "attempted_val": -0.63,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 147,
+    "attempted_val": -0.84,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 148,
+    "attempted_val": -0.62,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 148,
+    "attempted_val": -0.84,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 149,
+    "attempted_val": -0.61,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 149,
+    "attempted_val": -0.84,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 150,
+    "attempted_val": -0.6,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 150,
+    "attempted_val": -0.84,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 151,
+    "attempted_val": -0.59,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 151,
+    "attempted_val": -0.84,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 152,
+    "attempted_val": -0.58,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 152,
+    "attempted_val": -0.84,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 153,
+    "attempted_val": -0.57,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 153,
+    "attempted_val": -0.84,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 154,
+    "attempted_val": -0.56,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 154,
+    "attempted_val": -0.84,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 155,
+    "attempted_val": -0.56,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 155,
+    "attempted_val": -0.85,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 156,
+    "attempted_val": -0.55,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 156,
+    "attempted_val": -0.85,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 157,
+    "attempted_val": -0.54,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 157,
+    "attempted_val": -0.85,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 158,
+    "attempted_val": -0.53,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 158,
+    "attempted_val": -0.85,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 159,
+    "attempted_val": -0.53,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 159,
+    "attempted_val": -0.85,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 160,
+    "attempted_val": -0.52,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 160,
+    "attempted_val": -0.85,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 161,
+    "attempted_val": -0.51,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 161,
+    "attempted_val": -0.85,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 162,
+    "attempted_val": -0.51,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 162,
+    "attempted_val": -0.85,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 163,
+    "attempted_val": -0.5,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 163,
+    "attempted_val": -0.85,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 164,
+    "attempted_val": -0.36,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 164,
+    "attempted_val": -0.73,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 164,
+    "attempted_val": -0.38,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 164,
+    "attempted_val": -0.63,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 165,
+    "attempted_val": -0.43,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 165,
+    "attempted_val": -0.79,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 165,
+    "attempted_val": -0.46,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 165,
+    "attempted_val": -0.72,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 166,
+    "attempted_val": -0.54,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 166,
+    "attempted_val": -0.57,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 167,
+    "attempted_val": -0.45,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 167,
+    "attempted_val": -0.45,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 168,
+    "attempted_val": -0.48,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 168,
+    "attempted_val": -0.49,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 169,
+    "attempted_val": -0.65,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 169,
+    "attempted_val": -0.9,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 169,
+    "attempted_val": -0.38,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 169,
+    "attempted_val": -0.6,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 170,
+    "attempted_val": -0.32,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 170,
+    "attempted_val": -0.71,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 170,
+    "attempted_val": -0.05,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 171,
+    "attempted_val": -0.44,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 171,
+    "attempted_val": -0.73,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 172,
+    "attempted_val": -0.38,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 173,
+    "attempted_val": -0.13,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 173,
+    "attempted_val": -0.23,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 174,
+    "attempted_val": -0.33,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 174,
+    "attempted_val": -0.53,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 175,
+    "attempted_val": -0.55,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 175,
+    "attempted_val": -0.67,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 176,
+    "attempted_val": -0.02,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 176,
+    "attempted_val": -0.0,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 179,
+    "attempted_val": -0.15,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 180,
+    "attempted_val": -0.16,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 180,
+    "attempted_val": -0.32,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 188,
+    "attempted_val": -0.4,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 188,
+    "attempted_val": -0.4,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 189,
+    "attempted_val": -0.39,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 189,
+    "attempted_val": -0.38,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 190,
+    "attempted_val": -0.37,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 190,
+    "attempted_val": -0.38,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 191,
+    "attempted_val": -0.54,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 191,
+    "attempted_val": -0.59,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 192,
+    "attempted_val": -0.55,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 192,
+    "attempted_val": -0.59,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 193,
+    "attempted_val": -0.17,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 193,
+    "attempted_val": -0.17,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 194,
+    "attempted_val": -0.05,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 194,
+    "attempted_val": -0.2,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 226,
+    "attempted_val": -0.48,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 226,
+    "attempted_val": -0.56,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 227,
+    "attempted_val": -0.55,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 227,
+    "attempted_val": -0.58,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 228,
+    "attempted_val": -0.41,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 228,
+    "attempted_val": -0.45,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 229,
+    "attempted_val": -0.59,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 229,
+    "attempted_val": -0.85,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 229,
+    "attempted_val": -0.48,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 229,
+    "attempted_val": -0.61,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 230,
+    "attempted_val": -0.7,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 230,
+    "attempted_val": -0.91,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 230,
+    "attempted_val": -0.31,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 230,
+    "attempted_val": -0.62,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 232,
+    "attempted_val": -0.17,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 232,
+    "attempted_val": -0.25,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 233,
+    "attempted_val": -0.69,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 233,
+    "attempted_val": -0.46,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 234,
+    "attempted_val": -0.37,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 234,
+    "attempted_val": -0.37,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 235,
+    "attempted_val": -0.5,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 235,
+    "attempted_val": -0.61,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 236,
+    "attempted_val": 0.08,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 237,
+    "attempted_val": -0.01,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 238,
+    "attempted_val": 0.04,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 259,
+    "attempted_val": -0.01,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 260,
+    "attempted_val": -0.07,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 261,
+    "attempted_val": -0.13,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 286,
+    "attempted_val": -0.88,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 286,
+    "attempted_val": -0.97,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 286,
+    "attempted_val": -0.18,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 286,
+    "attempted_val": -0.28,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 287,
+    "attempted_val": -0.87,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 287,
+    "attempted_val": -0.97,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 287,
+    "attempted_val": -0.07,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 287,
+    "attempted_val": -0.12,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 288,
+    "attempted_val": -0.96,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 288,
+    "attempted_val": -1.0,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 288,
+    "attempted_val": -0.07,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 289,
+    "attempted_val": -0.99,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 289,
+    "attempted_val": -0.99,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 293,
+    "attempted_val": -0.01,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 294,
+    "attempted_val": -0.42,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 294,
+    "attempted_val": -0.66,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 294,
+    "attempted_val": -0.22,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 295,
+    "attempted_val": -0.12,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 295,
+    "attempted_val": -0.56,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 295,
+    "attempted_val": -0.52,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 296,
+    "attempted_val": -0.32,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 296,
+    "attempted_val": -0.04,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 296,
+    "attempted_val": -0.83,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 297,
+    "attempted_val": -0.26,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 297,
+    "attempted_val": -0.98,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 298,
+    "attempted_val": -0.43,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 298,
+    "attempted_val": -0.98,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 299,
+    "attempted_val": -0.54,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 299,
+    "attempted_val": -0.94,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 300,
+    "attempted_val": -0.62,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 300,
+    "attempted_val": -0.89,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 301,
+    "attempted_val": -0.67,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 301,
+    "attempted_val": -0.85,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 302,
+    "attempted_val": -0.69,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 302,
+    "attempted_val": -0.93,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 302,
+    "attempted_val": -0.43,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 302,
+    "attempted_val": -0.62,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 303,
+    "attempted_val": -0.39,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 303,
+    "attempted_val": -0.78,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 303,
+    "attempted_val": -0.53,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 303,
+    "attempted_val": -0.65,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 304,
+    "attempted_val": -0.39,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 304,
+    "attempted_val": -0.43,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 305,
+    "attempted_val": -0.49,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 305,
+    "attempted_val": -0.51,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 306,
+    "attempted_val": -0.43,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 306,
+    "attempted_val": -0.49,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 307,
+    "attempted_val": -0.48,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 307,
+    "attempted_val": -0.57,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 308,
+    "attempted_val": -0.45,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 308,
+    "attempted_val": -0.83,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 308,
+    "attempted_val": -0.43,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 308,
+    "attempted_val": -0.72,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 347,
+    "attempted_val": -0.35,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 347,
+    "attempted_val": -0.71,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 348,
+    "attempted_val": -0.39,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 348,
+    "attempted_val": -0.74,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 349,
+    "attempted_val": -0.05,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 349,
+    "attempted_val": -0.43,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 349,
+    "attempted_val": -0.76,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 360,
+    "attempted_val": -0.0,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 361,
+    "attempted_val": -0.53,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 362,
+    "attempted_val": -0.69,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 362,
+    "attempted_val": -0.93,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 362,
+    "attempted_val": -0.48,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 362,
+    "attempted_val": -0.67,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 363,
+    "attempted_val": -0.03,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 363,
+    "attempted_val": -0.45,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 363,
+    "attempted_val": -0.53,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 363,
+    "attempted_val": -0.64,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 364,
+    "attempted_val": -0.37,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 364,
+    "attempted_val": -0.39,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 365,
+    "attempted_val": -0.52,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 365,
+    "attempted_val": -0.53,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 366,
+    "attempted_val": -0.4,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 366,
+    "attempted_val": -0.47,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 369,
+    "attempted_val": -0.64,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 369,
+    "attempted_val": -0.87,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 370,
+    "attempted_val": -0.55,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 370,
+    "attempted_val": -0.83,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 371,
+    "attempted_val": -0.44,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 371,
+    "attempted_val": -0.76,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 372,
+    "attempted_val": -0.28,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 372,
+    "attempted_val": -0.64,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 373,
+    "attempted_val": -0.07,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 373,
+    "attempted_val": -0.44,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 374,
+    "attempted_val": -0.11,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 400,
+    "attempted_val": -0.03,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 401,
+    "attempted_val": -0.08,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 402,
+    "attempted_val": -0.13,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 402,
+    "attempted_val": 0.06,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 403,
+    "attempted_val": -0.18,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 403,
+    "attempted_val": -0.02,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 404,
+    "attempted_val": -0.23,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 404,
+    "attempted_val": -0.11,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 405,
+    "attempted_val": -0.28,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 405,
+    "attempted_val": -0.18,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 406,
+    "attempted_val": -0.34,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 406,
+    "attempted_val": -0.25,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 407,
+    "attempted_val": -0.39,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 407,
+    "attempted_val": -0.32,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 408,
+    "attempted_val": -0.44,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 408,
+    "attempted_val": -0.38,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 409,
+    "attempted_val": -0.48,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 409,
+    "attempted_val": -0.42,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 410,
+    "attempted_val": -0.53,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 410,
+    "attempted_val": -0.47,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 411,
+    "attempted_val": -0.57,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 411,
+    "attempted_val": -0.5,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 412,
+    "attempted_val": -0.48,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 412,
+    "attempted_val": -0.54,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 415,
+    "attempted_val": 0.06,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 416,
+    "attempted_val": -0.01,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 416,
+    "attempted_val": -0.05,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 417,
+    "attempted_val": -0.11,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 417,
+    "attempted_val": -0.17,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 418,
+    "attempted_val": -0.21,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 418,
+    "attempted_val": -0.29,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 419,
+    "attempted_val": -0.3,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 419,
+    "attempted_val": -0.4,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 420,
+    "attempted_val": -0.38,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 420,
+    "attempted_val": -0.51,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 421,
+    "attempted_val": -0.45,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 421,
+    "attempted_val": -0.61,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 423,
+    "attempted_val": -0.24,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 423,
+    "attempted_val": -0.39,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 424,
+    "attempted_val": -0.76,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 424,
+    "attempted_val": -0.87,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 424,
+    "attempted_val": -0.61,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 424,
+    "attempted_val": -0.65,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 428,
+    "attempted_val": -0.22,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 428,
+    "attempted_val": -0.67,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 428,
+    "attempted_val": -0.68,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 428,
+    "attempted_val": -0.68,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 429,
+    "attempted_val": -0.83,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 429,
+    "attempted_val": -0.81,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 430,
+    "attempted_val": -0.78,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 430,
+    "attempted_val": -0.9,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 430,
+    "attempted_val": -0.58,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 430,
+    "attempted_val": -0.59,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 431,
+    "attempted_val": -0.59,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 431,
+    "attempted_val": -0.83,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 431,
+    "attempted_val": -0.56,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 431,
+    "attempted_val": -0.58,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 432,
+    "attempted_val": -0.12,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 432,
+    "attempted_val": -0.15,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 433,
+    "attempted_val": -0.74,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 433,
+    "attempted_val": -0.71,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 434,
+    "attempted_val": -0.59,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 434,
+    "attempted_val": -0.56,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 435,
+    "attempted_val": -0.05,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 435,
+    "attempted_val": -0.34,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 435,
+    "attempted_val": -0.46,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 437,
+    "attempted_val": -0.7,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 437,
+    "attempted_val": -0.83,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 437,
+    "attempted_val": -0.49,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 437,
+    "attempted_val": -0.5,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 438,
+    "attempted_val": -0.62,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 438,
+    "attempted_val": -0.77,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 438,
+    "attempted_val": -0.14,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 438,
+    "attempted_val": -0.02,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 439,
+    "attempted_val": -0.43,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 439,
+    "attempted_val": -0.73,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 439,
+    "attempted_val": -0.55,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 439,
+    "attempted_val": -0.61,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 440,
+    "attempted_val": -0.46,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 440,
+    "attempted_val": -0.48,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 441,
+    "attempted_val": -0.59,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 441,
+    "attempted_val": -0.54,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 442,
+    "attempted_val": -0.53,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 442,
+    "attempted_val": -0.51,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 444,
+    "attempted_val": -0.66,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 444,
+    "attempted_val": -0.96,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 444,
+    "attempted_val": -0.83,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 444,
+    "attempted_val": -0.95,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 445,
+    "attempted_val": -0.65,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 445,
+    "attempted_val": -0.96,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 445,
+    "attempted_val": -0.75,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 445,
+    "attempted_val": -0.92,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 446,
+    "attempted_val": -0.64,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 446,
+    "attempted_val": -0.95,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 446,
+    "attempted_val": -0.64,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 446,
+    "attempted_val": -0.88,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 447,
+    "attempted_val": -0.63,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 447,
+    "attempted_val": -0.95,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 447,
+    "attempted_val": -0.51,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 447,
+    "attempted_val": -0.8,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 448,
+    "attempted_val": -0.62,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 448,
+    "attempted_val": -0.94,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 448,
+    "attempted_val": -0.35,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 448,
+    "attempted_val": -0.66,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 449,
+    "attempted_val": -0.6,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 449,
+    "attempted_val": -0.93,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 449,
+    "attempted_val": -0.17,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 449,
+    "attempted_val": -0.41,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 450,
+    "attempted_val": -0.59,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 450,
+    "attempted_val": -0.92,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 450,
+    "attempted_val": -0.01,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 450,
+    "attempted_val": -0.06,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 451,
+    "attempted_val": -0.58,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 451,
+    "attempted_val": -0.91,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 452,
+    "attempted_val": -0.56,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 452,
+    "attempted_val": -0.89,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 453,
+    "attempted_val": -0.54,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 453,
+    "attempted_val": -0.87,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 454,
+    "attempted_val": -0.73,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 454,
+    "attempted_val": -0.92,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 454,
+    "attempted_val": -0.4,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 454,
+    "attempted_val": -0.58,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 455,
+    "attempted_val": -0.59,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 455,
+    "attempted_val": -0.65,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 456,
+    "attempted_val": -0.28,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 456,
+    "attempted_val": -0.25,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 457,
+    "attempted_val": -0.35,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 457,
+    "attempted_val": -0.34,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 458,
+    "attempted_val": -0.46,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 458,
+    "attempted_val": -0.81,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 458,
+    "attempted_val": -0.64,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 458,
+    "attempted_val": -0.72,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 459,
+    "attempted_val": -0.61,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 459,
+    "attempted_val": -0.87,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 459,
+    "attempted_val": -0.46,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 459,
+    "attempted_val": -0.64,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 460,
+    "attempted_val": -0.78,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 460,
+    "attempted_val": -0.95,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 460,
+    "attempted_val": -0.35,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 460,
+    "attempted_val": -0.64,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 461,
+    "attempted_val": -0.99,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 461,
+    "attempted_val": -0.97,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 462,
+    "attempted_val": -0.98,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 462,
+    "attempted_val": -0.98,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 463,
+    "attempted_val": -0.95,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 463,
+    "attempted_val": -0.99,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 464,
+    "attempted_val": -0.89,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 464,
+    "attempted_val": -0.99,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 465,
+    "attempted_val": -0.78,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 465,
+    "attempted_val": -0.98,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 465,
+    "attempted_val": -0.57,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 465,
+    "attempted_val": -0.8,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 466,
+    "attempted_val": -0.64,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 466,
+    "attempted_val": -0.95,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 466,
+    "attempted_val": -0.58,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 466,
+    "attempted_val": -0.79,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 467,
+    "attempted_val": -0.48,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 467,
+    "attempted_val": -0.88,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 467,
+    "attempted_val": -0.59,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 467,
+    "attempted_val": -0.77,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 468,
+    "attempted_val": -0.32,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 468,
+    "attempted_val": -0.77,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 468,
+    "attempted_val": -0.59,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 468,
+    "attempted_val": -0.76,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 469,
+    "attempted_val": -0.17,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 469,
+    "attempted_val": -0.58,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 469,
+    "attempted_val": -0.6,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 469,
+    "attempted_val": -0.74,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 470,
+    "attempted_val": -0.05,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 470,
+    "attempted_val": -0.36,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 470,
+    "attempted_val": -0.6,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 470,
+    "attempted_val": -0.73,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 471,
+    "attempted_val": -0.14,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 471,
+    "attempted_val": -0.6,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 471,
+    "attempted_val": -0.71,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 483,
+    "attempted_val": -0.76,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 483,
+    "attempted_val": -0.78,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 484,
+    "attempted_val": -0.73,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 484,
+    "attempted_val": -0.72,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 485,
+    "attempted_val": -0.43,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 485,
+    "attempted_val": -0.42,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 489,
+    "attempted_val": -0.52,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 489,
+    "attempted_val": -0.48,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 490,
+    "attempted_val": -0.78,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 490,
+    "attempted_val": -0.9,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 490,
+    "attempted_val": -0.49,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 490,
+    "attempted_val": -0.55,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 491,
+    "attempted_val": -0.57,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 491,
+    "attempted_val": -0.81,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 491,
+    "attempted_val": -0.54,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 491,
+    "attempted_val": -0.55,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 492,
+    "attempted_val": -0.5,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 492,
+    "attempted_val": -0.45,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 494,
+    "attempted_val": -0.02,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 497,
+    "attempted_val": -0.66,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 497,
+    "attempted_val": -0.82,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 497,
+    "attempted_val": -0.41,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 497,
+    "attempted_val": -0.42,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 498,
+    "attempted_val": -0.55,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 498,
+    "attempted_val": -0.77,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 498,
+    "attempted_val": -0.7,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 498,
+    "attempted_val": -0.66,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 499,
+    "attempted_val": -0.56,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 499,
+    "attempted_val": -0.79,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 499,
+    "attempted_val": -0.56,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 499,
+    "attempted_val": -0.61,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 500,
+    "attempted_val": -0.51,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 500,
+    "attempted_val": -0.52,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 501,
+    "attempted_val": -0.04,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 501,
+    "attempted_val": -0.59,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 501,
+    "attempted_val": -0.53,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 502,
+    "attempted_val": -0.44,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 502,
+    "attempted_val": -0.38,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 504,
+    "attempted_val": -0.78,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 504,
+    "attempted_val": -0.99,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 504,
+    "attempted_val": -0.77,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 504,
+    "attempted_val": -0.9,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 505,
+    "attempted_val": -0.78,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 505,
+    "attempted_val": -0.99,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 505,
+    "attempted_val": -0.79,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 505,
+    "attempted_val": -0.89,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 506,
+    "attempted_val": -0.77,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 506,
+    "attempted_val": -0.99,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 506,
+    "attempted_val": -0.8,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 506,
+    "attempted_val": -0.89,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 507,
+    "attempted_val": -0.77,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 507,
+    "attempted_val": -0.99,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 507,
+    "attempted_val": -0.82,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 507,
+    "attempted_val": -0.88,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 508,
+    "attempted_val": -0.76,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 508,
+    "attempted_val": -0.98,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 508,
+    "attempted_val": -0.82,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 508,
+    "attempted_val": -0.88,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 509,
+    "attempted_val": -0.76,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 509,
+    "attempted_val": -0.98,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 509,
+    "attempted_val": -0.82,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 509,
+    "attempted_val": -0.87,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 510,
+    "attempted_val": -0.75,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 510,
+    "attempted_val": -0.97,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 510,
+    "attempted_val": -0.81,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 510,
+    "attempted_val": -0.87,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 511,
+    "attempted_val": -0.75,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 511,
+    "attempted_val": -0.97,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 511,
+    "attempted_val": -0.8,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 511,
+    "attempted_val": -0.86,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 512,
+    "attempted_val": -0.74,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 512,
+    "attempted_val": -0.96,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 512,
+    "attempted_val": -0.78,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 512,
+    "attempted_val": -0.86,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 513,
+    "attempted_val": -0.72,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 513,
+    "attempted_val": -0.94,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 513,
+    "attempted_val": -0.62,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 513,
+    "attempted_val": -0.78,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 514,
+    "attempted_val": -0.76,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 514,
+    "attempted_val": -0.95,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 514,
+    "attempted_val": -0.66,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 514,
+    "attempted_val": -0.8,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 515,
+    "attempted_val": -0.53,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 515,
+    "attempted_val": -0.62,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 516,
+    "attempted_val": -0.24,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 516,
+    "attempted_val": -0.19,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 517,
+    "attempted_val": -0.37,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 517,
+    "attempted_val": -0.38,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 518,
+    "attempted_val": -0.5,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 518,
+    "attempted_val": -0.59,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 519,
+    "attempted_val": -0.69,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 519,
+    "attempted_val": -0.91,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 519,
+    "attempted_val": -0.53,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 519,
+    "attempted_val": -0.71,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 520,
+    "attempted_val": -0.67,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 520,
+    "attempted_val": -0.9,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 520,
+    "attempted_val": -0.49,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 520,
+    "attempted_val": -0.7,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 521,
+    "attempted_val": -0.61,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 521,
+    "attempted_val": -0.89,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 521,
+    "attempted_val": -0.47,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 521,
+    "attempted_val": -0.68,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 522,
+    "attempted_val": -0.53,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 522,
+    "attempted_val": -0.87,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 522,
+    "attempted_val": -0.45,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 522,
+    "attempted_val": -0.67,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 523,
+    "attempted_val": -0.44,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 523,
+    "attempted_val": -0.84,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 523,
+    "attempted_val": -0.43,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 523,
+    "attempted_val": -0.65,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 524,
+    "attempted_val": -0.32,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 524,
+    "attempted_val": -0.8,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 524,
+    "attempted_val": -0.41,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 524,
+    "attempted_val": -0.62,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 525,
+    "attempted_val": -0.17,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 525,
+    "attempted_val": -0.71,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 525,
+    "attempted_val": -0.39,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 525,
+    "attempted_val": -0.6,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 526,
+    "attempted_val": -0.02,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 526,
+    "attempted_val": -0.52,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 526,
+    "attempted_val": -0.37,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 526,
+    "attempted_val": -0.57,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 527,
+    "attempted_val": -0.13,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 527,
+    "attempted_val": -0.36,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 527,
+    "attempted_val": -0.53,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 528,
+    "attempted_val": -0.34,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 528,
+    "attempted_val": -0.49,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 529,
+    "attempted_val": -0.33,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 529,
+    "attempted_val": -0.43,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 531,
+    "attempted_val": -0.1,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 531,
+    "attempted_val": -0.63,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 531,
+    "attempted_val": -0.55,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 532,
+    "attempted_val": -0.57,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 532,
+    "attempted_val": -0.51,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 544,
+    "attempted_val": -0.61,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 544,
+    "attempted_val": -0.77,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 548,
+    "attempted_val": -0.54,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 548,
+    "attempted_val": -0.8,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 548,
+    "attempted_val": -0.71,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 548,
+    "attempted_val": -0.7,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 549,
+    "attempted_val": -0.85,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 549,
+    "attempted_val": -0.84,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 550,
+    "attempted_val": -0.74,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 550,
+    "attempted_val": -0.87,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 550,
+    "attempted_val": -0.62,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 550,
+    "attempted_val": -0.62,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 551,
+    "attempted_val": -0.65,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 551,
+    "attempted_val": -0.85,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 551,
+    "attempted_val": -0.65,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 551,
+    "attempted_val": -0.64,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 552,
+    "attempted_val": -0.22,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 552,
+    "attempted_val": -0.27,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 553,
+    "attempted_val": -0.3,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 553,
+    "attempted_val": -0.29,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 554,
+    "attempted_val": -0.81,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 554,
+    "attempted_val": -0.78,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 555,
+    "attempted_val": -0.17,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 555,
+    "attempted_val": -0.1,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 557,
+    "attempted_val": -0.69,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 557,
+    "attempted_val": -0.84,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 557,
+    "attempted_val": -0.56,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 557,
+    "attempted_val": -0.56,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 558,
+    "attempted_val": -0.5,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 558,
+    "attempted_val": -0.69,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 558,
+    "attempted_val": -0.21,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 558,
+    "attempted_val": -0.09,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 559,
+    "attempted_val": -0.45,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 559,
+    "attempted_val": -0.74,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 559,
+    "attempted_val": -0.45,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 559,
+    "attempted_val": -0.53,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 560,
+    "attempted_val": -0.55,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 560,
+    "attempted_val": -0.58,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 561,
+    "attempted_val": -0.5,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 561,
+    "attempted_val": -0.76,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 561,
+    "attempted_val": -0.69,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 561,
+    "attempted_val": -0.63,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 562,
+    "attempted_val": -0.41,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 562,
+    "attempted_val": -0.34,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 566,
+    "attempted_val": -0.53,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 566,
+    "attempted_val": -0.83,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 566,
+    "attempted_val": -0.92,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 567,
+    "attempted_val": -0.07,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 567,
+    "attempted_val": -0.8,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 567,
+    "attempted_val": -0.83,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 567,
+    "attempted_val": -0.91,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 568,
+    "attempted_val": -0.27,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 568,
+    "attempted_val": -0.88,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 568,
+    "attempted_val": -0.83,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 568,
+    "attempted_val": -0.9,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 569,
+    "attempted_val": -0.44,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 569,
+    "attempted_val": -0.92,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 569,
+    "attempted_val": -0.83,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 569,
+    "attempted_val": -0.89,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 570,
+    "attempted_val": -0.56,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 570,
+    "attempted_val": -0.94,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 570,
+    "attempted_val": -0.83,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 570,
+    "attempted_val": -0.88,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 571,
+    "attempted_val": -0.65,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 571,
+    "attempted_val": -0.95,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 571,
+    "attempted_val": -0.82,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 571,
+    "attempted_val": -0.88,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 572,
+    "attempted_val": -0.71,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 572,
+    "attempted_val": -0.96,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 572,
+    "attempted_val": -0.81,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 572,
+    "attempted_val": -0.87,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 573,
+    "attempted_val": -0.71,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 573,
+    "attempted_val": -0.94,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 573,
+    "attempted_val": -0.58,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 573,
+    "attempted_val": -0.76,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 574,
+    "attempted_val": -0.73,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 574,
+    "attempted_val": -0.95,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 574,
+    "attempted_val": -0.62,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 574,
+    "attempted_val": -0.78,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 575,
+    "attempted_val": -0.48,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 575,
+    "attempted_val": -0.57,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 576,
+    "attempted_val": -0.2,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 576,
+    "attempted_val": -0.15,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 577,
+    "attempted_val": -0.24,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 577,
+    "attempted_val": -0.18,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 578,
+    "attempted_val": -0.41,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 578,
+    "attempted_val": -0.5,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 579,
+    "attempted_val": -0.67,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 579,
+    "attempted_val": -0.92,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 579,
+    "attempted_val": -0.47,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 579,
+    "attempted_val": -0.69,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 580,
+    "attempted_val": -0.62,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 580,
+    "attempted_val": -0.9,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 580,
+    "attempted_val": -0.31,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 580,
+    "attempted_val": -0.52,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 581,
+    "attempted_val": -0.55,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 581,
+    "attempted_val": -0.87,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 581,
+    "attempted_val": -0.35,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 581,
+    "attempted_val": -0.52,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 582,
+    "attempted_val": -0.48,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 582,
+    "attempted_val": -0.82,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 582,
+    "attempted_val": -0.38,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 582,
+    "attempted_val": -0.52,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 583,
+    "attempted_val": -0.39,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 583,
+    "attempted_val": -0.76,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 583,
+    "attempted_val": -0.41,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 583,
+    "attempted_val": -0.53,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 584,
+    "attempted_val": -0.29,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 584,
+    "attempted_val": -0.67,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 584,
+    "attempted_val": -0.44,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 584,
+    "attempted_val": -0.53,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 585,
+    "attempted_val": -0.19,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 585,
+    "attempted_val": -0.56,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 585,
+    "attempted_val": -0.47,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 585,
+    "attempted_val": -0.53,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 586,
+    "attempted_val": -0.09,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 586,
+    "attempted_val": -0.42,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 586,
+    "attempted_val": -0.5,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 586,
+    "attempted_val": -0.53,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 587,
+    "attempted_val": -0.26,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 587,
+    "attempted_val": -0.52,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 587,
+    "attempted_val": -0.53,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 588,
+    "attempted_val": -0.08,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 588,
+    "attempted_val": -0.55,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 588,
+    "attempted_val": -0.53,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 589,
+    "attempted_val": 0.09,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 589,
+    "attempted_val": -0.57,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 589,
+    "attempted_val": -0.53,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 590,
+    "attempted_val": -0.59,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 590,
+    "attempted_val": -0.53,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 591,
+    "attempted_val": -0.6,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 591,
+    "attempted_val": -0.53,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 592,
+    "attempted_val": -0.64,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 592,
+    "attempted_val": -0.6,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 593,
+    "attempted_val": -0.63,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 593,
+    "attempted_val": -0.61,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 594,
+    "attempted_val": -0.61,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 594,
+    "attempted_val": -0.62,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 595,
+    "attempted_val": -0.6,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 595,
+    "attempted_val": -0.62,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 596,
+    "attempted_val": -0.58,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 596,
+    "attempted_val": -0.63,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 597,
+    "attempted_val": -0.56,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 597,
+    "attempted_val": -0.64,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 598,
+    "attempted_val": -0.54,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 598,
+    "attempted_val": -0.65,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 599,
+    "attempted_val": -0.52,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 599,
+    "attempted_val": -0.66,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 600,
+    "attempted_val": -0.49,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 600,
+    "attempted_val": -0.67,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 601,
+    "attempted_val": -0.47,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 601,
+    "attempted_val": -0.67,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 604,
+    "attempted_val": -0.72,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 604,
+    "attempted_val": -0.84,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 604,
+    "attempted_val": -0.25,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 604,
+    "attempted_val": -0.31,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 605,
+    "attempted_val": 0.04,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 608,
+    "attempted_val": -0.76,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 608,
+    "attempted_val": -0.87,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 608,
+    "attempted_val": -0.63,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 608,
+    "attempted_val": -0.63,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 609,
+    "attempted_val": -0.47,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 609,
+    "attempted_val": -0.47,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 610,
+    "attempted_val": -0.73,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 610,
+    "attempted_val": -0.88,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 610,
+    "attempted_val": -0.68,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 610,
+    "attempted_val": -0.66,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 611,
+    "attempted_val": -0.55,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 611,
+    "attempted_val": -0.81,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 611,
+    "attempted_val": -0.59,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 611,
+    "attempted_val": -0.61,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 612,
+    "attempted_val": -0.33,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 612,
+    "attempted_val": -0.33,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 613,
+    "attempted_val": -0.63,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 613,
+    "attempted_val": -0.6,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 614,
+    "attempted_val": -0.65,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 614,
+    "attempted_val": -0.6,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 615,
+    "attempted_val": -0.56,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 615,
+    "attempted_val": -0.66,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 617,
+    "attempted_val": -0.75,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 617,
+    "attempted_val": -0.85,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 617,
+    "attempted_val": -0.5,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 617,
+    "attempted_val": -0.52,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 618,
+    "attempted_val": -0.52,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 618,
+    "attempted_val": -0.69,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 618,
+    "attempted_val": -0.09,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 618,
+    "attempted_val": 0.06,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 619,
+    "attempted_val": -0.18,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 619,
+    "attempted_val": -0.56,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 619,
+    "attempted_val": -0.45,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 619,
+    "attempted_val": -0.54,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 620,
+    "attempted_val": -0.55,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 620,
+    "attempted_val": -0.56,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 621,
+    "attempted_val": -0.28,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 621,
+    "attempted_val": -0.58,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 621,
+    "attempted_val": -0.66,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 621,
+    "attempted_val": -0.61,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 622,
+    "attempted_val": -0.3,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 622,
+    "attempted_val": -0.15,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 624,
+    "attempted_val": -0.81,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 624,
+    "attempted_val": -0.96,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 624,
+    "attempted_val": -0.77,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 624,
+    "attempted_val": -0.92,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 625,
+    "attempted_val": -0.8,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 625,
+    "attempted_val": -0.96,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 625,
+    "attempted_val": -0.65,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 625,
+    "attempted_val": -0.88,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 626,
+    "attempted_val": -0.78,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 626,
+    "attempted_val": -0.95,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 626,
+    "attempted_val": -0.49,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 626,
+    "attempted_val": -0.8,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 627,
+    "attempted_val": -0.76,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 627,
+    "attempted_val": -0.95,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 627,
+    "attempted_val": -0.29,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 627,
+    "attempted_val": -0.64,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 628,
+    "attempted_val": -0.73,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 628,
+    "attempted_val": -0.94,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 628,
+    "attempted_val": -0.08,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 628,
+    "attempted_val": -0.34,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 629,
+    "attempted_val": -0.7,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 629,
+    "attempted_val": -0.93,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 629,
+    "attempted_val": 0.1,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 630,
+    "attempted_val": -0.66,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 630,
+    "attempted_val": -0.92,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 631,
+    "attempted_val": -0.62,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 631,
+    "attempted_val": -0.89,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 632,
+    "attempted_val": -0.57,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 632,
+    "attempted_val": -0.87,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 633,
+    "attempted_val": -0.51,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 633,
+    "attempted_val": -0.82,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 634,
+    "attempted_val": -0.73,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 634,
+    "attempted_val": -0.93,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 634,
+    "attempted_val": -0.48,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 634,
+    "attempted_val": -0.66,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 635,
+    "attempted_val": -0.61,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 635,
+    "attempted_val": -0.68,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 636,
+    "attempted_val": -0.04,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 637,
+    "attempted_val": -0.37,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 637,
+    "attempted_val": -0.36,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 638,
+    "attempted_val": -0.62,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 638,
+    "attempted_val": -0.69,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 639,
+    "attempted_val": -0.63,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 639,
+    "attempted_val": -0.88,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 639,
+    "attempted_val": -0.48,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 639,
+    "attempted_val": -0.63,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 640,
+    "attempted_val": -0.66,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 640,
+    "attempted_val": -0.94,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 640,
+    "attempted_val": -0.51,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 640,
+    "attempted_val": -0.78,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 643,
+    "attempted_val": -0.96,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 643,
+    "attempted_val": -0.93,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 644,
+    "attempted_val": -0.91,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 644,
+    "attempted_val": -0.94,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 644,
+    "attempted_val": -0.26,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 644,
+    "attempted_val": -0.98,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 645,
+    "attempted_val": -0.82,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 645,
+    "attempted_val": -0.94,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 645,
+    "attempted_val": -0.37,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 645,
+    "attempted_val": -0.93,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 646,
+    "attempted_val": -0.71,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 646,
+    "attempted_val": -0.93,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 646,
+    "attempted_val": -0.44,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 646,
+    "attempted_val": -0.88,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 647,
+    "attempted_val": -0.59,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 647,
+    "attempted_val": -0.89,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 647,
+    "attempted_val": -0.49,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 647,
+    "attempted_val": -0.83,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 648,
+    "attempted_val": -0.47,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 648,
+    "attempted_val": -0.82,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 648,
+    "attempted_val": -0.52,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 648,
+    "attempted_val": -0.79,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 649,
+    "attempted_val": -0.36,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 649,
+    "attempted_val": -0.71,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 649,
+    "attempted_val": -0.55,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 649,
+    "attempted_val": -0.75,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 650,
+    "attempted_val": -0.26,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 650,
+    "attempted_val": -0.57,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 650,
+    "attempted_val": -0.56,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 650,
+    "attempted_val": -0.72,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 651,
+    "attempted_val": -0.18,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 651,
+    "attempted_val": -0.43,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 651,
+    "attempted_val": -0.57,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 651,
+    "attempted_val": -0.7,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 660,
+    "attempted_val": -0.06,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 660,
+    "attempted_val": -0.13,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 661,
+    "attempted_val": -0.26,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 661,
+    "attempted_val": -0.42,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 664,
+    "attempted_val": -0.72,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 664,
+    "attempted_val": -0.85,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 664,
+    "attempted_val": -0.35,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 664,
+    "attempted_val": -0.44,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 668,
+    "attempted_val": -0.44,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 668,
+    "attempted_val": -0.77,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 668,
+    "attempted_val": -0.69,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 668,
+    "attempted_val": -0.7,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 669,
+    "attempted_val": -0.84,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 669,
+    "attempted_val": -0.82,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 670,
+    "attempted_val": -0.72,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 670,
+    "attempted_val": -0.86,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 670,
+    "attempted_val": -0.64,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 670,
+    "attempted_val": -0.64,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 671,
+    "attempted_val": -0.65,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 671,
+    "attempted_val": -0.84,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 671,
+    "attempted_val": -0.58,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 671,
+    "attempted_val": -0.62,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 672,
+    "attempted_val": -0.74,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 672,
+    "attempted_val": -0.73,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 673,
+    "attempted_val": -0.44,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 673,
+    "attempted_val": -0.41,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 674,
+    "attempted_val": -0.7,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 674,
+    "attempted_val": -0.66,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 675,
+    "attempted_val": -0.27,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 675,
+    "attempted_val": -0.72,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 675,
+    "attempted_val": -0.54,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 675,
+    "attempted_val": -0.7,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 677,
+    "attempted_val": -0.68,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 677,
+    "attempted_val": -0.82,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 677,
+    "attempted_val": -0.58,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 677,
+    "attempted_val": -0.59,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 678,
+    "attempted_val": -0.51,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 678,
+    "attempted_val": -0.68,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 678,
+    "attempted_val": -0.14,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 678,
+    "attempted_val": -0.01,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 679,
+    "attempted_val": -0.28,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 679,
+    "attempted_val": -0.63,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 679,
+    "attempted_val": -0.56,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 679,
+    "attempted_val": -0.62,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 680,
+    "attempted_val": -0.53,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 680,
+    "attempted_val": -0.55,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 681,
+    "attempted_val": -0.4,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 681,
+    "attempted_val": -0.67,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 681,
+    "attempted_val": -0.69,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 681,
+    "attempted_val": -0.64,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 684,
+    "attempted_val": -0.77,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 684,
+    "attempted_val": -0.96,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 684,
+    "attempted_val": -0.75,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 684,
+    "attempted_val": -0.94,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 685,
+    "attempted_val": -0.75,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 685,
+    "attempted_val": -0.96,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 685,
+    "attempted_val": -0.72,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 685,
+    "attempted_val": -0.93,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 686,
+    "attempted_val": -0.72,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 686,
+    "attempted_val": -0.96,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 686,
+    "attempted_val": -0.69,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 686,
+    "attempted_val": -0.92,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 687,
+    "attempted_val": -0.69,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 687,
+    "attempted_val": -0.96,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 687,
+    "attempted_val": -0.65,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 687,
+    "attempted_val": -0.9,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 688,
+    "attempted_val": -0.66,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 688,
+    "attempted_val": -0.95,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 688,
+    "attempted_val": -0.61,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 688,
+    "attempted_val": -0.88,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 689,
+    "attempted_val": -0.62,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 689,
+    "attempted_val": -0.95,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 689,
+    "attempted_val": -0.56,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 689,
+    "attempted_val": -0.85,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 690,
+    "attempted_val": -0.59,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 690,
+    "attempted_val": -0.94,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 690,
+    "attempted_val": -0.52,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 690,
+    "attempted_val": -0.83,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 691,
+    "attempted_val": -0.54,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 691,
+    "attempted_val": -0.94,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 691,
+    "attempted_val": -0.47,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 691,
+    "attempted_val": -0.8,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 692,
+    "attempted_val": -0.5,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 692,
+    "attempted_val": -0.93,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 692,
+    "attempted_val": -0.43,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 692,
+    "attempted_val": -0.76,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 693,
+    "attempted_val": -0.45,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 693,
+    "attempted_val": -0.91,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 693,
+    "attempted_val": -0.39,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 693,
+    "attempted_val": -0.72,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 694,
+    "attempted_val": -0.72,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 694,
+    "attempted_val": -0.92,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 694,
+    "attempted_val": -0.38,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 694,
+    "attempted_val": -0.57,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 695,
+    "attempted_val": -0.58,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 695,
+    "attempted_val": -0.65,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 696,
+    "attempted_val": -0.3,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 696,
+    "attempted_val": -0.26,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 697,
+    "attempted_val": -0.38,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 697,
+    "attempted_val": -0.38,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 698,
+    "attempted_val": -0.6,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 698,
+    "attempted_val": -0.68,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 699,
+    "attempted_val": -0.66,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 699,
+    "attempted_val": -0.89,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 699,
+    "attempted_val": -0.4,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 699,
+    "attempted_val": -0.56,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 700,
+    "attempted_val": -0.76,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 700,
+    "attempted_val": -0.96,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 700,
+    "attempted_val": -0.23,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 700,
+    "attempted_val": -0.55,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 702,
+    "attempted_val": -0.98,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 702,
+    "attempted_val": -0.98,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 703,
+    "attempted_val": -0.96,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 703,
+    "attempted_val": -0.98,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 704,
+    "attempted_val": -0.91,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 704,
+    "attempted_val": -0.99,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 704,
+    "attempted_val": -0.57,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 704,
+    "attempted_val": -0.81,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 705,
+    "attempted_val": -0.84,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 705,
+    "attempted_val": -0.98,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 705,
+    "attempted_val": -0.56,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 705,
+    "attempted_val": -0.79,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 706,
+    "attempted_val": -0.74,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 706,
+    "attempted_val": -0.97,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 706,
+    "attempted_val": -0.55,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 706,
+    "attempted_val": -0.78,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 707,
+    "attempted_val": -0.63,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 707,
+    "attempted_val": -0.93,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 707,
+    "attempted_val": -0.54,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 707,
+    "attempted_val": -0.76,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 708,
+    "attempted_val": -0.51,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 708,
+    "attempted_val": -0.87,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 708,
+    "attempted_val": -0.53,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 708,
+    "attempted_val": -0.74,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 709,
+    "attempted_val": -0.4,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 709,
+    "attempted_val": -0.77,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 709,
+    "attempted_val": -0.52,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 709,
+    "attempted_val": -0.71,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 710,
+    "attempted_val": -0.29,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 710,
+    "attempted_val": -0.64,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 710,
+    "attempted_val": -0.51,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 710,
+    "attempted_val": -0.68,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 711,
+    "attempted_val": -0.2,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 711,
+    "attempted_val": -0.49,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 711,
+    "attempted_val": -0.5,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 711,
+    "attempted_val": -0.65,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 724,
+    "attempted_val": -0.48,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 724,
+    "attempted_val": -0.62,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 725,
+    "attempted_val": -0.4,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 725,
+    "attempted_val": -0.61,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 728,
+    "attempted_val": -0.71,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 728,
+    "attempted_val": -0.85,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 728,
+    "attempted_val": -0.44,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 728,
+    "attempted_val": -0.5,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 729,
+    "attempted_val": -0.68,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 729,
+    "attempted_val": -0.65,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 730,
+    "attempted_val": -0.65,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 730,
+    "attempted_val": -0.85,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 730,
+    "attempted_val": -0.52,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 730,
+    "attempted_val": -0.52,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 731,
+    "attempted_val": -0.24,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 731,
+    "attempted_val": -0.67,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 731,
+    "attempted_val": -0.43,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 731,
+    "attempted_val": -0.48,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 732,
+    "attempted_val": -0.7,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 732,
+    "attempted_val": -0.83,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 732,
+    "attempted_val": -0.54,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 732,
+    "attempted_val": -0.52,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 733,
+    "attempted_val": -0.86,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 733,
+    "attempted_val": -0.75,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 739,
+    "attempted_val": -0.73,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 739,
+    "attempted_val": -0.61,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftArm",
+    "frame": 740,
+    "attempted_val": -0.18,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 740,
+    "attempted_val": -0.48,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 740,
+    "attempted_val": -0.46,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 740,
+    "attempted_val": -0.48,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 741,
+    "attempted_val": -0.22,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightArm",
+    "frame": 741,
+    "attempted_val": -0.41,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "check_it",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 741,
+    "attempted_val": -0.43,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  }
+]

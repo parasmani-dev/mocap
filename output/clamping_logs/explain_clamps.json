@@ -1,0 +1,682 @@
+[
+  {
+    "word": "explain",
+    "joint": "LeftArm",
+    "frame": 1,
+    "attempted_val": -0.11,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "explain",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 1,
+    "attempted_val": -0.21,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "explain",
+    "joint": "LeftArm",
+    "frame": 2,
+    "attempted_val": -0.11,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "explain",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 2,
+    "attempted_val": -0.22,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "explain",
+    "joint": "LeftArm",
+    "frame": 3,
+    "attempted_val": -0.12,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "explain",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 3,
+    "attempted_val": -0.25,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "explain",
+    "joint": "LeftArm",
+    "frame": 4,
+    "attempted_val": -0.11,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "explain",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 4,
+    "attempted_val": -0.23,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "explain",
+    "joint": "LeftArm",
+    "frame": 5,
+    "attempted_val": -0.14,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "explain",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 5,
+    "attempted_val": -0.27,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "explain",
+    "joint": "LeftArm",
+    "frame": 6,
+    "attempted_val": -0.1,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "explain",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 6,
+    "attempted_val": -0.24,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "explain",
+    "joint": "LeftArm",
+    "frame": 7,
+    "attempted_val": -0.13,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "explain",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 7,
+    "attempted_val": -0.25,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "explain",
+    "joint": "LeftArm",
+    "frame": 8,
+    "attempted_val": -0.12,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "explain",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 8,
+    "attempted_val": -0.23,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "explain",
+    "joint": "LeftArm",
+    "frame": 9,
+    "attempted_val": -0.12,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "explain",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 9,
+    "attempted_val": -0.22,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "explain",
+    "joint": "LeftArm",
+    "frame": 10,
+    "attempted_val": -0.01,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "explain",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 10,
+    "attempted_val": 0.08,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "explain",
+    "joint": "LeftArm",
+    "frame": 11,
+    "attempted_val": -0.02,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "explain",
+    "joint": "LeftHandMiddle1",
+    "frame": 15,
+    "attempted_val": 94.17,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "explain",
+    "joint": "LeftHandRing1",
+    "frame": 15,
+    "attempted_val": 100.08,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "explain",
+    "joint": "LeftHandPinky1",
+    "frame": 15,
+    "attempted_val": 100.66,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "explain",
+    "joint": "RightHandPinky1",
+    "frame": 17,
+    "attempted_val": 94.22,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "explain",
+    "joint": "LeftHandPinky3",
+    "frame": 18,
+    "attempted_val": 108.04,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "explain",
+    "joint": "RightHandPinky1",
+    "frame": 18,
+    "attempted_val": 102.42,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "explain",
+    "joint": "LeftHandPinky3",
+    "frame": 19,
+    "attempted_val": 91.24,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "explain",
+    "joint": "RightHandPinky1",
+    "frame": 20,
+    "attempted_val": 102.54,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "explain",
+    "joint": "RightHandPinky1",
+    "frame": 21,
+    "attempted_val": 109.1,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "explain",
+    "joint": "RightHandRing1",
+    "frame": 22,
+    "attempted_val": 91.56,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "explain",
+    "joint": "RightHandPinky1",
+    "frame": 22,
+    "attempted_val": 110.38,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "explain",
+    "joint": "RightHandPinky1",
+    "frame": 25,
+    "attempted_val": 98.11,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "explain",
+    "joint": "LeftHandRing3",
+    "frame": 27,
+    "attempted_val": 102.89,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "explain",
+    "joint": "RightHandPinky1",
+    "frame": 28,
+    "attempted_val": 103.34,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "explain",
+    "joint": "RightHandRing1",
+    "frame": 29,
+    "attempted_val": 96.6,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "explain",
+    "joint": "RightHandPinky1",
+    "frame": 29,
+    "attempted_val": 112.08,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "explain",
+    "joint": "RightHandPinky1",
+    "frame": 35,
+    "attempted_val": 100.29,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "explain",
+    "joint": "RightHandIndex3",
+    "frame": 42,
+    "attempted_val": 95.58,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "explain",
+    "joint": "RightHandMiddle3",
+    "frame": 42,
+    "attempted_val": 109.42,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "explain",
+    "joint": "LeftHandIndex1",
+    "frame": 44,
+    "attempted_val": 90.33,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "explain",
+    "joint": "LeftHandMiddle1",
+    "frame": 44,
+    "attempted_val": 92.22,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "explain",
+    "joint": "LeftHandRing1",
+    "frame": 44,
+    "attempted_val": 92.94,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "explain",
+    "joint": "LeftHandPinky1",
+    "frame": 44,
+    "attempted_val": 99.5,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "explain",
+    "joint": "RightHandIndex2",
+    "frame": 44,
+    "attempted_val": 134.13,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "explain",
+    "joint": "RightHandMiddle2",
+    "frame": 44,
+    "attempted_val": 114.27,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "explain",
+    "joint": "RightHandIndex2",
+    "frame": 47,
+    "attempted_val": 116.5,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "explain",
+    "joint": "RightArm",
+    "frame": 48,
+    "attempted_val": -0.04,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "explain",
+    "joint": "LeftArm",
+    "frame": 49,
+    "attempted_val": -0.16,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "explain",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 49,
+    "attempted_val": -0.11,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "explain",
+    "joint": "RightArm",
+    "frame": 49,
+    "attempted_val": -0.02,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "explain",
+    "joint": "LeftArm",
+    "frame": 50,
+    "attempted_val": -0.15,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "explain",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 50,
+    "attempted_val": -0.15,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "explain",
+    "joint": "LeftArm",
+    "frame": 51,
+    "attempted_val": -0.21,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "explain",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 51,
+    "attempted_val": -0.27,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "explain",
+    "joint": "RightArm",
+    "frame": 51,
+    "attempted_val": -0.02,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "explain",
+    "joint": "LeftArm",
+    "frame": 52,
+    "attempted_val": -0.18,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "explain",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 52,
+    "attempted_val": -0.26,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "explain",
+    "joint": "RightArm",
+    "frame": 52,
+    "attempted_val": -0.02,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "explain",
+    "joint": "LeftArm",
+    "frame": 53,
+    "attempted_val": -0.14,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "explain",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 53,
+    "attempted_val": -0.23,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "explain",
+    "joint": "RightArm",
+    "frame": 53,
+    "attempted_val": -0.03,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "explain",
+    "joint": "LeftArm",
+    "frame": 54,
+    "attempted_val": -0.17,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "explain",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 54,
+    "attempted_val": -0.25,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "explain",
+    "joint": "RightArm",
+    "frame": 54,
+    "attempted_val": -0.03,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "explain",
+    "joint": "LeftArm",
+    "frame": 55,
+    "attempted_val": -0.14,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "explain",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 55,
+    "attempted_val": -0.24,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "explain",
+    "joint": "RightArm",
+    "frame": 55,
+    "attempted_val": -0.03,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "explain",
+    "joint": "LeftArm",
+    "frame": 56,
+    "attempted_val": -0.14,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "explain",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 56,
+    "attempted_val": -0.28,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "explain",
+    "joint": "RightArm",
+    "frame": 56,
+    "attempted_val": -0.05,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "explain",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 56,
+    "attempted_val": 0.1,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "explain",
+    "joint": "LeftArm",
+    "frame": 57,
+    "attempted_val": -0.17,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "explain",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 57,
+    "attempted_val": -0.31,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "explain",
+    "joint": "RightArm",
+    "frame": 57,
+    "attempted_val": -0.03,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "explain",
+    "joint": "LeftArm",
+    "frame": 58,
+    "attempted_val": -0.16,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "explain",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 58,
+    "attempted_val": -0.29,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "explain",
+    "joint": "RightArm",
+    "frame": 58,
+    "attempted_val": -0.04,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "explain",
+    "joint": "RightForeArm_SigningSpace",
+    "frame": 58,
+    "attempted_val": 0.09,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "explain",
+    "joint": "LeftArm",
+    "frame": 59,
+    "attempted_val": -0.16,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "explain",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 59,
+    "attempted_val": -0.28,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "explain",
+    "joint": "RightArm",
+    "frame": 59,
+    "attempted_val": -0.01,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "explain",
+    "joint": "LeftArm",
+    "frame": 60,
+    "attempted_val": -0.14,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "explain",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 60,
+    "attempted_val": -0.25,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "explain",
+    "joint": "RightArm",
+    "frame": 60,
+    "attempted_val": -0.0,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  }
+]
