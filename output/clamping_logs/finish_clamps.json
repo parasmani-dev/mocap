@@ -1,0 +1,570 @@
+[
+  {
+    "word": "finish",
+    "joint": "LeftHand_PalmNormalFlip",
+    "frame": 16,
+    "attempted_val": -0.61,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "finish",
+    "joint": "LeftHand_PalmNormalFlip",
+    "frame": 17,
+    "attempted_val": -0.98,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "finish",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 17,
+    "attempted_val": -0.63,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "finish",
+    "joint": "LeftHand_PalmNormalFlip",
+    "frame": 18,
+    "attempted_val": -0.99,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "finish",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 18,
+    "attempted_val": -0.75,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "finish",
+    "joint": "LeftHand_PalmNormalFlip",
+    "frame": 19,
+    "attempted_val": -0.99,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "finish",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 19,
+    "attempted_val": -0.95,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "finish",
+    "joint": "LeftHand_PalmNormalFlip",
+    "frame": 20,
+    "attempted_val": -0.96,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "finish",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 20,
+    "attempted_val": -1.0,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "finish",
+    "joint": "LeftHand_PalmNormalFlip",
+    "frame": 21,
+    "attempted_val": -0.97,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "finish",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 21,
+    "attempted_val": -0.27,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "finish",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 22,
+    "attempted_val": -0.98,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "finish",
+    "joint": "LeftHand_PalmNormalFlip",
+    "frame": 23,
+    "attempted_val": -0.87,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "finish",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 23,
+    "attempted_val": -0.56,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "finish",
+    "joint": "RightHandIndex1",
+    "frame": 23,
+    "attempted_val": 102.28,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "finish",
+    "joint": "RightHandMiddle1",
+    "frame": 23,
+    "attempted_val": 113.75,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "finish",
+    "joint": "RightHandRing1",
+    "frame": 23,
+    "attempted_val": 113.98,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "finish",
+    "joint": "RightHandPinky1",
+    "frame": 23,
+    "attempted_val": 107.23,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "finish",
+    "joint": "LeftHand_PalmNormalFlip",
+    "frame": 24,
+    "attempted_val": -0.99,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "finish",
+    "joint": "LeftHand_PalmNormalFlip",
+    "frame": 25,
+    "attempted_val": -0.98,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "finish",
+    "joint": "RightHandIndex2",
+    "frame": 25,
+    "attempted_val": 138.76,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "finish",
+    "joint": "RightHandMiddle2",
+    "frame": 25,
+    "attempted_val": 151.78,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "finish",
+    "joint": "RightHandRing2",
+    "frame": 25,
+    "attempted_val": 154.03,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "finish",
+    "joint": "RightHandPinky2",
+    "frame": 25,
+    "attempted_val": 144.91,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "finish",
+    "joint": "LeftHand_PalmNormalFlip",
+    "frame": 26,
+    "attempted_val": -0.96,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "finish",
+    "joint": "RightHandIndex2",
+    "frame": 26,
+    "attempted_val": 113.91,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "finish",
+    "joint": "RightHandMiddle2",
+    "frame": 26,
+    "attempted_val": 124.41,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "finish",
+    "joint": "RightHandRing2",
+    "frame": 26,
+    "attempted_val": 132.87,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "finish",
+    "joint": "RightHandPinky2",
+    "frame": 26,
+    "attempted_val": 129.4,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "finish",
+    "joint": "LeftHand_PalmNormalFlip",
+    "frame": 27,
+    "attempted_val": -0.98,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "finish",
+    "joint": "RightHandPinky3",
+    "frame": 27,
+    "attempted_val": 95.62,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "finish",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 28,
+    "attempted_val": -0.47,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "finish",
+    "joint": "RightHandIndex1",
+    "frame": 28,
+    "attempted_val": 105.04,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "finish",
+    "joint": "RightHandMiddle1",
+    "frame": 28,
+    "attempted_val": 111.84,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "finish",
+    "joint": "RightHandRing1",
+    "frame": 28,
+    "attempted_val": 108.89,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "finish",
+    "joint": "RightHandPinky1",
+    "frame": 28,
+    "attempted_val": 107.38,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "finish",
+    "joint": "LeftHand_PalmNormalFlip",
+    "frame": 29,
+    "attempted_val": -0.72,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "finish",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 29,
+    "attempted_val": -0.93,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "finish",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 30,
+    "attempted_val": -0.9,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "finish",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 31,
+    "attempted_val": -0.99,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "finish",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 32,
+    "attempted_val": -1.0,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "finish",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 33,
+    "attempted_val": -1.0,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "finish",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 34,
+    "attempted_val": -1.0,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "finish",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 35,
+    "attempted_val": -1.0,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "finish",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 36,
+    "attempted_val": -1.0,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "finish",
+    "joint": "LeftHandRing1",
+    "frame": 37,
+    "attempted_val": 91.4,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "finish",
+    "joint": "LeftHandPinky1",
+    "frame": 37,
+    "attempted_val": 94.37,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "finish",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 37,
+    "attempted_val": -0.91,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "finish",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 38,
+    "attempted_val": -0.44,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "finish",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 39,
+    "attempted_val": -0.96,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "finish",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 40,
+    "attempted_val": -0.98,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "finish",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 41,
+    "attempted_val": -0.95,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "finish",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 42,
+    "attempted_val": -1.0,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "finish",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 43,
+    "attempted_val": -1.0,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "finish",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 44,
+    "attempted_val": -1.0,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "finish",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 45,
+    "attempted_val": -1.0,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "finish",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 46,
+    "attempted_val": -1.0,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "finish",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 47,
+    "attempted_val": -1.0,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "finish",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 48,
+    "attempted_val": -1.0,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "finish",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 49,
+    "attempted_val": -1.0,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "finish",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 50,
+    "attempted_val": -1.0,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "finish",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 51,
+    "attempted_val": -1.0,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "finish",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 52,
+    "attempted_val": -1.0,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "finish",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 53,
+    "attempted_val": -1.0,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "finish",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 54,
+    "attempted_val": -1.0,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "finish",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 55,
+    "attempted_val": -1.0,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "finish",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 56,
+    "attempted_val": -1.0,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "finish",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 57,
+    "attempted_val": -1.0,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "finish",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 58,
+    "attempted_val": -1.0,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "finish",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 59,
+    "attempted_val": -1.0,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "finish",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 60,
+    "attempted_val": -1.0,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  }
+]

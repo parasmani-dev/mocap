@@ -1,0 +1,650 @@
+[
+  {
+    "word": "study",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 1,
+    "attempted_val": -0.21,
+    "clamped_val": 0.2,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "study",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 2,
+    "attempted_val": -0.22,
+    "clamped_val": 0.2,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "study",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 3,
+    "attempted_val": -0.21,
+    "clamped_val": 0.2,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "study",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 4,
+    "attempted_val": -0.22,
+    "clamped_val": 0.2,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "study",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 5,
+    "attempted_val": -0.21,
+    "clamped_val": 0.2,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "study",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 6,
+    "attempted_val": -0.23,
+    "clamped_val": 0.2,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "study",
+    "joint": "LeftArm",
+    "frame": 7,
+    "attempted_val": -0.15,
+    "clamped_val": -0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "study",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 7,
+    "attempted_val": -0.23,
+    "clamped_val": 0.2,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "study",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 11,
+    "attempted_val": -0.47,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "study",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 12,
+    "attempted_val": -1.0,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "study",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 13,
+    "attempted_val": -0.99,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "study",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 14,
+    "attempted_val": -1.0,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "study",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 15,
+    "attempted_val": -1.0,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "study",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 16,
+    "attempted_val": -1.0,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "study",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 17,
+    "attempted_val": -1.0,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "study",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 18,
+    "attempted_val": -1.0,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "study",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 19,
+    "attempted_val": -1.0,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "study",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 20,
+    "attempted_val": -1.0,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "study",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 21,
+    "attempted_val": -1.0,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "study",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 22,
+    "attempted_val": -1.0,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "study",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 23,
+    "attempted_val": -1.0,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "study",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 24,
+    "attempted_val": -1.0,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "study",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 25,
+    "attempted_val": -1.0,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "study",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 26,
+    "attempted_val": -1.0,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "study",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 27,
+    "attempted_val": -1.0,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "study",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 28,
+    "attempted_val": -1.0,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "study",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 29,
+    "attempted_val": -1.0,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "study",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 30,
+    "attempted_val": -1.0,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "study",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 31,
+    "attempted_val": -1.0,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "study",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 32,
+    "attempted_val": -1.0,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "study",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 33,
+    "attempted_val": -1.0,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "study",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 34,
+    "attempted_val": -0.99,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "study",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 35,
+    "attempted_val": -0.94,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "study",
+    "joint": "RightHandMiddle3",
+    "frame": 35,
+    "attempted_val": 111.85,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "study",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 36,
+    "attempted_val": -0.87,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "study",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 37,
+    "attempted_val": -0.99,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "study",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 38,
+    "attempted_val": -0.99,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "study",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 39,
+    "attempted_val": -0.71,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "study",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 40,
+    "attempted_val": -0.14,
+    "clamped_val": 0.2,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "study",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 40,
+    "attempted_val": -1.0,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "study",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 41,
+    "attempted_val": -0.24,
+    "clamped_val": 0.2,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "study",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 41,
+    "attempted_val": -1.0,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "study",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 42,
+    "attempted_val": -0.32,
+    "clamped_val": 0.2,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "study",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 42,
+    "attempted_val": -1.0,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "study",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 43,
+    "attempted_val": -0.31,
+    "clamped_val": 0.2,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "study",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 43,
+    "attempted_val": -1.0,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "study",
+    "joint": "LeftArm",
+    "frame": 44,
+    "attempted_val": -0.22,
+    "clamped_val": -0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "study",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 44,
+    "attempted_val": -0.32,
+    "clamped_val": 0.2,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "study",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 44,
+    "attempted_val": -1.0,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "study",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 45,
+    "attempted_val": -0.26,
+    "clamped_val": 0.2,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "study",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 45,
+    "attempted_val": -1.0,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "study",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 46,
+    "attempted_val": -0.25,
+    "clamped_val": 0.2,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "study",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 46,
+    "attempted_val": -1.0,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "study",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 47,
+    "attempted_val": -0.24,
+    "clamped_val": 0.2,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "study",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 47,
+    "attempted_val": -1.0,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "study",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 48,
+    "attempted_val": -0.24,
+    "clamped_val": 0.2,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "study",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 48,
+    "attempted_val": -1.0,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "study",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 49,
+    "attempted_val": -0.23,
+    "clamped_val": 0.2,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "study",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 49,
+    "attempted_val": -1.0,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "study",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 50,
+    "attempted_val": -0.17,
+    "clamped_val": 0.2,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "study",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 50,
+    "attempted_val": -1.0,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "study",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 51,
+    "attempted_val": -0.2,
+    "clamped_val": 0.2,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "study",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 51,
+    "attempted_val": -1.0,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "study",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 52,
+    "attempted_val": -0.2,
+    "clamped_val": 0.2,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "study",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 52,
+    "attempted_val": -1.0,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "study",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 53,
+    "attempted_val": -0.22,
+    "clamped_val": 0.2,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "study",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 53,
+    "attempted_val": -1.0,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "study",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 54,
+    "attempted_val": -0.16,
+    "clamped_val": 0.2,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "study",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 54,
+    "attempted_val": -1.0,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "study",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 55,
+    "attempted_val": -0.21,
+    "clamped_val": 0.2,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "study",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 55,
+    "attempted_val": -1.0,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "study",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 56,
+    "attempted_val": -0.21,
+    "clamped_val": 0.2,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "study",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 56,
+    "attempted_val": -1.0,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "study",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 57,
+    "attempted_val": -0.23,
+    "clamped_val": 0.2,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "study",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 57,
+    "attempted_val": -1.0,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "study",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 58,
+    "attempted_val": -0.24,
+    "clamped_val": 0.2,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "study",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 58,
+    "attempted_val": -1.0,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "study",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 59,
+    "attempted_val": -0.23,
+    "clamped_val": 0.2,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "study",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 59,
+    "attempted_val": -1.0,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "study",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 60,
+    "attempted_val": -0.19,
+    "clamped_val": 0.2,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "study",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 60,
+    "attempted_val": -1.0,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  }
+]

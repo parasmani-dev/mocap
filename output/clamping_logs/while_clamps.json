@@ -1,0 +1,3058 @@
+[
+  {
+    "word": "while",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 1,
+    "attempted_val": -0.28,
+    "clamped_val": 0.2,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandIndex2",
+    "frame": 1,
+    "attempted_val": 125.89,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandMiddle2",
+    "frame": 1,
+    "attempted_val": 154.48,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandRing2",
+    "frame": 1,
+    "attempted_val": 167.1,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandPinky2",
+    "frame": 1,
+    "attempted_val": 150.1,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 2,
+    "attempted_val": -0.25,
+    "clamped_val": 0.2,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandIndex2",
+    "frame": 2,
+    "attempted_val": 125.89,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandMiddle2",
+    "frame": 2,
+    "attempted_val": 154.48,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandRing2",
+    "frame": 2,
+    "attempted_val": 167.1,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandPinky2",
+    "frame": 2,
+    "attempted_val": 150.1,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 3,
+    "attempted_val": -0.25,
+    "clamped_val": 0.2,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandIndex2",
+    "frame": 3,
+    "attempted_val": 125.89,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandMiddle2",
+    "frame": 3,
+    "attempted_val": 154.48,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandRing2",
+    "frame": 3,
+    "attempted_val": 167.1,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandPinky2",
+    "frame": 3,
+    "attempted_val": 150.1,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 4,
+    "attempted_val": -0.26,
+    "clamped_val": 0.2,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandIndex2",
+    "frame": 4,
+    "attempted_val": 125.89,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandMiddle2",
+    "frame": 4,
+    "attempted_val": 154.48,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandRing2",
+    "frame": 4,
+    "attempted_val": 167.1,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandPinky2",
+    "frame": 4,
+    "attempted_val": 150.1,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 5,
+    "attempted_val": -0.26,
+    "clamped_val": 0.2,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandIndex2",
+    "frame": 5,
+    "attempted_val": 125.89,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandMiddle2",
+    "frame": 5,
+    "attempted_val": 154.48,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandRing2",
+    "frame": 5,
+    "attempted_val": 167.1,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandPinky2",
+    "frame": 5,
+    "attempted_val": 150.1,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 6,
+    "attempted_val": -0.23,
+    "clamped_val": 0.2,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandIndex2",
+    "frame": 6,
+    "attempted_val": 125.89,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandMiddle2",
+    "frame": 6,
+    "attempted_val": 154.48,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandRing2",
+    "frame": 6,
+    "attempted_val": 167.1,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandPinky2",
+    "frame": 6,
+    "attempted_val": 150.1,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 7,
+    "attempted_val": -0.25,
+    "clamped_val": 0.2,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandIndex2",
+    "frame": 7,
+    "attempted_val": 125.89,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandMiddle2",
+    "frame": 7,
+    "attempted_val": 154.48,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandRing2",
+    "frame": 7,
+    "attempted_val": 167.1,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandPinky2",
+    "frame": 7,
+    "attempted_val": 150.1,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 8,
+    "attempted_val": -0.27,
+    "clamped_val": 0.2,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandIndex2",
+    "frame": 8,
+    "attempted_val": 125.89,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandMiddle2",
+    "frame": 8,
+    "attempted_val": 154.48,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandRing2",
+    "frame": 8,
+    "attempted_val": 167.1,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandPinky2",
+    "frame": 8,
+    "attempted_val": 150.1,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 9,
+    "attempted_val": -0.27,
+    "clamped_val": 0.2,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandIndex2",
+    "frame": 9,
+    "attempted_val": 125.89,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandMiddle2",
+    "frame": 9,
+    "attempted_val": 154.48,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandRing2",
+    "frame": 9,
+    "attempted_val": 167.1,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandPinky2",
+    "frame": 9,
+    "attempted_val": 150.1,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 10,
+    "attempted_val": -0.26,
+    "clamped_val": 0.2,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandIndex2",
+    "frame": 10,
+    "attempted_val": 125.89,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandMiddle2",
+    "frame": 10,
+    "attempted_val": 154.48,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandRing2",
+    "frame": 10,
+    "attempted_val": 167.1,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandPinky2",
+    "frame": 10,
+    "attempted_val": 150.1,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 11,
+    "attempted_val": -0.16,
+    "clamped_val": 0.2,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandIndex2",
+    "frame": 11,
+    "attempted_val": 125.89,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandMiddle2",
+    "frame": 11,
+    "attempted_val": 154.48,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandRing2",
+    "frame": 11,
+    "attempted_val": 167.1,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandPinky2",
+    "frame": 11,
+    "attempted_val": 150.1,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandIndex2",
+    "frame": 12,
+    "attempted_val": 125.89,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandMiddle2",
+    "frame": 12,
+    "attempted_val": 154.48,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandRing2",
+    "frame": 12,
+    "attempted_val": 167.1,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandPinky2",
+    "frame": 12,
+    "attempted_val": 150.1,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandIndex2",
+    "frame": 14,
+    "attempted_val": 117.7,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandMiddle2",
+    "frame": 14,
+    "attempted_val": 154.8,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandRing2",
+    "frame": 14,
+    "attempted_val": 161.5,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandPinky2",
+    "frame": 14,
+    "attempted_val": 161.27,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandRing3",
+    "frame": 14,
+    "attempted_val": 97.16,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandMiddle2",
+    "frame": 15,
+    "attempted_val": 130.37,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandRing2",
+    "frame": 15,
+    "attempted_val": 151.73,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandPinky2",
+    "frame": 15,
+    "attempted_val": 151.58,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandMiddle1",
+    "frame": 15,
+    "attempted_val": 102.91,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandRing1",
+    "frame": 15,
+    "attempted_val": 107.64,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandPinky1",
+    "frame": 15,
+    "attempted_val": 110.93,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandMiddle2",
+    "frame": 16,
+    "attempted_val": 141.82,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandRing2",
+    "frame": 16,
+    "attempted_val": 154.83,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandPinky2",
+    "frame": 16,
+    "attempted_val": 142.9,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandMiddle1",
+    "frame": 16,
+    "attempted_val": 91.8,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandRing1",
+    "frame": 16,
+    "attempted_val": 94.41,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandPinky1",
+    "frame": 16,
+    "attempted_val": 94.66,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandMiddle2",
+    "frame": 17,
+    "attempted_val": 147.8,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandRing2",
+    "frame": 17,
+    "attempted_val": 150.31,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandMiddle2",
+    "frame": 18,
+    "attempted_val": 151.18,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandRing2",
+    "frame": 18,
+    "attempted_val": 146.77,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandPinky3",
+    "frame": 18,
+    "attempted_val": 101.05,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandRing1",
+    "frame": 18,
+    "attempted_val": 91.91,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandPinky1",
+    "frame": 18,
+    "attempted_val": 92.11,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandIndex3",
+    "frame": 19,
+    "attempted_val": 143.36,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandMiddle3",
+    "frame": 19,
+    "attempted_val": 112.06,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandPinky3",
+    "frame": 19,
+    "attempted_val": 117.83,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandMiddle1",
+    "frame": 19,
+    "attempted_val": 92.18,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandRing1",
+    "frame": 19,
+    "attempted_val": 96.12,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandRing3",
+    "frame": 19,
+    "attempted_val": 94.2,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandPinky1",
+    "frame": 19,
+    "attempted_val": 97.01,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandPinky3",
+    "frame": 19,
+    "attempted_val": 104.62,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandMiddle3",
+    "frame": 21,
+    "attempted_val": 94.86,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandRing3",
+    "frame": 21,
+    "attempted_val": 144.65,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandMiddle1",
+    "frame": 21,
+    "attempted_val": 98.39,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandRing1",
+    "frame": 21,
+    "attempted_val": 101.33,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandRing3",
+    "frame": 21,
+    "attempted_val": 92.25,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandPinky1",
+    "frame": 21,
+    "attempted_val": 97.16,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandMiddle1",
+    "frame": 22,
+    "attempted_val": 121.99,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandRing1",
+    "frame": 22,
+    "attempted_val": 124.66,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandPinky1",
+    "frame": 22,
+    "attempted_val": 125.29,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandMiddle1",
+    "frame": 22,
+    "attempted_val": 98.06,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandRing1",
+    "frame": 22,
+    "attempted_val": 102.14,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandPinky1",
+    "frame": 22,
+    "attempted_val": 101.16,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandMiddle1",
+    "frame": 23,
+    "attempted_val": 130.86,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandRing1",
+    "frame": 23,
+    "attempted_val": 131.91,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandPinky1",
+    "frame": 23,
+    "attempted_val": 131.12,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandMiddle1",
+    "frame": 23,
+    "attempted_val": 111.93,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandRing1",
+    "frame": 23,
+    "attempted_val": 114.33,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandRing3",
+    "frame": 23,
+    "attempted_val": 99.21,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandPinky1",
+    "frame": 23,
+    "attempted_val": 112.37,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandPinky3",
+    "frame": 23,
+    "attempted_val": 107.8,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandMiddle1",
+    "frame": 24,
+    "attempted_val": 129.91,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandRing1",
+    "frame": 24,
+    "attempted_val": 131.21,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandRing3",
+    "frame": 24,
+    "attempted_val": 95.33,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandPinky1",
+    "frame": 24,
+    "attempted_val": 129.77,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandPinky3",
+    "frame": 24,
+    "attempted_val": 102.85,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandMiddle1",
+    "frame": 24,
+    "attempted_val": 113.54,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandRing1",
+    "frame": 24,
+    "attempted_val": 115.11,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandPinky1",
+    "frame": 24,
+    "attempted_val": 113.11,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandMiddle1",
+    "frame": 25,
+    "attempted_val": 123.43,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandRing1",
+    "frame": 25,
+    "attempted_val": 124.25,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandRing3",
+    "frame": 25,
+    "attempted_val": 120.91,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandPinky1",
+    "frame": 25,
+    "attempted_val": 122.27,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandPinky3",
+    "frame": 25,
+    "attempted_val": 138.63,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandMiddle1",
+    "frame": 25,
+    "attempted_val": 103.87,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandRing1",
+    "frame": 25,
+    "attempted_val": 106.11,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandRing3",
+    "frame": 25,
+    "attempted_val": 124.66,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandPinky1",
+    "frame": 25,
+    "attempted_val": 105.35,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandPinky3",
+    "frame": 25,
+    "attempted_val": 126.18,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandMiddle1",
+    "frame": 26,
+    "attempted_val": 125.44,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandMiddle3",
+    "frame": 26,
+    "attempted_val": 113.03,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandRing1",
+    "frame": 26,
+    "attempted_val": 126.34,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandRing3",
+    "frame": 26,
+    "attempted_val": 141.35,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandPinky1",
+    "frame": 26,
+    "attempted_val": 124.46,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandPinky3",
+    "frame": 26,
+    "attempted_val": 144.63,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandMiddle1",
+    "frame": 26,
+    "attempted_val": 101.96,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandRing1",
+    "frame": 26,
+    "attempted_val": 103.94,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandRing3",
+    "frame": 26,
+    "attempted_val": 127.6,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandPinky1",
+    "frame": 26,
+    "attempted_val": 102.72,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandPinky3",
+    "frame": 26,
+    "attempted_val": 134.92,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandMiddle1",
+    "frame": 27,
+    "attempted_val": 126.48,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandMiddle3",
+    "frame": 27,
+    "attempted_val": 91.56,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandRing1",
+    "frame": 27,
+    "attempted_val": 127.25,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandRing3",
+    "frame": 27,
+    "attempted_val": 125.89,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandPinky1",
+    "frame": 27,
+    "attempted_val": 125.52,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandPinky3",
+    "frame": 27,
+    "attempted_val": 141.89,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandMiddle1",
+    "frame": 27,
+    "attempted_val": 106.87,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandMiddle3",
+    "frame": 27,
+    "attempted_val": 90.65,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandRing1",
+    "frame": 27,
+    "attempted_val": 108.34,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandRing3",
+    "frame": 27,
+    "attempted_val": 117.4,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandPinky1",
+    "frame": 27,
+    "attempted_val": 106.34,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandPinky3",
+    "frame": 27,
+    "attempted_val": 123.38,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandMiddle1",
+    "frame": 28,
+    "attempted_val": 118.7,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandMiddle3",
+    "frame": 28,
+    "attempted_val": 176.06,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandRing1",
+    "frame": 28,
+    "attempted_val": 120.24,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandPinky1",
+    "frame": 28,
+    "attempted_val": 117.97,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandMiddle1",
+    "frame": 28,
+    "attempted_val": 109.83,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandRing1",
+    "frame": 28,
+    "attempted_val": 111.46,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandRing3",
+    "frame": 28,
+    "attempted_val": 99.48,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandPinky1",
+    "frame": 28,
+    "attempted_val": 110.44,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandMiddle1",
+    "frame": 29,
+    "attempted_val": 111.17,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandRing1",
+    "frame": 29,
+    "attempted_val": 113.18,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandPinky1",
+    "frame": 29,
+    "attempted_val": 112.26,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandPinky3",
+    "frame": 29,
+    "attempted_val": 92.57,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandMiddle3",
+    "frame": 29,
+    "attempted_val": 162.68,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandRing1",
+    "frame": 29,
+    "attempted_val": 90.51,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandPinky1",
+    "frame": 29,
+    "attempted_val": 90.51,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandMiddle1",
+    "frame": 30,
+    "attempted_val": 109.25,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandRing1",
+    "frame": 30,
+    "attempted_val": 111.13,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandPinky1",
+    "frame": 30,
+    "attempted_val": 111.27,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandMiddle3",
+    "frame": 30,
+    "attempted_val": 143.18,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandRing2",
+    "frame": 30,
+    "attempted_val": 135.17,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandPinky2",
+    "frame": 30,
+    "attempted_val": 136.3,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandMiddle1",
+    "frame": 31,
+    "attempted_val": 109.5,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandMiddle3",
+    "frame": 31,
+    "attempted_val": 122.26,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandRing1",
+    "frame": 31,
+    "attempted_val": 111.01,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandRing2",
+    "frame": 31,
+    "attempted_val": 121.03,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandPinky1",
+    "frame": 31,
+    "attempted_val": 109.42,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandMiddle3",
+    "frame": 31,
+    "attempted_val": 146.04,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandRing2",
+    "frame": 31,
+    "attempted_val": 134.84,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandPinky2",
+    "frame": 31,
+    "attempted_val": 147.68,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandMiddle1",
+    "frame": 32,
+    "attempted_val": 112.97,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandMiddle3",
+    "frame": 32,
+    "attempted_val": 105.59,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandRing1",
+    "frame": 32,
+    "attempted_val": 114.46,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandRing3",
+    "frame": 32,
+    "attempted_val": 95.03,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandPinky1",
+    "frame": 32,
+    "attempted_val": 113.77,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandMiddle3",
+    "frame": 32,
+    "attempted_val": 138.08,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandRing2",
+    "frame": 32,
+    "attempted_val": 153.19,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandPinky2",
+    "frame": 32,
+    "attempted_val": 146.56,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandMiddle1",
+    "frame": 33,
+    "attempted_val": 102.79,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandMiddle3",
+    "frame": 33,
+    "attempted_val": 104.79,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandRing1",
+    "frame": 33,
+    "attempted_val": 105.31,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandPinky1",
+    "frame": 33,
+    "attempted_val": 103.41,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandMiddle3",
+    "frame": 33,
+    "attempted_val": 126.47,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandRing2",
+    "frame": 33,
+    "attempted_val": 122.42,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandMiddle1",
+    "frame": 34,
+    "attempted_val": 104.67,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandRing1",
+    "frame": 34,
+    "attempted_val": 109.82,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandPinky1",
+    "frame": 34,
+    "attempted_val": 109.19,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandRing3",
+    "frame": 34,
+    "attempted_val": 121.13,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandPinky3",
+    "frame": 34,
+    "attempted_val": 112.46,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandMiddle1",
+    "frame": 35,
+    "attempted_val": 101.53,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandRing1",
+    "frame": 35,
+    "attempted_val": 106.04,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandPinky1",
+    "frame": 35,
+    "attempted_val": 105.23,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandRing1",
+    "frame": 35,
+    "attempted_val": 90.66,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandRing3",
+    "frame": 35,
+    "attempted_val": 127.19,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandPinky1",
+    "frame": 35,
+    "attempted_val": 92.6,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandPinky3",
+    "frame": 35,
+    "attempted_val": 124.29,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandMiddle3",
+    "frame": 36,
+    "attempted_val": 145.57,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandPinky3",
+    "frame": 36,
+    "attempted_val": 128.17,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandMiddle3",
+    "frame": 36,
+    "attempted_val": 144.18,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandPinky3",
+    "frame": 36,
+    "attempted_val": 100.15,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandMiddle1",
+    "frame": 37,
+    "attempted_val": 102.63,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandMiddle3",
+    "frame": 37,
+    "attempted_val": 123.26,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandRing1",
+    "frame": 37,
+    "attempted_val": 104.9,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandPinky1",
+    "frame": 37,
+    "attempted_val": 103.0,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandMiddle3",
+    "frame": 37,
+    "attempted_val": 138.22,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandRing3",
+    "frame": 37,
+    "attempted_val": 114.33,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandPinky3",
+    "frame": 37,
+    "attempted_val": 120.72,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHand_PalmNormalFlip",
+    "frame": 38,
+    "attempted_val": -0.24,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandRing3",
+    "frame": 38,
+    "attempted_val": 115.44,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandPinky3",
+    "frame": 38,
+    "attempted_val": 136.95,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandRing3",
+    "frame": 38,
+    "attempted_val": 128.15,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandPinky3",
+    "frame": 38,
+    "attempted_val": 135.39,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandMiddle1",
+    "frame": 39,
+    "attempted_val": 109.39,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandMiddle3",
+    "frame": 39,
+    "attempted_val": 127.58,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandRing1",
+    "frame": 39,
+    "attempted_val": 111.53,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandPinky1",
+    "frame": 39,
+    "attempted_val": 109.13,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandPinky3",
+    "frame": 39,
+    "attempted_val": 91.21,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandRing1",
+    "frame": 39,
+    "attempted_val": 91.04,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandRing3",
+    "frame": 39,
+    "attempted_val": 126.64,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandPinky1",
+    "frame": 39,
+    "attempted_val": 93.3,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandPinky3",
+    "frame": 39,
+    "attempted_val": 142.71,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandMiddle1",
+    "frame": 40,
+    "attempted_val": 109.37,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandMiddle3",
+    "frame": 40,
+    "attempted_val": 156.31,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandRing1",
+    "frame": 40,
+    "attempted_val": 111.8,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandRing3",
+    "frame": 40,
+    "attempted_val": 111.21,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandPinky1",
+    "frame": 40,
+    "attempted_val": 110.01,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandPinky3",
+    "frame": 40,
+    "attempted_val": 113.11,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandMiddle1",
+    "frame": 40,
+    "attempted_val": 98.2,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandRing1",
+    "frame": 40,
+    "attempted_val": 101.24,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandRing3",
+    "frame": 40,
+    "attempted_val": 133.25,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandPinky1",
+    "frame": 40,
+    "attempted_val": 101.74,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandPinky3",
+    "frame": 40,
+    "attempted_val": 114.52,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandMiddle1",
+    "frame": 41,
+    "attempted_val": 117.84,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandRing1",
+    "frame": 41,
+    "attempted_val": 118.39,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandPinky1",
+    "frame": 41,
+    "attempted_val": 119.15,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandMiddle1",
+    "frame": 41,
+    "attempted_val": 114.23,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandMiddle3",
+    "frame": 41,
+    "attempted_val": 111.44,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandRing1",
+    "frame": 41,
+    "attempted_val": 115.39,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandRing3",
+    "frame": 41,
+    "attempted_val": 121.42,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandPinky1",
+    "frame": 41,
+    "attempted_val": 114.07,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandMiddle1",
+    "frame": 42,
+    "attempted_val": 120.62,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandRing1",
+    "frame": 42,
+    "attempted_val": 120.87,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandPinky1",
+    "frame": 42,
+    "attempted_val": 122.77,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandMiddle1",
+    "frame": 42,
+    "attempted_val": 114.65,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandMiddle3",
+    "frame": 42,
+    "attempted_val": 129.78,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandRing1",
+    "frame": 42,
+    "attempted_val": 115.44,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandRing2",
+    "frame": 42,
+    "attempted_val": 125.99,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandPinky1",
+    "frame": 42,
+    "attempted_val": 113.59,
+    "clamped_val": 90.0,
+    "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandMiddle3",
+    "frame": 43,
+    "attempted_val": 112.89,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandRing2",
+    "frame": 43,
+    "attempted_val": 131.78,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandPinky2",
+    "frame": 43,
+    "attempted_val": 123.94,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandIndex2",
+    "frame": 43,
+    "attempted_val": 151.03,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandMiddle2",
+    "frame": 43,
+    "attempted_val": 154.19,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandRing2",
+    "frame": 43,
+    "attempted_val": 155.15,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandPinky2",
+    "frame": 43,
+    "attempted_val": 151.91,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandMiddle2",
+    "frame": 44,
+    "attempted_val": 150.41,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandRing2",
+    "frame": 44,
+    "attempted_val": 152.66,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandPinky2",
+    "frame": 44,
+    "attempted_val": 156.54,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandMiddle3",
+    "frame": 45,
+    "attempted_val": 127.23,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandRing3",
+    "frame": 45,
+    "attempted_val": 122.09,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandPinky3",
+    "frame": 45,
+    "attempted_val": 92.13,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandMiddle2",
+    "frame": 45,
+    "attempted_val": 150.41,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandRing2",
+    "frame": 45,
+    "attempted_val": 152.66,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandPinky2",
+    "frame": 45,
+    "attempted_val": 156.54,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 46,
+    "attempted_val": -0.11,
+    "clamped_val": 0.2,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandMiddle3",
+    "frame": 46,
+    "attempted_val": 127.23,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandRing3",
+    "frame": 46,
+    "attempted_val": 122.09,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandPinky3",
+    "frame": 46,
+    "attempted_val": 92.13,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandMiddle2",
+    "frame": 46,
+    "attempted_val": 150.41,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandRing2",
+    "frame": 46,
+    "attempted_val": 152.66,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandPinky2",
+    "frame": 46,
+    "attempted_val": 156.54,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftArm",
+    "frame": 47,
+    "attempted_val": -0.16,
+    "clamped_val": -0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "while",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 47,
+    "attempted_val": -0.23,
+    "clamped_val": 0.2,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandMiddle3",
+    "frame": 47,
+    "attempted_val": 127.23,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandRing3",
+    "frame": 47,
+    "attempted_val": 122.09,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandPinky3",
+    "frame": 47,
+    "attempted_val": 92.13,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandMiddle2",
+    "frame": 47,
+    "attempted_val": 150.41,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandRing2",
+    "frame": 47,
+    "attempted_val": 152.66,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandPinky2",
+    "frame": 47,
+    "attempted_val": 156.54,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftArm",
+    "frame": 48,
+    "attempted_val": -0.16,
+    "clamped_val": -0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "while",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 48,
+    "attempted_val": -0.28,
+    "clamped_val": 0.2,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandMiddle3",
+    "frame": 48,
+    "attempted_val": 127.23,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandRing3",
+    "frame": 48,
+    "attempted_val": 122.09,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandPinky3",
+    "frame": 48,
+    "attempted_val": 92.13,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandMiddle2",
+    "frame": 48,
+    "attempted_val": 150.41,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandRing2",
+    "frame": 48,
+    "attempted_val": 152.66,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandPinky2",
+    "frame": 48,
+    "attempted_val": 156.54,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 49,
+    "attempted_val": -0.25,
+    "clamped_val": 0.2,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandMiddle3",
+    "frame": 49,
+    "attempted_val": 127.23,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandRing3",
+    "frame": 49,
+    "attempted_val": 122.09,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandPinky3",
+    "frame": 49,
+    "attempted_val": 92.13,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandMiddle2",
+    "frame": 49,
+    "attempted_val": 150.41,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandRing2",
+    "frame": 49,
+    "attempted_val": 152.66,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandPinky2",
+    "frame": 49,
+    "attempted_val": 156.54,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 50,
+    "attempted_val": -0.27,
+    "clamped_val": 0.2,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandMiddle3",
+    "frame": 50,
+    "attempted_val": 127.23,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandRing3",
+    "frame": 50,
+    "attempted_val": 122.09,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandPinky3",
+    "frame": 50,
+    "attempted_val": 92.13,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandMiddle2",
+    "frame": 50,
+    "attempted_val": 150.41,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandRing2",
+    "frame": 50,
+    "attempted_val": 152.66,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandPinky2",
+    "frame": 50,
+    "attempted_val": 156.54,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 51,
+    "attempted_val": -0.23,
+    "clamped_val": 0.2,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandMiddle3",
+    "frame": 51,
+    "attempted_val": 127.23,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandRing3",
+    "frame": 51,
+    "attempted_val": 122.09,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandPinky3",
+    "frame": 51,
+    "attempted_val": 92.13,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandMiddle2",
+    "frame": 51,
+    "attempted_val": 150.41,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandRing2",
+    "frame": 51,
+    "attempted_val": 152.66,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandPinky2",
+    "frame": 51,
+    "attempted_val": 156.54,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 52,
+    "attempted_val": -0.25,
+    "clamped_val": 0.2,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandMiddle3",
+    "frame": 52,
+    "attempted_val": 127.23,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandRing3",
+    "frame": 52,
+    "attempted_val": 122.09,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandPinky3",
+    "frame": 52,
+    "attempted_val": 92.13,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandMiddle2",
+    "frame": 52,
+    "attempted_val": 150.41,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandRing2",
+    "frame": 52,
+    "attempted_val": 152.66,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandPinky2",
+    "frame": 52,
+    "attempted_val": 156.54,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 53,
+    "attempted_val": -0.24,
+    "clamped_val": 0.2,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandMiddle3",
+    "frame": 53,
+    "attempted_val": 127.23,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandRing3",
+    "frame": 53,
+    "attempted_val": 122.09,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandPinky3",
+    "frame": 53,
+    "attempted_val": 92.13,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandMiddle2",
+    "frame": 53,
+    "attempted_val": 150.41,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandRing2",
+    "frame": 53,
+    "attempted_val": 152.66,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandPinky2",
+    "frame": 53,
+    "attempted_val": 156.54,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 54,
+    "attempted_val": -0.23,
+    "clamped_val": 0.2,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandMiddle3",
+    "frame": 54,
+    "attempted_val": 127.23,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandRing3",
+    "frame": 54,
+    "attempted_val": 122.09,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandPinky3",
+    "frame": 54,
+    "attempted_val": 92.13,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandMiddle2",
+    "frame": 54,
+    "attempted_val": 150.41,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandRing2",
+    "frame": 54,
+    "attempted_val": 152.66,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandPinky2",
+    "frame": 54,
+    "attempted_val": 156.54,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 55,
+    "attempted_val": -0.22,
+    "clamped_val": 0.2,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandMiddle3",
+    "frame": 55,
+    "attempted_val": 127.23,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandRing3",
+    "frame": 55,
+    "attempted_val": 122.09,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandPinky3",
+    "frame": 55,
+    "attempted_val": 92.13,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandMiddle2",
+    "frame": 55,
+    "attempted_val": 150.41,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandRing2",
+    "frame": 55,
+    "attempted_val": 152.66,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandPinky2",
+    "frame": 55,
+    "attempted_val": 156.54,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 56,
+    "attempted_val": -0.28,
+    "clamped_val": 0.2,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandMiddle3",
+    "frame": 56,
+    "attempted_val": 127.23,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandRing3",
+    "frame": 56,
+    "attempted_val": 122.09,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandPinky3",
+    "frame": 56,
+    "attempted_val": 92.13,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandMiddle2",
+    "frame": 56,
+    "attempted_val": 150.41,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandRing2",
+    "frame": 56,
+    "attempted_val": 152.66,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandPinky2",
+    "frame": 56,
+    "attempted_val": 156.54,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 57,
+    "attempted_val": -0.32,
+    "clamped_val": 0.2,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandMiddle3",
+    "frame": 57,
+    "attempted_val": 127.23,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandRing3",
+    "frame": 57,
+    "attempted_val": 122.09,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandPinky3",
+    "frame": 57,
+    "attempted_val": 92.13,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandMiddle2",
+    "frame": 57,
+    "attempted_val": 150.41,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandRing2",
+    "frame": 57,
+    "attempted_val": 152.66,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandPinky2",
+    "frame": 57,
+    "attempted_val": 156.54,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 58,
+    "attempted_val": -0.29,
+    "clamped_val": 0.2,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandMiddle3",
+    "frame": 58,
+    "attempted_val": 127.23,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandRing3",
+    "frame": 58,
+    "attempted_val": 122.09,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandPinky3",
+    "frame": 58,
+    "attempted_val": 92.13,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandMiddle2",
+    "frame": 58,
+    "attempted_val": 150.41,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandRing2",
+    "frame": 58,
+    "attempted_val": 152.66,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandPinky2",
+    "frame": 58,
+    "attempted_val": 156.54,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 59,
+    "attempted_val": -0.27,
+    "clamped_val": 0.2,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandMiddle3",
+    "frame": 59,
+    "attempted_val": 127.23,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandRing3",
+    "frame": 59,
+    "attempted_val": 122.09,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandPinky3",
+    "frame": 59,
+    "attempted_val": 92.13,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandMiddle2",
+    "frame": 59,
+    "attempted_val": 150.41,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandRing2",
+    "frame": 59,
+    "attempted_val": 152.66,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandPinky2",
+    "frame": 59,
+    "attempted_val": 156.54,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 60,
+    "attempted_val": -0.25,
+    "clamped_val": 0.2,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandMiddle3",
+    "frame": 60,
+    "attempted_val": 127.23,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandRing3",
+    "frame": 60,
+    "attempted_val": 122.09,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "LeftHandPinky3",
+    "frame": 60,
+    "attempted_val": 92.13,
+    "clamped_val": 90.0,
+    "reason": "FingerDIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandMiddle2",
+    "frame": 60,
+    "attempted_val": 150.41,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandRing2",
+    "frame": 60,
+    "attempted_val": 152.66,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "while",
+    "joint": "RightHandPinky2",
+    "frame": 60,
+    "attempted_val": 156.54,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  }
+]
