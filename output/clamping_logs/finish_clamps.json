@@ -1,11 +1,131 @@
 [
   {
     "word": "finish",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 1,
+    "attempted_val": -0.01,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "finish",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 2,
+    "attempted_val": 0.01,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "finish",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 3,
+    "attempted_val": 0.01,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "finish",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 4,
+    "attempted_val": 0.01,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "finish",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 5,
+    "attempted_val": 0.02,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "finish",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 6,
+    "attempted_val": 0.03,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "finish",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 7,
+    "attempted_val": 0.02,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "finish",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 8,
+    "attempted_val": 0.01,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "finish",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 9,
+    "attempted_val": -0.04,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "finish",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 10,
+    "attempted_val": -0.0,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "finish",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 11,
+    "attempted_val": 0.02,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "finish",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 12,
+    "attempted_val": 0.02,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "finish",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 13,
+    "attempted_val": -0.01,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "finish",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 14,
+    "attempted_val": -0.05,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "finish",
     "joint": "LeftHand_PalmNormalFlip",
     "frame": 16,
     "attempted_val": -0.61,
     "clamped_val": 1.0,
     "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "finish",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 17,
+    "attempted_val": 0.08,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
   },
   {
     "word": "finish",
@@ -433,11 +553,27 @@
   },
   {
     "word": "finish",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 44,
+    "attempted_val": 0.04,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "finish",
     "joint": "RightHand_PalmNormalFlip",
     "frame": 44,
     "attempted_val": -1.0,
     "clamped_val": 1.0,
     "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "finish",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 45,
+    "attempted_val": -0.04,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
   },
   {
     "word": "finish",
@@ -449,11 +585,27 @@
   },
   {
     "word": "finish",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 46,
+    "attempted_val": 0.0,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "finish",
     "joint": "RightHand_PalmNormalFlip",
     "frame": 46,
     "attempted_val": -1.0,
     "clamped_val": 1.0,
     "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "finish",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 47,
+    "attempted_val": 0.03,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
   },
   {
     "word": "finish",
@@ -465,11 +617,27 @@
   },
   {
     "word": "finish",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 48,
+    "attempted_val": 0.03,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "finish",
     "joint": "RightHand_PalmNormalFlip",
     "frame": 48,
     "attempted_val": -1.0,
     "clamped_val": 1.0,
     "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "finish",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 49,
+    "attempted_val": 0.06,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
   },
   {
     "word": "finish",
@@ -481,11 +649,27 @@
   },
   {
     "word": "finish",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 50,
+    "attempted_val": 0.02,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "finish",
     "joint": "RightHand_PalmNormalFlip",
     "frame": 50,
     "attempted_val": -1.0,
     "clamped_val": 1.0,
     "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "finish",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 51,
+    "attempted_val": 0.02,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
   },
   {
     "word": "finish",
@@ -497,11 +681,27 @@
   },
   {
     "word": "finish",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 52,
+    "attempted_val": 0.06,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "finish",
     "joint": "RightHand_PalmNormalFlip",
     "frame": 52,
     "attempted_val": -1.0,
     "clamped_val": 1.0,
     "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "finish",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 53,
+    "attempted_val": 0.02,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
   },
   {
     "word": "finish",
@@ -513,11 +713,27 @@
   },
   {
     "word": "finish",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 54,
+    "attempted_val": 0.01,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "finish",
     "joint": "RightHand_PalmNormalFlip",
     "frame": 54,
     "attempted_val": -1.0,
     "clamped_val": 1.0,
     "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "finish",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 55,
+    "attempted_val": -0.03,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
   },
   {
     "word": "finish",
@@ -529,11 +745,27 @@
   },
   {
     "word": "finish",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 56,
+    "attempted_val": -0.03,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "finish",
     "joint": "RightHand_PalmNormalFlip",
     "frame": 56,
     "attempted_val": -1.0,
     "clamped_val": 1.0,
     "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "finish",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 57,
+    "attempted_val": -0.01,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
   },
   {
     "word": "finish",
@@ -545,6 +777,14 @@
   },
   {
     "word": "finish",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 58,
+    "attempted_val": -0.0,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "finish",
     "joint": "RightHand_PalmNormalFlip",
     "frame": 58,
     "attempted_val": -1.0,
@@ -553,11 +793,27 @@
   },
   {
     "word": "finish",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 59,
+    "attempted_val": 0.01,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "finish",
     "joint": "RightHand_PalmNormalFlip",
     "frame": 59,
     "attempted_val": -1.0,
     "clamped_val": 1.0,
     "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "finish",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 60,
+    "attempted_val": 0.02,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
   },
   {
     "word": "finish",

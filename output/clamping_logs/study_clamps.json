@@ -1,50 +1,98 @@
 [
   {
     "word": "study",
+    "joint": "LeftArm",
+    "frame": 1,
+    "attempted_val": -0.08,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "study",
     "joint": "LeftForeArm_SigningSpace",
     "frame": 1,
     "attempted_val": -0.21,
-    "clamped_val": 0.2,
+    "clamped_val": 0.25,
     "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "study",
+    "joint": "LeftArm",
+    "frame": 2,
+    "attempted_val": -0.09,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
   },
   {
     "word": "study",
     "joint": "LeftForeArm_SigningSpace",
     "frame": 2,
     "attempted_val": -0.22,
-    "clamped_val": 0.2,
+    "clamped_val": 0.25,
     "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "study",
+    "joint": "LeftArm",
+    "frame": 3,
+    "attempted_val": -0.08,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
   },
   {
     "word": "study",
     "joint": "LeftForeArm_SigningSpace",
     "frame": 3,
     "attempted_val": -0.21,
-    "clamped_val": 0.2,
+    "clamped_val": 0.25,
     "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "study",
+    "joint": "LeftArm",
+    "frame": 4,
+    "attempted_val": -0.06,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
   },
   {
     "word": "study",
     "joint": "LeftForeArm_SigningSpace",
     "frame": 4,
     "attempted_val": -0.22,
-    "clamped_val": 0.2,
+    "clamped_val": 0.25,
     "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "study",
+    "joint": "LeftArm",
+    "frame": 5,
+    "attempted_val": -0.05,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
   },
   {
     "word": "study",
     "joint": "LeftForeArm_SigningSpace",
     "frame": 5,
     "attempted_val": -0.21,
-    "clamped_val": 0.2,
+    "clamped_val": 0.25,
     "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "study",
+    "joint": "LeftArm",
+    "frame": 6,
+    "attempted_val": -0.11,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
   },
   {
     "word": "study",
     "joint": "LeftForeArm_SigningSpace",
     "frame": 6,
     "attempted_val": -0.23,
-    "clamped_val": 0.2,
+    "clamped_val": 0.25,
     "reason": "ForearmBackwardClamp"
   },
   {
@@ -52,7 +100,7 @@
     "joint": "LeftArm",
     "frame": 7,
     "attempted_val": -0.15,
-    "clamped_val": -0.1,
+    "clamped_val": 0.1,
     "reason": "TorsoBackPenetration"
   },
   {
@@ -60,7 +108,23 @@
     "joint": "LeftForeArm_SigningSpace",
     "frame": 7,
     "attempted_val": -0.23,
-    "clamped_val": 0.2,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "study",
+    "joint": "LeftArm",
+    "frame": 8,
+    "attempted_val": -0.05,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "study",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 8,
+    "attempted_val": 0.08,
+    "clamped_val": 0.25,
     "reason": "ForearmBackwardClamp"
   },
   {
@@ -289,11 +353,27 @@
   },
   {
     "word": "study",
+    "joint": "LeftArm",
+    "frame": 38,
+    "attempted_val": -0.01,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "study",
     "joint": "RightHand_PalmNormalFlip",
     "frame": 38,
     "attempted_val": -0.99,
     "clamped_val": 1.0,
     "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "study",
+    "joint": "LeftArm",
+    "frame": 39,
+    "attempted_val": -0.03,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
   },
   {
     "word": "study",
@@ -305,10 +385,18 @@
   },
   {
     "word": "study",
+    "joint": "LeftArm",
+    "frame": 40,
+    "attempted_val": -0.09,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "study",
     "joint": "LeftForeArm_SigningSpace",
     "frame": 40,
     "attempted_val": -0.14,
-    "clamped_val": 0.2,
+    "clamped_val": 0.25,
     "reason": "ForearmBackwardClamp"
   },
   {
@@ -318,13 +406,21 @@
     "attempted_val": -1.0,
     "clamped_val": 1.0,
     "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "study",
+    "joint": "LeftArm",
+    "frame": 41,
+    "attempted_val": -0.13,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
   },
   {
     "word": "study",
     "joint": "LeftForeArm_SigningSpace",
     "frame": 41,
     "attempted_val": -0.24,
-    "clamped_val": 0.2,
+    "clamped_val": 0.25,
     "reason": "ForearmBackwardClamp"
   },
   {
@@ -337,11 +433,27 @@
   },
   {
     "word": "study",
+    "joint": "LeftArm",
+    "frame": 42,
+    "attempted_val": -0.15,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "study",
     "joint": "LeftForeArm_SigningSpace",
     "frame": 42,
     "attempted_val": -0.32,
-    "clamped_val": 0.2,
+    "clamped_val": 0.25,
     "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "study",
+    "joint": "RightArm",
+    "frame": 42,
+    "attempted_val": -0.03,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
   },
   {
     "word": "study",
@@ -353,11 +465,27 @@
   },
   {
     "word": "study",
+    "joint": "LeftArm",
+    "frame": 43,
+    "attempted_val": -0.14,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "study",
     "joint": "LeftForeArm_SigningSpace",
     "frame": 43,
     "attempted_val": -0.31,
-    "clamped_val": 0.2,
+    "clamped_val": 0.25,
     "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "study",
+    "joint": "RightArm",
+    "frame": 43,
+    "attempted_val": -0.04,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
   },
   {
     "word": "study",
@@ -372,7 +500,7 @@
     "joint": "LeftArm",
     "frame": 44,
     "attempted_val": -0.22,
-    "clamped_val": -0.1,
+    "clamped_val": 0.1,
     "reason": "TorsoBackPenetration"
   },
   {
@@ -380,8 +508,16 @@
     "joint": "LeftForeArm_SigningSpace",
     "frame": 44,
     "attempted_val": -0.32,
-    "clamped_val": 0.2,
+    "clamped_val": 0.25,
     "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "study",
+    "joint": "RightArm",
+    "frame": 44,
+    "attempted_val": -0.0,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
   },
   {
     "word": "study",
@@ -393,10 +529,18 @@
   },
   {
     "word": "study",
+    "joint": "LeftArm",
+    "frame": 45,
+    "attempted_val": -0.12,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "study",
     "joint": "LeftForeArm_SigningSpace",
     "frame": 45,
     "attempted_val": -0.26,
-    "clamped_val": 0.2,
+    "clamped_val": 0.25,
     "reason": "ForearmBackwardClamp"
   },
   {
@@ -406,13 +550,21 @@
     "attempted_val": -1.0,
     "clamped_val": 1.0,
     "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "study",
+    "joint": "LeftArm",
+    "frame": 46,
+    "attempted_val": -0.1,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
   },
   {
     "word": "study",
     "joint": "LeftForeArm_SigningSpace",
     "frame": 46,
     "attempted_val": -0.25,
-    "clamped_val": 0.2,
+    "clamped_val": 0.25,
     "reason": "ForearmBackwardClamp"
   },
   {
@@ -425,10 +577,18 @@
   },
   {
     "word": "study",
+    "joint": "LeftArm",
+    "frame": 47,
+    "attempted_val": -0.07,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "study",
     "joint": "LeftForeArm_SigningSpace",
     "frame": 47,
     "attempted_val": -0.24,
-    "clamped_val": 0.2,
+    "clamped_val": 0.25,
     "reason": "ForearmBackwardClamp"
   },
   {
@@ -441,10 +601,18 @@
   },
   {
     "word": "study",
+    "joint": "LeftArm",
+    "frame": 48,
+    "attempted_val": -0.04,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "study",
     "joint": "LeftForeArm_SigningSpace",
     "frame": 48,
     "attempted_val": -0.24,
-    "clamped_val": 0.2,
+    "clamped_val": 0.25,
     "reason": "ForearmBackwardClamp"
   },
   {
@@ -454,13 +622,21 @@
     "attempted_val": -1.0,
     "clamped_val": 1.0,
     "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "study",
+    "joint": "LeftArm",
+    "frame": 49,
+    "attempted_val": -0.05,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
   },
   {
     "word": "study",
     "joint": "LeftForeArm_SigningSpace",
     "frame": 49,
     "attempted_val": -0.23,
-    "clamped_val": 0.2,
+    "clamped_val": 0.25,
     "reason": "ForearmBackwardClamp"
   },
   {
@@ -476,7 +652,7 @@
     "joint": "LeftForeArm_SigningSpace",
     "frame": 50,
     "attempted_val": -0.17,
-    "clamped_val": 0.2,
+    "clamped_val": 0.25,
     "reason": "ForearmBackwardClamp"
   },
   {
@@ -489,10 +665,18 @@
   },
   {
     "word": "study",
+    "joint": "LeftArm",
+    "frame": 51,
+    "attempted_val": -0.1,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "study",
     "joint": "LeftForeArm_SigningSpace",
     "frame": 51,
     "attempted_val": -0.2,
-    "clamped_val": 0.2,
+    "clamped_val": 0.25,
     "reason": "ForearmBackwardClamp"
   },
   {
@@ -505,10 +689,18 @@
   },
   {
     "word": "study",
+    "joint": "LeftArm",
+    "frame": 52,
+    "attempted_val": -0.07,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "study",
     "joint": "LeftForeArm_SigningSpace",
     "frame": 52,
     "attempted_val": -0.2,
-    "clamped_val": 0.2,
+    "clamped_val": 0.25,
     "reason": "ForearmBackwardClamp"
   },
   {
@@ -518,13 +710,21 @@
     "attempted_val": -1.0,
     "clamped_val": 1.0,
     "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "study",
+    "joint": "LeftArm",
+    "frame": 53,
+    "attempted_val": -0.13,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
   },
   {
     "word": "study",
     "joint": "LeftForeArm_SigningSpace",
     "frame": 53,
     "attempted_val": -0.22,
-    "clamped_val": 0.2,
+    "clamped_val": 0.25,
     "reason": "ForearmBackwardClamp"
   },
   {
@@ -537,10 +737,18 @@
   },
   {
     "word": "study",
+    "joint": "LeftArm",
+    "frame": 54,
+    "attempted_val": -0.05,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "study",
     "joint": "LeftForeArm_SigningSpace",
     "frame": 54,
     "attempted_val": -0.16,
-    "clamped_val": 0.2,
+    "clamped_val": 0.25,
     "reason": "ForearmBackwardClamp"
   },
   {
@@ -553,10 +761,18 @@
   },
   {
     "word": "study",
+    "joint": "LeftArm",
+    "frame": 55,
+    "attempted_val": -0.08,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "study",
     "joint": "LeftForeArm_SigningSpace",
     "frame": 55,
     "attempted_val": -0.21,
-    "clamped_val": 0.2,
+    "clamped_val": 0.25,
     "reason": "ForearmBackwardClamp"
   },
   {
@@ -569,10 +785,18 @@
   },
   {
     "word": "study",
+    "joint": "LeftArm",
+    "frame": 56,
+    "attempted_val": -0.06,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "study",
     "joint": "LeftForeArm_SigningSpace",
     "frame": 56,
     "attempted_val": -0.21,
-    "clamped_val": 0.2,
+    "clamped_val": 0.25,
     "reason": "ForearmBackwardClamp"
   },
   {
@@ -582,13 +806,21 @@
     "attempted_val": -1.0,
     "clamped_val": 1.0,
     "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "study",
+    "joint": "LeftArm",
+    "frame": 57,
+    "attempted_val": -0.13,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
   },
   {
     "word": "study",
     "joint": "LeftForeArm_SigningSpace",
     "frame": 57,
     "attempted_val": -0.23,
-    "clamped_val": 0.2,
+    "clamped_val": 0.25,
     "reason": "ForearmBackwardClamp"
   },
   {
@@ -598,13 +830,21 @@
     "attempted_val": -1.0,
     "clamped_val": 1.0,
     "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "study",
+    "joint": "LeftArm",
+    "frame": 58,
+    "attempted_val": -0.1,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
   },
   {
     "word": "study",
     "joint": "LeftForeArm_SigningSpace",
     "frame": 58,
     "attempted_val": -0.24,
-    "clamped_val": 0.2,
+    "clamped_val": 0.25,
     "reason": "ForearmBackwardClamp"
   },
   {
@@ -617,10 +857,18 @@
   },
   {
     "word": "study",
+    "joint": "LeftArm",
+    "frame": 59,
+    "attempted_val": -0.09,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "study",
     "joint": "LeftForeArm_SigningSpace",
     "frame": 59,
     "attempted_val": -0.23,
-    "clamped_val": 0.2,
+    "clamped_val": 0.25,
     "reason": "ForearmBackwardClamp"
   },
   {
@@ -633,10 +881,18 @@
   },
   {
     "word": "study",
+    "joint": "LeftArm",
+    "frame": 60,
+    "attempted_val": -0.1,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "study",
     "joint": "LeftForeArm_SigningSpace",
     "frame": 60,
     "attempted_val": -0.19,
-    "clamped_val": 0.2,
+    "clamped_val": 0.25,
     "reason": "ForearmBackwardClamp"
   },
   {

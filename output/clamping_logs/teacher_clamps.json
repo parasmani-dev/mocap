@@ -4,7 +4,7 @@
     "joint": "LeftArm",
     "frame": 1,
     "attempted_val": -0.19,
-    "clamped_val": -0.1,
+    "clamped_val": 0.1,
     "reason": "TorsoBackPenetration"
   },
   {
@@ -12,8 +12,16 @@
     "joint": "LeftForeArm_SigningSpace",
     "frame": 1,
     "attempted_val": -0.31,
-    "clamped_val": 0.2,
+    "clamped_val": 0.25,
     "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "teacher",
+    "joint": "RightArm",
+    "frame": 1,
+    "attempted_val": -0.01,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
   },
   {
     "word": "teacher",
@@ -52,7 +60,7 @@
     "joint": "LeftArm",
     "frame": 2,
     "attempted_val": -0.19,
-    "clamped_val": -0.1,
+    "clamped_val": 0.1,
     "reason": "TorsoBackPenetration"
   },
   {
@@ -60,8 +68,16 @@
     "joint": "LeftForeArm_SigningSpace",
     "frame": 2,
     "attempted_val": -0.28,
-    "clamped_val": 0.2,
+    "clamped_val": 0.25,
     "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "teacher",
+    "joint": "RightArm",
+    "frame": 2,
+    "attempted_val": -0.0,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
   },
   {
     "word": "teacher",
@@ -100,7 +116,7 @@
     "joint": "LeftArm",
     "frame": 3,
     "attempted_val": -0.15,
-    "clamped_val": -0.1,
+    "clamped_val": 0.1,
     "reason": "TorsoBackPenetration"
   },
   {
@@ -108,7 +124,7 @@
     "joint": "LeftForeArm_SigningSpace",
     "frame": 3,
     "attempted_val": -0.25,
-    "clamped_val": 0.2,
+    "clamped_val": 0.25,
     "reason": "ForearmBackwardClamp"
   },
   {
@@ -145,10 +161,18 @@
   },
   {
     "word": "teacher",
+    "joint": "LeftArm",
+    "frame": 4,
+    "attempted_val": -0.13,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "teacher",
     "joint": "LeftForeArm_SigningSpace",
     "frame": 4,
     "attempted_val": -0.2,
-    "clamped_val": 0.2,
+    "clamped_val": 0.25,
     "reason": "ForearmBackwardClamp"
   },
   {
@@ -188,7 +212,7 @@
     "joint": "LeftArm",
     "frame": 5,
     "attempted_val": -0.16,
-    "clamped_val": -0.1,
+    "clamped_val": 0.1,
     "reason": "TorsoBackPenetration"
   },
   {
@@ -196,7 +220,7 @@
     "joint": "LeftForeArm_SigningSpace",
     "frame": 5,
     "attempted_val": -0.27,
-    "clamped_val": 0.2,
+    "clamped_val": 0.25,
     "reason": "ForearmBackwardClamp"
   },
   {
@@ -233,10 +257,18 @@
   },
   {
     "word": "teacher",
+    "joint": "LeftArm",
+    "frame": 6,
+    "attempted_val": -0.14,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "teacher",
     "joint": "LeftForeArm_SigningSpace",
     "frame": 6,
     "attempted_val": -0.22,
-    "clamped_val": 0.2,
+    "clamped_val": 0.25,
     "reason": "ForearmBackwardClamp"
   },
   {
@@ -276,7 +308,7 @@
     "joint": "LeftArm",
     "frame": 7,
     "attempted_val": -0.17,
-    "clamped_val": -0.1,
+    "clamped_val": 0.1,
     "reason": "TorsoBackPenetration"
   },
   {
@@ -284,7 +316,7 @@
     "joint": "LeftForeArm_SigningSpace",
     "frame": 7,
     "attempted_val": -0.27,
-    "clamped_val": 0.2,
+    "clamped_val": 0.25,
     "reason": "ForearmBackwardClamp"
   },
   {
@@ -321,10 +353,18 @@
   },
   {
     "word": "teacher",
+    "joint": "LeftArm",
+    "frame": 8,
+    "attempted_val": -0.14,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "teacher",
     "joint": "LeftForeArm_SigningSpace",
     "frame": 8,
     "attempted_val": -0.23,
-    "clamped_val": 0.2,
+    "clamped_val": 0.25,
     "reason": "ForearmBackwardClamp"
   },
   {
@@ -364,7 +404,7 @@
     "joint": "LeftArm",
     "frame": 9,
     "attempted_val": -0.16,
-    "clamped_val": -0.1,
+    "clamped_val": 0.1,
     "reason": "TorsoBackPenetration"
   },
   {
@@ -372,7 +412,7 @@
     "joint": "LeftForeArm_SigningSpace",
     "frame": 9,
     "attempted_val": -0.27,
-    "clamped_val": 0.2,
+    "clamped_val": 0.25,
     "reason": "ForearmBackwardClamp"
   },
   {
@@ -406,13 +446,21 @@
     "attempted_val": 141.49,
     "clamped_val": 110.0,
     "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "teacher",
+    "joint": "LeftArm",
+    "frame": 10,
+    "attempted_val": -0.13,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
   },
   {
     "word": "teacher",
     "joint": "LeftForeArm_SigningSpace",
     "frame": 10,
     "attempted_val": -0.22,
-    "clamped_val": 0.2,
+    "clamped_val": 0.25,
     "reason": "ForearmBackwardClamp"
   },
   {
@@ -446,14 +494,30 @@
     "attempted_val": 141.49,
     "clamped_val": 110.0,
     "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "teacher",
+    "joint": "LeftArm",
+    "frame": 11,
+    "attempted_val": -0.14,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
   },
   {
     "word": "teacher",
     "joint": "LeftForeArm_SigningSpace",
     "frame": 11,
     "attempted_val": -0.22,
-    "clamped_val": 0.2,
+    "clamped_val": 0.25,
     "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "teacher",
+    "joint": "RightArm",
+    "frame": 11,
+    "attempted_val": -0.01,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
   },
   {
     "word": "teacher",
@@ -492,7 +556,7 @@
     "joint": "LeftArm",
     "frame": 12,
     "attempted_val": -0.16,
-    "clamped_val": -0.1,
+    "clamped_val": 0.1,
     "reason": "TorsoBackPenetration"
   },
   {
@@ -500,7 +564,7 @@
     "joint": "LeftForeArm_SigningSpace",
     "frame": 12,
     "attempted_val": -0.24,
-    "clamped_val": 0.2,
+    "clamped_val": 0.25,
     "reason": "ForearmBackwardClamp"
   },
   {
@@ -537,6 +601,30 @@
   },
   {
     "word": "teacher",
+    "joint": "LeftArm",
+    "frame": 13,
+    "attempted_val": -0.13,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "teacher",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 13,
+    "attempted_val": -0.07,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "teacher",
+    "joint": "RightArm",
+    "frame": 13,
+    "attempted_val": -0.0,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "teacher",
     "joint": "RightHandIndex2",
     "frame": 13,
     "attempted_val": 153.42,
@@ -566,6 +654,14 @@
     "attempted_val": 141.49,
     "clamped_val": 110.0,
     "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "teacher",
+    "joint": "LeftArm",
+    "frame": 14,
+    "attempted_val": -0.05,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
   },
   {
     "word": "teacher",
@@ -598,6 +694,14 @@
     "attempted_val": 129.25,
     "clamped_val": 110.0,
     "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "teacher",
+    "joint": "LeftArm",
+    "frame": 15,
+    "attempted_val": -0.08,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
   },
   {
     "word": "teacher",
@@ -684,7 +788,7 @@
     "joint": "LeftArm",
     "frame": 17,
     "attempted_val": -0.21,
-    "clamped_val": -0.1,
+    "clamped_val": 0.1,
     "reason": "TorsoBackPenetration"
   },
   {
@@ -692,23 +796,39 @@
     "joint": "LeftForeArm_SigningSpace",
     "frame": 17,
     "attempted_val": -0.56,
-    "clamped_val": 0.2,
+    "clamped_val": 0.25,
     "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "teacher",
+    "joint": "LeftArm",
+    "frame": 18,
+    "attempted_val": -0.12,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
   },
   {
     "word": "teacher",
     "joint": "LeftForeArm_SigningSpace",
     "frame": 18,
     "attempted_val": -0.33,
-    "clamped_val": 0.2,
+    "clamped_val": 0.25,
     "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "teacher",
+    "joint": "LeftArm",
+    "frame": 19,
+    "attempted_val": -0.03,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
   },
   {
     "word": "teacher",
     "joint": "LeftForeArm_SigningSpace",
     "frame": 19,
     "attempted_val": -0.11,
-    "clamped_val": 0.2,
+    "clamped_val": 0.25,
     "reason": "ForearmBackwardClamp"
   },
   {
@@ -729,18 +849,34 @@
   },
   {
     "word": "teacher",
+    "joint": "LeftArm",
+    "frame": 22,
+    "attempted_val": -0.07,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "teacher",
     "joint": "LeftForeArm_SigningSpace",
     "frame": 22,
     "attempted_val": -0.2,
-    "clamped_val": 0.2,
+    "clamped_val": 0.25,
     "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "teacher",
+    "joint": "LeftArm",
+    "frame": 23,
+    "attempted_val": -0.14,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
   },
   {
     "word": "teacher",
     "joint": "LeftForeArm_SigningSpace",
     "frame": 23,
     "attempted_val": -0.4,
-    "clamped_val": 0.2,
+    "clamped_val": 0.25,
     "reason": "ForearmBackwardClamp"
   },
   {
@@ -833,6 +969,22 @@
   },
   {
     "word": "teacher",
+    "joint": "LeftArm",
+    "frame": 26,
+    "attempted_val": -0.01,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "teacher",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 26,
+    "attempted_val": -0.03,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "teacher",
     "joint": "LeftHandMiddle2",
     "frame": 26,
     "attempted_val": 130.12,
@@ -873,6 +1025,22 @@
   },
   {
     "word": "teacher",
+    "joint": "LeftArm",
+    "frame": 27,
+    "attempted_val": -0.02,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "teacher",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 27,
+    "attempted_val": -0.05,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "teacher",
     "joint": "LeftHandMiddle2",
     "frame": 27,
     "attempted_val": 138.69,
@@ -905,11 +1073,43 @@
   },
   {
     "word": "teacher",
+    "joint": "LeftArm",
+    "frame": 28,
+    "attempted_val": -0.01,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "teacher",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 28,
+    "attempted_val": -0.08,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "teacher",
     "joint": "LeftHandMiddle2",
     "frame": 28,
     "attempted_val": 112.53,
     "clamped_val": 110.0,
     "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "teacher",
+    "joint": "LeftArm",
+    "frame": 29,
+    "attempted_val": -0.02,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "teacher",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 29,
+    "attempted_val": 0.06,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
   },
   {
     "word": "teacher",
@@ -1140,7 +1340,23 @@
     "joint": "LeftArm",
     "frame": 38,
     "attempted_val": -0.2,
-    "clamped_val": -0.1,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "teacher",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 38,
+    "attempted_val": -0.08,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "teacher",
+    "joint": "RightArm",
+    "frame": 38,
+    "attempted_val": -0.01,
+    "clamped_val": 0.1,
     "reason": "TorsoBackPenetration"
   },
   {
@@ -1201,6 +1417,30 @@
   },
   {
     "word": "teacher",
+    "joint": "LeftArm",
+    "frame": 39,
+    "attempted_val": -0.13,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "teacher",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 39,
+    "attempted_val": -0.06,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "teacher",
+    "joint": "RightArm",
+    "frame": 39,
+    "attempted_val": -0.02,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "teacher",
     "joint": "LeftHandIndex2",
     "frame": 39,
     "attempted_val": 111.26,
@@ -1222,14 +1462,30 @@
     "attempted_val": 111.25,
     "clamped_val": 110.0,
     "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "teacher",
+    "joint": "LeftArm",
+    "frame": 40,
+    "attempted_val": -0.13,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
   },
   {
     "word": "teacher",
     "joint": "LeftForeArm_SigningSpace",
     "frame": 40,
     "attempted_val": -0.16,
-    "clamped_val": 0.2,
+    "clamped_val": 0.25,
     "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "teacher",
+    "joint": "RightArm",
+    "frame": 40,
+    "attempted_val": -0.01,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
   },
   {
     "word": "teacher",
@@ -1254,13 +1510,21 @@
     "attempted_val": 111.25,
     "clamped_val": 110.0,
     "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "teacher",
+    "joint": "LeftArm",
+    "frame": 41,
+    "attempted_val": -0.13,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
   },
   {
     "word": "teacher",
     "joint": "LeftForeArm_SigningSpace",
     "frame": 41,
     "attempted_val": -0.19,
-    "clamped_val": 0.2,
+    "clamped_val": 0.25,
     "reason": "ForearmBackwardClamp"
   },
   {
@@ -1289,10 +1553,18 @@
   },
   {
     "word": "teacher",
+    "joint": "LeftArm",
+    "frame": 42,
+    "attempted_val": -0.13,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "teacher",
     "joint": "LeftForeArm_SigningSpace",
     "frame": 42,
     "attempted_val": -0.2,
-    "clamped_val": 0.2,
+    "clamped_val": 0.25,
     "reason": "ForearmBackwardClamp"
   },
   {
@@ -1324,7 +1596,7 @@
     "joint": "LeftArm",
     "frame": 43,
     "attempted_val": -0.15,
-    "clamped_val": -0.1,
+    "clamped_val": 0.1,
     "reason": "TorsoBackPenetration"
   },
   {
@@ -1332,7 +1604,7 @@
     "joint": "LeftForeArm_SigningSpace",
     "frame": 43,
     "attempted_val": -0.21,
-    "clamped_val": 0.2,
+    "clamped_val": 0.25,
     "reason": "ForearmBackwardClamp"
   },
   {
@@ -1361,10 +1633,18 @@
   },
   {
     "word": "teacher",
+    "joint": "LeftArm",
+    "frame": 44,
+    "attempted_val": -0.14,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "teacher",
     "joint": "LeftForeArm_SigningSpace",
     "frame": 44,
     "attempted_val": -0.21,
-    "clamped_val": 0.2,
+    "clamped_val": 0.25,
     "reason": "ForearmBackwardClamp"
   },
   {
@@ -1396,7 +1676,7 @@
     "joint": "LeftArm",
     "frame": 45,
     "attempted_val": -0.2,
-    "clamped_val": -0.1,
+    "clamped_val": 0.1,
     "reason": "TorsoBackPenetration"
   },
   {
@@ -1404,8 +1684,16 @@
     "joint": "LeftForeArm_SigningSpace",
     "frame": 45,
     "attempted_val": -0.29,
-    "clamped_val": 0.2,
+    "clamped_val": 0.25,
     "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "teacher",
+    "joint": "RightArm",
+    "frame": 45,
+    "attempted_val": -0.02,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
   },
   {
     "word": "teacher",
@@ -1436,7 +1724,7 @@
     "joint": "LeftArm",
     "frame": 46,
     "attempted_val": -0.18,
-    "clamped_val": -0.1,
+    "clamped_val": 0.1,
     "reason": "TorsoBackPenetration"
   },
   {
@@ -1444,7 +1732,7 @@
     "joint": "LeftForeArm_SigningSpace",
     "frame": 46,
     "attempted_val": -0.28,
-    "clamped_val": 0.2,
+    "clamped_val": 0.25,
     "reason": "ForearmBackwardClamp"
   },
   {
@@ -1476,7 +1764,7 @@
     "joint": "LeftArm",
     "frame": 47,
     "attempted_val": -0.17,
-    "clamped_val": -0.1,
+    "clamped_val": 0.1,
     "reason": "TorsoBackPenetration"
   },
   {
@@ -1484,7 +1772,7 @@
     "joint": "LeftForeArm_SigningSpace",
     "frame": 47,
     "attempted_val": -0.26,
-    "clamped_val": 0.2,
+    "clamped_val": 0.25,
     "reason": "ForearmBackwardClamp"
   },
   {
@@ -1516,7 +1804,7 @@
     "joint": "LeftArm",
     "frame": 48,
     "attempted_val": -0.17,
-    "clamped_val": -0.1,
+    "clamped_val": 0.1,
     "reason": "TorsoBackPenetration"
   },
   {
@@ -1524,7 +1812,7 @@
     "joint": "LeftForeArm_SigningSpace",
     "frame": 48,
     "attempted_val": -0.27,
-    "clamped_val": 0.2,
+    "clamped_val": 0.25,
     "reason": "ForearmBackwardClamp"
   },
   {
@@ -1556,7 +1844,7 @@
     "joint": "LeftArm",
     "frame": 49,
     "attempted_val": -0.17,
-    "clamped_val": -0.1,
+    "clamped_val": 0.1,
     "reason": "TorsoBackPenetration"
   },
   {
@@ -1564,8 +1852,16 @@
     "joint": "LeftForeArm_SigningSpace",
     "frame": 49,
     "attempted_val": -0.29,
-    "clamped_val": 0.2,
+    "clamped_val": 0.25,
     "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "teacher",
+    "joint": "RightArm",
+    "frame": 49,
+    "attempted_val": -0.0,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
   },
   {
     "word": "teacher",
@@ -1590,13 +1886,21 @@
     "attempted_val": 111.25,
     "clamped_val": 110.0,
     "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "teacher",
+    "joint": "LeftArm",
+    "frame": 50,
+    "attempted_val": -0.13,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
   },
   {
     "word": "teacher",
     "joint": "LeftForeArm_SigningSpace",
     "frame": 50,
     "attempted_val": -0.21,
-    "clamped_val": 0.2,
+    "clamped_val": 0.25,
     "reason": "ForearmBackwardClamp"
   },
   {
@@ -1622,13 +1926,21 @@
     "attempted_val": 111.25,
     "clamped_val": 110.0,
     "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "teacher",
+    "joint": "LeftArm",
+    "frame": 51,
+    "attempted_val": -0.14,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
   },
   {
     "word": "teacher",
     "joint": "LeftForeArm_SigningSpace",
     "frame": 51,
     "attempted_val": -0.22,
-    "clamped_val": 0.2,
+    "clamped_val": 0.25,
     "reason": "ForearmBackwardClamp"
   },
   {
@@ -1657,10 +1969,18 @@
   },
   {
     "word": "teacher",
+    "joint": "LeftArm",
+    "frame": 52,
+    "attempted_val": -0.13,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "teacher",
     "joint": "LeftForeArm_SigningSpace",
     "frame": 52,
     "attempted_val": -0.2,
-    "clamped_val": 0.2,
+    "clamped_val": 0.25,
     "reason": "ForearmBackwardClamp"
   },
   {
@@ -1692,7 +2012,7 @@
     "joint": "LeftArm",
     "frame": 53,
     "attempted_val": -0.16,
-    "clamped_val": -0.1,
+    "clamped_val": 0.1,
     "reason": "TorsoBackPenetration"
   },
   {
@@ -1700,7 +2020,7 @@
     "joint": "LeftForeArm_SigningSpace",
     "frame": 53,
     "attempted_val": -0.24,
-    "clamped_val": 0.2,
+    "clamped_val": 0.25,
     "reason": "ForearmBackwardClamp"
   },
   {
@@ -1732,7 +2052,7 @@
     "joint": "LeftArm",
     "frame": 54,
     "attempted_val": -0.18,
-    "clamped_val": -0.1,
+    "clamped_val": 0.1,
     "reason": "TorsoBackPenetration"
   },
   {
@@ -1740,7 +2060,7 @@
     "joint": "LeftForeArm_SigningSpace",
     "frame": 54,
     "attempted_val": -0.26,
-    "clamped_val": 0.2,
+    "clamped_val": 0.25,
     "reason": "ForearmBackwardClamp"
   },
   {
@@ -1769,10 +2089,18 @@
   },
   {
     "word": "teacher",
+    "joint": "LeftArm",
+    "frame": 55,
+    "attempted_val": -0.13,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "teacher",
     "joint": "LeftForeArm_SigningSpace",
     "frame": 55,
     "attempted_val": -0.19,
-    "clamped_val": 0.2,
+    "clamped_val": 0.25,
     "reason": "ForearmBackwardClamp"
   },
   {
@@ -1804,7 +2132,7 @@
     "joint": "LeftArm",
     "frame": 56,
     "attempted_val": -0.16,
-    "clamped_val": -0.1,
+    "clamped_val": 0.1,
     "reason": "TorsoBackPenetration"
   },
   {
@@ -1812,7 +2140,7 @@
     "joint": "LeftForeArm_SigningSpace",
     "frame": 56,
     "attempted_val": -0.22,
-    "clamped_val": 0.2,
+    "clamped_val": 0.25,
     "reason": "ForearmBackwardClamp"
   },
   {
@@ -1844,7 +2172,7 @@
     "joint": "LeftArm",
     "frame": 57,
     "attempted_val": -0.16,
-    "clamped_val": -0.1,
+    "clamped_val": 0.1,
     "reason": "TorsoBackPenetration"
   },
   {
@@ -1852,8 +2180,16 @@
     "joint": "LeftForeArm_SigningSpace",
     "frame": 57,
     "attempted_val": -0.24,
-    "clamped_val": 0.2,
+    "clamped_val": 0.25,
     "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "teacher",
+    "joint": "RightArm",
+    "frame": 57,
+    "attempted_val": -0.0,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
   },
   {
     "word": "teacher",
@@ -1878,13 +2214,21 @@
     "attempted_val": 111.25,
     "clamped_val": 110.0,
     "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "teacher",
+    "joint": "LeftArm",
+    "frame": 58,
+    "attempted_val": -0.14,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
   },
   {
     "word": "teacher",
     "joint": "LeftForeArm_SigningSpace",
     "frame": 58,
     "attempted_val": -0.2,
-    "clamped_val": 0.2,
+    "clamped_val": 0.25,
     "reason": "ForearmBackwardClamp"
   },
   {
@@ -1910,13 +2254,21 @@
     "attempted_val": 111.25,
     "clamped_val": 110.0,
     "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "teacher",
+    "joint": "LeftArm",
+    "frame": 59,
+    "attempted_val": -0.13,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
   },
   {
     "word": "teacher",
     "joint": "LeftForeArm_SigningSpace",
     "frame": 59,
     "attempted_val": -0.21,
-    "clamped_val": 0.2,
+    "clamped_val": 0.25,
     "reason": "ForearmBackwardClamp"
   },
   {
@@ -1945,10 +2297,18 @@
   },
   {
     "word": "teacher",
+    "joint": "LeftArm",
+    "frame": 60,
+    "attempted_val": -0.12,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "teacher",
     "joint": "LeftForeArm_SigningSpace",
     "frame": 60,
     "attempted_val": -0.18,
-    "clamped_val": 0.2,
+    "clamped_val": 0.25,
     "reason": "ForearmBackwardClamp"
   },
   {

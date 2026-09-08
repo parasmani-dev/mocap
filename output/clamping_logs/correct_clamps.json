@@ -73,14 +73,6 @@
   },
   {
     "word": "correct",
-    "joint": "LeftForeArm_SigningSpace",
-    "frame": 4,
-    "attempted_val": -0.14,
-    "clamped_val": 0.2,
-    "reason": "ForearmBackwardClamp"
-  },
-  {
-    "word": "correct",
     "joint": "RightHandMiddle2",
     "frame": 4,
     "attempted_val": 149.95,
@@ -201,14 +193,6 @@
   },
   {
     "word": "correct",
-    "joint": "LeftForeArm_SigningSpace",
-    "frame": 9,
-    "attempted_val": -0.12,
-    "clamped_val": 0.2,
-    "reason": "ForearmBackwardClamp"
-  },
-  {
-    "word": "correct",
     "joint": "RightHandMiddle2",
     "frame": 9,
     "attempted_val": 149.95,
@@ -230,22 +214,6 @@
     "attempted_val": 153.84,
     "clamped_val": 110.0,
     "reason": "FingerPIPHyperextension"
-  },
-  {
-    "word": "correct",
-    "joint": "LeftArm",
-    "frame": 10,
-    "attempted_val": -0.22,
-    "clamped_val": -0.1,
-    "reason": "TorsoBackPenetration"
-  },
-  {
-    "word": "correct",
-    "joint": "LeftForeArm_SigningSpace",
-    "frame": 10,
-    "attempted_val": -0.12,
-    "clamped_val": 0.2,
-    "reason": "ForearmBackwardClamp"
   },
   {
     "word": "correct",
@@ -273,22 +241,6 @@
   },
   {
     "word": "correct",
-    "joint": "LeftArm",
-    "frame": 11,
-    "attempted_val": -0.28,
-    "clamped_val": -0.1,
-    "reason": "TorsoBackPenetration"
-  },
-  {
-    "word": "correct",
-    "joint": "LeftForeArm_SigningSpace",
-    "frame": 11,
-    "attempted_val": -0.23,
-    "clamped_val": 0.2,
-    "reason": "ForearmBackwardClamp"
-  },
-  {
-    "word": "correct",
     "joint": "RightHandMiddle2",
     "frame": 11,
     "attempted_val": 149.95,
@@ -310,22 +262,6 @@
     "attempted_val": 153.84,
     "clamped_val": 110.0,
     "reason": "FingerPIPHyperextension"
-  },
-  {
-    "word": "correct",
-    "joint": "LeftArm",
-    "frame": 12,
-    "attempted_val": -0.24,
-    "clamped_val": -0.1,
-    "reason": "TorsoBackPenetration"
-  },
-  {
-    "word": "correct",
-    "joint": "LeftForeArm_SigningSpace",
-    "frame": 12,
-    "attempted_val": -0.21,
-    "clamped_val": 0.2,
-    "reason": "ForearmBackwardClamp"
   },
   {
     "word": "correct",
@@ -353,22 +289,6 @@
   },
   {
     "word": "correct",
-    "joint": "LeftArm",
-    "frame": 13,
-    "attempted_val": -0.29,
-    "clamped_val": -0.1,
-    "reason": "TorsoBackPenetration"
-  },
-  {
-    "word": "correct",
-    "joint": "LeftForeArm_SigningSpace",
-    "frame": 13,
-    "attempted_val": -0.26,
-    "clamped_val": 0.2,
-    "reason": "ForearmBackwardClamp"
-  },
-  {
-    "word": "correct",
     "joint": "RightHandMiddle2",
     "frame": 13,
     "attempted_val": 127.3,
@@ -390,22 +310,6 @@
     "attempted_val": 145.81,
     "clamped_val": 110.0,
     "reason": "FingerPIPHyperextension"
-  },
-  {
-    "word": "correct",
-    "joint": "LeftArm",
-    "frame": 14,
-    "attempted_val": -0.32,
-    "clamped_val": -0.1,
-    "reason": "TorsoBackPenetration"
-  },
-  {
-    "word": "correct",
-    "joint": "LeftForeArm_SigningSpace",
-    "frame": 14,
-    "attempted_val": -0.28,
-    "clamped_val": 0.2,
-    "reason": "ForearmBackwardClamp"
   },
   {
     "word": "correct",
@@ -433,22 +337,6 @@
   },
   {
     "word": "correct",
-    "joint": "LeftArm",
-    "frame": 15,
-    "attempted_val": -0.38,
-    "clamped_val": -0.1,
-    "reason": "TorsoBackPenetration"
-  },
-  {
-    "word": "correct",
-    "joint": "LeftForeArm_SigningSpace",
-    "frame": 15,
-    "attempted_val": -0.36,
-    "clamped_val": 0.2,
-    "reason": "ForearmBackwardClamp"
-  },
-  {
-    "word": "correct",
     "joint": "RightHandMiddle2",
     "frame": 15,
     "attempted_val": 158.88,
@@ -470,22 +358,6 @@
     "attempted_val": 154.35,
     "clamped_val": 110.0,
     "reason": "FingerPIPHyperextension"
-  },
-  {
-    "word": "correct",
-    "joint": "LeftArm",
-    "frame": 16,
-    "attempted_val": -0.34,
-    "clamped_val": -0.1,
-    "reason": "TorsoBackPenetration"
-  },
-  {
-    "word": "correct",
-    "joint": "LeftForeArm_SigningSpace",
-    "frame": 16,
-    "attempted_val": -0.29,
-    "clamped_val": 0.2,
-    "reason": "ForearmBackwardClamp"
   },
   {
     "word": "correct",
@@ -513,22 +385,6 @@
   },
   {
     "word": "correct",
-    "joint": "LeftArm",
-    "frame": 17,
-    "attempted_val": -0.28,
-    "clamped_val": -0.1,
-    "reason": "TorsoBackPenetration"
-  },
-  {
-    "word": "correct",
-    "joint": "LeftForeArm_SigningSpace",
-    "frame": 17,
-    "attempted_val": -0.23,
-    "clamped_val": 0.2,
-    "reason": "ForearmBackwardClamp"
-  },
-  {
-    "word": "correct",
     "joint": "RightHand_PalmNormalFlip",
     "frame": 17,
     "attempted_val": -0.55,
@@ -553,22 +409,6 @@
   },
   {
     "word": "correct",
-    "joint": "LeftArm",
-    "frame": 18,
-    "attempted_val": -0.27,
-    "clamped_val": -0.1,
-    "reason": "TorsoBackPenetration"
-  },
-  {
-    "word": "correct",
-    "joint": "LeftForeArm_SigningSpace",
-    "frame": 18,
-    "attempted_val": -0.23,
-    "clamped_val": 0.2,
-    "reason": "ForearmBackwardClamp"
-  },
-  {
-    "word": "correct",
     "joint": "RightHand_PalmNormalFlip",
     "frame": 18,
     "attempted_val": -0.99,
@@ -582,22 +422,6 @@
     "attempted_val": 112.38,
     "clamped_val": 110.0,
     "reason": "FingerPIPHyperextension"
-  },
-  {
-    "word": "correct",
-    "joint": "LeftArm",
-    "frame": 19,
-    "attempted_val": -0.27,
-    "clamped_val": -0.1,
-    "reason": "TorsoBackPenetration"
-  },
-  {
-    "word": "correct",
-    "joint": "LeftForeArm_SigningSpace",
-    "frame": 19,
-    "attempted_val": -0.26,
-    "clamped_val": 0.2,
-    "reason": "ForearmBackwardClamp"
   },
   {
     "word": "correct",
@@ -617,22 +441,6 @@
   },
   {
     "word": "correct",
-    "joint": "LeftArm",
-    "frame": 20,
-    "attempted_val": -0.24,
-    "clamped_val": -0.1,
-    "reason": "TorsoBackPenetration"
-  },
-  {
-    "word": "correct",
-    "joint": "LeftForeArm_SigningSpace",
-    "frame": 20,
-    "attempted_val": -0.25,
-    "clamped_val": 0.2,
-    "reason": "ForearmBackwardClamp"
-  },
-  {
-    "word": "correct",
     "joint": "RightHand_PalmNormalFlip",
     "frame": 20,
     "attempted_val": -1.0,
@@ -646,22 +454,6 @@
     "attempted_val": 126.65,
     "clamped_val": 110.0,
     "reason": "FingerPIPHyperextension"
-  },
-  {
-    "word": "correct",
-    "joint": "LeftArm",
-    "frame": 21,
-    "attempted_val": -0.28,
-    "clamped_val": -0.1,
-    "reason": "TorsoBackPenetration"
-  },
-  {
-    "word": "correct",
-    "joint": "LeftForeArm_SigningSpace",
-    "frame": 21,
-    "attempted_val": -0.28,
-    "clamped_val": 0.2,
-    "reason": "ForearmBackwardClamp"
   },
   {
     "word": "correct",
@@ -681,22 +473,6 @@
   },
   {
     "word": "correct",
-    "joint": "LeftArm",
-    "frame": 22,
-    "attempted_val": -0.25,
-    "clamped_val": -0.1,
-    "reason": "TorsoBackPenetration"
-  },
-  {
-    "word": "correct",
-    "joint": "LeftForeArm_SigningSpace",
-    "frame": 22,
-    "attempted_val": -0.25,
-    "clamped_val": 0.2,
-    "reason": "ForearmBackwardClamp"
-  },
-  {
-    "word": "correct",
     "joint": "RightHand_PalmNormalFlip",
     "frame": 22,
     "attempted_val": -1.0,
@@ -710,22 +486,6 @@
     "attempted_val": 90.67,
     "clamped_val": 90.0,
     "reason": "FingerMCPClamp"
-  },
-  {
-    "word": "correct",
-    "joint": "LeftArm",
-    "frame": 23,
-    "attempted_val": -0.28,
-    "clamped_val": -0.1,
-    "reason": "TorsoBackPenetration"
-  },
-  {
-    "word": "correct",
-    "joint": "LeftForeArm_SigningSpace",
-    "frame": 23,
-    "attempted_val": -0.27,
-    "clamped_val": 0.2,
-    "reason": "ForearmBackwardClamp"
   },
   {
     "word": "correct",
@@ -745,22 +505,6 @@
   },
   {
     "word": "correct",
-    "joint": "LeftArm",
-    "frame": 24,
-    "attempted_val": -0.26,
-    "clamped_val": -0.1,
-    "reason": "TorsoBackPenetration"
-  },
-  {
-    "word": "correct",
-    "joint": "LeftForeArm_SigningSpace",
-    "frame": 24,
-    "attempted_val": -0.28,
-    "clamped_val": 0.2,
-    "reason": "ForearmBackwardClamp"
-  },
-  {
-    "word": "correct",
     "joint": "RightHand_PalmNormalFlip",
     "frame": 24,
     "attempted_val": -1.0,
@@ -777,43 +521,11 @@
   },
   {
     "word": "correct",
-    "joint": "LeftArm",
-    "frame": 25,
-    "attempted_val": -0.29,
-    "clamped_val": -0.1,
-    "reason": "TorsoBackPenetration"
-  },
-  {
-    "word": "correct",
-    "joint": "LeftForeArm_SigningSpace",
-    "frame": 25,
-    "attempted_val": -0.31,
-    "clamped_val": 0.2,
-    "reason": "ForearmBackwardClamp"
-  },
-  {
-    "word": "correct",
     "joint": "RightHand_PalmNormalFlip",
     "frame": 25,
     "attempted_val": -1.0,
     "clamped_val": 1.0,
     "reason": "GhostHandNormalInversion"
-  },
-  {
-    "word": "correct",
-    "joint": "LeftArm",
-    "frame": 26,
-    "attempted_val": -0.27,
-    "clamped_val": -0.1,
-    "reason": "TorsoBackPenetration"
-  },
-  {
-    "word": "correct",
-    "joint": "LeftForeArm_SigningSpace",
-    "frame": 26,
-    "attempted_val": -0.25,
-    "clamped_val": 0.2,
-    "reason": "ForearmBackwardClamp"
   },
   {
     "word": "correct",
@@ -833,43 +545,11 @@
   },
   {
     "word": "correct",
-    "joint": "LeftArm",
-    "frame": 27,
-    "attempted_val": -0.27,
-    "clamped_val": -0.1,
-    "reason": "TorsoBackPenetration"
-  },
-  {
-    "word": "correct",
-    "joint": "LeftForeArm_SigningSpace",
-    "frame": 27,
-    "attempted_val": -0.25,
-    "clamped_val": 0.2,
-    "reason": "ForearmBackwardClamp"
-  },
-  {
-    "word": "correct",
     "joint": "RightHand_PalmNormalFlip",
     "frame": 27,
     "attempted_val": -1.0,
     "clamped_val": 1.0,
     "reason": "GhostHandNormalInversion"
-  },
-  {
-    "word": "correct",
-    "joint": "LeftArm",
-    "frame": 28,
-    "attempted_val": -0.24,
-    "clamped_val": -0.1,
-    "reason": "TorsoBackPenetration"
-  },
-  {
-    "word": "correct",
-    "joint": "LeftForeArm_SigningSpace",
-    "frame": 28,
-    "attempted_val": -0.21,
-    "clamped_val": 0.2,
-    "reason": "ForearmBackwardClamp"
   },
   {
     "word": "correct",
@@ -897,22 +577,6 @@
   },
   {
     "word": "correct",
-    "joint": "LeftArm",
-    "frame": 29,
-    "attempted_val": -0.28,
-    "clamped_val": -0.1,
-    "reason": "TorsoBackPenetration"
-  },
-  {
-    "word": "correct",
-    "joint": "LeftForeArm_SigningSpace",
-    "frame": 29,
-    "attempted_val": -0.25,
-    "clamped_val": 0.2,
-    "reason": "ForearmBackwardClamp"
-  },
-  {
-    "word": "correct",
     "joint": "RightHand_PalmNormalFlip",
     "frame": 29,
     "attempted_val": -1.0,
@@ -934,22 +598,6 @@
     "attempted_val": 99.52,
     "clamped_val": 90.0,
     "reason": "FingerMCPClamp"
-  },
-  {
-    "word": "correct",
-    "joint": "LeftArm",
-    "frame": 30,
-    "attempted_val": -0.25,
-    "clamped_val": -0.1,
-    "reason": "TorsoBackPenetration"
-  },
-  {
-    "word": "correct",
-    "joint": "LeftForeArm_SigningSpace",
-    "frame": 30,
-    "attempted_val": -0.23,
-    "clamped_val": 0.2,
-    "reason": "ForearmBackwardClamp"
   },
   {
     "word": "correct",
@@ -977,22 +625,6 @@
   },
   {
     "word": "correct",
-    "joint": "LeftArm",
-    "frame": 31,
-    "attempted_val": -0.27,
-    "clamped_val": -0.1,
-    "reason": "TorsoBackPenetration"
-  },
-  {
-    "word": "correct",
-    "joint": "LeftForeArm_SigningSpace",
-    "frame": 31,
-    "attempted_val": -0.23,
-    "clamped_val": 0.2,
-    "reason": "ForearmBackwardClamp"
-  },
-  {
-    "word": "correct",
     "joint": "RightHand_PalmNormalFlip",
     "frame": 31,
     "attempted_val": -1.0,
@@ -1014,22 +646,6 @@
     "attempted_val": 107.76,
     "clamped_val": 90.0,
     "reason": "FingerMCPClamp"
-  },
-  {
-    "word": "correct",
-    "joint": "LeftArm",
-    "frame": 32,
-    "attempted_val": -0.3,
-    "clamped_val": -0.1,
-    "reason": "TorsoBackPenetration"
-  },
-  {
-    "word": "correct",
-    "joint": "LeftForeArm_SigningSpace",
-    "frame": 32,
-    "attempted_val": -0.25,
-    "clamped_val": 0.2,
-    "reason": "ForearmBackwardClamp"
   },
   {
     "word": "correct",
@@ -1057,22 +673,6 @@
   },
   {
     "word": "correct",
-    "joint": "LeftArm",
-    "frame": 33,
-    "attempted_val": -0.26,
-    "clamped_val": -0.1,
-    "reason": "TorsoBackPenetration"
-  },
-  {
-    "word": "correct",
-    "joint": "LeftForeArm_SigningSpace",
-    "frame": 33,
-    "attempted_val": -0.22,
-    "clamped_val": 0.2,
-    "reason": "ForearmBackwardClamp"
-  },
-  {
-    "word": "correct",
     "joint": "RightHand_PalmNormalFlip",
     "frame": 33,
     "attempted_val": -1.0,
@@ -1094,22 +694,6 @@
     "attempted_val": 104.38,
     "clamped_val": 90.0,
     "reason": "FingerMCPClamp"
-  },
-  {
-    "word": "correct",
-    "joint": "LeftArm",
-    "frame": 34,
-    "attempted_val": -0.25,
-    "clamped_val": -0.1,
-    "reason": "TorsoBackPenetration"
-  },
-  {
-    "word": "correct",
-    "joint": "LeftForeArm_SigningSpace",
-    "frame": 34,
-    "attempted_val": -0.2,
-    "clamped_val": 0.2,
-    "reason": "ForearmBackwardClamp"
   },
   {
     "word": "correct",
@@ -1137,22 +721,6 @@
   },
   {
     "word": "correct",
-    "joint": "LeftArm",
-    "frame": 35,
-    "attempted_val": -0.24,
-    "clamped_val": -0.1,
-    "reason": "TorsoBackPenetration"
-  },
-  {
-    "word": "correct",
-    "joint": "LeftForeArm_SigningSpace",
-    "frame": 35,
-    "attempted_val": -0.19,
-    "clamped_val": 0.2,
-    "reason": "ForearmBackwardClamp"
-  },
-  {
-    "word": "correct",
     "joint": "RightHand_PalmNormalFlip",
     "frame": 35,
     "attempted_val": -1.0,
@@ -1174,22 +742,6 @@
     "attempted_val": 104.19,
     "clamped_val": 90.0,
     "reason": "FingerMCPClamp"
-  },
-  {
-    "word": "correct",
-    "joint": "LeftArm",
-    "frame": 36,
-    "attempted_val": -0.27,
-    "clamped_val": -0.1,
-    "reason": "TorsoBackPenetration"
-  },
-  {
-    "word": "correct",
-    "joint": "LeftForeArm_SigningSpace",
-    "frame": 36,
-    "attempted_val": -0.23,
-    "clamped_val": 0.2,
-    "reason": "ForearmBackwardClamp"
   },
   {
     "word": "correct",
@@ -1217,22 +769,6 @@
   },
   {
     "word": "correct",
-    "joint": "LeftArm",
-    "frame": 37,
-    "attempted_val": -0.27,
-    "clamped_val": -0.1,
-    "reason": "TorsoBackPenetration"
-  },
-  {
-    "word": "correct",
-    "joint": "LeftForeArm_SigningSpace",
-    "frame": 37,
-    "attempted_val": -0.2,
-    "clamped_val": 0.2,
-    "reason": "ForearmBackwardClamp"
-  },
-  {
-    "word": "correct",
     "joint": "RightHand_PalmNormalFlip",
     "frame": 37,
     "attempted_val": -1.0,
@@ -1254,22 +790,6 @@
     "attempted_val": 107.94,
     "clamped_val": 90.0,
     "reason": "FingerMCPClamp"
-  },
-  {
-    "word": "correct",
-    "joint": "LeftArm",
-    "frame": 38,
-    "attempted_val": -0.25,
-    "clamped_val": -0.1,
-    "reason": "TorsoBackPenetration"
-  },
-  {
-    "word": "correct",
-    "joint": "LeftForeArm_SigningSpace",
-    "frame": 38,
-    "attempted_val": -0.18,
-    "clamped_val": 0.2,
-    "reason": "ForearmBackwardClamp"
   },
   {
     "word": "correct",
@@ -1305,22 +825,6 @@
   },
   {
     "word": "correct",
-    "joint": "LeftArm",
-    "frame": 39,
-    "attempted_val": -0.24,
-    "clamped_val": -0.1,
-    "reason": "TorsoBackPenetration"
-  },
-  {
-    "word": "correct",
-    "joint": "LeftForeArm_SigningSpace",
-    "frame": 39,
-    "attempted_val": -0.16,
-    "clamped_val": 0.2,
-    "reason": "ForearmBackwardClamp"
-  },
-  {
-    "word": "correct",
     "joint": "RightHand_PalmNormalFlip",
     "frame": 39,
     "attempted_val": -1.0,
@@ -1350,22 +854,6 @@
     "attempted_val": 117.67,
     "clamped_val": 90.0,
     "reason": "FingerMCPClamp"
-  },
-  {
-    "word": "correct",
-    "joint": "LeftArm",
-    "frame": 40,
-    "attempted_val": -0.22,
-    "clamped_val": -0.1,
-    "reason": "TorsoBackPenetration"
-  },
-  {
-    "word": "correct",
-    "joint": "LeftForeArm_SigningSpace",
-    "frame": 40,
-    "attempted_val": -0.17,
-    "clamped_val": 0.2,
-    "reason": "ForearmBackwardClamp"
   },
   {
     "word": "correct",
@@ -1401,22 +889,6 @@
   },
   {
     "word": "correct",
-    "joint": "LeftArm",
-    "frame": 41,
-    "attempted_val": -0.21,
-    "clamped_val": -0.1,
-    "reason": "TorsoBackPenetration"
-  },
-  {
-    "word": "correct",
-    "joint": "LeftForeArm_SigningSpace",
-    "frame": 41,
-    "attempted_val": -0.13,
-    "clamped_val": 0.2,
-    "reason": "ForearmBackwardClamp"
-  },
-  {
-    "word": "correct",
     "joint": "RightHand_PalmNormalFlip",
     "frame": 41,
     "attempted_val": -1.0,
@@ -1449,22 +921,6 @@
   },
   {
     "word": "correct",
-    "joint": "LeftArm",
-    "frame": 42,
-    "attempted_val": -0.31,
-    "clamped_val": -0.1,
-    "reason": "TorsoBackPenetration"
-  },
-  {
-    "word": "correct",
-    "joint": "LeftForeArm_SigningSpace",
-    "frame": 42,
-    "attempted_val": -0.26,
-    "clamped_val": 0.2,
-    "reason": "ForearmBackwardClamp"
-  },
-  {
-    "word": "correct",
     "joint": "RightHand_PalmNormalFlip",
     "frame": 42,
     "attempted_val": -0.99,
@@ -1481,22 +937,6 @@
   },
   {
     "word": "correct",
-    "joint": "LeftArm",
-    "frame": 43,
-    "attempted_val": -0.3,
-    "clamped_val": -0.1,
-    "reason": "TorsoBackPenetration"
-  },
-  {
-    "word": "correct",
-    "joint": "LeftForeArm_SigningSpace",
-    "frame": 43,
-    "attempted_val": -0.25,
-    "clamped_val": 0.2,
-    "reason": "ForearmBackwardClamp"
-  },
-  {
-    "word": "correct",
     "joint": "RightHand_PalmNormalFlip",
     "frame": 43,
     "attempted_val": -1.0,
@@ -1526,22 +966,6 @@
     "attempted_val": 121.91,
     "clamped_val": 90.0,
     "reason": "FingerMCPClamp"
-  },
-  {
-    "word": "correct",
-    "joint": "LeftArm",
-    "frame": 44,
-    "attempted_val": -0.33,
-    "clamped_val": -0.1,
-    "reason": "TorsoBackPenetration"
-  },
-  {
-    "word": "correct",
-    "joint": "LeftForeArm_SigningSpace",
-    "frame": 44,
-    "attempted_val": -0.26,
-    "clamped_val": 0.2,
-    "reason": "ForearmBackwardClamp"
   },
   {
     "word": "correct",
@@ -1577,22 +1001,6 @@
   },
   {
     "word": "correct",
-    "joint": "LeftArm",
-    "frame": 45,
-    "attempted_val": -0.33,
-    "clamped_val": -0.1,
-    "reason": "TorsoBackPenetration"
-  },
-  {
-    "word": "correct",
-    "joint": "LeftForeArm_SigningSpace",
-    "frame": 45,
-    "attempted_val": -0.28,
-    "clamped_val": 0.2,
-    "reason": "ForearmBackwardClamp"
-  },
-  {
-    "word": "correct",
     "joint": "RightHand_PalmNormalFlip",
     "frame": 45,
     "attempted_val": -1.0,
@@ -1625,22 +1033,6 @@
   },
   {
     "word": "correct",
-    "joint": "LeftArm",
-    "frame": 46,
-    "attempted_val": -0.26,
-    "clamped_val": -0.1,
-    "reason": "TorsoBackPenetration"
-  },
-  {
-    "word": "correct",
-    "joint": "LeftForeArm_SigningSpace",
-    "frame": 46,
-    "attempted_val": -0.26,
-    "clamped_val": 0.2,
-    "reason": "ForearmBackwardClamp"
-  },
-  {
-    "word": "correct",
     "joint": "RightHand_PalmNormalFlip",
     "frame": 46,
     "attempted_val": -1.0,
@@ -1670,22 +1062,6 @@
     "attempted_val": 121.91,
     "clamped_val": 90.0,
     "reason": "FingerMCPClamp"
-  },
-  {
-    "word": "correct",
-    "joint": "LeftArm",
-    "frame": 47,
-    "attempted_val": -0.16,
-    "clamped_val": -0.1,
-    "reason": "TorsoBackPenetration"
-  },
-  {
-    "word": "correct",
-    "joint": "LeftForeArm_SigningSpace",
-    "frame": 47,
-    "attempted_val": -0.1,
-    "clamped_val": 0.2,
-    "reason": "ForearmBackwardClamp"
   },
   {
     "word": "correct",
@@ -1753,14 +1129,6 @@
   },
   {
     "word": "correct",
-    "joint": "LeftForeArm_SigningSpace",
-    "frame": 49,
-    "attempted_val": -0.11,
-    "clamped_val": 0.2,
-    "reason": "ForearmBackwardClamp"
-  },
-  {
-    "word": "correct",
     "joint": "RightHand_PalmNormalFlip",
     "frame": 49,
     "attempted_val": -1.0,
@@ -1790,13 +1158,21 @@
     "attempted_val": 121.91,
     "clamped_val": 90.0,
     "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "correct",
+    "joint": "LeftArm",
+    "frame": 50,
+    "attempted_val": -0.02,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
   },
   {
     "word": "correct",
     "joint": "LeftForeArm_SigningSpace",
     "frame": 50,
     "attempted_val": -0.1,
-    "clamped_val": 0.2,
+    "clamped_val": 0.25,
     "reason": "ForearmBackwardClamp"
   },
   {
@@ -1993,6 +1369,22 @@
   },
   {
     "word": "correct",
+    "joint": "LeftArm",
+    "frame": 56,
+    "attempted_val": -0.04,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "correct",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 56,
+    "attempted_val": -0.09,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "correct",
     "joint": "RightHand_PalmNormalFlip",
     "frame": 56,
     "attempted_val": -1.0,
@@ -2025,6 +1417,22 @@
   },
   {
     "word": "correct",
+    "joint": "LeftArm",
+    "frame": 57,
+    "attempted_val": -0.04,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "correct",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 57,
+    "attempted_val": -0.09,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "correct",
     "joint": "RightHand_PalmNormalFlip",
     "frame": 57,
     "attempted_val": -1.0,
@@ -2057,6 +1465,22 @@
   },
   {
     "word": "correct",
+    "joint": "LeftArm",
+    "frame": 58,
+    "attempted_val": -0.02,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "correct",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 58,
+    "attempted_val": -0.07,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "correct",
     "joint": "RightHand_PalmNormalFlip",
     "frame": 58,
     "attempted_val": -1.0,
@@ -2086,6 +1510,22 @@
     "attempted_val": 121.91,
     "clamped_val": 90.0,
     "reason": "FingerMCPClamp"
+  },
+  {
+    "word": "correct",
+    "joint": "LeftArm",
+    "frame": 59,
+    "attempted_val": -0.04,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "correct",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 59,
+    "attempted_val": -0.06,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
   },
   {
     "word": "correct",
