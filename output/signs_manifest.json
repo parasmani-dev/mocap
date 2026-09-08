@@ -8,10 +8,34 @@
     "status": "CLEAN"
   },
   {
+    "word_id": "beautiful_authentic",
+    "label": "Beautiful Authentic",
+    "glb_file": "./output/glb/avatar_beautiful_authentic.glb",
+    "bvh_file": "./output/bvh/beautiful_authentic.bvh",
+    "duration_sec": 2.0,
+    "status": "CLEAN"
+  },
+  {
+    "word_id": "beautiful_trimmed",
+    "label": "Beautiful Trimmed",
+    "glb_file": "./output/glb/avatar_beautiful_trimmed.glb",
+    "bvh_file": "./output/bvh/beautiful_trimmed.bvh",
+    "duration_sec": 2.0,
+    "status": "CLEAN"
+  },
+  {
     "word_id": "black",
     "label": "Black",
     "glb_file": "./output/glb/avatar_black.glb",
     "bvh_file": "./output/bvh/black.bvh",
+    "duration_sec": 2.0,
+    "status": "CLEAN"
+  },
+  {
+    "word_id": "black_direct",
+    "label": "Black Direct",
+    "glb_file": "./output/glb/avatar_black_direct.glb",
+    "bvh_file": "",
     "duration_sec": 2.0,
     "status": "CLEAN"
   },
@@ -21,7 +45,7 @@
     "glb_file": "./output/glb/avatar_blackboard.glb",
     "bvh_file": "./output/bvh/blackboard.bvh",
     "duration_sec": 2.0,
-    "status": "NEEDS_REVIEW"
+    "status": "CLEAN"
   },
   {
     "word_id": "board_panel",
@@ -40,12 +64,20 @@
     "status": "CLEAN"
   },
   {
+    "word_id": "check_it",
+    "label": "Check It",
+    "glb_file": "./output/glb/avatar_check_it.glb",
+    "bvh_file": "./output/bvh/check_it.bvh",
+    "duration_sec": 2.0,
+    "status": "CLEAN"
+  },
+  {
     "word_id": "competition_contest",
     "label": "Competition Contest",
     "glb_file": "./output/glb/avatar_competition_contest.glb",
     "bvh_file": "./output/bvh/competition_contest.bvh",
     "duration_sec": 2.0,
-    "status": "NEEDS_REVIEW"
+    "status": "CLEAN"
   },
   {
     "word_id": "congratulations",
@@ -61,7 +93,7 @@
     "glb_file": "./output/glb/avatar_correct.glb",
     "bvh_file": "./output/bvh/correct.bvh",
     "duration_sec": 2.0,
-    "status": "NEEDS_REVIEW"
+    "status": "CLEAN"
   },
   {
     "word_id": "cost",
@@ -69,7 +101,7 @@
     "glb_file": "./output/glb/avatar_cost.glb",
     "bvh_file": "./output/bvh/cost.bvh",
     "duration_sec": 2.0,
-    "status": "NEEDS_REVIEW"
+    "status": "CLEAN"
   },
   {
     "word_id": "deaf",
@@ -77,7 +109,7 @@
     "glb_file": "./output/glb/avatar_deaf.glb",
     "bvh_file": "./output/bvh/deaf.bvh",
     "duration_sec": 2.0,
-    "status": "NEEDS_REVIEW"
+    "status": "CLEAN"
   },
   {
     "word_id": "explain",
@@ -101,7 +133,7 @@
     "glb_file": "./output/glb/avatar_pen_sign_2.glb",
     "bvh_file": "./output/bvh/pen_sign_2.bvh",
     "duration_sec": 2.0,
-    "status": "NEEDS_REVIEW"
+    "status": "CLEAN"
   },
   {
     "word_id": "pencil_sign_4",
@@ -109,7 +141,7 @@
     "glb_file": "./output/glb/avatar_pencil_sign_4.glb",
     "bvh_file": "./output/bvh/pencil_sign_4.bvh",
     "duration_sec": 2.0,
-    "status": "NEEDS_REVIEW"
+    "status": "CLEAN"
   },
   {
     "word_id": "quiet",
@@ -120,12 +152,20 @@
     "status": "CLEAN"
   },
   {
+    "word_id": "sign_test",
+    "label": "Sign Test",
+    "glb_file": "./output/glb/avatar_sign_test.glb",
+    "bvh_file": "./output/bvh/sign_test.bvh",
+    "duration_sec": 2.0,
+    "status": "CLEAN"
+  },
+  {
     "word_id": "student",
     "label": "Student",
     "glb_file": "./output/glb/avatar_student.glb",
     "bvh_file": "./output/bvh/student.bvh",
     "duration_sec": 2.0,
-    "status": "NEEDS_REVIEW"
+    "status": "CLEAN"
   },
   {
     "word_id": "study",
@@ -141,7 +181,15 @@
     "glb_file": "./output/glb/avatar_teacher.glb",
     "bvh_file": "./output/bvh/teacher.bvh",
     "duration_sec": 2.0,
-    "status": "NEEDS_REVIEW"
+    "status": "CLEAN"
+  },
+  {
+    "word_id": "test_vid1",
+    "label": "Test Vid1",
+    "glb_file": "./output/glb/avatar_test_vid1.glb",
+    "bvh_file": "./output/bvh/test_vid1.bvh",
+    "duration_sec": 2.0,
+    "status": "CLEAN"
   },
   {
     "word_id": "today",
@@ -149,7 +197,7 @@
     "glb_file": "./output/glb/avatar_today.glb",
     "bvh_file": "./output/bvh/today.bvh",
     "duration_sec": 2.0,
-    "status": "NEEDS_REVIEW"
+    "status": "CLEAN"
   },
   {
     "word_id": "tomorrow",
@@ -157,7 +205,7 @@
     "glb_file": "./output/glb/avatar_tomorrow.glb",
     "bvh_file": "./output/bvh/tomorrow.bvh",
     "duration_sec": 2.0,
-    "status": "NEEDS_REVIEW"
+    "status": "CLEAN"
   },
   {
     "word_id": "wait",
@@ -165,7 +213,7 @@
     "glb_file": "./output/glb/avatar_wait.glb",
     "bvh_file": "./output/bvh/wait.bvh",
     "duration_sec": 2.0,
-    "status": "NEEDS_REVIEW"
+    "status": "CLEAN"
   },
   {
     "word_id": "want_desire_wish_for",
@@ -173,7 +221,7 @@
     "glb_file": "./output/glb/avatar_want_desire_wish_for.glb",
     "bvh_file": "./output/bvh/want_desire_wish_for.bvh",
     "duration_sec": 2.0,
-    "status": "NEEDS_REVIEW"
+    "status": "CLEAN"
   },
   {
     "word_id": "what_happened",
@@ -181,7 +229,7 @@
     "glb_file": "./output/glb/avatar_what_happened.glb",
     "bvh_file": "./output/bvh/what_happened.bvh",
     "duration_sec": 2.0,
-    "status": "NEEDS_REVIEW"
+    "status": "CLEAN"
   },
   {
     "word_id": "what_is_your_name",
@@ -189,7 +237,7 @@
     "glb_file": "./output/glb/avatar_what_is_your_name.glb",
     "bvh_file": "./output/bvh/what_is_your_name.bvh",
     "duration_sec": 2.0,
-    "status": "NEEDS_REVIEW"
+    "status": "CLEAN"
   },
   {
     "word_id": "whats_up",
@@ -205,7 +253,7 @@
     "glb_file": "./output/glb/avatar_when_for_days.glb",
     "bvh_file": "./output/bvh/when_for_days.bvh",
     "duration_sec": 2.0,
-    "status": "NEEDS_REVIEW"
+    "status": "CLEAN"
   },
   {
     "word_id": "where",
@@ -221,7 +269,7 @@
     "glb_file": "./output/glb/avatar_which.glb",
     "bvh_file": "./output/bvh/which.bvh",
     "duration_sec": 2.0,
-    "status": "NEEDS_REVIEW"
+    "status": "CLEAN"
   },
   {
     "word_id": "while",
@@ -229,7 +277,7 @@
     "glb_file": "./output/glb/avatar_while.glb",
     "bvh_file": "./output/bvh/while.bvh",
     "duration_sec": 2.0,
-    "status": "NEEDS_REVIEW"
+    "status": "CLEAN"
   },
   {
     "word_id": "why_sign_1",
@@ -237,7 +285,7 @@
     "glb_file": "./output/glb/avatar_why_sign_1.glb",
     "bvh_file": "./output/bvh/why_sign_1.bvh",
     "duration_sec": 2.0,
-    "status": "NEEDS_REVIEW"
+    "status": "CLEAN"
   },
   {
     "word_id": "win",
@@ -245,6 +293,6 @@
     "glb_file": "./output/glb/avatar_win.glb",
     "bvh_file": "./output/bvh/win.bvh",
     "duration_sec": 2.0,
-    "status": "NEEDS_REVIEW"
+    "status": "CLEAN"
   }
 ]
