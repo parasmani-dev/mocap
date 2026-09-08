@@ -1,0 +1,1026 @@
+[
+  {
+    "word": "book",
+    "joint": "LeftArm",
+    "frame": 1,
+    "attempted_val": -0.15,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "book",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 1,
+    "attempted_val": -0.2,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "book",
+    "joint": "LeftArm",
+    "frame": 2,
+    "attempted_val": -0.14,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "book",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 2,
+    "attempted_val": -0.18,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "book",
+    "joint": "LeftArm",
+    "frame": 3,
+    "attempted_val": -0.16,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "book",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 3,
+    "attempted_val": -0.22,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "book",
+    "joint": "LeftArm",
+    "frame": 4,
+    "attempted_val": -0.18,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "book",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 4,
+    "attempted_val": -0.23,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "book",
+    "joint": "LeftArm",
+    "frame": 5,
+    "attempted_val": -0.17,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "book",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 5,
+    "attempted_val": -0.23,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "book",
+    "joint": "LeftArm",
+    "frame": 6,
+    "attempted_val": -0.18,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "book",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 6,
+    "attempted_val": -0.26,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "book",
+    "joint": "LeftArm",
+    "frame": 7,
+    "attempted_val": -0.19,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "book",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 7,
+    "attempted_val": -0.25,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "book",
+    "joint": "LeftArm",
+    "frame": 8,
+    "attempted_val": -0.25,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "book",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 8,
+    "attempted_val": -0.33,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "book",
+    "joint": "LeftArm",
+    "frame": 9,
+    "attempted_val": -0.17,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "book",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 9,
+    "attempted_val": -0.23,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "book",
+    "joint": "RightArm",
+    "frame": 9,
+    "attempted_val": -0.01,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "book",
+    "joint": "LeftArm",
+    "frame": 10,
+    "attempted_val": -0.11,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "book",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 10,
+    "attempted_val": -0.16,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "book",
+    "joint": "LeftArm",
+    "frame": 11,
+    "attempted_val": -0.14,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "book",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 11,
+    "attempted_val": -0.12,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "book",
+    "joint": "RightArm",
+    "frame": 11,
+    "attempted_val": -0.0,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "book",
+    "joint": "LeftArm",
+    "frame": 12,
+    "attempted_val": -0.19,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "book",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 12,
+    "attempted_val": -0.06,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "book",
+    "joint": "LeftArm",
+    "frame": 13,
+    "attempted_val": -0.19,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "book",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 13,
+    "attempted_val": -0.04,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "book",
+    "joint": "RightArm",
+    "frame": 13,
+    "attempted_val": -0.03,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "book",
+    "joint": "LeftArm",
+    "frame": 14,
+    "attempted_val": -0.12,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "book",
+    "joint": "LeftArm",
+    "frame": 18,
+    "attempted_val": -0.01,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "book",
+    "joint": "LeftArm",
+    "frame": 19,
+    "attempted_val": -0.07,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "book",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 19,
+    "attempted_val": -0.23,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "book",
+    "joint": "LeftArm",
+    "frame": 20,
+    "attempted_val": -0.21,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "book",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 20,
+    "attempted_val": -0.54,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "book",
+    "joint": "LeftArm",
+    "frame": 21,
+    "attempted_val": -0.18,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "book",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 21,
+    "attempted_val": -0.49,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "book",
+    "joint": "LeftArm",
+    "frame": 22,
+    "attempted_val": -0.08,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "book",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 22,
+    "attempted_val": -0.29,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "book",
+    "joint": "LeftForeArm_ElbowFlexion",
+    "frame": 22,
+    "attempted_val": 150.12,
+    "clamped_val": 145.0,
+    "reason": "ElbowOverflexion"
+  },
+  {
+    "word": "book",
+    "joint": "RightHand_PalmNormalFlip",
+    "frame": 39,
+    "attempted_val": -0.87,
+    "clamped_val": 1.0,
+    "reason": "GhostHandNormalInversion"
+  },
+  {
+    "word": "book",
+    "joint": "RightHandIndex2",
+    "frame": 44,
+    "attempted_val": 113.42,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "book",
+    "joint": "RightHandMiddle2",
+    "frame": 44,
+    "attempted_val": 141.96,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "book",
+    "joint": "RightHandPinky2",
+    "frame": 45,
+    "attempted_val": 118.91,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "book",
+    "joint": "LeftArm",
+    "frame": 48,
+    "attempted_val": -0.17,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "book",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 48,
+    "attempted_val": -0.01,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "book",
+    "joint": "RightArm",
+    "frame": 48,
+    "attempted_val": -0.09,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "book",
+    "joint": "RightHandIndex2",
+    "frame": 48,
+    "attempted_val": 134.73,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "book",
+    "joint": "RightHandMiddle2",
+    "frame": 48,
+    "attempted_val": 125.95,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "book",
+    "joint": "RightHandRing2",
+    "frame": 48,
+    "attempted_val": 121.67,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "book",
+    "joint": "RightHandPinky2",
+    "frame": 48,
+    "attempted_val": 110.07,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "book",
+    "joint": "LeftArm",
+    "frame": 49,
+    "attempted_val": -0.13,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "book",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 49,
+    "attempted_val": 0.08,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "book",
+    "joint": "RightArm",
+    "frame": 49,
+    "attempted_val": -0.09,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "book",
+    "joint": "LeftHandIndex2",
+    "frame": 49,
+    "attempted_val": 116.65,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "book",
+    "joint": "LeftHandMiddle2",
+    "frame": 49,
+    "attempted_val": 114.36,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "book",
+    "joint": "LeftHandRing2",
+    "frame": 49,
+    "attempted_val": 116.03,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "book",
+    "joint": "RightHandIndex2",
+    "frame": 49,
+    "attempted_val": 141.86,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "book",
+    "joint": "RightHandMiddle2",
+    "frame": 49,
+    "attempted_val": 133.01,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "book",
+    "joint": "RightHandRing2",
+    "frame": 49,
+    "attempted_val": 127.91,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "book",
+    "joint": "RightHandPinky2",
+    "frame": 49,
+    "attempted_val": 122.02,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "book",
+    "joint": "LeftArm",
+    "frame": 50,
+    "attempted_val": -0.24,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "book",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 50,
+    "attempted_val": -0.14,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "book",
+    "joint": "RightArm",
+    "frame": 50,
+    "attempted_val": -0.02,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "book",
+    "joint": "LeftHandIndex2",
+    "frame": 50,
+    "attempted_val": 126.04,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "book",
+    "joint": "LeftHandMiddle2",
+    "frame": 50,
+    "attempted_val": 125.24,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "book",
+    "joint": "LeftHandRing2",
+    "frame": 50,
+    "attempted_val": 125.8,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "book",
+    "joint": "LeftHandPinky2",
+    "frame": 50,
+    "attempted_val": 124.76,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "book",
+    "joint": "LeftArm",
+    "frame": 51,
+    "attempted_val": -0.2,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "book",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 51,
+    "attempted_val": -0.14,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "book",
+    "joint": "LeftHandIndex2",
+    "frame": 51,
+    "attempted_val": 126.04,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "book",
+    "joint": "LeftHandMiddle2",
+    "frame": 51,
+    "attempted_val": 125.24,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "book",
+    "joint": "LeftHandRing2",
+    "frame": 51,
+    "attempted_val": 125.8,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "book",
+    "joint": "LeftHandPinky2",
+    "frame": 51,
+    "attempted_val": 124.76,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "book",
+    "joint": "LeftArm",
+    "frame": 52,
+    "attempted_val": -0.2,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "book",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 52,
+    "attempted_val": -0.19,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "book",
+    "joint": "LeftHandIndex2",
+    "frame": 52,
+    "attempted_val": 126.04,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "book",
+    "joint": "LeftHandMiddle2",
+    "frame": 52,
+    "attempted_val": 125.24,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "book",
+    "joint": "LeftHandRing2",
+    "frame": 52,
+    "attempted_val": 125.8,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "book",
+    "joint": "LeftHandPinky2",
+    "frame": 52,
+    "attempted_val": 124.76,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "book",
+    "joint": "LeftArm",
+    "frame": 53,
+    "attempted_val": -0.2,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "book",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 53,
+    "attempted_val": -0.28,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "book",
+    "joint": "LeftHandIndex2",
+    "frame": 53,
+    "attempted_val": 126.04,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "book",
+    "joint": "LeftHandMiddle2",
+    "frame": 53,
+    "attempted_val": 125.24,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "book",
+    "joint": "LeftHandRing2",
+    "frame": 53,
+    "attempted_val": 125.8,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "book",
+    "joint": "LeftHandPinky2",
+    "frame": 53,
+    "attempted_val": 124.76,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "book",
+    "joint": "LeftArm",
+    "frame": 54,
+    "attempted_val": -0.25,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "book",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 54,
+    "attempted_val": -0.33,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "book",
+    "joint": "LeftHandIndex2",
+    "frame": 54,
+    "attempted_val": 126.04,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "book",
+    "joint": "LeftHandMiddle2",
+    "frame": 54,
+    "attempted_val": 125.24,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "book",
+    "joint": "LeftHandRing2",
+    "frame": 54,
+    "attempted_val": 125.8,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "book",
+    "joint": "LeftHandPinky2",
+    "frame": 54,
+    "attempted_val": 124.76,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "book",
+    "joint": "LeftArm",
+    "frame": 55,
+    "attempted_val": -0.23,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "book",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 55,
+    "attempted_val": -0.31,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "book",
+    "joint": "LeftHandIndex2",
+    "frame": 55,
+    "attempted_val": 126.04,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "book",
+    "joint": "LeftHandMiddle2",
+    "frame": 55,
+    "attempted_val": 125.24,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "book",
+    "joint": "LeftHandRing2",
+    "frame": 55,
+    "attempted_val": 125.8,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "book",
+    "joint": "LeftHandPinky2",
+    "frame": 55,
+    "attempted_val": 124.76,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "book",
+    "joint": "LeftArm",
+    "frame": 56,
+    "attempted_val": -0.21,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "book",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 56,
+    "attempted_val": -0.3,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "book",
+    "joint": "LeftHandIndex2",
+    "frame": 56,
+    "attempted_val": 126.04,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "book",
+    "joint": "LeftHandMiddle2",
+    "frame": 56,
+    "attempted_val": 125.24,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "book",
+    "joint": "LeftHandRing2",
+    "frame": 56,
+    "attempted_val": 125.8,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "book",
+    "joint": "LeftHandPinky2",
+    "frame": 56,
+    "attempted_val": 124.76,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "book",
+    "joint": "LeftArm",
+    "frame": 57,
+    "attempted_val": -0.19,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "book",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 57,
+    "attempted_val": -0.22,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "book",
+    "joint": "LeftHandIndex2",
+    "frame": 57,
+    "attempted_val": 126.04,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "book",
+    "joint": "LeftHandMiddle2",
+    "frame": 57,
+    "attempted_val": 125.24,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "book",
+    "joint": "LeftHandRing2",
+    "frame": 57,
+    "attempted_val": 125.8,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "book",
+    "joint": "LeftHandPinky2",
+    "frame": 57,
+    "attempted_val": 124.76,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "book",
+    "joint": "LeftArm",
+    "frame": 58,
+    "attempted_val": -0.17,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "book",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 58,
+    "attempted_val": -0.24,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "book",
+    "joint": "LeftHandIndex2",
+    "frame": 58,
+    "attempted_val": 126.04,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "book",
+    "joint": "LeftHandMiddle2",
+    "frame": 58,
+    "attempted_val": 125.24,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "book",
+    "joint": "LeftHandRing2",
+    "frame": 58,
+    "attempted_val": 125.8,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "book",
+    "joint": "LeftHandPinky2",
+    "frame": 58,
+    "attempted_val": 124.76,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "book",
+    "joint": "LeftArm",
+    "frame": 59,
+    "attempted_val": -0.2,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "book",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 59,
+    "attempted_val": -0.24,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "book",
+    "joint": "LeftHandIndex2",
+    "frame": 59,
+    "attempted_val": 126.04,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "book",
+    "joint": "LeftHandMiddle2",
+    "frame": 59,
+    "attempted_val": 125.24,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "book",
+    "joint": "LeftHandRing2",
+    "frame": 59,
+    "attempted_val": 125.8,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "book",
+    "joint": "LeftHandPinky2",
+    "frame": 59,
+    "attempted_val": 124.76,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "book",
+    "joint": "LeftArm",
+    "frame": 60,
+    "attempted_val": -0.18,
+    "clamped_val": 0.1,
+    "reason": "TorsoBackPenetration"
+  },
+  {
+    "word": "book",
+    "joint": "LeftForeArm_SigningSpace",
+    "frame": 60,
+    "attempted_val": -0.22,
+    "clamped_val": 0.25,
+    "reason": "ForearmBackwardClamp"
+  },
+  {
+    "word": "book",
+    "joint": "LeftHandIndex2",
+    "frame": 60,
+    "attempted_val": 126.04,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "book",
+    "joint": "LeftHandMiddle2",
+    "frame": 60,
+    "attempted_val": 125.24,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "book",
+    "joint": "LeftHandRing2",
+    "frame": 60,
+    "attempted_val": 125.8,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  },
+  {
+    "word": "book",
+    "joint": "LeftHandPinky2",
+    "frame": 60,
+    "attempted_val": 124.76,
+    "clamped_val": 110.0,
+    "reason": "FingerPIPHyperextension"
+  }
+]
