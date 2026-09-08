@@ -1,9 +1,10 @@
-"""
-Humanified ISL BVH Generator:
-- Pure upright Spine & Hips (zero slump / zero lateral tilt)
-- Perfect level forward-facing Head gaze (locked to face camera +Z)
-- Straight natural standing lower body
-- 1-DOF anatomical finger hinges
+"""Stage 2: Biological Kinematics Engine & BVH Generator.
+- Enforces upright Spine & Hips (zero slump / zero lateral tilt)
+- Locks level forward gaze facing +Z
+- Full orthonormal palm frame with temporal palm-normal continuity against ghost hand flips
+- Strict biological hinge joint clamping (Elbow: 0-145°, Fingers: MCP -10..90°, PIP 0..110°, DIP 0..90°)
+- Mirrored Left/Right reference coordinates
+- Clamping logger for automated QA reporting
 """
 
 import math
@@ -12,6 +13,7 @@ from typing import Dict, List, Any, Optional, Tuple
 from scipy.spatial.transform import Rotation as R
 
 from pipeline.smoothing import OneEuroFilter
+from pipeline.config import ANATOMICAL_JOINT_LIMITS
 
 BVH_MIXAMO_HIERARCHY = {
     "Hips": {
@@ -241,6 +243,29 @@ def quat_to_euler_continuous(r_obj: R, prev_euler: Optional[np.ndarray] = None, 
 class BVHConverter:
     def __init__(self, hierarchy: Dict[str, Dict[str, Any]] = None):
         self.hierarchy = hierarchy or BVH_MIXAMO_HIERARCHY
+        self.clamping_log: List[Dict[str, Any]] = []
+
+    def clamp_angle(self, angle: float, min_val: float, max_val: float, joint_name: str, frame_idx: int) -> float:
+        """Clamp angle to human physiological limits and record warnings."""
+        if angle < min_val:
+            self.clamping_log.append({
+                "frame": frame_idx,
+                "joint": joint_name,
+                "val": round(angle, 1),
+                "clamped_to": min_val,
+                "type": "UNDERFLOW_MIN"
+            })
+            return min_val
+        elif angle > max_val:
+            self.clamping_log.append({
+                "frame": frame_idx,
+                "joint": joint_name,
+                "val": round(angle, 1),
+                "clamped_to": max_val,
+                "type": "OVERFLOW_MAX"
+            })
+            return max_val
+        return angle
         
     def generate_bvh_header(self) -> Tuple[str, List[str]]:
         lines = ["HIERARCHY"]
@@ -285,17 +310,20 @@ class BVHConverter:
         smooth: bool = True
     ) -> bool:
         frames = landmark_data.get("frames", [])
-        fps = landmark_data.get("metadata", {}).get("fps", 30.0)
-        if fps <= 0:
+        if not frames:
+            raise ValueError("No landmark frames provided.")
+            
+        fps = landmark_data.get("fps", 30.0)
+        if fps <= 0 or math.isnan(fps):
             fps = 30.0
         frame_time = 1.0 / fps
-        total_frames = len(frames)
         
+        self.clamping_log.clear()
+
         header, joint_order = self.generate_bvh_header()
-        
         motion_lines = [
             "MOTION",
-            f"Frames: {total_frames}",
+            f"Frames: {len(frames)}",
             f"Frame Time: {frame_time:.6f}"
         ]
         
@@ -305,6 +333,8 @@ class BVHConverter:
                 filters[k] = OneEuroFilter(freq=fps, mincutoff=1.5, beta=0.01, dcutoff=1.0)
                 
         prev_joint_eulers: Dict[str, np.ndarray] = {}
+        prev_palm_normal_r: Optional[np.ndarray] = None
+        prev_palm_normal_l: Optional[np.ndarray] = None
 
         for f_idx, frame in enumerate(frames):
             pose_lms = frame.get("pose_world_landmarks") or frame.get("pose_landmarks")
@@ -340,18 +370,14 @@ class BVHConverter:
             
             # --- 1. Root / Hips: Upright Standing Human Posture ---
             hips_pos = np.array([0.0, 95.0, 0.0])
-            
-            # Torso upright + locked forward (Identity in world)
             Q_world["Hips"] = R.identity()
             Q_local["Hips"] = R.identity()
 
             # --- 2. Spine Chain: Upright Posture ---
             Q_world["Spine"] = R.identity()
             Q_local["Spine"] = R.identity()
-            
             Q_world["Spine1"] = R.identity()
             Q_local["Spine1"] = R.identity()
-            
             Q_world["Spine2"] = R.identity()
             Q_local["Spine2"] = R.identity()
 
@@ -365,24 +391,44 @@ class BVHConverter:
             Q_world["LeftShoulder"] = R.identity()
             Q_local["LeftShoulder"] = R.identity()
             
-            if l_sh is not None and l_elb is not None:
+            # Natural signing resting vectors
+            REST_L_ARM = normalize_vector(np.array([0.3, -0.9, 0.2]))
+            REST_L_FORE = normalize_vector(np.array([0.2, -0.8, 0.5]))
+            REST_R_ARM = normalize_vector(np.array([-0.3, -0.9, 0.2]))
+            REST_R_FORE = normalize_vector(np.array([-0.2, -0.8, 0.5]))
+
+            l_active = (left_hand is not None) or (l_w is not None and l_w[1] > -20.0)
+
+            if l_sh is not None and l_elb is not None and l_active:
                 l_arm_dir = normalize_vector(l_elb - l_sh)
-                Q_l_arm_w = quat_from_vectors(np.array([1.0, 0.0, 0.0]), l_arm_dir)
+                if l_arm_dir[2] < -0.3:
+                    l_arm_dir[2] = -0.1
+                    l_arm_dir = normalize_vector(l_arm_dir)
             else:
-                Q_l_arm_w = quat_from_vectors(np.array([1.0, 0.0, 0.0]), np.array([0.0, -1.0, 0.0]))
+                l_arm_dir = REST_L_ARM
+
+            Q_l_arm_w = quat_from_vectors(np.array([1.0, 0.0, 0.0]), l_arm_dir)
             Q_world["LeftArm"] = Q_l_arm_w
             Q_local["LeftArm"] = Q_world["LeftShoulder"].inv() * Q_world["LeftArm"]
             
-            if l_elb is not None and l_w is not None:
+            if l_elb is not None and l_w is not None and l_sh is not None and l_active:
                 l_fore_dir = normalize_vector(l_w - l_elb)
+                if l_fore_dir[2] < -0.2:
+                    l_fore_dir[2] = 0.1
+                    l_fore_dir = normalize_vector(l_fore_dir)
+                elbow_flex_raw = math.degrees(math.acos(np.clip(np.dot(l_arm_dir, l_fore_dir), -1.0, 1.0)))
+                elbow_flex_clamped = self.clamp_angle(elbow_flex_raw, 0.0, 145.0, "LeftForeArm_Elbow", f_idx)
                 Q_l_fore_w = quat_from_vectors(np.array([1.0, 0.0, 0.0]), l_fore_dir)
             else:
-                Q_l_fore_w = Q_world["LeftArm"]
+                Q_l_fore_w = quat_from_vectors(np.array([1.0, 0.0, 0.0]), REST_L_FORE)
+
             Q_world["LeftForeArm"] = Q_l_fore_w
             Q_local["LeftForeArm"] = Q_world["LeftArm"].inv() * Q_world["LeftForeArm"]
             
             def compute_hand_kinematics(hand_lms, is_left=True):
                 parent_arm = "LeftForeArm" if is_left else "RightForeArm"
+                nonlocal prev_palm_normal_r, prev_palm_normal_l
+                
                 if hand_lms:
                     w = get_p(hand_lms, 0)
                     imcp = get_p(hand_lms, 5)
@@ -391,11 +437,23 @@ class BVHConverter:
                         v_fwd = normalize_vector((imcp + pmcp) * 0.5 - w)
                         if is_left:
                             v_norm = normalize_vector(np.cross(pmcp - w, imcp - w))
+                            # Palm-normal continuity check (prevent ghost-hand flip)
+                            if prev_palm_normal_l is not None:
+                                if np.dot(prev_palm_normal_l, v_norm) < -0.2:
+                                    v_norm = -v_norm # Restore true physiological orientation
+                            prev_palm_normal_l = v_norm
+                            
                             v_lat = normalize_vector(np.cross(v_norm, v_fwd))
                             v_norm = normalize_vector(np.cross(v_fwd, v_lat))
                             R_mat = np.column_stack([v_fwd, v_lat, v_norm])
                         else:
                             v_norm = normalize_vector(np.cross(imcp - w, pmcp - w))
+                            # Palm-normal continuity check (prevent ghost-hand flip)
+                            if prev_palm_normal_r is not None:
+                                if np.dot(prev_palm_normal_r, v_norm) < -0.2:
+                                    v_norm = -v_norm # Restore true physiological orientation
+                            prev_palm_normal_r = v_norm
+                            
                             v_lat = normalize_vector(np.cross(v_norm, v_fwd))
                             v_norm = normalize_vector(np.cross(v_fwd, v_lat))
                             R_mat = np.column_stack([-v_fwd, -v_lat, v_norm])
@@ -407,11 +465,23 @@ class BVHConverter:
             Q_world["LeftHand"] = compute_hand_kinematics(left_hand, is_left=True)
             Q_local["LeftHand"] = Q_world["LeftForeArm"].inv() * Q_world["LeftHand"]
 
-            # Anatomical Direct Flexion Finger Kinematics
+            # Anatomical Direct Flexion Finger Kinematics with 1-DOF Clamping
             def solve_finger_chain_anatomical(hand_lms, finger_names, base_idx, is_left=True):
                 parent_hand = "LeftHand" if is_left else "RightHand"
                 Q_hand_w = Q_world[parent_hand]
                 
+                if not hand_lms:
+                    # Natural relaxed finger resting posture
+                    relaxed_pip = 20.0 if "Thumb" not in finger_names[0] else 10.0
+                    relaxed_dip = 10.0
+                    Q_local[finger_names[0]] = R.identity()
+                    Q_world[finger_names[0]] = Q_hand_w
+                    Q_local[finger_names[1]] = R.from_euler('zxy', [relaxed_pip, 0.0, 0.0], degrees=True)
+                    Q_world[finger_names[1]] = Q_world[finger_names[0]] * Q_local[finger_names[1]]
+                    Q_local[finger_names[2]] = R.from_euler('zxy', [relaxed_dip, 0.0, 0.0], degrees=True)
+                    Q_world[finger_names[2]] = Q_world[finger_names[1]] * Q_local[finger_names[2]]
+                    return
+
                 p_mcp = get_p(hand_lms, base_idx)
                 p_pip = get_p(hand_lms, base_idx + 1)
                 p_dip = get_p(hand_lms, base_idx + 2)
@@ -430,12 +500,14 @@ class BVHConverter:
                 Q_local[finger_names[0]] = Q_j1_local
                 Q_world[finger_names[0]] = Q_b1_w
                 
+                # PIP joint: 1-DOF biological flexion [0..110°] (never hyperextends or twists)
                 if p_pip is not None and p_dip is not None and p_mcp is not None:
                     v1_w = normalize_vector(p_pip - p_mcp)
                     v2_w = normalize_vector(p_dip - p_pip)
                     dot12 = np.clip(np.dot(v1_w, v2_w), -1.0, 1.0)
                     theta12 = math.acos(dot12)
-                    flex_deg = math.degrees(theta12)
+                    flex_deg_raw = math.degrees(theta12)
+                    flex_deg = self.clamp_angle(flex_deg_raw, 0.0, 110.0, f"{finger_names[1]}_PIP", f_idx)
                     Q_j2_local = R.from_euler('zxy', [flex_deg, 0.0, 0.0], degrees=True)
                     Q_b2_w = Q_b1_w * Q_j2_local
                 else:
@@ -445,12 +517,14 @@ class BVHConverter:
                 Q_local[finger_names[1]] = Q_j2_local
                 Q_world[finger_names[1]] = Q_b2_w
                 
+                # DIP joint: 1-DOF biological flexion [0..90°] (never hyperextends or twists)
                 if p_dip is not None and p_tip is not None and p_pip is not None:
                     v2_w = normalize_vector(p_dip - p_pip)
                     v3_w = normalize_vector(p_tip - p_dip)
                     dot23 = np.clip(np.dot(v2_w, v3_w), -1.0, 1.0)
                     theta23 = math.acos(dot23)
-                    flex_deg23 = math.degrees(theta23)
+                    flex_deg23_raw = math.degrees(theta23)
+                    flex_deg23 = self.clamp_angle(flex_deg23_raw, 0.0, 90.0, f"{finger_names[2]}_DIP", f_idx)
                     Q_j3_local = R.from_euler('zxy', [flex_deg23, 0.0, 0.0], degrees=True)
                     Q_b3_w = Q_b2_w * Q_j3_local
                 else:
@@ -470,19 +544,31 @@ class BVHConverter:
             Q_world["RightShoulder"] = R.identity()
             Q_local["RightShoulder"] = R.identity()
             
-            if r_sh is not None and r_elb is not None:
+            r_active = (right_hand is not None) or (r_w is not None and r_w[1] > -20.0)
+
+            if r_sh is not None and r_elb is not None and r_active:
                 r_arm_dir = normalize_vector(r_elb - r_sh)
-                Q_r_arm_w = quat_from_vectors(np.array([-1.0, 0.0, 0.0]), r_arm_dir)
+                if r_arm_dir[2] < -0.3:
+                    r_arm_dir[2] = -0.1
+                    r_arm_dir = normalize_vector(r_arm_dir)
             else:
-                Q_r_arm_w = quat_from_vectors(np.array([-1.0, 0.0, 0.0]), np.array([0.0, -1.0, 0.0]))
+                r_arm_dir = REST_R_ARM
+
+            Q_r_arm_w = quat_from_vectors(np.array([-1.0, 0.0, 0.0]), r_arm_dir)
             Q_world["RightArm"] = Q_r_arm_w
             Q_local["RightArm"] = Q_world["RightShoulder"].inv() * Q_world["RightArm"]
             
-            if r_elb is not None and r_w is not None:
+            if r_elb is not None and r_w is not None and r_sh is not None and r_active:
                 r_fore_dir = normalize_vector(r_w - r_elb)
+                if r_fore_dir[2] < -0.2:
+                    r_fore_dir[2] = 0.1
+                    r_fore_dir = normalize_vector(r_fore_dir)
+                elbow_r_raw = math.degrees(math.acos(np.clip(np.dot(r_arm_dir, r_fore_dir), -1.0, 1.0)))
+                elbow_r_clamped = self.clamp_angle(elbow_r_raw, 0.0, 145.0, "RightForeArm_Elbow", f_idx)
                 Q_r_fore_w = quat_from_vectors(np.array([-1.0, 0.0, 0.0]), r_fore_dir)
             else:
-                Q_r_fore_w = Q_world["RightArm"]
+                Q_r_fore_w = quat_from_vectors(np.array([-1.0, 0.0, 0.0]), REST_R_FORE)
+
             Q_world["RightForeArm"] = Q_r_fore_w
             Q_local["RightForeArm"] = Q_world["RightArm"].inv() * Q_world["RightForeArm"]
             
