@@ -124,7 +124,7 @@ def process_single_video(
     glb_size_mb = 0.0
     if bake_glb:
         base_dir = os.path.dirname(os.path.abspath(__file__))
-        solver_script = os.path.join(base_dir, "pipeline", "direct_finger_baker.py")
+        solver_script = os.path.join(base_dir, "pipeline", "kinematic_baker.py")
         if os.path.exists(blender_exe) and os.path.exists(char_fbx) and os.path.exists(solver_script):
             print(f"[{word}] Stage 4 Baking GLB avatar...")
             cmd = [
