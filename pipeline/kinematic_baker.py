@@ -33,13 +33,31 @@ args = parse_args()
 bpy.ops.wm.read_factory_settings(use_empty=True)
 
 # 1. Import Character FBX
+# Clean default scene objects if any exist
+for obj in list(bpy.data.objects):
+    bpy.data.objects.remove(obj, do_unlink=True)
+
 bpy.ops.import_scene.fbx(filepath=args.character)
 char_arm = [o for o in bpy.data.objects if o.type == 'ARMATURE'][0]
 char_arm.name = "Character_Armature"
 bpy.context.view_layer.objects.active = char_arm
+
+# Clear any pre-existing actions / NLA tracks from the imported FBX
+if char_arm.animation_data:
+    char_arm.animation_data.action = None
+    for track in list(char_arm.animation_data.nla_tracks):
+        char_arm.animation_data.nla_tracks.remove(track)
+for act in list(bpy.data.actions):
+    bpy.data.actions.remove(act, do_unlink=True)
+
 bpy.ops.object.mode_set(mode='POSE')
 
-# Downscale textures for web optimization
+# Downscale textures for web optimization and enforce 100% solid OPAQUE blend modes
+for mat in bpy.data.materials:
+    mat.blend_method = 'OPAQUE'
+    if hasattr(mat, 'shadow_method'):
+        mat.shadow_method = 'OPAQUE'
+
 for img in bpy.data.images:
     if img.size[0] > 1024 or img.size[1] > 1024:
         img.scale(min(1024, img.size[0]), min(1024, img.size[1]))
@@ -138,6 +156,10 @@ def get_bone_local_rot(target_dir_world: Vector, m_rest: Matrix, is_child: bool 
 
 prev_palm_n_l = None
 prev_palm_n_r = None
+prev_q_hand_l = None
+prev_q_hand_r = None
+prev_finger_curls_l = {}
+prev_finger_curls_r = {}
 
 BLEND_FRAMES = min(5, total_frames // 2)
 
@@ -300,10 +322,11 @@ for f_idx, frame in enumerate(frames):
 
     # 4. Hand Orientation via Full 3x3 Orthonormal Palm Frame
     def solve_hand(hand_lms, is_left=True, q_fore_world=None):
-        global prev_palm_n_l, prev_palm_n_r
+        global prev_palm_n_l, prev_palm_n_r, prev_q_hand_l, prev_q_hand_r, prev_finger_curls_l, prev_finger_curls_r
         prefix = 'LeftHand' if is_left else 'RightHand'
         pb_h = char_bones.get(prefix)
         R_rest = R_REST_LH if is_left else R_REST_RH
+        prev_curls_dict = prev_finger_curls_l if is_left else prev_finger_curls_r
         
         finger_data = [
             ('Thumb', 1, [char_bones.get(prefix + 'Thumb1'), char_bones.get(prefix + 'Thumb2'), char_bones.get(prefix + 'Thumb3')]),
@@ -313,18 +336,32 @@ for f_idx, frame in enumerate(frames):
             ('Pinky', 17, [char_bones.get(prefix + 'Pinky1'), char_bones.get(prefix + 'Pinky2'), char_bones.get(prefix + 'Pinky3')])
         ]
         
+        # Canonical natural rest curl proportions (MCP knuckle bends most, PIP middle less, DIP tip least)
+        rest_cascade_map = {
+            'Thumb':  [15.0, 12.0, 8.0],
+            'Index':  [28.0, 18.0, 8.0],
+            'Middle': [30.0, 20.0, 9.0],
+            'Ring':   [32.0, 22.0, 10.0],
+            'Pinky':  [35.0, 25.0, 12.0]
+        }
+        
         if not hand_lms:
-            # Neutral idle hand pose
+            # Neutral idle hand pose with natural cascading curl proportions
+            if is_left: prev_q_hand_l = None
+            else: prev_q_hand_r = None
+            prev_curls_dict.clear()
+            
             if pb_h:
                 pb_h.rotation_mode = 'QUATERNION'
                 pb_h.rotation_quaternion = Quaternion((1, 0, 0, 0))
                 pb_h.keyframe_insert(data_path='rotation_quaternion', frame=f_num)
             for fname, _, pbs in finger_data:
-                rest_curls = [math.radians(15.0), math.radians(25.0), math.radians(15.0)] if fname != 'Thumb' else [math.radians(10.0), math.radians(15.0), math.radians(10.0)]
-                for pb, curl in zip(pbs, rest_curls):
+                rest_degs = rest_cascade_map.get(fname, [25.0, 18.0, 8.0])
+                for pb, deg in zip(pbs, rest_degs):
                     if pb:
                         pb.rotation_mode = 'QUATERNION'
-                        pb.rotation_quaternion = Euler((curl if is_left else -curl, 0, 0), 'XYZ').to_quaternion()
+                        curl = math.radians(deg)
+                        pb.rotation_quaternion = Euler((0, 0, -curl if is_left else curl), 'XYZ').to_quaternion()
                         pb.keyframe_insert(data_path='rotation_quaternion', frame=f_num)
             return
 
@@ -374,7 +411,6 @@ for f_idx, frame in enumerate(frames):
             
         if R_rest is not None:
             # The hand's parent (ForeArm) is rotated by pb_fore.matrix in pose space.
-            # In parent's pose space, the target hand rotation matrix is:
             pb_fore = pb_l_fore if is_left else pb_r_fore
             M_rest_fore = M_REST_LF if is_left else M_REST_RF
             M_rel_rest_hand = M_rest_fore.inverted() @ R_rest
@@ -387,6 +423,16 @@ for f_idx, frame in enumerate(frames):
         else:
             q_hand_local = Quaternion((1, 0, 0, 0))
             
+        # Temporal smoothing for calm and stable wrist orientation (removes jitter/shivering)
+        prev_q = prev_q_hand_l if is_left else prev_q_hand_r
+        if prev_q is not None:
+            # Smooth interpolation: 65% new pose, 35% temporal continuity
+            q_hand_local = prev_q.slerp(q_hand_local, 0.65)
+        if is_left:
+            prev_q_hand_l = q_hand_local.copy()
+        else:
+            prev_q_hand_r = q_hand_local.copy()
+            
         q_hand_final = Quaternion((1, 0, 0, 0)).slerp(q_hand_local, blend_weight)
         
         if pb_h:
@@ -394,7 +440,7 @@ for f_idx, frame in enumerate(frames):
             pb_h.rotation_quaternion = q_hand_final
             pb_h.keyframe_insert(data_path='rotation_quaternion', frame=f_num)
 
-        # Solve individual fingers with 1-DOF biological flexion hinges
+        # Solve individual fingers with 1-DOF biological flexion hinges and temporal smoothing
         for fname, base, pbs in finger_data:
             p0, p1, p2, p3 = pts[base], pts[base+1], pts[base+2], pts[base+3]
             v01 = norm_v(p1 - p0)
@@ -427,13 +473,24 @@ for f_idx, frame in enumerate(frames):
                 if f2_raw != f2_deg: log_clamp(f"{prefix}{fname}2", f_idx, f2_raw, f2_deg, "FingerPIPHyperextension")
                 if f3_raw != f3_deg: log_clamp(f"{prefix}{fname}3", f_idx, f3_raw, f3_deg, "FingerDIPHyperextension")
                 
-            curls = [math.radians(f1_deg * blend_weight + (1 - blend_weight)*15.0),
-                     math.radians(f2_deg * blend_weight + (1 - blend_weight)*25.0),
-                     math.radians(f3_deg * blend_weight + (1 - blend_weight)*15.0)]
+            raw_curls = [f1_deg, f2_deg, f3_deg]
+            prev_curls = prev_curls_dict.get(fname)
+            if prev_curls is not None:
+                # Temporal filter for calm finger flexing without high-frequency vibration
+                smoothed_curls = [prev_curls[i] * 0.4 + raw_curls[i] * 0.6 for i in range(3)]
+            else:
+                smoothed_curls = raw_curls
+            prev_curls_dict[fname] = smoothed_curls
+            
+            rest_degs = rest_cascade_map.get(fname, [25.0, 18.0, 8.0])
+            curls = [math.radians(smoothed_curls[0] * blend_weight + (1 - blend_weight) * rest_degs[0]),
+                     math.radians(smoothed_curls[1] * blend_weight + (1 - blend_weight) * rest_degs[1]),
+                     math.radians(smoothed_curls[2] * blend_weight + (1 - blend_weight) * rest_degs[2])]
             for pb, curl in zip(pbs, curls):
                 if pb:
                     pb.rotation_mode = 'QUATERNION'
-                    q_curl = Euler((curl if is_left else -curl, 0, 0), 'XYZ').to_quaternion()
+                    # Mixamo finger bones curl along local Z-axis (LeftHand: -Z, RightHand: +Z)
+                    q_curl = Euler((0, 0, -curl if is_left else curl), 'XYZ').to_quaternion()
                     pb.rotation_quaternion = q_curl
                     pb.keyframe_insert(data_path='rotation_quaternion', frame=f_num)
 
