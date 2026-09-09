@@ -189,9 +189,9 @@
         <p class="subtitle">Complete Indian Sign Language Dictionary</p>
 
         <div class="control-group">
-            <label>Search & Select Sign (<span id="sign-count">35</span> Words)</label>
+            <label>Search & Select Sign (<span id="sign-count">34</span> Words)</label>
             <input type="text" id="search-input" class="search-box" placeholder="Type to filter words...">
-            <select id="sign-selector" size="6" style="height: 150px; overflow-y: auto;">
+            <select id="sign-selector" size="6" style="height: 160px; overflow-y: auto;">
             </select>
         </div>
 
@@ -295,8 +295,13 @@
             try {
                 const res = await fetch('./output/signs_manifest.json?v=' + Date.now());
                 if (res.ok) {
-                    allSigns = await res.json();
+                    const data = await res.json();
+                    allSigns = data.signs || data;
                     renderSignList(allSigns);
+                    if (allSigns.length > 0) {
+                        const firstId = allSigns[0].id || allSigns[0].word_id;
+                        loadSign(firstId);
+                    }
                 }
             } catch (e) {
                 console.error('Error fetching signs manifest:', e);
@@ -338,10 +343,15 @@
                 loadingScreen.style.opacity = '1';
             }
 
-            if (currentAvatar) {
-                scene.remove(currentAvatar);
-                if (mixer) mixer.stopAllAction();
-            }
+            // Thoroughly clean previous avatars from scene
+            const toRemove = [];
+            scene.traverse((obj) => {
+                if (obj !== scene && obj !== gridHelper && obj !== ambientLight && obj !== keyLight && obj !== fillLight && obj !== rimLight) {
+                    toRemove.push(obj);
+                }
+            });
+            toRemove.forEach((obj) => scene.remove(obj));
+            if (mixer) mixer.stopAllAction();
 
             const path = './output/glb/avatar_' + wordId + '.glb?v=' + Date.now();
             loader.load(
@@ -354,6 +364,8 @@
                             child.castShadow = true;
                             child.receiveShadow = true;
                             if (child.material) {
+                                child.material.transparent = false;
+                                child.material.opacity = 1.0;
                                 child.material.depthWrite = true;
                                 child.material.needsUpdate = true;
                             }
@@ -407,14 +419,7 @@
         });
 
         // Initialize and load default
-        fetchManifest().then(() => {
-            if (allSigns.length > 0) {
-                const firstId = allSigns[0].id || allSigns[0].word_id || 'black';
-                loadSign(firstId);
-            } else {
-                loadSign('black');
-            }
-        });
+        fetchManifest();
 
         // 7. UI Controls Interactivity
         const btnPlayPause = document.getElementById('btn-play-pause');
