@@ -441,51 +441,57 @@ for f_idx, frame in enumerate(frames):
         # Solve individual fingers with 1-DOF biological flexion hinges and temporal smoothing
         for fname, base, pbs in finger_data:
             p0, p1, p2, p3 = pts[base], pts[base+1], pts[base+2], pts[base+3]
+            # Per-finger base direction: wrist → this finger's MCP knuckle (true neutral axis for f1)
+            v_base = norm_v(p0 - w)
             v01 = norm_v(p1 - p0)
             v12 = norm_v(p2 - p1)
             v23 = norm_v(p3 - p2)
-            
+
+            # Dead-zone: 15° for PIP/DIP (noisier joints), 10° for MCP
+            DZ_MCP = 10.0
+            DZ_PIP = 15.0
+            DZ_DIP = 15.0
+
             if fname == 'Thumb':
-                f1_raw = math.degrees(math.acos(max(-1.0, min(1.0, v_fwd.dot(v01))))) * 0.6
-                f2_raw = math.degrees(math.acos(max(-1.0, min(1.0, v01.dot(v12)))))
-                f3_raw = math.degrees(math.acos(max(-1.0, min(1.0, v12.dot(v23)))))
-                
+                f1_raw = max(0.0, math.degrees(math.acos(max(-1.0, min(1.0, v_fwd.dot(v01))))) * 0.6 - DZ_MCP)
+                f2_raw = max(0.0, math.degrees(math.acos(max(-1.0, min(1.0, v01.dot(v12))))) - DZ_PIP)
+                f3_raw = max(0.0, math.degrees(math.acos(max(-1.0, min(1.0, v12.dot(v23))))) - DZ_DIP)
+
                 f1_deg = max(0.0, min(70.0, f1_raw))
                 f2_deg = max(0.0, min(70.0, f2_raw))
                 f3_deg = max(0.0, min(90.0, f3_raw))
-                
+
                 if f1_raw != f1_deg: log_clamp(f"{prefix}Thumb1", f_idx, f1_raw, f1_deg, "ThumbMCPClamp")
                 if f2_raw != f2_deg: log_clamp(f"{prefix}Thumb2", f_idx, f2_raw, f2_deg, "ThumbPIPClamp")
                 if f3_raw != f3_deg: log_clamp(f"{prefix}Thumb3", f_idx, f3_raw, f3_deg, "ThumbDIPClamp")
             else:
-                # Dead-zone: subtract 12° so MediaPipe noise on flat/open hands doesn't register as curl
-                DEAD_ZONE_DEG = 12.0
-                f1_raw = max(0.0, math.degrees(math.acos(max(-1.0, min(1.0, v_fwd.dot(v01))))) * 0.7 - DEAD_ZONE_DEG)
-                f2_raw = max(0.0, math.degrees(math.acos(max(-1.0, min(1.0, v01.dot(v12))))) - DEAD_ZONE_DEG)
-                f3_raw = max(0.0, math.degrees(math.acos(max(-1.0, min(1.0, v12.dot(v23))))) - DEAD_ZONE_DEG)
+                # MCP: use per-finger base vector (wrist→knuckle) so ring/pinky spread doesn't fake curl
+                f1_raw = max(0.0, math.degrees(math.acos(max(-1.0, min(1.0, v_base.dot(v01))))) * 0.7 - DZ_MCP)
+                f2_raw = max(0.0, math.degrees(math.acos(max(-1.0, min(1.0, v01.dot(v12))))) - DZ_PIP)
+                f3_raw = max(0.0, math.degrees(math.acos(max(-1.0, min(1.0, v12.dot(v23))))) - DZ_DIP)
 
                 # Biological 1-DOF limits: MCP 0..90°, PIP 0..110°, DIP 0..90°
                 f1_deg = max(0.0, min(90.0, f1_raw))
                 f2_deg = max(0.0, min(110.0, f2_raw))
                 f3_deg = max(0.0, min(90.0, f3_raw))
-                
+
                 if f1_raw != f1_deg: log_clamp(f"{prefix}{fname}1", f_idx, f1_raw, f1_deg, "FingerMCPClamp")
                 if f2_raw != f2_deg: log_clamp(f"{prefix}{fname}2", f_idx, f2_raw, f2_deg, "FingerPIPHyperextension")
                 if f3_raw != f3_deg: log_clamp(f"{prefix}{fname}3", f_idx, f3_raw, f3_deg, "FingerDIPHyperextension")
-                
+
             raw_curls = [f1_deg, f2_deg, f3_deg]
             prev_curls = prev_curls_dict.get(fname)
             if prev_curls is not None:
-                # Temporal filter for calm finger flexing without high-frequency vibration
-                smoothed_curls = [prev_curls[i] * 0.4 + raw_curls[i] * 0.6 for i in range(3)]
+                # Temporal filter: 75% new data, 25% previous — responsive but not jittery
+                smoothed_curls = [prev_curls[i] * 0.25 + raw_curls[i] * 0.75 for i in range(3)]
             else:
                 smoothed_curls = raw_curls
             prev_curls_dict[fname] = smoothed_curls
-            
-            rest_degs = rest_cascade_map.get(fname, [25.0, 18.0, 8.0])
-            curls = [math.radians(smoothed_curls[0] * blend_weight + (1 - blend_weight) * rest_degs[0]),
-                     math.radians(smoothed_curls[1] * blend_weight + (1 - blend_weight) * rest_degs[1]),
-                     math.radians(smoothed_curls[2] * blend_weight + (1 - blend_weight) * rest_degs[2])]
+
+            # Blend toward 0° (straight) at lead-in/out — NOT toward cascaded curl values
+            curls = [math.radians(smoothed_curls[0] * blend_weight),
+                     math.radians(smoothed_curls[1] * blend_weight),
+                     math.radians(smoothed_curls[2] * blend_weight)]
             for pb, curl in zip(pbs, curls):
                 if pb:
                     pb.rotation_mode = 'QUATERNION'
