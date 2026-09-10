@@ -8,6 +8,22 @@
     "status": "CLEAN"
   },
   {
+    "word_id": "beautiful_authentic",
+    "label": "Beautiful Authentic",
+    "glb_file": "./output/glb/avatar_beautiful_authentic.glb",
+    "bvh_file": "./output/bvh/beautiful_authentic.bvh",
+    "duration_sec": 2.0,
+    "status": "CLEAN"
+  },
+  {
+    "word_id": "beautiful_trimmed",
+    "label": "Beautiful Trimmed",
+    "glb_file": "./output/glb/avatar_beautiful_trimmed.glb",
+    "bvh_file": "./output/bvh/beautiful_trimmed.bvh",
+    "duration_sec": 1.4,
+    "status": "CLEAN"
+  },
+  {
     "word_id": "black",
     "label": "Black",
     "glb_file": "./output/glb/avatar_black.glb",
@@ -44,7 +60,7 @@
     "label": "Check It",
     "glb_file": "./output/glb/avatar_check_it.glb",
     "bvh_file": "./output/bvh/check_it.bvh",
-    "duration_sec": 2.0,
+    "duration_sec": 24.7,
     "status": "CLEAN"
   },
   {
@@ -132,7 +148,7 @@
     "label": "Sign Test",
     "glb_file": "./output/glb/avatar_sign_test.glb",
     "bvh_file": "./output/bvh/sign_test.bvh",
-    "duration_sec": 2.0,
+    "duration_sec": 2.62,
     "status": "CLEAN"
   },
   {
@@ -164,7 +180,7 @@
     "label": "Test Vid1",
     "glb_file": "./output/glb/avatar_test_vid1.glb",
     "bvh_file": "./output/bvh/test_vid1.bvh",
-    "duration_sec": 2.0,
+    "duration_sec": 18.11,
     "status": "CLEAN"
   },
   {

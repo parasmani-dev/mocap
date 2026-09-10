@@ -206,7 +206,7 @@ for f_idx, frame in enumerate(frames):
 
     # 3. Direct Anatomical Finger Tracking with Palm-Normal Continuity & Neutral Rest Pose
     def solve_hand_fingers(hand_lms, is_left=False):
-        nonlocal prev_palm_normal_r, prev_palm_normal_l
+        global prev_palm_normal_r, prev_palm_normal_l
         prefix = 'LeftHand' if is_left else 'RightHand'
         pb_hand = char_bones.get(prefix)
         if pb_hand:
@@ -223,13 +223,12 @@ for f_idx, frame in enumerate(frames):
         ]
 
         if not hand_lms:
-            # Neutral relaxed hand pose when not actively signing
+            # Straight neutral rest pose when hand is not detected — fingers fully extended (0°)
             for fname, _, pbs in finger_defs:
-                relaxed_angles = [math.radians(15.0), math.radians(20.0), math.radians(10.0)] if fname != 'Thumb' else [math.radians(10.0), math.radians(10.0), math.radians(10.0)]
-                for pb, angle in zip(pbs, relaxed_angles):
+                for pb in pbs:
                     if pb:
                         pb.rotation_mode = 'XYZ'
-                        pb.rotation_euler = Euler((angle, 0, 0), 'XYZ')
+                        pb.rotation_euler = Euler((0.0, 0.0, 0.0), 'XYZ')
                         pb.keyframe_insert(data_path='rotation_euler', frame=f_num)
             return
 
@@ -259,21 +258,29 @@ for f_idx, frame in enumerate(frames):
             v12 = norm_v(p2 - p1)
             v23 = norm_v(p3 - p2)
 
+            # Dead-zone: angles below 12° are treated as zero (finger is straight)
+            # This prevents MediaPipe landmark noise from causing phantom curl
+            DEAD_ZONE = math.radians(12.0)
+
+            def apply_dead_zone(angle_rad):
+                return max(0.0, angle_rad - DEAD_ZONE)
+
             if fname == 'Thumb':
-                f1_raw = math.acos(max(-1.0, min(1.0, v_fwd.dot(v01)))) * 0.5
-                f2_raw = math.acos(max(-1.0, min(1.0, v01.dot(v12))))
-                f3_raw = math.acos(max(-1.0, min(1.0, v12.dot(v23))))
-                
+                f1_raw = apply_dead_zone(math.acos(max(-1.0, min(1.0, v_fwd.dot(v01)))) * 0.5)
+                f2_raw = apply_dead_zone(math.acos(max(-1.0, min(1.0, v01.dot(v12)))))
+                f3_raw = apply_dead_zone(math.acos(max(-1.0, min(1.0, v12.dot(v23)))))
+
                 f1 = clamp_rad(f1_raw, 0.0, 70.0)
                 f2 = clamp_rad(f2_raw, 0.0, 70.0)
                 f3 = clamp_rad(f3_raw, 0.0, 90.0)
             else:
-                f1_raw = math.acos(max(-1.0, min(1.0, v_fwd.dot(v01)))) * 0.8
-                f2_raw = math.acos(max(-1.0, min(1.0, v01.dot(v12))))
-                f3_raw = math.acos(max(-1.0, min(1.0, v12.dot(v23))))
+                # MCP: measured against palm-forward direction; scale by 0.7 to reduce over-bend
+                f1_raw = apply_dead_zone(math.acos(max(-1.0, min(1.0, v_fwd.dot(v01)))) * 0.7)
+                f2_raw = apply_dead_zone(math.acos(max(-1.0, min(1.0, v01.dot(v12)))))
+                f3_raw = apply_dead_zone(math.acos(max(-1.0, min(1.0, v12.dot(v23)))))
 
-                # Clamping to biological 1-DOF hinge limits (No hyperextension/backward bend)
-                f1 = clamp_rad(f1_raw, -10.0, 90.0)
+                # Clamping to biological 1-DOF hinge limits (no hyperextension/backward bend)
+                f1 = clamp_rad(f1_raw, 0.0, 90.0)   # MCP: never allow negative (backward) curl
                 f2 = clamp_rad(f2_raw, 0.0, 110.0)
                 f3 = clamp_rad(f3_raw, 0.0, 90.0)
 
