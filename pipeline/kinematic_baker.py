@@ -346,22 +346,20 @@ for f_idx, frame in enumerate(frames):
         }
         
         if not hand_lms:
-            # Neutral idle hand pose with natural cascading curl proportions
+            # Straight neutral rest pose — fingers fully extended (0°) when hand not detected
             if is_left: prev_q_hand_l = None
             else: prev_q_hand_r = None
             prev_curls_dict.clear()
-            
+
             if pb_h:
                 pb_h.rotation_mode = 'QUATERNION'
                 pb_h.rotation_quaternion = Quaternion((1, 0, 0, 0))
                 pb_h.keyframe_insert(data_path='rotation_quaternion', frame=f_num)
             for fname, _, pbs in finger_data:
-                rest_degs = rest_cascade_map.get(fname, [25.0, 18.0, 8.0])
-                for pb, deg in zip(pbs, rest_degs):
+                for pb in pbs:
                     if pb:
                         pb.rotation_mode = 'QUATERNION'
-                        curl = math.radians(deg)
-                        pb.rotation_quaternion = Euler((0, 0, -curl if is_left else curl), 'XYZ').to_quaternion()
+                        pb.rotation_quaternion = Quaternion((1, 0, 0, 0))
                         pb.keyframe_insert(data_path='rotation_quaternion', frame=f_num)
             return
 
@@ -460,12 +458,14 @@ for f_idx, frame in enumerate(frames):
                 if f2_raw != f2_deg: log_clamp(f"{prefix}Thumb2", f_idx, f2_raw, f2_deg, "ThumbPIPClamp")
                 if f3_raw != f3_deg: log_clamp(f"{prefix}Thumb3", f_idx, f3_raw, f3_deg, "ThumbDIPClamp")
             else:
-                f1_raw = math.degrees(math.acos(max(-1.0, min(1.0, v_fwd.dot(v01))))) * 0.9
-                f2_raw = math.degrees(math.acos(max(-1.0, min(1.0, v01.dot(v12)))))
-                f3_raw = math.degrees(math.acos(max(-1.0, min(1.0, v12.dot(v23)))))
-                
-                # Biological 1-DOF limits: MCP -5..90°, PIP 0..110°, DIP 0..90°
-                f1_deg = max(-5.0, min(90.0, f1_raw))
+                # Dead-zone: subtract 12° so MediaPipe noise on flat/open hands doesn't register as curl
+                DEAD_ZONE_DEG = 12.0
+                f1_raw = max(0.0, math.degrees(math.acos(max(-1.0, min(1.0, v_fwd.dot(v01))))) * 0.7 - DEAD_ZONE_DEG)
+                f2_raw = max(0.0, math.degrees(math.acos(max(-1.0, min(1.0, v01.dot(v12))))) - DEAD_ZONE_DEG)
+                f3_raw = max(0.0, math.degrees(math.acos(max(-1.0, min(1.0, v12.dot(v23))))) - DEAD_ZONE_DEG)
+
+                # Biological 1-DOF limits: MCP 0..90°, PIP 0..110°, DIP 0..90°
+                f1_deg = max(0.0, min(90.0, f1_raw))
                 f2_deg = max(0.0, min(110.0, f2_raw))
                 f3_deg = max(0.0, min(90.0, f3_raw))
                 

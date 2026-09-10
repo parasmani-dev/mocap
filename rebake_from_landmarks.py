@@ -1,5 +1,5 @@
-﻿"""
-Re-bake all GLBs from cached landmark JSONs using the updated direct_finger_baker.py.
+"""
+Re-bake all GLBs from cached landmark JSONs using the updated kinematic_baker.py.
 This applies the straight-finger fix without needing source videos.
 """
 
@@ -12,7 +12,7 @@ import subprocess
 BASE_DIR = r"C:\Users\paras\.gemini\antigravity\scratch\isl_mocap_pipeline"
 CHAR_FBX_PATH = r"C:\Users\paras\Downloads\Ch22_nonPBR.fbx"
 BLENDER_EXE = r"C:\Program Files\Blender Foundation\Blender 5.2\blender.exe"
-BAKER_SCRIPT = os.path.join(BASE_DIR, "pipeline", "direct_finger_baker.py")
+BAKER_SCRIPT = os.path.join(BASE_DIR, "pipeline", "kinematic_baker.py")
 LANDMARKS_DIR = os.path.join(BASE_DIR, "output", "landmarks_json")
 GLB_DIR = os.path.join(BASE_DIR, "output", "glb")
 MANIFEST_PATH = os.path.join(BASE_DIR, "output", "signs_manifest.json")
