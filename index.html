@@ -3,68 +3,353 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ISL 3D Sign Language Avatar Studio</title>
+    <title>Sanket — ISL AI Translation & 3D Avatar Studio</title>
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
+        :root {
+            --bg-dark: #0a0d14;
+            --panel-bg: rgba(15, 20, 31, 0.92);
+            --panel-border: rgba(255, 255, 255, 0.12);
+            --accent-blue: #388bfd;
+            --accent-cyan: #39c5cf;
+            --accent-green: #3fb950;
+            --accent-purple: #bc8cff;
+            --accent-orange: #f0883e;
+            --text-primary: #f0f6fc;
+            --text-secondary: #8b949e;
+            --text-muted: #6e7681;
+        }
+
         body {
-            background-color: #0b0d13;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            color: #f0f3f6;
+            background-color: var(--bg-dark);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            color: var(--text-primary);
             overflow: hidden;
             width: 100vw;
             height: 100vh;
         }
+
         #canvas-container {
             width: 100%;
             height: 100%;
             position: absolute;
             top: 0;
             left: 0;
+            z-index: 1;
         }
-        .ui-overlay {
+
+        /* Top Header Navigation Bar */
+        .top-navbar {
             position: absolute;
-            top: 20px;
+            top: 16px;
             left: 20px;
+            right: 20px;
             z-index: 10;
-            background: rgba(18, 22, 30, 0.92);
-            backdrop-filter: blur(16px);
-            border: 1px solid rgba(255, 255, 255, 0.12);
-            border-radius: 14px;
-            padding: 20px;
-            width: 340px;
-            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6);
-            max-height: 94vh;
             display: flex;
-            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            background: var(--panel-bg);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--panel-border);
+            border-radius: 12px;
+            padding: 10px 20px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
         }
-        h1 {
-            font-size: 1.15rem;
-            font-weight: 700;
-            margin-bottom: 2px;
-            color: #58a6ff;
+
+        .brand-section {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .brand-badge {
+            background: linear-gradient(135deg, #1f6feb, #388bfd);
+            color: #ffffff;
+            font-weight: 800;
+            font-size: 0.85rem;
+            padding: 4px 10px;
+            border-radius: 6px;
             letter-spacing: 0.5px;
         }
-        p.subtitle {
-            font-size: 0.78rem;
-            color: #8b949e;
-            margin-bottom: 14px;
+
+        .brand-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--text-primary);
         }
-        .control-group {
-            margin-bottom: 14px;
+
+        .brand-subtitle {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
         }
-        label {
-            display: block;
+
+        .header-tags {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+
+        .chip {
+            font-size: 0.72rem;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--text-secondary);
+        }
+
+        .chip.active {
+            background: rgba(57, 197, 207, 0.15);
+            border-color: var(--accent-cyan);
+            color: var(--accent-cyan);
+        }
+
+        .chip .dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--accent-green);
+        }
+
+        /* Left Control Panel */
+        .left-panel {
+            position: absolute;
+            top: 80px;
+            left: 20px;
+            width: 440px;
+            max-height: calc(100vh - 100px);
+            z-index: 10;
+            background: var(--panel-bg);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--panel-border);
+            border-radius: 14px;
+            padding: 20px;
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6);
+            display: flex;
+            flex-direction: column;
+            overflow-y: auto;
+        }
+
+        .left-panel::-webkit-scrollbar {
+            width: 5px;
+        }
+        .left-panel::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 4px;
+        }
+
+        /* Mode Tabs */
+        .tab-switcher {
+            display: flex;
+            background: rgba(0, 0, 0, 0.35);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 8px;
+            padding: 3px;
+            margin-bottom: 16px;
+        }
+
+        .tab-btn {
+            flex: 1;
+            padding: 8px 12px;
+            background: transparent;
+            border: none;
+            color: var(--text-secondary);
+            font-size: 0.8rem;
+            font-weight: 600;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .tab-btn.active {
+            background: var(--accent-blue);
+            color: #ffffff;
+            box-shadow: 0 2px 8px rgba(31, 111, 235, 0.4);
+        }
+
+        .section-title {
             font-size: 0.72rem;
             font-weight: 700;
             text-transform: uppercase;
-            letter-spacing: 0.5px;
-            color: #8b949e;
-            margin-bottom: 6px;
+            letter-spacing: 0.8px;
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
+
+        /* Sentence Input Area */
+        .input-group {
+            margin-bottom: 14px;
+        }
+
+        .sentence-input {
+            width: 100%;
+            height: 70px;
+            padding: 10px 14px;
+            background: rgba(22, 27, 34, 0.85);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 8px;
+            color: #ffffff;
+            font-size: 0.9rem;
+            resize: none;
+            outline: none;
+            font-family: inherit;
+            transition: border-color 0.2s ease;
+        }
+
+        .sentence-input:focus {
+            border-color: var(--accent-blue);
+            box-shadow: 0 0 0 2px rgba(56, 139, 253, 0.2);
+        }
+
+        .btn-translate {
+            width: 100%;
+            padding: 11px 16px;
+            background: linear-gradient(135deg, #1f6feb, #388bfd);
+            border: 1px solid #58a6ff;
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 0.88rem;
+            border-radius: 8px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 14px rgba(31, 111, 235, 0.4);
+        }
+
+        .btn-translate:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 6px 20px rgba(31, 111, 235, 0.6);
+        }
+
+        /* Preset Demo Buttons */
+        .preset-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 6px;
+            margin-bottom: 14px;
+        }
+
+        .preset-btn {
+            padding: 7px 10px;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: #c9d1d9;
+            font-size: 0.74rem;
+            text-align: left;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.15s ease;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .preset-btn:hover {
+            background: rgba(56, 139, 253, 0.15);
+            border-color: var(--accent-blue);
+            color: #ffffff;
+        }
+
+        /* Gloss Sequence Card */
+        .gloss-card {
+            background: rgba(10, 14, 22, 0.8);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 14px;
+            margin-bottom: 14px;
+        }
+
+        .syntax-row {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.72rem;
+            color: var(--accent-cyan);
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .gloss-tokens {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            min-height: 38px;
+            align-items: center;
+        }
+
+        .gloss-pill {
+            padding: 5px 10px;
+            background: rgba(33, 38, 45, 0.9);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            color: var(--text-primary);
+            border-radius: 6px;
+            font-size: 0.78rem;
+            font-weight: 700;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .gloss-pill.active {
+            background: linear-gradient(135deg, #238636, #2ea043);
+            border-color: #3fb950;
+            color: #ffffff;
+            transform: scale(1.08);
+            box-shadow: 0 0 12px rgba(63, 185, 80, 0.6);
+        }
+
+        .gloss-pill.completed {
+            background: rgba(31, 111, 235, 0.25);
+            border-color: var(--accent-blue);
+            color: #79c0ff;
+        }
+
+        .pill-role {
+            font-size: 0.6rem;
+            opacity: 0.75;
+            padding: 1px 4px;
+            border-radius: 3px;
+            background: rgba(0, 0, 0, 0.3);
+            text-transform: uppercase;
+        }
+
+        /* Progress Bar */
+        .progress-bar-container {
+            width: 100%;
+            height: 4px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 2px;
+            margin-top: 10px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            width: 0%;
+            background: linear-gradient(90deg, #388bfd, #39c5cf);
+            transition: width 0.3s ease;
+        }
+
+        /* Dictionary Mode Controls */
+        #dict-controls {
+            display: none;
+        }
+
         .search-box {
             width: 100%;
             padding: 8px 12px;
-            background: #161b22;
+            background: rgba(22, 27, 34, 0.85);
             border: 1px solid rgba(255, 255, 255, 0.15);
             color: #ffffff;
             border-radius: 6px;
@@ -72,77 +357,148 @@
             outline: none;
             margin-bottom: 6px;
         }
-        .search-box:focus {
-            border-color: #58a6ff;
-        }
+
         select {
             width: 100%;
             padding: 9px 12px;
-            background: #21262d;
+            background: #161b22;
             border: 1px solid rgba(255, 255, 255, 0.15);
             color: #ffffff;
             border-radius: 6px;
-            font-size: 0.9rem;
+            font-size: 0.88rem;
             outline: none;
-            cursor: pointer;
         }
-        select:focus {
-            border-color: #58a6ff;
-        }
-        .btn-row {
+
+        /* Right / Bottom HUD Controls */
+        .bottom-hud {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+            background: var(--panel-bg);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--panel-border);
+            border-radius: 14px;
+            padding: 12px 24px;
             display: flex;
-            gap: 6px;
+            align-items: center;
+            gap: 16px;
+            box-shadow: 0 12px 36px rgba(0, 0, 0, 0.6);
         }
-        button {
-            flex: 1;
-            padding: 8px 10px;
+
+        .hud-btn {
+            padding: 8px 14px;
             background: #21262d;
             border: 1px solid rgba(255, 255, 255, 0.15);
-            color: #c9d1d9;
+            color: var(--text-primary);
             border-radius: 6px;
             cursor: pointer;
-            font-size: 0.8rem;
-            font-weight: 500;
-            transition: all 0.15s ease;
-        }
-        button:hover {
-            background: #30363d;
-            border-color: #58a6ff;
-            color: #ffffff;
-        }
-        button.active {
-            background: #1f6feb;
-            border-color: #58a6ff;
-            color: #ffffff;
-        }
-        .speed-slider {
-            width: 100%;
-            accent-color: #1f6feb;
-            margin-top: 4px;
-        }
-        .status-badge {
+            font-size: 0.82rem;
+            font-weight: 600;
             display: inline-flex;
             align-items: center;
             gap: 6px;
+            transition: all 0.15s ease;
+        }
+
+        .hud-btn:hover {
+            background: #30363d;
+            border-color: var(--accent-blue);
+        }
+
+        .hud-btn.primary {
+            background: var(--accent-blue);
+            border-color: #58a6ff;
+            color: #ffffff;
+        }
+
+        .slider-group {
+            display: flex;
+            align-items: center;
+            gap: 8px;
             font-size: 0.75rem;
-            color: #3fb950;
-            margin-top: auto;
-            padding-top: 8px;
-            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            color: var(--text-secondary);
         }
-        .status-dot {
-            width: 8px;
-            height: 8px;
-            background: #3fb950;
-            border-radius: 50%;
+
+        .speed-slider {
+            width: 80px;
+            accent-color: var(--accent-blue);
+            cursor: pointer;
         }
+
+        /* Subtitle Banner */
+        .subtitle-banner {
+            position: absolute;
+            bottom: 90px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+            background: rgba(10, 13, 20, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(56, 139, 253, 0.3);
+            border-radius: 10px;
+            padding: 10px 24px;
+            text-align: center;
+            min-width: 320px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+            transition: all 0.2s ease;
+        }
+
+        .current-word-title {
+            font-size: 1.15rem;
+            font-weight: 800;
+            color: #58a6ff;
+            letter-spacing: 0.5px;
+        }
+
+        .current-word-meta {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            margin-top: 2px;
+        }
+
+        /* Right Camera Controls */
+        .camera-dock {
+            position: absolute;
+            top: 80px;
+            right: 20px;
+            z-index: 10;
+            background: var(--panel-bg);
+            backdrop-filter: blur(16px);
+            border: 1px solid var(--panel-border);
+            border-radius: 10px;
+            padding: 8px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .cam-btn {
+            padding: 7px 12px;
+            background: #21262d;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--text-secondary);
+            font-size: 0.74rem;
+            font-weight: 600;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.15s ease;
+        }
+
+        .cam-btn:hover, .cam-btn.active {
+            background: var(--accent-blue);
+            color: #ffffff;
+            border-color: #58a6ff;
+        }
+
         #loading-screen {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: #0b0d13;
+            background: var(--bg-dark);
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -150,25 +506,27 @@
             z-index: 100;
             transition: opacity 0.3s ease;
         }
+
         .spinner {
-            width: 44px;
-            height: 44px;
-            border: 3px solid rgba(88, 166, 255, 0.2);
-            border-top-color: #58a6ff;
+            width: 48px;
+            height: 48px;
+            border: 3px solid rgba(56, 139, 253, 0.2);
+            border-top-color: var(--accent-blue);
             border-radius: 50%;
             animation: spin 0.8s linear infinite;
             margin-bottom: 16px;
         }
         @keyframes spin { to { transform: rotate(360deg); } }
+
         #debug-bar {
             position: absolute;
-            bottom: 12px;
+            bottom: 6px;
             right: 12px;
-            background: rgba(0,0,0,0.75);
-            color: #58a6ff;
-            font-size: 0.8rem;
-            padding: 6px 12px;
-            border-radius: 6px;
+            background: rgba(0,0,0,0.6);
+            color: var(--text-muted);
+            font-size: 0.7rem;
+            padding: 3px 8px;
+            border-radius: 4px;
             z-index: 10;
         }
     </style>
@@ -179,73 +537,271 @@
 <body>
     <div id="loading-screen">
         <div class="spinner"></div>
-        <p id="loading-text" style="color: #8b949e; font-size: 0.9rem;">Loading Sign Language Avatar...</p>
+        <p id="loading-text" style="color: var(--text-secondary); font-size: 0.9rem;">Initializing 3D Sign Language Avatar & Solver...</p>
     </div>
 
     <div id="canvas-container"></div>
 
-    <div class="ui-overlay">
-        <h1>ISL 3D Avatar Studio</h1>
-        <p class="subtitle">Complete Indian Sign Language Dictionary</p>
-
-        <div class="control-group">
-            <label>Search & Select Sign (<span id="sign-count">34</span> Words)</label>
-            <input type="text" id="search-input" class="search-box" placeholder="Type to filter words...">
-            <select id="sign-selector" size="6" style="height: 160px; overflow-y: auto;">
-            </select>
-        </div>
-
-        <div class="control-group">
-            <label>Playback</label>
-            <div class="btn-row">
-                <button id="btn-play-pause" class="active">Pause</button>
-                <button id="btn-replay">Replay</button>
+    <!-- Top Navigation Header -->
+    <div class="top-navbar">
+        <div class="brand-section">
+            <div class="brand-badge">SANKET ISL</div>
+            <div>
+                <div class="brand-title">ISL Sentence Translator & 3D Avatar Engine</div>
+                <div class="brand-subtitle">Smart India Hackathon 2026 • Real-Time Biomechanical Synthesis</div>
             </div>
         </div>
-
-        <div class="control-group">
-            <label>Signing Speed: <span id="speed-val" style="color: #58a6ff;">1.0x</span></label>
-            <input type="range" id="speed-slider" class="speed-slider" min="0.2" max="2.0" step="0.1" value="1.0">
-        </div>
-
-        <div class="control-group">
-            <label>Camera Preset</label>
-            <div class="btn-row">
-                <button id="btn-view-chest" class="active">Upper Body</button>
-                <button id="btn-view-hand">Hand Focus</button>
-                <button id="btn-view-full">Full Body</button>
-            </div>
-        </div>
-
-        <div class="status-badge">
-            <div class="status-dot"></div>
-            <span id="track-status">Kinematics Active</span>
+        <div class="header-tags">
+            <div class="chip active"><div class="dot"></div>60 FPS WebGL</div>
+            <div class="chip active">1-DOF Hinges Active</div>
+            <div class="chip">34 Signs Loaded</div>
         </div>
     </div>
 
-    <div id="debug-bar">Initializing...</div>
+    <!-- Left Interaction Panel -->
+    <div class="left-panel">
+        <div class="tab-switcher">
+            <button id="tab-sentence" class="tab-btn active">💬 Sentence to ISL Sign</button>
+            <button id="tab-dictionary" class="tab-btn">📚 Sign Dictionary</button>
+        </div>
+
+        <!-- Mode 1: Sentence Translator -->
+        <div id="sentence-controls">
+            <div class="section-title">
+                <span>Input Sentence (English / Hindi)</span>
+                <span style="color: var(--accent-cyan); font-weight: 500;">Topic-Comment Syntax</span>
+            </div>
+
+            <div class="input-group">
+                <textarea id="sentence-text" class="sentence-input" placeholder="Type a sentence (e.g., 'What is your name?' or 'Today teacher explained book on blackboard')...">What is your name?</textarea>
+            </div>
+
+            <button id="btn-translate-sign" class="btn-translate">
+                <span>⚡ Translate to ISL Gloss & Sign</span>
+            </button>
+
+            <div class="section-title" style="margin-top: 16px;">Quick Demo Scenarios for Judges</div>
+            <div class="preset-grid">
+                <button class="preset-btn" data-text="What is your name?">🙋 1. What is your name?</button>
+                <button class="preset-btn" data-text="Today teacher explain book on blackboard">🏫 2. Teacher explain book</button>
+                <button class="preset-btn" data-text="Congratulations you win competition">🏆 3. Congrats you win</button>
+                <button class="preset-btn" data-text="Quiet while study">🤫 4. Quiet while study</button>
+                <button class="preset-btn" data-text="Where is pen and pencil?">✏️ 5. Where pen pencil?</button>
+                <button class="preset-btn" data-text="Tomorrow wait for student">⏳ 6. Tomorrow wait student</button>
+            </div>
+
+            <div class="gloss-card">
+                <div class="syntax-row">
+                    <span>🔤 ISL Gloss Syntax Flow:</span>
+                    <span id="syntax-type">TOPIC-COMMENT STRUCTURE</span>
+                </div>
+                <div id="gloss-tokens-container" class="gloss-tokens">
+                    <span style="color: var(--text-muted); font-size: 0.8rem;">Click Translate to generate ISL Gloss sequence...</span>
+                </div>
+                <div class="progress-bar-container">
+                    <div id="sentence-progress" class="progress-fill"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mode 2: Dictionary Explorer -->
+        <div id="dict-controls">
+            <div class="section-title">Search & Direct Preview (<span id="sign-count">34</span> Signs)</div>
+            <input type="text" id="search-input" class="search-box" placeholder="Filter dictionary words...">
+            <select id="sign-selector" size="9" style="height: 220px; overflow-y: auto; margin-bottom: 12px;"></select>
+        </div>
+    </div>
+
+    <!-- Right Camera Presets -->
+    <div class="camera-dock">
+        <button id="btn-cam-chest" class="cam-btn active">Upper Body</button>
+        <button id="btn-cam-hand" class="cam-btn">Hand Focus</button>
+        <button id="btn-cam-full" class="cam-btn">Full Body</button>
+    </div>
+
+    <!-- Active Subtitle HUD -->
+    <div id="subtitle-hud" class="subtitle-banner" style="display: none;">
+        <div id="current-sign-label" class="current-word-title">SIGNING: BEAUTIFUL</div>
+        <div id="current-sign-meta" class="current-word-meta">Duration: 2.1s • Cascading Knuckles Active</div>
+    </div>
+
+    <!-- Bottom Playback Controller -->
+    <div class="bottom-hud">
+        <button id="btn-play-pause" class="hud-btn primary">⏸ Pause</button>
+        <button id="btn-replay" class="hud-btn">🔄 Replay Sentence</button>
+        <button id="btn-step-prev" class="hud-btn">⏮ Prev Sign</button>
+        <button id="btn-step-next" class="hud-btn">⏭ Next Sign</button>
+
+        <div class="slider-group">
+            <span>Speed:</span>
+            <input type="range" id="speed-slider" class="speed-slider" min="0.25" max="2.0" step="0.1" value="1.0">
+            <span id="speed-val" style="color: var(--accent-blue); font-weight: 700; width: 28px;">1.0x</span>
+        </div>
+    </div>
+
+    <div id="debug-bar">Initializing Three.js WebGL Engine...</div>
 
     <script>
         const debugBar = document.getElementById('debug-bar');
         function setDebug(msg) {
-            console.log('[ISL Studio]', msg);
+            console.log('[Sanket Studio]', msg);
             if (debugBar) debugBar.textContent = msg;
         }
 
-        // 1. Scene Setup
+        // ==========================================
+        // 1. ISL LINGUISTIC GLOSS & SYNTAX ENGINE
+        // ==========================================
+        // Maps natural English/Hindi words & phrases to canonical 34-word ISL vocabulary IDs
+        const ISL_VOCAB_MAP = {
+            'beautiful': { id: 'beautiful', label: 'BEAUTIFUL', role: 'Modifier', hindi: 'सुंदर' },
+            'sundar': { id: 'beautiful', label: 'BEAUTIFUL', role: 'Modifier', hindi: 'सुंदर' },
+            'pretty': { id: 'beautiful', label: 'BEAUTIFUL', role: 'Modifier', hindi: 'सुंदर' },
+            'black': { id: 'black', label: 'BLACK', role: 'Modifier', hindi: 'काला' },
+            'kala': { id: 'black', label: 'BLACK', role: 'Modifier', hindi: 'काला' },
+            'blackboard': { id: 'blackboard', label: 'BLACKBOARD', role: 'Topic', hindi: 'श्यामपट्ट' },
+            'board': { id: 'blackboard', label: 'BLACKBOARD', role: 'Topic', hindi: 'बोर्ड' },
+            'book': { id: 'book', label: 'BOOK', role: 'Object', hindi: 'किताब' },
+            'kitab': { id: 'book', label: 'BOOK', role: 'Object', hindi: 'किताब' },
+            'check': { id: 'check_it', label: 'CHECK_IT', role: 'Action', hindi: 'जांचना' },
+            'inspect': { id: 'check_it', label: 'CHECK_IT', role: 'Action', hindi: 'निरीक्षण' },
+            'verify': { id: 'check_it', label: 'CHECK_IT', role: 'Action', hindi: 'सत्यापित' },
+            'competition': { id: 'competition_contest', label: 'COMPETITION', role: 'Topic', hindi: 'प्रतियोगिता' },
+            'contest': { id: 'competition_contest', label: 'COMPETITION', role: 'Topic', hindi: 'प्रतियोगिता' },
+            'match': { id: 'competition_contest', label: 'COMPETITION', role: 'Topic', hindi: 'मैच' },
+            'congratulations': { id: 'congratulations', label: 'CONGRATULATIONS', role: 'Comment', hindi: 'बधाई' },
+            'congrats': { id: 'congratulations', label: 'CONGRATULATIONS', role: 'Comment', hindi: 'बधाई' },
+            'badhai': { id: 'congratulations', label: 'CONGRATULATIONS', role: 'Comment', hindi: 'बधाई' },
+            'correct': { id: 'correct', label: 'CORRECT', role: 'Comment', hindi: 'सही' },
+            'right': { id: 'correct', label: 'CORRECT', role: 'Comment', hindi: 'सही' },
+            'sahi': { id: 'correct', label: 'CORRECT', role: 'Comment', hindi: 'सही' },
+            'cost': { id: 'cost', label: 'COST', role: 'Topic', hindi: 'कीमत' },
+            'price': { id: 'cost', label: 'COST', role: 'Topic', hindi: 'मूल्य' },
+            'keemat': { id: 'cost', label: 'COST', role: 'Topic', hindi: 'कीमत' },
+            'deaf': { id: 'deaf', label: 'DEAF', role: 'Subject', hindi: 'बधिर' },
+            'badhir': { id: 'deaf', label: 'DEAF', role: 'Subject', hindi: 'बधिर' },
+            'explain': { id: 'explain', label: 'EXPLAIN', role: 'Action', hindi: 'समझाना' },
+            'describe': { id: 'explain', label: 'EXPLAIN', role: 'Action', hindi: 'बताना' },
+            'samjhana': { id: 'explain', label: 'EXPLAIN', role: 'Action', hindi: 'समझाना' },
+            'finish': { id: 'finish', label: 'FINISH', role: 'Aspect', hindi: 'खत्म' },
+            'done': { id: 'finish', label: 'FINISH', role: 'Aspect', hindi: 'पूरा' },
+            'complete': { id: 'finish', label: 'FINISH', role: 'Aspect', hindi: 'समाप्त' },
+            'khatam': { id: 'finish', label: 'FINISH', role: 'Aspect', hindi: 'खत्म' },
+            'pen': { id: 'pen_sign_2', label: 'PEN', role: 'Object', hindi: 'कलम' },
+            'kalam': { id: 'pen_sign_2', label: 'PEN', role: 'Object', hindi: 'कलम' },
+            'pencil': { id: 'pencil_sign_4', label: 'PENCIL', role: 'Object', hindi: 'पेंसिल' },
+            'quiet': { id: 'quiet', label: 'QUIET', role: 'Comment', hindi: 'शांत' },
+            'silent': { id: 'quiet', label: 'QUIET', role: 'Comment', hindi: 'चुप' },
+            'shant': { id: 'quiet', label: 'QUIET', role: 'Comment', hindi: 'शांत' },
+            'student': { id: 'student', label: 'STUDENT', role: 'Subject', hindi: 'छात्र' },
+            'chhatra': { id: 'student', label: 'STUDENT', role: 'Subject', hindi: 'छात्र' },
+            'vidyarthi': { id: 'student', label: 'STUDENT', role: 'Subject', hindi: 'विद्यार्थी' },
+            'study': { id: 'study', label: 'STUDY', role: 'Action', hindi: 'पढ़ाई' },
+            'learn': { id: 'study', label: 'STUDY', role: 'Action', hindi: 'सीखना' },
+            'padhna': { id: 'study', label: 'STUDY', role: 'Action', hindi: 'पढ़ना' },
+            'teacher': { id: 'teacher', label: 'TEACHER', role: 'Subject', hindi: 'शिक्षक' },
+            'adhyapak': { id: 'teacher', label: 'TEACHER', role: 'Subject', hindi: 'अध्यापक' },
+            'guru': { id: 'teacher', label: 'TEACHER', role: 'Subject', hindi: 'गुरु' },
+            'today': { id: 'today', label: 'TODAY', role: 'Time', hindi: 'आज' },
+            'aaj': { id: 'today', label: 'TODAY', role: 'Time', hindi: 'आज' },
+            'tomorrow': { id: 'tomorrow', label: 'TOMORROW', role: 'Time', hindi: 'कल' },
+            'kal': { id: 'tomorrow', label: 'TOMORROW', role: 'Time', hindi: 'कल' },
+            'wait': { id: 'wait', label: 'WAIT', role: 'Action', hindi: 'इंतजार' },
+            'ruko': { id: 'wait', label: 'WAIT', role: 'Action', hindi: 'रुको' },
+            'want': { id: 'want_desire_wish_for', label: 'WANT', role: 'Action', hindi: 'चाहना' },
+            'desire': { id: 'want_desire_wish_for', label: 'WANT', role: 'Action', hindi: 'इच्छा' },
+            'wish': { id: 'want_desire_wish_for', label: 'WANT', role: 'Action', hindi: 'चाह' },
+            'where': { id: 'where', label: 'WHERE', role: 'Question', hindi: 'कहाँ' },
+            'kahan': { id: 'where', label: 'WHERE', role: 'Question', hindi: 'कहाँ' },
+            'which': { id: 'which', label: 'WHICH', role: 'Question', hindi: 'कौनसा' },
+            'kaunsa': { id: 'which', label: 'WHICH', role: 'Question', hindi: 'कौनसा' },
+            'while': { id: 'while', label: 'WHILE', role: 'Conjunction', hindi: 'दौरान' },
+            'jabki': { id: 'while', label: 'WHILE', role: 'Conjunction', hindi: 'जबकि' },
+            'why': { id: 'why_sign_1', label: 'WHY', role: 'Question', hindi: 'क्यों' },
+            'kyun': { id: 'why_sign_1', label: 'WHY', role: 'Question', hindi: 'क्यों' },
+            'win': { id: 'win', label: 'WIN', role: 'Action', hindi: 'जीत' },
+            'victory': { id: 'win', label: 'WIN', role: 'Action', hindi: 'जीत' },
+            'jeet': { id: 'win', label: 'WIN', role: 'Action', hindi: 'जीत' },
+            'test': { id: 'test_vid1', label: 'TEST', role: 'Topic', hindi: 'परीक्षा' },
+            'exam': { id: 'test_vid1', label: 'TEST', role: 'Topic', hindi: 'परीक्षा' }
+        };
+
+        // Multi-word phrase triggers
+        const PHRASE_TRIGGERS = [
+            { phrases: ['what is your name', 'what\'s your name', 'aapka naam kya hai', 'naam kya hai', 'your name what'], id: 'what_is_your_name', label: 'WHAT_IS_YOUR_NAME', role: 'Question', hindi: 'आपका नाम क्या है' },
+            { phrases: ['what happened', 'what\'s happened', 'kya hua', 'kya ho gaya'], id: 'what_happened', label: 'WHAT_HAPPENED', role: 'Question', hindi: 'क्या हुआ' },
+            { phrases: ['whats up', 'what\'s up', 'kya chal raha hai', 'kya hal hai'], id: 'whats_up', label: 'WHATS_UP', role: 'Salutation', hindi: 'क्या हाल है' },
+            { phrases: ['when', 'when for days', 'kab', 'kis din'], id: 'when_for_days', label: 'WHEN', role: 'Question', hindi: 'कब' }
+        ];
+
+        function transformTextToISLGloss(inputText) {
+            if (!inputText || !inputText.trim()) return [];
+            const cleanText = inputText.toLowerCase().replace(/[?,.!]/g, '').trim();
+
+            // 1. Check direct multi-word phrase triggers first
+            for (const phraseObj of PHRASE_TRIGGERS) {
+                for (const p of phraseObj.phrases) {
+                    if (cleanText.includes(p)) {
+                        return [{ id: phraseObj.id, label: phraseObj.label, role: phraseObj.role, hindi: phraseObj.hindi }];
+                    }
+                }
+            }
+
+            // 2. Tokenize and extract recognized ISL concepts
+            const words = cleanText.split(/\s+/);
+            const recognizedTokens = [];
+            const seenIds = new Set();
+
+            for (const w of words) {
+                if (ISL_VOCAB_MAP[w]) {
+                    const item = ISL_VOCAB_MAP[w];
+                    if (!seenIds.has(item.id)) {
+                        recognizedTokens.push(item);
+                        seenIds.add(item.id);
+                    }
+                }
+            }
+
+            if (recognizedTokens.length === 0) {
+                // Fallback default
+                return [{ id: 'beautiful', label: 'BEAUTIFUL', role: 'Default', hindi: 'सुंदर' }];
+            }
+
+            // 3. ISL Topic-Comment & Temporal Syntax Reordering:
+            // Order: Time (Today/Tomorrow) -> Topic/Subject -> Object -> Action -> Question (Where/Why/When)
+            const timeTokens = [];
+            const topicTokens = [];
+            const objectTokens = [];
+            const actionTokens = [];
+            const questionTokens = [];
+            const otherTokens = [];
+
+            recognizedTokens.forEach(t => {
+                if (t.role === 'Time') timeTokens.push(t);
+                else if (t.role === 'Topic' || t.role === 'Subject') topicTokens.push(t);
+                else if (t.role === 'Object') objectTokens.push(t);
+                else if (t.role === 'Action' || t.role === 'Aspect') actionTokens.push(t);
+                else if (t.role === 'Question') questionTokens.push(t);
+                else otherTokens.push(t);
+            });
+
+            // Reconstruct in ISL grammar order
+            return [...timeTokens, ...topicTokens, ...objectTokens, ...otherTokens, ...actionTokens, ...questionTokens];
+        }
+
+        // ==========================================
+        // 2. THREE.JS 3D SCENE & ENGINE SETUP
+        // ==========================================
         const container = document.getElementById('canvas-container');
         const scene = new THREE.Scene();
-        scene.background = new THREE.Color(0x10141d);
+        scene.background = new THREE.Color(0x0e121a);
 
-        const gridHelper = new THREE.GridHelper(10, 20, 0x30363d, 0x1f242c);
+        const gridHelper = new THREE.GridHelper(10, 20, 0x30363d, 0x181d26);
         gridHelper.position.y = 0;
         scene.add(gridHelper);
 
-        // 2. Camera Setup (Centered on upper chest and facing straight at avatar)
         const camera = new THREE.PerspectiveCamera(38, window.innerWidth / window.innerHeight, 0.1, 100);
         camera.position.set(0.0, 1.45, 1.7);
 
-        // 3. Renderer Setup
         const renderer = new THREE.WebGLRenderer({ antialias: true });
         renderer.setSize(window.innerWidth, window.innerHeight);
         renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
@@ -254,7 +810,6 @@
         renderer.shadowMap.enabled = true;
         container.appendChild(renderer.domElement);
 
-        // 4. Orbit Controls
         const controls = new THREE.OrbitControls(camera, renderer.domElement);
         controls.enableDamping = true;
         controls.dampingFactor = 0.05;
@@ -262,8 +817,8 @@
         controls.minDistance = 0.5;
         controls.maxDistance = 5.0;
 
-        // 5. Studio Lighting
-        const ambientLight = new THREE.AmbientLight(0xffffff, 1.6);
+        // Lighting
+        const ambientLight = new THREE.AmbientLight(0xffffff, 1.8);
         scene.add(ambientLight);
 
         const keyLight = new THREE.DirectionalLight(0xfffaed, 3.2);
@@ -275,33 +830,44 @@
         fillLight.position.set(-2.5, 2.5, 2.0);
         scene.add(fillLight);
 
-        const rimLight = new THREE.DirectionalLight(0x58a6ff, 2.0);
+        const rimLight = new THREE.DirectionalLight(0x58a6ff, 2.2);
         rimLight.position.set(0.0, 3.0, -3.0);
         scene.add(rimLight);
 
-        // 6. Sign Model Loader & Active Animation Player
-        let allSigns = [];
+        // ==========================================
+        // 3. AVATAR MODEL & SEQUENTIAL SIGN PLAYER
+        // ==========================================
+        let allSignsManifest = [];
         let currentAvatar = null;
         let mixer = null;
         let activeAction = null;
+        let playbackSpeed = 1.0;
+
+        // Sentence Playback Queue State
+        let sentenceQueue = [];
+        let currentQueueIndex = 0;
+        let isSentencePlaying = false;
+        let isPaused = false;
         const loader = new THREE.GLTFLoader();
 
+        const subtitleHud = document.getElementById('subtitle-hud');
+        const currentSignLabel = document.getElementById('current-sign-label');
+        const currentSignMeta = document.getElementById('current-sign-meta');
+        const sentenceProgress = document.getElementById('sentence-progress');
+        const glossContainer = document.getElementById('gloss-tokens-container');
         const signSelector = document.getElementById('sign-selector');
         const signCountEl = document.getElementById('sign-count');
-        const searchInput = document.getElementById('search-input');
-        const trackStatus = document.getElementById('track-status');
 
         async function fetchManifest() {
             try {
                 const res = await fetch('./output/signs_manifest.json?v=' + Date.now());
                 if (res.ok) {
                     const data = await res.json();
-                    allSigns = data.signs || data;
-                    renderSignList(allSigns);
-                    if (allSigns.length > 0) {
-                        const firstId = allSigns[0].id || allSigns[0].word_id;
-                        loadSign(firstId);
-                    }
+                    allSignsManifest = data.signs || data;
+                    renderSignList(allSignsManifest);
+                    
+                    // Trigger default sentence translation on startup
+                    handleTranslateSentence();
                 }
             } catch (e) {
                 console.error('Error fetching signs manifest:', e);
@@ -309,41 +875,32 @@
         }
 
         function renderSignList(signs) {
-            const query = searchInput.value.toLowerCase();
+            const searchInput = document.getElementById('search-input');
+            const query = (searchInput.value || '').toLowerCase();
             const filtered = signs.filter(s => {
-                const title = (s.title || s.label || s.id || '').toLowerCase();
+                const title = (s.label || s.title || s.id || '').toLowerCase();
                 const id = (s.id || s.word_id || '').toLowerCase();
                 return title.includes(query) || id.includes(query);
             });
-            const currentSelected = signSelector.value;
             signSelector.innerHTML = '';
-            
             filtered.forEach((s, idx) => {
                 const opt = document.createElement('option');
                 const val = s.id || s.word_id;
-                const title = s.title || s.label || val;
+                const title = s.label || s.title || val;
                 opt.value = val;
-                opt.textContent = title;
-                if (val === currentSelected || (!currentSelected && idx === 0)) {
-                    opt.selected = true;
-                }
+                opt.textContent = `${idx + 1}. ${title.toUpperCase()}`;
+                if (idx === 0) opt.selected = true;
                 signSelector.appendChild(opt);
             });
             if (signCountEl) signCountEl.textContent = signs.length;
         }
 
-        searchInput.addEventListener('input', () => renderSignList(allSigns));
-
-        function loadSign(wordId) {
-            if (!wordId) wordId = 'black';
-            setDebug('Loading sign: ' + wordId + '...');
+        // Play a specific sign by wordId with completion callback
+        function playSignAnimation(wordId, onComplete = null) {
+            setDebug(`Loading sign clip: ${wordId}...`);
             const loadingScreen = document.getElementById('loading-screen');
-            if (loadingScreen) {
-                loadingScreen.style.display = 'flex';
-                loadingScreen.style.opacity = '1';
-            }
 
-            // Thoroughly clean previous avatars from scene
+            // Clean previous avatar
             const toRemove = [];
             scene.traverse((obj) => {
                 if (obj !== scene && obj !== gridHelper && obj !== ambientLight && obj !== keyLight && obj !== fillLight && obj !== rimLight) {
@@ -353,12 +910,11 @@
             toRemove.forEach((obj) => scene.remove(obj));
             if (mixer) mixer.stopAllAction();
 
-            const path = './output/glb/avatar_' + wordId + '.glb?v=' + Date.now();
+            const path = `./output/glb/avatar_${wordId}.glb?v=` + Date.now();
             loader.load(
                 path,
                 (gltf) => {
                     currentAvatar = gltf.scene;
-                    
                     currentAvatar.traverse((child) => {
                         if (child.isMesh) {
                             child.castShadow = true;
@@ -371,27 +927,39 @@
                             }
                         }
                     });
-                    
-                    scene.add(currentAvatar);
 
+                    scene.add(currentAvatar);
                     mixer = new THREE.AnimationMixer(currentAvatar);
-                    
+                    mixer.timeScale = playbackSpeed;
+
                     let clip = null;
                     if (gltf.animations && gltf.animations.length > 0) {
                         clip = gltf.animations.find(c => c.name.toLowerCase().includes(wordId.toLowerCase()));
-                        if (!clip) {
-                            clip = gltf.animations.reduce((max, c) => c.duration > max.duration ? c : max, gltf.animations[0]);
-                        }
+                        if (!clip) clip = gltf.animations.reduce((max, c) => c.duration > max.duration ? c : max, gltf.animations[0]);
                     }
 
                     if (clip) {
-                        if (trackStatus) trackStatus.textContent = 'Sign: ' + wordId.toUpperCase() + ' (' + clip.duration.toFixed(2) + 's)';
                         activeAction = mixer.clipAction(clip);
-                        activeAction.setLoop(THREE.LoopRepeat);
+                        activeAction.setLoop(THREE.LoopOnce);
+                        activeAction.clampWhenFinished = true;
+                        activeAction.reset();
                         activeAction.play();
-                        setDebug('Playing: ' + wordId + ' (' + clip.duration.toFixed(2) + 's)');
-                    } else {
-                        setDebug('Warning: No animation clip found in ' + wordId);
+
+                        // Show HUD Banner
+                        subtitleHud.style.display = 'block';
+                        currentSignLabel.textContent = `SIGNING: ${wordId.toUpperCase().replace(/_/g, ' ')}`;
+                        currentSignMeta.textContent = `Duration: ${clip.duration.toFixed(2)}s • 60 FPS • Cascading Knuckles`;
+
+                        setDebug(`Playing: ${wordId} (${clip.duration.toFixed(2)}s)`);
+
+                        // Listen for animation finish event to transition next sign in sentence
+                        const onFinished = (e) => {
+                            if (e.action === activeAction) {
+                                mixer.removeEventListener('finished', onFinished);
+                                if (onComplete) onComplete();
+                            }
+                        };
+                        mixer.addEventListener('finished', onFinished);
                     }
 
                     if (loadingScreen) {
@@ -399,71 +967,223 @@
                         setTimeout(() => { loadingScreen.style.display = 'none'; }, 200);
                     }
                 },
-                (xhr) => {
-                    if (xhr.total > 0) {
-                        const pct = Math.round((xhr.loaded / xhr.total) * 100);
-                        setDebug('Downloading ' + wordId + ': ' + pct + '%');
-                    }
-                },
+                undefined,
                 (err) => {
-                    console.error('Error loading sign GLB:', err);
-                    setDebug('Error loading avatar_' + wordId + '.glb');
-                    if (trackStatus) trackStatus.textContent = 'Error: ' + wordId;
+                    console.error(`Error loading avatar_${wordId}.glb:`, err);
+                    setDebug(`Error loading avatar_${wordId}.glb`);
                     if (loadingScreen) loadingScreen.style.display = 'none';
+                    if (onComplete) onComplete();
                 }
             );
         }
 
-        signSelector.addEventListener('change', (e) => {
-            if (e.target.value) loadSign(e.target.value);
+        // ==========================================
+        // 4. SENTENCE QUEUE EXECUTION ENGINE
+        // ==========================================
+        function executeSentenceSequence() {
+            if (sentenceQueue.length === 0) return;
+            isSentencePlaying = true;
+            isPaused = false;
+            currentQueueIndex = 0;
+            updateGlossPillUI();
+            playNextSignFromQueue();
+        }
+
+        function playNextSignFromQueue() {
+            if (currentQueueIndex >= sentenceQueue.length) {
+                // Completed whole sentence!
+                isSentencePlaying = false;
+                setDebug('Sentence signing complete!');
+                document.getElementById('btn-play-pause').textContent = '▶ Play';
+                document.getElementById('btn-play-pause').classList.remove('primary');
+                sentenceProgress.style.width = '100%';
+                updateGlossPillUI();
+                return;
+            }
+
+            const currentItem = sentenceQueue[currentQueueIndex];
+            updateGlossPillUI();
+
+            // Calculate progress bar percentage
+            const pct = Math.round((currentQueueIndex / sentenceQueue.length) * 100);
+            sentenceProgress.style.width = pct + '%';
+
+            playSignAnimation(currentItem.id, () => {
+                if (isSentencePlaying && !isPaused) {
+                    currentQueueIndex++;
+                    setTimeout(() => {
+                        playNextSignFromQueue();
+                    }, 150); // slight natural pause between ISL signs
+                }
+            });
+        }
+
+        function updateGlossPillUI() {
+            const pills = glossContainer.querySelectorAll('.gloss-pill');
+            pills.forEach((p, idx) => {
+                p.classList.remove('active', 'completed');
+                if (idx === currentQueueIndex && isSentencePlaying) {
+                    p.classList.add('active');
+                } else if (idx < currentQueueIndex) {
+                    p.classList.add('completed');
+                }
+            });
+        }
+
+        function handleTranslateSentence() {
+            const textInput = document.getElementById('sentence-text').value;
+            const glossTokens = transformTextToISLGloss(textInput);
+            sentenceQueue = glossTokens;
+            currentQueueIndex = 0;
+
+            // Render Gloss Badges in UI
+            glossContainer.innerHTML = '';
+            if (glossTokens.length === 0) {
+                glossContainer.innerHTML = '<span style="color: var(--text-muted); font-size: 0.8rem;">No recognizable words.</span>';
+                return;
+            }
+
+            glossTokens.forEach((item, idx) => {
+                const pill = document.createElement('div');
+                pill.className = 'gloss-pill' + (idx === 0 ? ' active' : '');
+                pill.innerHTML = `
+                    <span>${item.label}</span>
+                    <span class="pill-role">${item.role}</span>
+                `;
+                glossContainer.appendChild(pill);
+            });
+
+            document.getElementById('syntax-type').textContent = `ISL TOPIC-COMMENT (${glossTokens.length} SIGNS)`;
+            sentenceProgress.style.width = '0%';
+            document.getElementById('btn-play-pause').textContent = '⏸ Pause';
+            document.getElementById('btn-play-pause').classList.add('primary');
+
+            executeSentenceSequence();
+        }
+
+        // ==========================================
+        // 5. EVENT LISTENERS & UI WIRING
+        // ==========================================
+        document.getElementById('btn-translate-sign').addEventListener('click', handleTranslateSentence);
+
+        // Preset Scenario Buttons
+        document.querySelectorAll('.preset-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                const text = btn.getAttribute('data-text');
+                document.getElementById('sentence-text').value = text;
+                handleTranslateSentence();
+            });
         });
 
-        // Initialize and load default
-        fetchManifest();
+        // Tab Switching
+        const tabSentence = document.getElementById('tab-sentence');
+        const tabDictionary = document.getElementById('tab-dictionary');
+        const sentenceControls = document.getElementById('sentence-controls');
+        const dictControls = document.getElementById('dict-controls');
 
-        // 7. UI Controls Interactivity
+        tabSentence.addEventListener('click', () => {
+            tabSentence.classList.add('active');
+            tabDictionary.classList.remove('active');
+            sentenceControls.style.display = 'block';
+            dictControls.style.display = 'none';
+        });
+
+        tabDictionary.addEventListener('click', () => {
+            tabDictionary.classList.add('active');
+            tabSentence.classList.remove('active');
+            sentenceControls.style.display = 'none';
+            dictControls.style.display = 'block';
+        });
+
+        // Dictionary List Change
+        signSelector.addEventListener('change', (e) => {
+            if (e.target.value) {
+                isSentencePlaying = false;
+                playSignAnimation(e.target.value);
+            }
+        });
+
+        document.getElementById('search-input').addEventListener('input', () => renderSignList(allSignsManifest));
+
+        // Play/Pause & Replay
         const btnPlayPause = document.getElementById('btn-play-pause');
         btnPlayPause.addEventListener('click', () => {
             if (!activeAction) return;
             if (activeAction.paused) {
                 activeAction.paused = false;
-                btnPlayPause.textContent = 'Pause';
-                btnPlayPause.classList.add('active');
+                isPaused = false;
+                btnPlayPause.textContent = '⏸ Pause';
+                btnPlayPause.classList.add('primary');
             } else {
                 activeAction.paused = true;
-                btnPlayPause.textContent = 'Play';
-                btnPlayPause.classList.remove('active');
+                isPaused = true;
+                btnPlayPause.textContent = '▶ Play';
+                btnPlayPause.classList.remove('primary');
             }
         });
 
         document.getElementById('btn-replay').addEventListener('click', () => {
-            if (activeAction) {
+            if (sentenceQueue.length > 0) {
+                executeSentenceSequence();
+            } else if (activeAction) {
                 activeAction.reset();
                 activeAction.paused = false;
-                btnPlayPause.textContent = 'Pause';
-                btnPlayPause.classList.add('active');
+                activeAction.play();
             }
         });
 
+        document.getElementById('btn-step-next').addEventListener('click', () => {
+            if (sentenceQueue.length > 0 && currentQueueIndex < sentenceQueue.length - 1) {
+                currentQueueIndex++;
+                updateGlossPillUI();
+                playSignAnimation(sentenceQueue[currentQueueIndex].id);
+            }
+        });
+
+        document.getElementById('btn-step-prev').addEventListener('click', () => {
+            if (sentenceQueue.length > 0 && currentQueueIndex > 0) {
+                currentQueueIndex--;
+                updateGlossPillUI();
+                playSignAnimation(sentenceQueue[currentQueueIndex].id);
+            }
+        });
+
+        // Speed Slider
         const speedSlider = document.getElementById('speed-slider');
         const speedVal = document.getElementById('speed-val');
         speedSlider.addEventListener('input', (e) => {
-            const speed = parseFloat(e.target.value);
-            speedVal.textContent = speed.toFixed(1) + 'x';
-            if (mixer) mixer.timeScale = speed;
+            playbackSpeed = parseFloat(e.target.value);
+            speedVal.textContent = playbackSpeed.toFixed(1) + 'x';
+            if (mixer) mixer.timeScale = playbackSpeed;
         });
 
-        document.getElementById('btn-view-chest').addEventListener('click', () => {
+        // Camera Presets
+        const btnCamChest = document.getElementById('btn-cam-chest');
+        const btnCamHand = document.getElementById('btn-cam-hand');
+        const btnCamFull = document.getElementById('btn-cam-full');
+
+        btnCamChest.addEventListener('click', () => {
             camera.position.set(0.0, 1.45, 1.7);
             controls.target.set(0.0, 1.3, 0.0);
+            btnCamChest.classList.add('active');
+            btnCamHand.classList.remove('active');
+            btnCamFull.classList.remove('active');
         });
-        document.getElementById('btn-view-hand').addEventListener('click', () => {
+
+        btnCamHand.addEventListener('click', () => {
             camera.position.set(-0.25, 1.45, 0.95);
             controls.target.set(-0.12, 1.38, 0.0);
+            btnCamHand.classList.add('active');
+            btnCamChest.classList.remove('active');
+            btnCamFull.classList.remove('active');
         });
-        document.getElementById('btn-view-full').addEventListener('click', () => {
+
+        btnCamFull.addEventListener('click', () => {
             camera.position.set(0.0, 1.1, 3.2);
             controls.target.set(0.0, 0.9, 0.0);
+            btnCamFull.classList.add('active');
+            btnCamChest.classList.remove('active');
+            btnCamHand.classList.remove('active');
         });
 
         window.addEventListener('resize', () => {
@@ -472,7 +1192,7 @@
             renderer.setSize(window.innerWidth, window.innerHeight);
         });
 
-        // 8. Render Animation Loop
+        // 6. Animation Render Loop
         const clock = new THREE.Clock();
         function animate() {
             requestAnimationFrame(animate);
@@ -482,6 +1202,9 @@
             renderer.render(scene, camera);
         }
         animate();
+
+        // Start manifest fetch
+        fetchManifest();
     </script>
 </body>
 </html>
