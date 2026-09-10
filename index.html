@@ -634,8 +634,8 @@
 
         <div class="slider-group">
             <span>Speed:</span>
-            <input type="range" id="speed-slider" class="speed-slider" min="0.25" max="2.0" step="0.1" value="1.0">
-            <span id="speed-val" style="color: var(--accent-blue); font-weight: 700; width: 28px;">1.0x</span>
+            <input type="range" id="speed-slider" class="speed-slider" min="0.25" max="2.0" step="0.1" value="0.8">
+            <span id="speed-val" style="color: var(--accent-blue); font-weight: 700; width: 28px;">0.8x</span>
         </div>
     </div>
 
@@ -841,7 +841,7 @@
         let currentAvatar = null;
         let mixer = null;
         let activeAction = null;
-        let playbackSpeed = 1.0;
+        let playbackSpeed = 0.8; // Shifted default to 0.8x for calm, natural signing
 
         // Sentence Playback Queue State
         let sentenceQueue = [];
@@ -948,9 +948,9 @@
                         // Show HUD Banner
                         subtitleHud.style.display = 'block';
                         currentSignLabel.textContent = `SIGNING: ${wordId.toUpperCase().replace(/_/g, ' ')}`;
-                        currentSignMeta.textContent = `Duration: ${clip.duration.toFixed(2)}s • 60 FPS • Cascading Knuckles`;
+                        currentSignMeta.textContent = `Duration: ${clip.duration.toFixed(2)}s • 60 FPS • Speed: ${playbackSpeed.toFixed(1)}x`;
 
-                        setDebug(`Playing: ${wordId} (${clip.duration.toFixed(2)}s)`);
+                        setDebug(`Playing: ${wordId} (${clip.duration.toFixed(2)}s) at ${playbackSpeed.toFixed(1)}x`);
 
                         // Listen for animation finish event to transition next sign in sentence
                         const onFinished = (e) => {
@@ -1013,7 +1013,7 @@
                     currentQueueIndex++;
                     setTimeout(() => {
                         playNextSignFromQueue();
-                    }, 150); // slight natural pause between ISL signs
+                    }, 180); // natural pause between ISL signs
                 }
             });
         }
@@ -1148,7 +1148,7 @@
             }
         });
 
-        // Speed Slider
+        // Speed Slider (Default 0.8x)
         const speedSlider = document.getElementById('speed-slider');
         const speedVal = document.getElementById('speed-val');
         speedSlider.addEventListener('input', (e) => {
