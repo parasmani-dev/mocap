@@ -359,7 +359,8 @@ for f_idx, frame in enumerate(frames):
                 for pb in pbs:
                     if pb:
                         pb.rotation_mode = 'QUATERNION'
-                        pb.rotation_quaternion = Quaternion((1, 0, 0, 0))
+                        # Identity = 0° on X axis = straight fingers
+                        pb.rotation_quaternion = Euler((0, 0, 0), 'XYZ').to_quaternion()
                         pb.keyframe_insert(data_path='rotation_quaternion', frame=f_num)
             return
 
@@ -495,8 +496,10 @@ for f_idx, frame in enumerate(frames):
             for pb, curl in zip(pbs, curls):
                 if pb:
                     pb.rotation_mode = 'QUATERNION'
-                    # Mixamo finger bones curl along local Z-axis (LeftHand: -Z, RightHand: +Z)
-                    q_curl = Euler((0, 0, -curl if is_left else curl), 'XYZ').to_quaternion()
+                    # Mixamo Ch22 finger bones: local Z ≈ -Y (downward/palmward) in armature space.
+                    # Flexion (curl toward palm) = positive rotation around LOCAL X axis for both hands.
+                    # (local X points along ±Z in armature space, giving correct opposing flexion per hand)
+                    q_curl = Euler((curl, 0, 0), 'XYZ').to_quaternion()
                     pb.rotation_quaternion = q_curl
                     pb.keyframe_insert(data_path='rotation_quaternion', frame=f_num)
 
