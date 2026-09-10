@@ -554,7 +554,7 @@
         <div class="header-tags">
             <div class="chip active"><div class="dot"></div>60 FPS WebGL</div>
             <div class="chip active">1-DOF Hinges Active</div>
-            <div class="chip">34 Signs Loaded</div>
+            <div class="chip">Seamless Transitions</div>
         </div>
     </div>
 
@@ -651,7 +651,6 @@
         // ==========================================
         // 1. ISL LINGUISTIC GLOSS & SYNTAX ENGINE
         // ==========================================
-        // Maps natural English/Hindi words & phrases to canonical 34-word ISL vocabulary IDs
         const ISL_VOCAB_MAP = {
             'beautiful': { id: 'beautiful', label: 'BEAUTIFUL', role: 'Modifier', hindi: 'सुंदर' },
             'sundar': { id: 'beautiful', label: 'BEAUTIFUL', role: 'Modifier', hindi: 'सुंदर' },
@@ -725,7 +724,6 @@
             'exam': { id: 'test_vid1', label: 'TEST', role: 'Topic', hindi: 'परीक्षा' }
         };
 
-        // Multi-word phrase triggers
         const PHRASE_TRIGGERS = [
             { phrases: ['what is your name', 'what\'s your name', 'aapka naam kya hai', 'naam kya hai', 'your name what'], id: 'what_is_your_name', label: 'WHAT_IS_YOUR_NAME', role: 'Question', hindi: 'आपका नाम क्या है' },
             { phrases: ['what happened', 'what\'s happened', 'kya hua', 'kya ho gaya'], id: 'what_happened', label: 'WHAT_HAPPENED', role: 'Question', hindi: 'क्या हुआ' },
@@ -737,7 +735,6 @@
             if (!inputText || !inputText.trim()) return [];
             const cleanText = inputText.toLowerCase().replace(/[?,.!]/g, '').trim();
 
-            // 1. Check direct multi-word phrase triggers first
             for (const phraseObj of PHRASE_TRIGGERS) {
                 for (const p of phraseObj.phrases) {
                     if (cleanText.includes(p)) {
@@ -746,7 +743,6 @@
                 }
             }
 
-            // 2. Tokenize and extract recognized ISL concepts
             const words = cleanText.split(/\s+/);
             const recognizedTokens = [];
             const seenIds = new Set();
@@ -762,12 +758,9 @@
             }
 
             if (recognizedTokens.length === 0) {
-                // Fallback default
                 return [{ id: 'beautiful', label: 'BEAUTIFUL', role: 'Default', hindi: 'सुंदर' }];
             }
 
-            // 3. ISL Topic-Comment & Temporal Syntax Reordering:
-            // Order: Time (Today/Tomorrow) -> Topic/Subject -> Object -> Action -> Question (Where/Why/When)
             const timeTokens = [];
             const topicTokens = [];
             const objectTokens = [];
@@ -784,12 +777,11 @@
                 else otherTokens.push(t);
             });
 
-            // Reconstruct in ISL grammar order
             return [...timeTokens, ...topicTokens, ...objectTokens, ...otherTokens, ...actionTokens, ...questionTokens];
         }
 
         // ==========================================
-        // 2. THREE.JS 3D SCENE & ENGINE SETUP
+        // 2. THREE.JS 3D SCENE & PERSISTENT AVATAR
         // ==========================================
         const container = document.getElementById('canvas-container');
         const scene = new THREE.Scene();
@@ -802,7 +794,7 @@
         const camera = new THREE.PerspectiveCamera(38, window.innerWidth / window.innerHeight, 0.1, 100);
         camera.position.set(0.0, 1.45, 1.7);
 
-        const renderer = new THREE.WebGLRenderer({ antialias: true });
+        const renderer = new THREE.WebGLRenderer({ antialias: true, powerPreference: 'high-performance' });
         renderer.setSize(window.innerWidth, window.innerHeight);
         renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
         renderer.toneMapping = THREE.ACESFilmicToneMapping;
@@ -835,20 +827,22 @@
         scene.add(rimLight);
 
         // ==========================================
-        // 3. AVATAR MODEL & SEQUENTIAL SIGN PLAYER
+        // 3. ZERO-BLINK CLIP CACHE & CROSS-FADE MIXER
         // ==========================================
         let allSignsManifest = [];
-        let currentAvatar = null;
+        let persistentAvatar = null;
         let mixer = null;
         let activeAction = null;
-        let playbackSpeed = 0.8; // Shifted default to 0.8x for calm, natural signing
+        let playbackSpeed = 0.8;
+        const clipCache = {}; // in-memory animation clips: { [wordId]: THREE.AnimationClip }
+        const loader = new THREE.GLTFLoader();
 
-        // Sentence Playback Queue State
+        // Queue Execution State
         let sentenceQueue = [];
         let currentQueueIndex = 0;
         let isSentencePlaying = false;
         let isPaused = false;
-        const loader = new THREE.GLTFLoader();
+        let activeTransitionTimeout = null;
 
         const subtitleHud = document.getElementById('subtitle-hud');
         const currentSignLabel = document.getElementById('current-sign-label');
@@ -858,6 +852,213 @@
         const signSelector = document.getElementById('sign-selector');
         const signCountEl = document.getElementById('sign-count');
 
+        // Fetch or load clip without touching scene mesh
+        async function getOrFetchClip(wordId) {
+            if (clipCache[wordId]) return clipCache[wordId];
+            return new Promise((resolve, reject) => {
+                const path = `./output/glb/avatar_${wordId}.glb?v=` + Date.now();
+                loader.load(
+                    path,
+                    (gltf) => {
+                        let clip = null;
+                        if (gltf.animations && gltf.animations.length > 0) {
+                            clip = gltf.animations.find(c => c.name.toLowerCase().includes(wordId.toLowerCase()));
+                            if (!clip) clip = gltf.animations.reduce((max, c) => c.duration > max.duration ? c : max, gltf.animations[0]);
+                        }
+                        if (clip) {
+                            clipCache[wordId] = clip;
+                            resolve(clip);
+                        } else {
+                            reject(new Error(`No animation clip found in avatar_${wordId}.glb`));
+                        }
+                    },
+                    undefined,
+                    (err) => reject(err)
+                );
+            });
+        }
+
+        // Initialize persistent base avatar ONCE on startup
+        async function initializeBaseAvatar(firstWordId = 'what_is_your_name') {
+            const loadingScreen = document.getElementById('loading-screen');
+            setDebug('Loading Base Avatar Mesh...');
+
+            return new Promise((resolve) => {
+                const path = `./output/glb/avatar_${firstWordId}.glb?v=` + Date.now();
+                loader.load(
+                    path,
+                    (gltf) => {
+                        persistentAvatar = gltf.scene;
+                        persistentAvatar.traverse((child) => {
+                            if (child.isMesh) {
+                                child.castShadow = true;
+                                child.receiveShadow = true;
+                                if (child.material) {
+                                    child.material.transparent = false;
+                                    child.material.opacity = 1.0;
+                                    child.material.depthWrite = true;
+                                    child.material.needsUpdate = true;
+                                }
+                            }
+                        });
+
+                        scene.add(persistentAvatar);
+                        mixer = new THREE.AnimationMixer(persistentAvatar);
+                        mixer.timeScale = playbackSpeed;
+
+                        if (gltf.animations && gltf.animations.length > 0) {
+                            clipCache[firstWordId] = gltf.animations[0];
+                        }
+
+                        if (loadingScreen) {
+                            loadingScreen.style.opacity = '0';
+                            setTimeout(() => { loadingScreen.style.display = 'none'; }, 250);
+                        }
+                        setDebug('Avatar Ready. Initialized Smooth Cross-Fading.');
+                        resolve();
+                    },
+                    undefined,
+                    (err) => {
+                        console.error('Failed to load base avatar:', err);
+                        if (loadingScreen) loadingScreen.style.display = 'none';
+                        resolve();
+                    }
+                );
+            });
+        }
+
+        // Smooth Cross-Fade Animation Playback in Same Frame
+        async function playSignSmooth(wordId, onComplete = null, crossFadeDuration = 0.35) {
+            setDebug(`Transitioning to sign: ${wordId}...`);
+            if (activeTransitionTimeout) {
+                clearTimeout(activeTransitionTimeout);
+                activeTransitionTimeout = null;
+            }
+
+            try {
+                const clip = await getOrFetchClip(wordId);
+                if (!mixer || !persistentAvatar) return;
+
+                const nextAction = mixer.clipAction(clip);
+                nextAction.setLoop(THREE.LoopOnce);
+                nextAction.clampWhenFinished = true;
+                nextAction.reset();
+                nextAction.enabled = true;
+                nextAction.play();
+
+                if (activeAction && activeAction !== nextAction) {
+                    // Smooth continuous biological quaternion slerp crossfade
+                    activeAction.crossFadeTo(nextAction, crossFadeDuration, true);
+                }
+                activeAction = nextAction;
+
+                // Update HUD
+                subtitleHud.style.display = 'block';
+                currentSignLabel.textContent = `SIGNING: ${wordId.toUpperCase().replace(/_/g, ' ')}`;
+                currentSignMeta.textContent = `Duration: ${clip.duration.toFixed(2)}s • 60 FPS • Seamless Cross-Fade`;
+
+                // Calculate exact trigger point for next sign transition
+                const clipDurationMs = (clip.duration / playbackSpeed) * 1000;
+                const transitionLeadMs = Math.max(100, (crossFadeDuration / playbackSpeed) * 1000 * 0.8);
+                const timeToNext = Math.max(200, clipDurationMs - transitionLeadMs);
+
+                activeTransitionTimeout = setTimeout(() => {
+                    if (onComplete) onComplete();
+                }, timeToNext);
+
+            } catch (err) {
+                console.error(`Error playing smooth sign ${wordId}:`, err);
+                if (onComplete) onComplete();
+            }
+        }
+
+        // ==========================================
+        // 4. SEAMLESS SENTENCE QUEUE ENGINE
+        // ==========================================
+        function executeSentenceSequence() {
+            if (sentenceQueue.length === 0) return;
+            isSentencePlaying = true;
+            isPaused = false;
+            currentQueueIndex = 0;
+            updateGlossPillUI();
+            playNextSignFromQueue();
+        }
+
+        function playNextSignFromQueue() {
+            if (!isSentencePlaying || isPaused) return;
+
+            if (currentQueueIndex >= sentenceQueue.length) {
+                isSentencePlaying = false;
+                setDebug('Sentence sequence complete!');
+                document.getElementById('btn-play-pause').textContent = '▶ Play';
+                document.getElementById('btn-play-pause').classList.remove('primary');
+                sentenceProgress.style.width = '100%';
+                updateGlossPillUI();
+                return;
+            }
+
+            const currentItem = sentenceQueue[currentQueueIndex];
+            updateGlossPillUI();
+
+            const pct = Math.round(((currentQueueIndex + 1) / sentenceQueue.length) * 100);
+            sentenceProgress.style.width = pct + '%';
+
+            playSignSmooth(currentItem.id, () => {
+                if (isSentencePlaying && !isPaused) {
+                    currentQueueIndex++;
+                    playNextSignFromQueue();
+                }
+            }, 0.35); // 350ms smooth blend between signs
+        }
+
+        function updateGlossPillUI() {
+            const pills = glossContainer.querySelectorAll('.gloss-pill');
+            pills.forEach((p, idx) => {
+                p.classList.remove('active', 'completed');
+                if (idx === currentQueueIndex && isSentencePlaying) {
+                    p.classList.add('active');
+                } else if (idx < currentQueueIndex) {
+                    p.classList.add('completed');
+                }
+            });
+        }
+
+        function handleTranslateSentence() {
+            const textInput = document.getElementById('sentence-text').value;
+            const glossTokens = transformTextToISLGloss(textInput);
+            sentenceQueue = glossTokens;
+            currentQueueIndex = 0;
+
+            glossContainer.innerHTML = '';
+            if (glossTokens.length === 0) {
+                glossContainer.innerHTML = '<span style="color: var(--text-muted); font-size: 0.8rem;">No recognizable words.</span>';
+                return;
+            }
+
+            glossTokens.forEach((item, idx) => {
+                const pill = document.createElement('div');
+                pill.className = 'gloss-pill' + (idx === 0 ? ' active' : '');
+                pill.innerHTML = `
+                    <span>${item.label}</span>
+                    <span class="pill-role">${item.role}</span>
+                `;
+                glossContainer.appendChild(pill);
+            });
+
+            document.getElementById('syntax-type').textContent = `ISL TOPIC-COMMENT (${glossTokens.length} SIGNS)`;
+            sentenceProgress.style.width = '0%';
+            document.getElementById('btn-play-pause').textContent = '⏸ Pause';
+            document.getElementById('btn-play-pause').classList.add('primary');
+
+            // Pre-fetch clips for this sentence in parallel before executing for instant response
+            Promise.all(glossTokens.map(t => getOrFetchClip(t.id))).then(() => {
+                executeSentenceSequence();
+            });
+        }
+
+        // ==========================================
+        // 5. EVENT LISTENERS & UI SETUP
+        // ==========================================
         async function fetchManifest() {
             try {
                 const res = await fetch('./output/signs_manifest.json?v=' + Date.now());
@@ -866,7 +1067,9 @@
                     allSignsManifest = data.signs || data;
                     renderSignList(allSignsManifest);
                     
-                    // Trigger default sentence translation on startup
+                    // Initialize base avatar and trigger default sentence
+                    const firstId = allSignsManifest.length > 0 ? (allSignsManifest[0].id || allSignsManifest[0].word_id) : 'what_is_your_name';
+                    await initializeBaseAvatar(firstId);
                     handleTranslateSentence();
                 }
             } catch (e) {
@@ -895,180 +1098,10 @@
             if (signCountEl) signCountEl.textContent = signs.length;
         }
 
-        // Play a specific sign by wordId with completion callback
-        function playSignAnimation(wordId, onComplete = null) {
-            setDebug(`Loading sign clip: ${wordId}...`);
-            const loadingScreen = document.getElementById('loading-screen');
-
-            // Clean previous avatar
-            const toRemove = [];
-            scene.traverse((obj) => {
-                if (obj !== scene && obj !== gridHelper && obj !== ambientLight && obj !== keyLight && obj !== fillLight && obj !== rimLight) {
-                    toRemove.push(obj);
-                }
-            });
-            toRemove.forEach((obj) => scene.remove(obj));
-            if (mixer) mixer.stopAllAction();
-
-            const path = `./output/glb/avatar_${wordId}.glb?v=` + Date.now();
-            loader.load(
-                path,
-                (gltf) => {
-                    currentAvatar = gltf.scene;
-                    currentAvatar.traverse((child) => {
-                        if (child.isMesh) {
-                            child.castShadow = true;
-                            child.receiveShadow = true;
-                            if (child.material) {
-                                child.material.transparent = false;
-                                child.material.opacity = 1.0;
-                                child.material.depthWrite = true;
-                                child.material.needsUpdate = true;
-                            }
-                        }
-                    });
-
-                    scene.add(currentAvatar);
-                    mixer = new THREE.AnimationMixer(currentAvatar);
-                    mixer.timeScale = playbackSpeed;
-
-                    let clip = null;
-                    if (gltf.animations && gltf.animations.length > 0) {
-                        clip = gltf.animations.find(c => c.name.toLowerCase().includes(wordId.toLowerCase()));
-                        if (!clip) clip = gltf.animations.reduce((max, c) => c.duration > max.duration ? c : max, gltf.animations[0]);
-                    }
-
-                    if (clip) {
-                        activeAction = mixer.clipAction(clip);
-                        activeAction.setLoop(THREE.LoopOnce);
-                        activeAction.clampWhenFinished = true;
-                        activeAction.reset();
-                        activeAction.play();
-
-                        // Show HUD Banner
-                        subtitleHud.style.display = 'block';
-                        currentSignLabel.textContent = `SIGNING: ${wordId.toUpperCase().replace(/_/g, ' ')}`;
-                        currentSignMeta.textContent = `Duration: ${clip.duration.toFixed(2)}s • 60 FPS • Speed: ${playbackSpeed.toFixed(1)}x`;
-
-                        setDebug(`Playing: ${wordId} (${clip.duration.toFixed(2)}s) at ${playbackSpeed.toFixed(1)}x`);
-
-                        // Listen for animation finish event to transition next sign in sentence
-                        const onFinished = (e) => {
-                            if (e.action === activeAction) {
-                                mixer.removeEventListener('finished', onFinished);
-                                if (onComplete) onComplete();
-                            }
-                        };
-                        mixer.addEventListener('finished', onFinished);
-                    }
-
-                    if (loadingScreen) {
-                        loadingScreen.style.opacity = '0';
-                        setTimeout(() => { loadingScreen.style.display = 'none'; }, 200);
-                    }
-                },
-                undefined,
-                (err) => {
-                    console.error(`Error loading avatar_${wordId}.glb:`, err);
-                    setDebug(`Error loading avatar_${wordId}.glb`);
-                    if (loadingScreen) loadingScreen.style.display = 'none';
-                    if (onComplete) onComplete();
-                }
-            );
-        }
-
-        // ==========================================
-        // 4. SENTENCE QUEUE EXECUTION ENGINE
-        // ==========================================
-        function executeSentenceSequence() {
-            if (sentenceQueue.length === 0) return;
-            isSentencePlaying = true;
-            isPaused = false;
-            currentQueueIndex = 0;
-            updateGlossPillUI();
-            playNextSignFromQueue();
-        }
-
-        function playNextSignFromQueue() {
-            if (currentQueueIndex >= sentenceQueue.length) {
-                // Completed whole sentence!
-                isSentencePlaying = false;
-                setDebug('Sentence signing complete!');
-                document.getElementById('btn-play-pause').textContent = '▶ Play';
-                document.getElementById('btn-play-pause').classList.remove('primary');
-                sentenceProgress.style.width = '100%';
-                updateGlossPillUI();
-                return;
-            }
-
-            const currentItem = sentenceQueue[currentQueueIndex];
-            updateGlossPillUI();
-
-            // Calculate progress bar percentage
-            const pct = Math.round((currentQueueIndex / sentenceQueue.length) * 100);
-            sentenceProgress.style.width = pct + '%';
-
-            playSignAnimation(currentItem.id, () => {
-                if (isSentencePlaying && !isPaused) {
-                    currentQueueIndex++;
-                    setTimeout(() => {
-                        playNextSignFromQueue();
-                    }, 180); // natural pause between ISL signs
-                }
-            });
-        }
-
-        function updateGlossPillUI() {
-            const pills = glossContainer.querySelectorAll('.gloss-pill');
-            pills.forEach((p, idx) => {
-                p.classList.remove('active', 'completed');
-                if (idx === currentQueueIndex && isSentencePlaying) {
-                    p.classList.add('active');
-                } else if (idx < currentQueueIndex) {
-                    p.classList.add('completed');
-                }
-            });
-        }
-
-        function handleTranslateSentence() {
-            const textInput = document.getElementById('sentence-text').value;
-            const glossTokens = transformTextToISLGloss(textInput);
-            sentenceQueue = glossTokens;
-            currentQueueIndex = 0;
-
-            // Render Gloss Badges in UI
-            glossContainer.innerHTML = '';
-            if (glossTokens.length === 0) {
-                glossContainer.innerHTML = '<span style="color: var(--text-muted); font-size: 0.8rem;">No recognizable words.</span>';
-                return;
-            }
-
-            glossTokens.forEach((item, idx) => {
-                const pill = document.createElement('div');
-                pill.className = 'gloss-pill' + (idx === 0 ? ' active' : '');
-                pill.innerHTML = `
-                    <span>${item.label}</span>
-                    <span class="pill-role">${item.role}</span>
-                `;
-                glossContainer.appendChild(pill);
-            });
-
-            document.getElementById('syntax-type').textContent = `ISL TOPIC-COMMENT (${glossTokens.length} SIGNS)`;
-            sentenceProgress.style.width = '0%';
-            document.getElementById('btn-play-pause').textContent = '⏸ Pause';
-            document.getElementById('btn-play-pause').classList.add('primary');
-
-            executeSentenceSequence();
-        }
-
-        // ==========================================
-        // 5. EVENT LISTENERS & UI WIRING
-        // ==========================================
         document.getElementById('btn-translate-sign').addEventListener('click', handleTranslateSentence);
 
-        // Preset Scenario Buttons
         document.querySelectorAll('.preset-btn').forEach(btn => {
-            btn.addEventListener('click', (e) => {
+            btn.addEventListener('click', () => {
                 const text = btn.getAttribute('data-text');
                 document.getElementById('sentence-text').value = text;
                 handleTranslateSentence();
@@ -1095,11 +1128,11 @@
             dictControls.style.display = 'block';
         });
 
-        // Dictionary List Change
+        // Dictionary List Selection
         signSelector.addEventListener('change', (e) => {
             if (e.target.value) {
                 isSentencePlaying = false;
-                playSignAnimation(e.target.value);
+                playSignSmooth(e.target.value, null, 0.4);
             }
         });
 
@@ -1114,6 +1147,7 @@
                 isPaused = false;
                 btnPlayPause.textContent = '⏸ Pause';
                 btnPlayPause.classList.add('primary');
+                if (isSentencePlaying) playNextSignFromQueue();
             } else {
                 activeAction.paused = true;
                 isPaused = true;
@@ -1136,7 +1170,7 @@
             if (sentenceQueue.length > 0 && currentQueueIndex < sentenceQueue.length - 1) {
                 currentQueueIndex++;
                 updateGlossPillUI();
-                playSignAnimation(sentenceQueue[currentQueueIndex].id);
+                playSignSmooth(sentenceQueue[currentQueueIndex].id, null, 0.35);
             }
         });
 
@@ -1144,11 +1178,11 @@
             if (sentenceQueue.length > 0 && currentQueueIndex > 0) {
                 currentQueueIndex--;
                 updateGlossPillUI();
-                playSignAnimation(sentenceQueue[currentQueueIndex].id);
+                playSignSmooth(sentenceQueue[currentQueueIndex].id, null, 0.35);
             }
         });
 
-        // Speed Slider (Default 0.8x)
+        // Speed Slider
         const speedSlider = document.getElementById('speed-slider');
         const speedVal = document.getElementById('speed-val');
         speedSlider.addEventListener('input', (e) => {
@@ -1203,7 +1237,6 @@
         }
         animate();
 
-        // Start manifest fetch
         fetchManifest();
     </script>
 </body>
