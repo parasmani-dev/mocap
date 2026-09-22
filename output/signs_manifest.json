@@ -1,5 +1,37 @@
 [
   {
+    "word_id": "answer",
+    "label": "Answer",
+    "glb_file": "./output/glb/avatar_answer.glb",
+    "bvh_file": "./output/bvh/answer.bvh",
+    "duration_sec": 2.92,
+    "status": "CLEAN"
+  },
+  {
+    "word_id": "approval",
+    "label": "Approval",
+    "glb_file": "./output/glb/avatar_approval.glb",
+    "bvh_file": "./output/bvh/approval.bvh",
+    "duration_sec": 15.47,
+    "status": "CLEAN"
+  },
+  {
+    "word_id": "bag_backpack",
+    "label": "Bag Backpack",
+    "glb_file": "./output/glb/avatar_bag_backpack.glb",
+    "bvh_file": "./output/bvh/bag_backpack.bvh",
+    "duration_sec": 3.84,
+    "status": "CLEAN"
+  },
+  {
+    "word_id": "ball",
+    "label": "Ball",
+    "glb_file": "./output/glb/avatar_ball.glb",
+    "bvh_file": "./output/bvh/ball.bvh",
+    "duration_sec": 3.0,
+    "status": "CLEAN"
+  },
+  {
     "word_id": "beautiful",
     "label": "Beautiful",
     "glb_file": "./output/glb/avatar_beautiful.glb",
@@ -8,10 +40,34 @@
     "status": "CLEAN"
   },
   {
+    "word_id": "beautiful_authentic",
+    "label": "Beautiful Authentic",
+    "glb_file": "./output/glb/avatar_beautiful_authentic.glb",
+    "bvh_file": "./output/bvh/beautiful_authentic.bvh",
+    "duration_sec": 2.0,
+    "status": "CLEAN"
+  },
+  {
+    "word_id": "beautiful_trimmed",
+    "label": "Beautiful Trimmed",
+    "glb_file": "./output/glb/avatar_beautiful_trimmed.glb",
+    "bvh_file": "./output/bvh/beautiful_trimmed.bvh",
+    "duration_sec": 1.4,
+    "status": "CLEAN"
+  },
+  {
     "word_id": "black",
     "label": "Black",
     "glb_file": "./output/glb/avatar_black.glb",
     "bvh_file": "./output/bvh/black.bvh",
+    "duration_sec": 2.0,
+    "status": "CLEAN"
+  },
+  {
+    "word_id": "black_direct",
+    "label": "Black Direct",
+    "glb_file": "./output/glb/avatar_black_direct.glb",
+    "bvh_file": "",
     "duration_sec": 2.0,
     "status": "CLEAN"
   },
@@ -40,11 +96,27 @@
     "status": "CLEAN"
   },
   {
+    "word_id": "calculator",
+    "label": "Calculator",
+    "glb_file": "./output/glb/avatar_calculator.glb",
+    "bvh_file": "./output/bvh/calculator.bvh",
+    "duration_sec": 3.6,
+    "status": "CLEAN"
+  },
+  {
+    "word_id": "calendar",
+    "label": "Calendar",
+    "glb_file": "./output/glb/avatar_calendar.glb",
+    "bvh_file": "./output/bvh/calendar.bvh",
+    "duration_sec": 4.2,
+    "status": "CLEAN"
+  },
+  {
     "word_id": "check_it",
     "label": "Check It",
     "glb_file": "./output/glb/avatar_check_it.glb",
     "bvh_file": "./output/bvh/check_it.bvh",
-    "duration_sec": 2.0,
+    "duration_sec": 24.7,
     "status": "CLEAN"
   },
   {
@@ -53,6 +125,14 @@
     "glb_file": "./output/glb/avatar_competition_contest.glb",
     "bvh_file": "./output/bvh/competition_contest.bvh",
     "duration_sec": 2.0,
+    "status": "CLEAN"
+  },
+  {
+    "word_id": "computer",
+    "label": "Computer",
+    "glb_file": "./output/glb/avatar_computer.glb",
+    "bvh_file": "./output/bvh/computer.bvh",
+    "duration_sec": 3.72,
     "status": "CLEAN"
   },
   {
@@ -88,6 +168,14 @@
     "status": "CLEAN"
   },
   {
+    "word_id": "early",
+    "label": "Early",
+    "glb_file": "./output/glb/avatar_early.glb",
+    "bvh_file": "./output/bvh/early.bvh",
+    "duration_sec": 5.64,
+    "status": "CLEAN"
+  },
+  {
     "word_id": "explain",
     "label": "Explain",
     "glb_file": "./output/glb/avatar_explain.glb",
@@ -101,6 +189,158 @@
     "glb_file": "./output/glb/avatar_finish.glb",
     "bvh_file": "./output/bvh/finish.bvh",
     "duration_sec": 2.0,
+    "status": "CLEAN"
+  },
+  {
+    "word_id": "friend",
+    "label": "Friend",
+    "glb_file": "./output/glb/avatar_friend.glb",
+    "bvh_file": "./output/bvh/friend.bvh",
+    "duration_sec": 4.52,
+    "status": "CLEAN"
+  },
+  {
+    "word_id": "good_afternoon",
+    "label": "Good Afternoon",
+    "glb_file": "./output/glb/avatar_good_afternoon.glb",
+    "bvh_file": "./output/bvh/good_afternoon.bvh",
+    "duration_sec": 3.28,
+    "status": "CLEAN"
+  },
+  {
+    "word_id": "good_friday",
+    "label": "Good Friday",
+    "glb_file": "./output/glb/avatar_good_friday.glb",
+    "bvh_file": "./output/bvh/good_friday.bvh",
+    "duration_sec": 3.84,
+    "status": "CLEAN"
+  },
+  {
+    "word_id": "good_morning",
+    "label": "Good Morning",
+    "glb_file": "./output/glb/avatar_good_morning.glb",
+    "bvh_file": "./output/bvh/good_morning.bvh",
+    "duration_sec": 3.64,
+    "status": "CLEAN"
+  },
+  {
+    "word_id": "good_night",
+    "label": "Good Night",
+    "glb_file": "./output/glb/avatar_good_night.glb",
+    "bvh_file": "./output/bvh/good_night.bvh",
+    "duration_sec": 3.04,
+    "status": "CLEAN"
+  },
+  {
+    "word_id": "hello",
+    "label": "Hello",
+    "glb_file": "./output/glb/avatar_hello.glb",
+    "bvh_file": "./output/bvh/hello.bvh",
+    "duration_sec": 2.96,
+    "status": "CLEAN"
+  },
+  {
+    "word_id": "help",
+    "label": "Help",
+    "glb_file": "./output/glb/avatar_help.glb",
+    "bvh_file": "./output/bvh/help.bvh",
+    "duration_sec": 3.36,
+    "status": "CLEAN"
+  },
+  {
+    "word_id": "homework",
+    "label": "Homework",
+    "glb_file": "./output/glb/avatar_homework.glb",
+    "bvh_file": "./output/bvh/homework.bvh",
+    "duration_sec": 3.2,
+    "status": "CLEAN"
+  },
+  {
+    "word_id": "how_explanation",
+    "label": "How Explanation",
+    "glb_file": "./output/glb/avatar_how_explanation.glb",
+    "bvh_file": "./output/bvh/how_explanation.bvh",
+    "duration_sec": 8.16,
+    "status": "CLEAN"
+  },
+  {
+    "word_id": "laboratory_academic",
+    "label": "Laboratory Academic",
+    "glb_file": "./output/glb/avatar_laboratory_academic.glb",
+    "bvh_file": "./output/bvh/laboratory_academic.bvh",
+    "duration_sec": 29.24,
+    "status": "CLEAN"
+  },
+  {
+    "word_id": "late_sign_1",
+    "label": "Late Sign 1",
+    "glb_file": "./output/glb/avatar_late_sign_1.glb",
+    "bvh_file": "./output/bvh/late_sign_1.bvh",
+    "duration_sec": 3.64,
+    "status": "CLEAN"
+  },
+  {
+    "word_id": "learn",
+    "label": "Learn",
+    "glb_file": "./output/glb/avatar_learn.glb",
+    "bvh_file": "./output/bvh/learn.bvh",
+    "duration_sec": 5.52,
+    "status": "CLEAN"
+  },
+  {
+    "word_id": "leave_absent",
+    "label": "Leave Absent",
+    "glb_file": "./output/glb/avatar_leave_absent.glb",
+    "bvh_file": "./output/bvh/leave_absent.bvh",
+    "duration_sec": 6.16,
+    "status": "CLEAN"
+  },
+  {
+    "word_id": "listen_visual",
+    "label": "Listen Visual",
+    "glb_file": "./output/glb/avatar_listen_visual.glb",
+    "bvh_file": "./output/bvh/listen_visual.bvh",
+    "duration_sec": 3.88,
+    "status": "CLEAN"
+  },
+  {
+    "word_id": "name",
+    "label": "Name",
+    "glb_file": "./output/glb/avatar_name.glb",
+    "bvh_file": "./output/bvh/name.bvh",
+    "duration_sec": 3.4,
+    "status": "CLEAN"
+  },
+  {
+    "word_id": "nice",
+    "label": "Nice",
+    "glb_file": "./output/glb/avatar_nice.glb",
+    "bvh_file": "./output/bvh/nice.bvh",
+    "duration_sec": 3.88,
+    "status": "CLEAN"
+  },
+  {
+    "word_id": "nice_to_meet_you",
+    "label": "Nice To Meet You",
+    "glb_file": "./output/glb/avatar_nice_to_meet_you.glb",
+    "bvh_file": "./output/bvh/nice_to_meet_you.bvh",
+    "duration_sec": 3.32,
+    "status": "CLEAN"
+  },
+  {
+    "word_id": "no_sign_2",
+    "label": "No Sign 2",
+    "glb_file": "./output/glb/avatar_no_sign_2.glb",
+    "bvh_file": "./output/bvh/no_sign_2.bvh",
+    "duration_sec": 3.96,
+    "status": "CLEAN"
+  },
+  {
+    "word_id": "parents",
+    "label": "Parents",
+    "glb_file": "./output/glb/avatar_parents.glb",
+    "bvh_file": "./output/bvh/parents.bvh",
+    "duration_sec": 3.16,
     "status": "CLEAN"
   },
   {
@@ -120,6 +360,22 @@
     "status": "CLEAN"
   },
   {
+    "word_id": "phone",
+    "label": "Phone",
+    "glb_file": "./output/glb/avatar_phone.glb",
+    "bvh_file": "./output/bvh/phone.bvh",
+    "duration_sec": 5.28,
+    "status": "CLEAN"
+  },
+  {
+    "word_id": "please",
+    "label": "Please",
+    "glb_file": "./output/glb/avatar_please.glb",
+    "bvh_file": "./output/bvh/please.bvh",
+    "duration_sec": 3.88,
+    "status": "CLEAN"
+  },
+  {
     "word_id": "quiet",
     "label": "Quiet",
     "glb_file": "./output/glb/avatar_quiet.glb",
@@ -128,11 +384,27 @@
     "status": "CLEAN"
   },
   {
+    "word_id": "read",
+    "label": "Read",
+    "glb_file": "./output/glb/avatar_read.glb",
+    "bvh_file": "./output/bvh/read.bvh",
+    "duration_sec": 4.04,
+    "status": "CLEAN"
+  },
+  {
+    "word_id": "request",
+    "label": "Request",
+    "glb_file": "./output/glb/avatar_request.glb",
+    "bvh_file": "./output/bvh/request.bvh",
+    "duration_sec": 3.4,
+    "status": "CLEAN"
+  },
+  {
     "word_id": "sign_test",
     "label": "Sign Test",
     "glb_file": "./output/glb/avatar_sign_test.glb",
     "bvh_file": "./output/bvh/sign_test.bvh",
-    "duration_sec": 2.0,
+    "duration_sec": 2.62,
     "status": "CLEAN"
   },
   {
@@ -152,6 +424,22 @@
     "status": "CLEAN"
   },
   {
+    "word_id": "stupid",
+    "label": "Stupid",
+    "glb_file": "./output/glb/avatar_stupid.glb",
+    "bvh_file": "./output/bvh/stupid.bvh",
+    "duration_sec": 3.2,
+    "status": "CLEAN"
+  },
+  {
+    "word_id": "take",
+    "label": "Take",
+    "glb_file": "./output/glb/avatar_take.glb",
+    "bvh_file": "./output/bvh/take.bvh",
+    "duration_sec": 3.24,
+    "status": "CLEAN"
+  },
+  {
     "word_id": "teacher",
     "label": "Teacher",
     "glb_file": "./output/glb/avatar_teacher.glb",
@@ -164,7 +452,47 @@
     "label": "Test Vid1",
     "glb_file": "./output/glb/avatar_test_vid1.glb",
     "bvh_file": "./output/bvh/test_vid1.bvh",
-    "duration_sec": 2.0,
+    "duration_sec": 18.11,
+    "status": "CLEAN"
+  },
+  {
+    "word_id": "thank_you_sign_2",
+    "label": "Thank You Sign 2",
+    "glb_file": "./output/glb/avatar_thank_you_sign_2.glb",
+    "bvh_file": "./output/bvh/thank_you_sign_2.bvh",
+    "duration_sec": 3.0,
+    "status": "CLEAN"
+  },
+  {
+    "word_id": "this",
+    "label": "This",
+    "glb_file": "./output/glb/avatar_this.glb",
+    "bvh_file": "./output/bvh/this.bvh",
+    "duration_sec": 3.04,
+    "status": "CLEAN"
+  },
+  {
+    "word_id": "time",
+    "label": "Time",
+    "glb_file": "./output/glb/avatar_time.glb",
+    "bvh_file": "./output/bvh/time.bvh",
+    "duration_sec": 2.96,
+    "status": "CLEAN"
+  },
+  {
+    "word_id": "time_table",
+    "label": "Time Table",
+    "glb_file": "./output/glb/avatar_time_table.glb",
+    "bvh_file": "./output/bvh/time_table.bvh",
+    "duration_sec": 4.08,
+    "status": "CLEAN"
+  },
+  {
+    "word_id": "timeline",
+    "label": "Timeline",
+    "glb_file": "./output/glb/avatar_timeline.glb",
+    "bvh_file": "./output/bvh/timeline.bvh",
+    "duration_sec": 70.16,
     "status": "CLEAN"
   },
   {
@@ -184,6 +512,22 @@
     "status": "CLEAN"
   },
   {
+    "word_id": "tonight",
+    "label": "Tonight",
+    "glb_file": "./output/glb/avatar_tonight.glb",
+    "bvh_file": "./output/bvh/tonight.bvh",
+    "duration_sec": 3.68,
+    "status": "CLEAN"
+  },
+  {
+    "word_id": "understand_comprehend_grasp_sign_2",
+    "label": "Understand Comprehend Grasp Sign 2",
+    "glb_file": "./output/glb/avatar_understand_comprehend_grasp_sign_2.glb",
+    "bvh_file": "./output/bvh/understand_comprehend_grasp_sign_2.bvh",
+    "duration_sec": 2.76,
+    "status": "CLEAN"
+  },
+  {
     "word_id": "wait",
     "label": "Wait",
     "glb_file": "./output/glb/avatar_wait.glb",
@@ -192,11 +536,27 @@
     "status": "CLEAN"
   },
   {
+    "word_id": "wake",
+    "label": "Wake",
+    "glb_file": "./output/glb/avatar_wake.glb",
+    "bvh_file": "./output/bvh/wake.bvh",
+    "duration_sec": 4.0,
+    "status": "CLEAN"
+  },
+  {
     "word_id": "want_desire_wish_for",
     "label": "Want Desire Wish For",
     "glb_file": "./output/glb/avatar_want_desire_wish_for.glb",
     "bvh_file": "./output/bvh/want_desire_wish_for.bvh",
     "duration_sec": 2.0,
+    "status": "CLEAN"
+  },
+  {
+    "word_id": "what",
+    "label": "What",
+    "glb_file": "./output/glb/avatar_what.glb",
+    "bvh_file": "./output/bvh/what.bvh",
+    "duration_sec": 2.56,
     "status": "CLEAN"
   },
   {
@@ -213,6 +573,14 @@
     "glb_file": "./output/glb/avatar_what_is_your_name.glb",
     "bvh_file": "./output/bvh/what_is_your_name.bvh",
     "duration_sec": 2.0,
+    "status": "CLEAN"
+  },
+  {
+    "word_id": "whatever",
+    "label": "Whatever",
+    "glb_file": "./output/glb/avatar_whatever.glb",
+    "bvh_file": "./output/bvh/whatever.bvh",
+    "duration_sec": 2.72,
     "status": "CLEAN"
   },
   {
@@ -256,6 +624,14 @@
     "status": "CLEAN"
   },
   {
+    "word_id": "who_whom",
+    "label": "Who Whom",
+    "glb_file": "./output/glb/avatar_who_whom.glb",
+    "bvh_file": "./output/bvh/who_whom.bvh",
+    "duration_sec": 3.12,
+    "status": "CLEAN"
+  },
+  {
     "word_id": "why_sign_1",
     "label": "Why Sign 1",
     "glb_file": "./output/glb/avatar_why_sign_1.glb",
@@ -264,11 +640,59 @@
     "status": "CLEAN"
   },
   {
+    "word_id": "wifi_",
+    "label": "Wifi ",
+    "glb_file": "./output/glb/avatar_wifi_.glb",
+    "bvh_file": "./output/bvh/wifi_.bvh",
+    "duration_sec": 3.8,
+    "status": "CLEAN"
+  },
+  {
     "word_id": "win",
     "label": "Win",
     "glb_file": "./output/glb/avatar_win.glb",
     "bvh_file": "./output/bvh/win.bvh",
     "duration_sec": 2.0,
+    "status": "CLEAN"
+  },
+  {
+    "word_id": "write",
+    "label": "Write",
+    "glb_file": "./output/glb/avatar_write.glb",
+    "bvh_file": "./output/bvh/write.bvh",
+    "duration_sec": 3.52,
+    "status": "CLEAN"
+  },
+  {
+    "word_id": "yesterday",
+    "label": "Yesterday",
+    "glb_file": "./output/glb/avatar_yesterday.glb",
+    "bvh_file": "./output/bvh/yesterday.bvh",
+    "duration_sec": 2.52,
+    "status": "CLEAN"
+  },
+  {
+    "word_id": "you",
+    "label": "You",
+    "glb_file": "./output/glb/avatar_you.glb",
+    "bvh_file": "./output/bvh/you.bvh",
+    "duration_sec": 2.72,
+    "status": "CLEAN"
+  },
+  {
+    "word_id": "your",
+    "label": "Your",
+    "glb_file": "./output/glb/avatar_your.glb",
+    "bvh_file": "./output/bvh/your.bvh",
+    "duration_sec": 2.72,
+    "status": "CLEAN"
+  },
+  {
+    "word_id": "yourself",
+    "label": "Yourself",
+    "glb_file": "./output/glb/avatar_yourself.glb",
+    "bvh_file": "./output/bvh/yourself.bvh",
+    "duration_sec": 2.88,
     "status": "CLEAN"
   }
 ]

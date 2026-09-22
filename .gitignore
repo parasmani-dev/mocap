@@ -32,3 +32,5 @@ input_videos/*.avi
 # Raw FBX character model cache
 models/*.fbx
 
+output/landmarks_json/*.json
+output/bvh/*.bvh
