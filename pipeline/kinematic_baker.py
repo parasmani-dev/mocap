@@ -136,10 +136,10 @@ R_REST_LH = char_arm.data.bones['mixamorig2:LeftHand'].matrix_local.to_3x3() if 
 R_REST_RH = char_arm.data.bones['mixamorig2:RightHand'].matrix_local.to_3x3() if 'mixamorig2:RightHand' in char_arm.data.bones else None
 
 # Canonical Neutral Ready / Rest Pose (Arms resting down and forward in front of waist)
-REST_L_ARM = norm_v(Vector((0.2, -0.9, 0.15)))
-REST_L_FORE = norm_v(Vector((0.2, -0.3, 0.8)))
-REST_R_ARM = norm_v(Vector((-0.2, -0.9, 0.15)))
-REST_R_FORE = norm_v(Vector((-0.2, -0.3, 0.8)))
+REST_L_ARM = norm_v(Vector((0.3, -0.4, 0.6)))
+REST_L_FORE = norm_v(Vector((0.1, 0.2, 0.8)))
+REST_R_ARM = norm_v(Vector((-0.3, -0.4, 0.6)))
+REST_R_FORE = norm_v(Vector((-0.1, 0.2, 0.8)))
 
 def get_bone_local_rot(target_dir_world: Vector, m_rest: Matrix, is_child: bool = False, q_parent_world: Quaternion = None) -> Tuple[Quaternion, Quaternion]:
     """Computes exact local quaternion for a bone given target direction in world space."""
@@ -202,16 +202,51 @@ for f_idx, frame in enumerate(frames):
             pb.rotation_quaternion = Quaternion((1, 0, 0, 0))
             pb.keyframe_insert(data_path='rotation_quaternion', frame=f_num)
 
-    # 2. Left Arm & Forearm
+    # 2. Extract Arm & Forearm Landmarks
     l_sh, l_sh_vis = get_vec_with_vis(pose_lms, 11, min_vis=0.15)
     l_elb, l_elb_vis = get_vec_with_vis(pose_lms, 13, min_vis=0.15)
     l_w, l_w_vis = get_vec_with_vis(pose_lms, 15, min_vis=0.2)
+    
+    r_sh, r_sh_vis = get_vec_with_vis(pose_lms, 12, min_vis=0.15)
+    r_elb, r_elb_vis = get_vec_with_vis(pose_lms, 14, min_vis=0.15)
+    r_w, r_w_vis = get_vec_with_vis(pose_lms, 16, min_vis=0.2)
+    
+    # --- 3D COLLISION & REPULSION PHYSICS LAYER ---
+    CHEST_Z_CLEARANCE = 22.0  # cm in front of spine — increased to clear Ch22 mesh volume
+    
+    # A. Chest Buffer (Z-axis push if too close to torso)
+    if l_w and l_w.z < CHEST_Z_CLEARANCE: l_w.z = CHEST_Z_CLEARANCE
+    if r_w and r_w.z < CHEST_Z_CLEARANCE: r_w.z = CHEST_Z_CLEARANCE
+    if l_elb and l_elb.z < 5.0: l_elb.z = 5.0
+    if r_elb and r_elb.z < 5.0: r_elb.z = 5.0
+    
+    # Y-Floor Lift: Push hands up if they fall below chest/navel area (Y < 15.0)
+    if l_w and l_w.y < 15.0: l_w.y = 15.0
+    if r_w and r_w.y < 15.0: r_w.y = 15.0
+    
+    # B. Hand-to-Hand Anti-Intersection (Z-depth separation)
+    if l_w and r_w:
+        dist = (l_w - r_w).length
+        if dist < 12.0:  # within 12 cm
+            if l_w.z > r_w.z:
+                l_w.z += 6.0
+                r_w.z -= 6.0
+            else:
+                l_w.z -= 6.0
+                r_w.z += 6.0
+                
+    # C. Elbow Abduction Flare Bias (Push elbows outward in X)
+    if l_elb and l_sh: l_elb.x += 8.0 
+    if r_elb and r_sh: r_elb.x -= 8.0 
+    # --- END COLLISION LAYER ---
     
     pb_l_arm = char_bones.get('LeftArm')
     pb_l_fore = char_bones.get('LeftForeArm')
     pb_l_hand = char_bones.get('LeftHand')
     
-    l_active = (lh is not None) or (l_w is not None and l_w_vis >= 0.25)
+    l_active_val = 1.0 if lh is not None else (l_w_vis if l_w is not None else 0.0)
+    l_active = l_active_val >= 0.25
+    blend_l = blend_weight * (1.0 if l_active_val >= 0.35 else 0.3)
     
     if l_sh and l_elb and l_active:
         dir_l_arm_target = norm_v(l_elb - l_sh)
@@ -222,7 +257,7 @@ for f_idx, frame in enumerate(frames):
     else:
         dir_l_arm_target = REST_L_ARM
         
-    dir_l_arm = REST_L_ARM.lerp(dir_l_arm_target, blend_weight if l_active else 0.0).normalized()
+    dir_l_arm = REST_L_ARM.lerp(dir_l_arm_target, blend_l if l_active else 0.0).normalized()
     
     # Calculate local rotation for LeftArm
     target_l_arm_local = norm_v(M_REST_LA.inverted() @ dir_l_arm)
@@ -249,7 +284,7 @@ for f_idx, frame in enumerate(frames):
     else:
         dir_l_fore_target = REST_L_FORE
         
-    dir_l_fore = REST_L_FORE.lerp(dir_l_fore_target, blend_weight if l_active else 0.0).normalized()
+    dir_l_fore = REST_L_FORE.lerp(dir_l_fore_target, blend_l if l_active else 0.0).normalized()
     
     # In pose hierarchy, LeftForeArm target is transformed by parent pb_l_arm.matrix:
     dir_l_fore_in_parent = norm_v(pb_l_arm.matrix.to_3x3().inverted() @ dir_l_fore)
@@ -262,16 +297,14 @@ for f_idx, frame in enumerate(frames):
         pb_l_fore.rotation_quaternion = q_l_fore_local
         pb_l_fore.keyframe_insert(data_path='rotation_quaternion', frame=f_num)
 
-    # 3. Right Arm & Forearm
-    r_sh, r_sh_vis = get_vec_with_vis(pose_lms, 12, min_vis=0.15)
-    r_elb, r_elb_vis = get_vec_with_vis(pose_lms, 14, min_vis=0.15)
-    r_w, r_w_vis = get_vec_with_vis(pose_lms, 16, min_vis=0.2)
-    
+    # 3. Right Arm & Forearm (already extracted above for collision physics)
     pb_r_arm = char_bones.get('RightArm')
     pb_r_fore = char_bones.get('RightForeArm')
     pb_r_hand = char_bones.get('RightHand')
     
-    r_active = (rh is not None) or (r_w is not None and r_w_vis >= 0.25)
+    r_active_val = 1.0 if rh is not None else (r_w_vis if r_w is not None else 0.0)
+    r_active = r_active_val >= 0.25
+    blend_r = blend_weight * (1.0 if r_active_val >= 0.35 else 0.3)
     
     if r_sh and r_elb and r_active:
         dir_r_arm_target = norm_v(r_elb - r_sh)
@@ -282,7 +315,7 @@ for f_idx, frame in enumerate(frames):
     else:
         dir_r_arm_target = REST_R_ARM
         
-    dir_r_arm = REST_R_ARM.lerp(dir_r_arm_target, blend_weight if r_active else 0.0).normalized()
+    dir_r_arm = REST_R_ARM.lerp(dir_r_arm_target, blend_r if r_active else 0.0).normalized()
     target_r_arm_local = norm_v(M_REST_RA.inverted() @ dir_r_arm)
     q_r_arm_local = norm_v(Vector((0, 1, 0))).rotation_difference(target_r_arm_local)
     
@@ -307,7 +340,7 @@ for f_idx, frame in enumerate(frames):
     else:
         dir_r_fore_target = REST_R_FORE
         
-    dir_r_fore = REST_R_FORE.lerp(dir_r_fore_target, blend_weight if r_active else 0.0).normalized()
+    dir_r_fore = REST_R_FORE.lerp(dir_r_fore_target, blend_r if r_active else 0.0).normalized()
     dir_r_fore_in_parent = norm_v(pb_r_arm.matrix.to_3x3().inverted() @ dir_r_fore)
     M_rel_rest_rf = M_REST_RA.inverted() @ M_REST_RF
     target_r_fore_local = norm_v(M_rel_rest_rf.inverted() @ dir_r_fore_in_parent)
@@ -346,10 +379,11 @@ for f_idx, frame in enumerate(frames):
         }
         
         if not hand_lms:
-            # Straight neutral rest pose — fingers fully extended (0°) when hand not detected
+            # Straight neutral rest pose
             if is_left: prev_q_hand_l = None
             else: prev_q_hand_r = None
-            prev_curls_dict.clear()
+            for k in prev_curls_dict:
+                prev_curls_dict[k] = [c * 0.5 for c in prev_curls_dict[k]]
 
             if pb_h:
                 pb_h.rotation_mode = 'QUATERNION'
@@ -363,6 +397,13 @@ for f_idx, frame in enumerate(frames):
                         pb.rotation_quaternion = Euler((0, 0, 0), 'XYZ').to_quaternion()
                         pb.keyframe_insert(data_path='rotation_quaternion', frame=f_num)
             return
+
+        hand_vis = sum([lm.get('visibility', 1.0) for lm in hand_lms]) / len(hand_lms) if hand_lms else 0.0
+        
+        # Hand Confidence Gate
+        if hand_vis < 0.4:
+            for k in prev_curls_dict:
+                prev_curls_dict[k] = [c * 0.5 for c in prev_curls_dict[k]]
 
         pts = [Vector((lm['x'] * 100.0, -lm['y'] * 100.0, -lm['z'] * 100.0)) for lm in hand_lms]
         w = pts[0]
@@ -425,14 +466,40 @@ for f_idx, frame in enumerate(frames):
         # Temporal smoothing for calm and stable wrist orientation (removes jitter/shivering)
         prev_q = prev_q_hand_l if is_left else prev_q_hand_r
         if prev_q is not None:
-            # Smooth interpolation: 65% new pose, 35% temporal continuity
-            q_hand_local = prev_q.slerp(q_hand_local, 0.65)
+            q_hand_local = prev_q.slerp(q_hand_local, 0.55)
+            angle_diff = math.degrees(prev_q.rotation_difference(q_hand_local).angle)
+            if angle_diff > 45.0:
+                q_hand_local = prev_q.slerp(q_hand_local, 45.0 / angle_diff)
         if is_left:
             prev_q_hand_l = q_hand_local.copy()
         else:
             prev_q_hand_r = q_hand_local.copy()
             
         q_hand_final = Quaternion((1, 0, 0, 0)).slerp(q_hand_local, blend_weight)
+        
+        # ── WRIST HARD AXIS CONSTRAINT (post-IK, pre-write) ──────────────────────────
+        # Wrist: Zero axial rotation (Y/twist) — not anatomically possible on this joint.
+        # Allow only: X flexion/extension (-70° to +80°) and Z radial/ulnar deviation (-30° to +20°).
+        e_wrist = q_hand_final.to_euler('YXZ')
+        orig_y = math.degrees(e_wrist.y)
+        orig_x = math.degrees(e_wrist.x)
+        orig_z = math.degrees(e_wrist.z)
+        # Hard zero on Y (twist)
+        if abs(orig_y) > 5.0:
+            log_clamp(f"{prefix}_Wrist_YTwist", f_idx, orig_y, 0.0, "WristTwistZeroed")
+        e_wrist.y = 0.0
+        # Clamp X (flexion/extension -70..+80)
+        clamped_x = max(-70.0, min(80.0, orig_x))
+        if abs(clamped_x - orig_x) > 1.0:
+            log_clamp(f"{prefix}_Wrist_XFlexion", f_idx, orig_x, clamped_x, "WristFlexionClamped")
+        e_wrist.x = math.radians(clamped_x)
+        # Clamp Z (radial/ulnar deviation -30..+20)
+        clamped_z = max(-30.0, min(20.0, orig_z))
+        if abs(clamped_z - orig_z) > 1.0:
+            log_clamp(f"{prefix}_Wrist_ZDeviation", f_idx, orig_z, clamped_z, "WristDeviationClamped")
+        e_wrist.z = math.radians(clamped_z)
+        q_hand_final = e_wrist.to_quaternion()
+        # ── END WRIST CONSTRAINT ───────────────────────────────────────────────────────
         
         if pb_h:
             pb_h.rotation_mode = 'QUATERNION'
@@ -480,19 +547,42 @@ for f_idx, frame in enumerate(frames):
                 if f2_raw != f2_deg: log_clamp(f"{prefix}{fname}2", f_idx, f2_raw, f2_deg, "FingerPIPHyperextension")
                 if f3_raw != f3_deg: log_clamp(f"{prefix}{fname}3", f_idx, f3_raw, f3_deg, "FingerDIPHyperextension")
 
-            raw_curls = [f1_deg, f2_deg, f3_deg]
+            raw_curls = [f1_deg, f2_deg, f3_deg] if hand_vis >= 0.4 else [0.0, 0.0, 0.0]
             prev_curls = prev_curls_dict.get(fname)
             if prev_curls is not None:
-                # Temporal filter: 75% new data, 25% previous — responsive but not jittery
-                smoothed_curls = [prev_curls[i] * 0.25 + raw_curls[i] * 0.75 for i in range(3)]
+                # Temporal filter: 60% new data, 40% previous — stronger damping to kill shivering
+                smoothed_curls = [prev_curls[i] * 0.40 + raw_curls[i] * 0.60 for i in range(3)]
             else:
                 smoothed_curls = raw_curls
             prev_curls_dict[fname] = smoothed_curls
 
-            # Blend toward 0° (straight) at lead-in/out — NOT toward cascaded curl values
-            curls = [math.radians(smoothed_curls[0] * blend_weight),
-                     math.radians(smoothed_curls[1] * blend_weight),
-                     math.radians(smoothed_curls[2] * blend_weight)]
+            # ── HARD ANATOMICAL CONSTRAINT GATE (post-IK, pre-write) ──────────────────
+            # Implements exact single-axis hinge physics per joint type.
+            # PIP (joint index 1) & DIP (joint index 2): pure X-axis hinge only.
+            #   Zero Y and Z completely. Clamp X to [0°, 120°] (PIP) / [0°, 90°] (DIP).
+            # MCP (joint index 0): 2-axis condyloid — allow X flexion + Z abduction only.
+            #   Zero Y (twist) completely.
+            # All violations are logged to clamping_events for CSV export.
+            constrained_curls = []
+            joint_labels = ['MCP', 'PIP', 'DIP']
+            limits = {
+                'Thumb':  [(0.0, 55.0), (0.0, 80.0), (0.0, 70.0)],  # Thumb is more mobile
+                'Index':  [(0.0, 90.0), (0.0, 120.0), (0.0, 90.0)],
+                'Middle': [(0.0, 90.0), (0.0, 120.0), (0.0, 90.0)],
+                'Ring':   [(0.0, 90.0), (0.0, 120.0), (0.0, 90.0)],
+                'Pinky':  [(0.0, 90.0), (0.0, 120.0), (0.0, 90.0)],
+            }
+            for ji, (raw_curl, (lo, hi)) in enumerate(zip(smoothed_curls, limits[fname])):
+                clamped = max(lo, min(hi, raw_curl))
+                if abs(clamped - raw_curl) > 0.5:
+                    log_clamp(f"{prefix}{fname}{ji+1}_{joint_labels[ji]}_FlexionAxis",
+                              f_idx, raw_curl, clamped, "HardAnatomicalClamp")
+                constrained_curls.append(clamped)
+            # ── END HARD GATE ───────────────────────────────────────────────────────────
+
+            curls = [math.radians(constrained_curls[0] * blend_weight),
+                     math.radians(constrained_curls[1] * blend_weight),
+                     math.radians(constrained_curls[2] * blend_weight)]
             for pb, curl in zip(pbs, curls):
                 if pb:
                     pb.rotation_mode = 'QUATERNION'
